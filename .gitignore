@@ -1,0 +1,17 @@
+specs.md
+data.md
+setup.md
+*.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.python-version
+
+# IDE
+.idea/
+
+# Env
+.env
+*.env
