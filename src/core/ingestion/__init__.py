@@ -1,6 +1,6 @@
 import logging
 
-from src.ingestion.config import LOG_DATE_FORMAT, LOG_FORMAT, LOG_LEVEL
+from src.config.config import LOG_DATE_FORMAT, LOG_FORMAT, LOG_LEVEL
 
 
 def setup_logging() -> None:

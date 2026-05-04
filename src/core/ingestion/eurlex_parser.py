@@ -9,21 +9,20 @@ from typing import Optional
 
 from bs4 import BeautifulSoup
 
-from src.ingestion.models import Article, FetchResult
-from src.ingestion.utils import roman_to_int
+from src.domain.models.models import Article, FetchResult
+from src.core.ingestion.utils import roman_to_int
 
 logger = logging.getLogger(__name__)
 
 
-class EurLexParser:
+class EurLexParser():
     """Parser for EUR-Lex XHTML regulation pages."""
 
-    def parse(self, result: FetchResult) -> list[Article]:
-        """Parse one fetched regulation payload into article records."""
-        logger.info("Parse started regulation=%s", result.regulation_name)
-        soup = BeautifulSoup(result.html, "html.parser")
+    def parse_html(self, html: str, regulation_name: str, valid_from: str, source_url: str) -> list[Article]:
+        logger.info("Parse started regulation=%s", regulation_name)
+        soup = BeautifulSoup(html, "html.parser")
         tags = soup.find_all(True)
-        logger.debug("HTML parsed regulation=%s tag_count=%s", result.regulation_name, len(tags))
+        logger.debug("HTML parsed regulation=%s tag_count=%s", regulation_name, len(tags))
 
         articles = []
         current_title = None
@@ -44,18 +43,15 @@ class EurLexParser:
 
             if tag.name == "div" and tag_classes == ["eli-subdivision"] and tag.get("id", "").startswith("art_"):
                 try:
-                    article = self._parse_article(tag, current_title, current_chapter, result)
+                    article = self._parse_article(tag, current_title, current_chapter, regulation_name, valid_from,
+                                                  source_url)
                 except (TypeError, ValueError):
-                    logger.warning(
-                        "Skipping malformed article block regulation=%s id=%s",
-                        result.regulation_name,
-                        tag.get("id"),
-                        exc_info=True,
-                    )
+                    logger.warning("Skipping malformed article block regulation=%s id=%s", regulation_name,
+                                   tag.get("id"), exc_info=True)
                     continue
                 articles.append(article)
 
-        logger.info("Parse completed regulation=%s article_count=%s", result.regulation_name, len(articles))
+        logger.info("Parse completed regulation=%s article_count=%s", regulation_name, len(articles))
         return articles
 
     def _extract_article_number(self, article_div) -> int:
@@ -76,18 +72,20 @@ class EurLexParser:
         return " ".join(p.get_text(strip=True) for p in paragraphs)
 
     def _parse_article(
-        self,
-        article_div,
-        title_num: Optional[int],
-        chapter_num: Optional[int],
-        result: FetchResult,
+            self,
+            article_div,
+            title_num: Optional[int],
+            chapter_num: Optional[int],
+            regulation_name: str,
+            valid_from: str,
+            source_url: str,
     ) -> Article:
         """Build an `Article` model from one article block and current section context."""
         article_number = self._extract_article_number(article_div)
         article_title = self._extract_article_title(article_div)
         content = self._extract_content(article_div)
 
-        breadcrumb_parts = [result.regulation_name]
+        breadcrumb_parts = [regulation_name]
         if title_num:
             breadcrumb_parts.append(f"Titre {title_num}")
         if chapter_num:
@@ -96,35 +94,14 @@ class EurLexParser:
         breadcrumb = " > ".join(breadcrumb_parts)
 
         return Article(
-            regulation_name=result.regulation_name,
+            regulation_name=regulation_name,
             title_number=title_num,
             chapter_number=chapter_num,
             article_number=article_number,
             article_title=article_title,
             breadcrumb=breadcrumb,
             content=content,
-            valid_from=result.valid_from,
+            valid_from=valid_from,
             valid_until=None,
-            source_url=result.source_url,
+            source_url=source_url,
         )
-
-
-if __name__ == "__main__":
-    import asyncio
-
-    from src.ingestion import setup_logging
-    from src.ingestion.fetch import EurLexFetcher
-
-    async def main():
-        """Quick manual smoke test: fetch MiCA and print first parsed breadcrumbs."""
-        setup_logging()
-        fetcher = EurLexFetcher()
-        result = await fetcher.fetch("mica")
-
-        parser = EurLexParser()
-        articles = parser.parse(result)
-
-        for article in articles[:5]:
-            print(f"{article.breadcrumb} - {article.article_title}")
-
-    asyncio.run(main())

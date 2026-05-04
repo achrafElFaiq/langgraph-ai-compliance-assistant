@@ -9,13 +9,15 @@ import time
 
 import httpx
 
-from src.ingestion.config import REGULATIONS, SPARQL_ENDPOINT
-from src.ingestion.models import FetchResult
+from src.config.config import REGULATIONS, SPARQL_ENDPOINT
+from src.core.ingestion.eurlex_parser import EurLexParser
+from src.domain.models.models import FetchResult
+from src.domain.ports.fetch import RegulationFetcher
 
 logger = logging.getLogger(__name__)
 
 
-class EurLexFetcher:
+class EurLexFetcher(RegulationFetcher):
     """Fetches regulation XHTML from EUR-Lex for a configured language.
 
     Args:
@@ -25,6 +27,7 @@ class EurLexFetcher:
 
     def __init__(self, language: str = "FRA"):
         self.language = language
+        self._parser = EurLexParser()
 
     async def _get_work_uri(self, celex: str, client: httpx.AsyncClient) -> str:
         """Resolve a CELEX identifier to the corresponding EUR-Lex work URI.
@@ -122,8 +125,15 @@ class EurLexFetcher:
             elapsed_ms,
         )
 
-        return FetchResult(
+        articles = self._parser.parse_html(
             html=html,
+            regulation_name=meta["regulation_name"],
+            valid_from=meta["valid_from"],
+            source_url=f"https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:{celex}",
+        )
+
+        return FetchResult(
+            articles=articles,
             regulation_name=meta["regulation_name"],
             valid_from=meta["valid_from"],
             source_url=f"https://eur-lex.europa.eu/legal-content/FR/TXT/HTML/?uri=CELEX:{celex}",
