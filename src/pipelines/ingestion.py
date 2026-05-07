@@ -1,7 +1,7 @@
 import time
 import logging
 
-from src.core.ingestion.character_chunker import ArticleChunker
+from src.core.ingestion.text_chunker import ArticleChunker
 from src.domain.ports.chunk import RegulationChunker
 from src.domain.ports.embed import ArtcileEmbedder
 from src.domain.ports.fetch import RegulationFetcher
@@ -29,9 +29,11 @@ async def run_ingestion_pipeline(fetcher: RegulationFetcher, chunker: Regulation
                 logger.warning("Empty result for regulation=%s, skipping", regulation)
                 continue
 
+
+            article_ids = await store.store_articles(result.articles)
             chunks = await chunker.chunk(result.articles)
             chunks = await embedder.embed(chunks)
-            await store.store(chunks)
+            await store.store_chunks(chunks, article_ids)
 
             duration_ms = int((time.perf_counter() - loop_start) * 1000)
             logger.info(

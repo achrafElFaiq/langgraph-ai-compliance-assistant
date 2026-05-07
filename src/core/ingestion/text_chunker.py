@@ -1,11 +1,11 @@
-from typing import List
-
 from src.domain.models.models import Article, ArticleChunk
 from src.domain.ports.chunk import RegulationChunker
 
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class ArticleChunker(RegulationChunker):
+    """Recursive character splitter with overlap — chunks articles for embedding while preserving metadata."""
+
 
     def __init__(self, chunk_size: int = 1500, chunk_overlap: int = 150) -> None:
         self._splitter = RecursiveCharacterTextSplitter(
@@ -14,7 +14,7 @@ class ArticleChunker(RegulationChunker):
         )
 
     async def chunk(self, articles: list[Article]) -> list[ArticleChunk]:
-
+        """Split each article into overlapping chunks, preserving all parent metadata on each chunk."""
 
         result: list[ArticleChunk]  = []
         for article in articles:

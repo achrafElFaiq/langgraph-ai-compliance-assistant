@@ -19,6 +19,8 @@ class EurLexParser():
     """Parser for EUR-Lex XHTML regulation pages."""
 
     def parse_html(self, html: str, regulation_name: str, valid_from: str, source_url: str) -> list[Article]:
+        """Walk the XHTML document and return one Article per article block, tracking title/chapter context."""
+
         logger.info("Parse started regulation=%s", regulation_name)
         soup = BeautifulSoup(html, "html.parser")
         tags = soup.find_all(True)
