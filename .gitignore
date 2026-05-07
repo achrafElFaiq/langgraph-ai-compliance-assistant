@@ -2,6 +2,7 @@ specs.md
 data.md
 setup.md
 *.md
+!README.md
 
 # Python
 __pycache__/
