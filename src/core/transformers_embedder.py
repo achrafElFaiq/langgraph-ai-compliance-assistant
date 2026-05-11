@@ -35,3 +35,7 @@ class TransformersEmbedder(ArtcileEmbedder):
 
         logger.info("Embedding complete.")
         return chunks
+
+    async def embed_query(self, query: str) -> list[float]:
+        vector = self._model.encode([query])
+        return vector[0].tolist()

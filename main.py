@@ -1,6 +1,13 @@
 import asyncio
 import os
 
+import asyncio
+from dotenv import load_dotenv
+
+load_dotenv()
+
+from src.core.agent.graph import compiled_graph
+
 from src.core.ingestion import setup_logging
 from src.core.ingestion.text_chunker import ArticleChunker
 from src.core.ingestion.eurlex_fetcher import EurLexFetcher
@@ -26,5 +33,18 @@ async def main():
 
 
 
+
+
 if __name__ == "__main__":
-    asyncio.run(main())
+    from src.config.store import store
+
+
+    async def test():
+        await store.connect()
+        result = await compiled_graph.ainvoke(
+            {"input_text": "We are launching a crypto token in France, do we need a license?"},
+            config={"configurable": {"thread_id": "test-1"}}
+        )
+        print(result["answer"])
+
+    asyncio.run(test())

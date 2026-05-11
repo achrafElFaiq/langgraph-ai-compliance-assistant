@@ -8,3 +8,7 @@ class ArtcileEmbedder(ABC):
     @abstractmethod
     async def embed(self, articles: list[ArticleChunk]) -> list[ArticleChunk]:
         pass
+
+    @abstractmethod
+    async def embed_query(self, query: str) -> list[float]:
+        pass

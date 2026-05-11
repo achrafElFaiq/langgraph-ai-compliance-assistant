@@ -1,3 +1,5 @@
+from datetime import date
+
 from pydantic import BaseModel
 from typing import Optional
 
@@ -10,8 +12,8 @@ class Article(BaseModel):
     article_title: Optional[str]
     breadcrumb: str
     content: str
-    valid_from: str
-    valid_until: Optional[str]
+    valid_from: date
+    valid_until: Optional[date]
     source_url: str
 
 class ArticleChunk(BaseModel):
@@ -24,8 +26,8 @@ class ArticleChunk(BaseModel):
     chunk_index: int
     chunk_total: int
     content: str
-    valid_from: str
-    valid_until: Optional[str]
+    valid_from: date
+    valid_until: Optional[date]
     source_url: str
     embedding: Optional[list[float]] = None
 
