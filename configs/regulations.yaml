@@ -1,0 +1,21 @@
+regulations:
+  mica:
+    celex: "32023R1114"
+    regulation_name: "MiCA"
+    valid_from: "2024-12-30"
+
+  dora:
+    celex: "32022R2554"
+    regulation_name: "DORA"
+    valid_from: "2025-01-17"
+
+  ai_act:
+    celex: "32024R1689"
+    regulation_name: "AI Act"
+    valid_from: "2024-08-01"
+
+  gdpr:
+    celex: "32016R0679"
+    regulation_name: "GDPR"
+    valid_from: "2018-05-25"
+

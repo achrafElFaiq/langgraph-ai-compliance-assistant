@@ -570,6 +570,7 @@ dependencies = [
     { name = "langgraph" },
     { name = "psycopg", extra = ["binary"] },
     { name = "python-dotenv" },
+    { name = "pyyaml" },
     { name = "sentence-transformers" },
 ]
 
@@ -583,6 +584,7 @@ requires-dist = [
     { name = "langgraph", specifier = ">=1.1.9" },
     { name = "psycopg", extras = ["binary"], specifier = ">=3.3.3" },
     { name = "python-dotenv", specifier = ">=1.2.2" },
+    { name = "pyyaml", specifier = ">=6.0.3" },
     { name = "sentence-transformers", specifier = ">=5.4.1" },
 ]
 

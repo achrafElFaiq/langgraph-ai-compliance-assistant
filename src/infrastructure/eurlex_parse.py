@@ -9,8 +9,8 @@ from typing import Optional
 
 from bs4 import BeautifulSoup
 
-from src.domain.models.models import Article, FetchResult
-from src.core.ingestion.utils import roman_to_int
+from src.domain.models.models import Article
+from src.infrastructure.utils import roman_to_int
 
 logger = logging.getLogger(__name__)
 

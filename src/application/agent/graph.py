@@ -1,8 +1,8 @@
 from langgraph.graph import StateGraph, START, END
-from src.core.agent.state import State
+from src.application.agent.state import State
 from langgraph.checkpoint.memory import MemorySaver
 
-from src.core.agent.nodes import (
+from src.application.agent.nodes import (
     generate_questions,
     needs_research,
     retrieve_articles,

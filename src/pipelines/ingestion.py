@@ -1,12 +1,11 @@
 import time
 import logging
 
-from src.core.ingestion.text_chunker import ArticleChunker
 from src.domain.ports.chunk import RegulationChunker
 from src.domain.ports.embed import ArtcileEmbedder
 from src.domain.ports.fetch import RegulationFetcher
 from src.domain.ports.store import RegulationRepository
-from src.config.config import REGULATIONS
+from src.config.init_regulations import REGULATIONS
 
 
 logger = logging.getLogger(__name__)
