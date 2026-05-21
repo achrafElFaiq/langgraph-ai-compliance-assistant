@@ -7,10 +7,10 @@ load_dotenv()
 
 from src.config.settings import setup_logging
 from src.application.agent.graph import compiled_graph
-from src.infrastructure.eurlex_fetch import EurLexFetcher
+from src.infrastructure.fetch.eurlex_fetch import EurLexFetcher
 from src.infrastructure.text_chunk import ArticleChunker
-from src.infrastructure.postgres_store import PostgresRegulationRepository
-from src.infrastructure.transformers_embed import TransformersEmbedder
+from src.infrastructure.store.postgres_store import PostgresRegulationRepository
+from src.infrastructure.embed.transformers_embed import TransformersEmbedder
 from src.domain.ports.chunk import RegulationChunker
 from src.domain.ports.embed import ArtcileEmbedder
 from src.domain.ports.fetch import RegulationFetcher

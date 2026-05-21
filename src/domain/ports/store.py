@@ -16,11 +16,11 @@ class RegulationRepository(ABC):
         pass
 
     @abstractmethod
-    async def store_articles(self, articles: List[Article]) -> dict[int, int]:
+    async def store_articles(self, articles: List[Article]) -> dict[str, int]:
         pass
 
     @abstractmethod
-    async def store_chunks(self, chunks: List[ArticleChunk], article_ids: dict[int, int]) -> None:
+    async def store_chunks(self, chunks: List[ArticleChunk], article_ids: dict[str, int]) -> None:
         pass
 
     @abstractmethod

@@ -1,6 +1,7 @@
 from datetime import date
 
-from pydantic import BaseModel
+import pandas as pd
+from pydantic import BaseModel, Field
 from typing import Optional
 
 
@@ -8,7 +9,7 @@ class Article(BaseModel):
     regulation_name: str
     title_number: Optional[int]
     chapter_number: Optional[int]
-    article_number: int
+    article_number: str
     article_title: Optional[str]
     breadcrumb: str
     content: str
@@ -20,7 +21,7 @@ class ArticleChunk(BaseModel):
     regulation_name: str
     title_number: Optional[int]
     chapter_number: Optional[int]
-    article_number: int
+    article_number: str
     article_title: Optional[str]
     breadcrumb: str
     chunk_index: int
@@ -41,3 +42,11 @@ class FetchResult(BaseModel):
 class StoreResult(BaseModel):
     regulation_name: str
     article_count: int
+
+
+
+class EvaluationResult(BaseModel):
+    faithfulness: list[float]
+    factual_correctness: list[float]
+    context_recall: list[float]
+    context_precision: list[float]

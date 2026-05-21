@@ -25,7 +25,7 @@ def route_research(state: State) -> str:
     return "answer"
 
 def route_critic(state: State) -> str:
-    if state["critic_feedback"]:
+    if state["critic_opinion"]:
         return "generate_query"
     return "END"
 

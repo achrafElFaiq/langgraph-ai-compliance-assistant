@@ -1,0 +1,940 @@
+[
+  {
+    "id": "r1",
+    "question": "Selon MiCA, quelles sont les obligations applicables à un émetteur qui offre au public un crypto-actif autre qu'un jeton se référant à des actifs ou un jeton de monnaie électronique ?",
+    "expected_regulations": ["MiCA"],
+    "expected_articles": [
+      {"regulation_name": "MiCA", "article_number": "6"},
+      {"regulation_name": "MiCA", "article_number": "7"},
+      {"regulation_name": "MiCA", "article_number": "8"},
+      {"regulation_name": "MiCA", "article_number": "9"}
+    ],
+    "answer": "Un émetteur qui offre au public un crypto-actif autre qu'un jeton se référant à des actifs (ART) ou un jeton de monnaie électronique (EMT) doit, en vertu du Titre II de MiCA, rédiger un livre blanc de crypto-actif conforme aux exigences de contenu et de format de l'Article 6. Si des communications marketing accompagnent l'offre, elles doivent respecter l'Article 7. Le livre blanc doit être notifié à l'autorité compétente de l'État membre d'origine avant publication, conformément à l'Article 8 (notification au moins 20 jours ouvrables avant publication). Une fois la notification effectuée, le livre blanc et les communications marketing doivent être publiés conformément à l'Article 9. À noter qu'aucune approbation préalable n'est requise pour ce type de crypto-actif — seule une notification est nécessaire.",
+    "key_facts": [
+      "Rédaction d'un livre blanc conforme à l'Article 6 (contenu et format)",
+      "Communications marketing conformes à l'Article 7",
+      "Notification du livre blanc à l'autorité compétente de l'État membre d'origine (Article 8)",
+      "Notification au moins 20 jours ouvrables avant publication",
+      "Publication du livre blanc et des communications marketing selon l'Article 9",
+      "Pas d'approbation préalable requise, seulement une notification"
+    ]
+  },
+  {
+    "id": "r2",
+    "question": "Que dois-je faire pour être autorisé en tant que prestataire de services sur crypto-actifs (PSCA) dans l'Union européenne ?",
+    "expected_regulations": ["MiCA"],
+    "expected_articles": [
+      {"regulation_name": "MiCA", "article_number": "59"},
+      {"regulation_name": "MiCA", "article_number": "60"},
+      {"regulation_name": "MiCA", "article_number": "62"},
+      {"regulation_name": "MiCA", "article_number": "63"}
+    ],
+    "answer": "Sous MiCA, depuis le 30 décembre 2024, seuls les prestataires de services sur crypto-actifs (PSCA) autorisés peuvent fournir des services sur crypto-actifs dans l'Union (Article 59). Deux voies existent : soit une autorisation complète délivrée par l'autorité nationale compétente conformément à l'Article 63, soit, pour certaines entités financières déjà régulées (établissements de crédit, entreprises d'investissement, EME, OPCVM, AIFM, etc.), une simple notification au titre de l'Article 60. Pour la voie d'autorisation complète, l'Article 62 détaille le contenu du dossier de demande, qui doit notamment inclure les statuts, la description des services proposés, le plan d'affaires, les garanties prudentielles, les dispositifs de gouvernance et le programme d'opérations. L'autorité compétente évalue la complétude du dossier sous 25 jours ouvrables puis rend sa décision sous 40 jours ouvrables après réception d'un dossier complet (Article 63). En France, l'autorité compétente est l'AMF. Une fois autorisé, le PSCA bénéficie du passeport européen lui permettant d'opérer dans tous les États membres.",
+    "key_facts": [
+      "Autorisation obligatoire pour fournir des services sur crypto-actifs dans l'UE (Article 59)",
+      "Voie 1 : autorisation complète selon Article 63",
+      "Voie 2 : notification simplifiée pour entités financières déjà régulées (Article 60)",
+      "Dossier de demande détaillé selon Article 62 (gouvernance, fonds propres, plan d'affaires)",
+      "Délais d'instruction : 25 jours pour complétude, 40 jours pour décision",
+      "Autorité compétente en France : AMF",
+      "Passeport européen une fois autorisé"
+    ]
+  },
+  {
+    "id": "r3",
+    "question": "Notre société est un PSCA opérant une plateforme de négociation de crypto-actifs. Quel est le montant minimum de fonds propres que nous devons détenir en permanence et sur quelle base le calculer ?",
+    "expected_regulations": ["MiCA"],
+    "expected_articles": [
+      {"regulation_name": "MiCA", "article_number": "67"}
+    ],
+    "answer": "L'Article 67 de MiCA impose aux PSCA de détenir en permanence des garanties prudentielles au moins égales au montant le plus élevé entre : (a) le montant minimum permanent de capital prévu à l'Annexe IV, qui dépend de la classe de services fournis, et (b) un quart des frais généraux fixes de l'année précédente. Pour l'exploitation d'une plateforme de négociation de crypto-actifs (classe 3), le seuil minimum est de 150 000 EUR. Le calcul des frais généraux fixes s'effectue à partir du total des dépenses (fixes et variables) après distribution aux actionnaires, en déduisant uniquement les éléments listés à l'Article 67(3) points (a) à (d) — la liste est exhaustive selon l'ESMA (Q&A 2349 de février 2026). Les garanties prudentielles peuvent prendre la forme de fonds propres (instruments CET1), d'une police d'assurance, ou d'une combinaison des deux. Pour les sociétés en activité depuis moins d'un an, le calcul se base sur les projections de frais généraux fixes des 12 premiers mois.",
+    "key_facts": [
+      "Garanties prudentielles permanentes selon Article 67",
+      "Montant = le plus élevé entre minimum d'Annexe IV et 25% des frais généraux fixes de N-1",
+      "Seuil minimum pour exploitation d'une plateforme de négociation : 150 000 EUR",
+      "Frais généraux fixes calculés sur le total des dépenses (fixes + variables)",
+      "Déductions limitées à la liste exhaustive de l'Article 67(3)(a)-(d)",
+      "Formes acceptées : fonds propres CET1, police d'assurance, ou combinaison",
+      "Sociétés < 1 an : projection sur 12 premiers mois"
+    ]
+  },
+  {
+    "id": "r4",
+    "question": "Notre établissement financier vient de subir une cyberattaque ayant compromis temporairement la disponibilité de nos services de paiement aux clients. Sous DORA, que devons-nous faire et dans quels délais devons-nous notifier l'autorité compétente ?",
+    "expected_regulations": ["DORA"],
+    "expected_articles": [
+      {"regulation_name": "DORA", "article_number": "17"},
+      {"regulation_name": "DORA", "article_number": "18"},
+      {"regulation_name": "DORA", "article_number": "19"}
+    ],
+    "answer": "Sous DORA, vous devez d'abord déclencher votre processus de gestion des incidents liés aux TIC (Article 17) pour détecter, contenir et documenter l'incident. Vous devez ensuite classifier l'incident selon les critères de l'Article 18 et du Règlement délégué (UE) 2024/1772 : un incident est considéré comme majeur s'il remplit au moins 2 critères primaires, ou 1 critère primaire plus le seuil d'impact économique (100 000 EUR). Si l'incident est classifié comme majeur, l'Article 19 impose trois reportings successifs à l'autorité compétente : une notification initiale dans les 4 heures suivant la classification (et au plus tard 24 heures après détection), un rapport intermédiaire dans les 72 heures suivant la notification initiale ou dès rétablissement de l'activité normale, et un rapport final dans le mois suivant le dernier rapport intermédiaire. Comme l'incident a affecté la disponibilité des services aux clients, l'Article 19(3) vous impose également d'informer les clients concernés sans délai indu, ainsi que les mesures prises pour atténuer l'impact.",
+    "key_facts": [
+      "Activation du processus de gestion d'incidents TIC (Article 17)",
+      "Classification de l'incident selon Article 18 et RTS 2024/1772",
+      "Incident majeur = au moins 2 critères primaires OU 1 critère primaire + seuil 100 000 EUR",
+      "Notification initiale : 4h après classification, max 24h après détection",
+      "Rapport intermédiaire : 72h après notification initiale",
+      "Rapport final : 1 mois après dernier rapport intermédiaire",
+      "Information des clients concernés sans délai indu (Article 19(3))"
+    ]
+  },
+  {
+    "id": "r5",
+    "question": "Nous allons signer un contrat avec un fournisseur cloud externe pour héberger notre infrastructure de paiement, qui est une fonction critique. Quelles clauses contractuelles devons-nous impérativement inclure dans cet accord sous DORA ?",
+    "expected_regulations": ["DORA"],
+    "expected_articles": [
+      {"regulation_name": "DORA", "article_number": "28"},
+      {"regulation_name": "DORA", "article_number": "30"}
+    ],
+    "answer": "DORA adopte une approche à deux niveaux pour les contrats avec des prestataires de services TIC tiers. L'Article 28 pose les principes généraux : gouvernance du risque tiers par l'organe de direction, tenue d'un registre d'information distinguant les contrats supportant des fonctions critiques ou importantes des autres contrats, reporting annuel à l'autorité compétente, et information préalable de l'autorité avant la conclusion d'un contrat sur une fonction critique. L'Article 30 fixe les clauses contractuelles obligatoires. Pour tout contrat TIC, le contrat doit inclure : la description claire des services, les niveaux de service, la localisation des données, les obligations d'assistance en cas d'incident, les droits de résiliation, et les obligations de coopération avec les autorités. Comme votre infrastructure de paiement est une fonction critique, des clauses renforcées s'appliquent (Article 30(3)) : objectifs de performance quantitatifs et qualitatifs précis, droits d'accès, d'inspection et d'audit illimités (y compris par l'autorité compétente), participation du prestataire aux tests de résilience (TLPT le cas échéant), stratégies de sortie documentées avec plan de transition, et contrôle renforcé de la sous-traitance.",
+    "key_facts": [
+      "Article 28 : principes généraux du risque tiers TIC",
+      "Tenue d'un registre d'information distinguant fonctions critiques",
+      "Information préalable de l'autorité avant contrat sur fonction critique",
+      "Article 30 : clauses contractuelles minimales obligatoires",
+      "Clauses de base : description services, SLA, localisation données, résiliation, coopération autorités",
+      "Clauses renforcées pour fonctions critiques (Article 30(3))",
+      "Droits d'accès, inspection et audit illimités",
+      "Participation aux tests de résilience (TLPT)",
+      "Stratégie de sortie documentée avec plan de transition",
+      "Encadrement strict de la sous-traitance"
+    ]
+  },
+  {
+    "id": "r6",
+    "question": "Quelles sont les conditions à respecter pour qu'un consentement au traitement de données personnelles soit valide sous le GDPR ?",
+    "expected_regulations": ["GDPR"],
+    "expected_articles": [
+      {"regulation_name": "GDPR", "article_number": "7"}
+    ],
+    "answer": "Sous le GDPR, l'Article 7 fixe les conditions de validité du consentement. Le consentement doit remplir quatre critères cumulatifs : libre (sans pression ni conditionnement à l'exécution d'un contrat lorsque ce n'est pas nécessaire), spécifique (pour une finalité déterminée), éclairé (la personne doit connaître l'identité du responsable de traitement et les finalités) et univoque (acte positif clair, pas de case pré-cochée). Le responsable de traitement porte la charge de la preuve : il doit pouvoir démontrer à tout moment que la personne a effectivement consenti. La demande de consentement, lorsqu'elle figure dans un document traitant aussi d'autres sujets, doit être présentée sous une forme distincte, dans des termes clairs et accessibles. La personne concernée a le droit de retirer son consentement à tout moment, aussi facilement qu'elle l'a donné — le retrait n'affecte pas la licéité du traitement effectué avant celui-ci. Les sanctions en cas de manquement peuvent atteindre 20 millions d'euros ou 4% du chiffre d'affaires annuel mondial.",
+    "key_facts": [
+      "Quatre critères cumulatifs : libre, spécifique, éclairé, univoque",
+      "Acte positif clair requis (pas de case pré-cochée)",
+      "Charge de la preuve sur le responsable de traitement",
+      "Demande distincte des autres clauses, en termes clairs et accessibles",
+      "Droit de retrait à tout moment, aussi aisé que le recueil",
+      "Le retrait n'affecte pas la licéité du traitement antérieur",
+      "Sanctions jusqu'à 20M€ ou 4% du CA annuel mondial"
+    ]
+  },
+  {
+  "id": "r7",
+  "question": "Nous venons de découvrir qu'un hacker a accédé à notre base de données clients contenant des coordonnées et historiques de paiement. Quelles sont nos obligations sous le GDPR et dans quels délais devons-nous agir ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "33"},
+    {"regulation_name": "GDPR", "article_number": "34"}
+  ],
+  "answer": "Sous le GDPR, deux obligations parallèles s'appliquent. L'Article 33 impose de notifier la violation à l'autorité de contrôle compétente (la CNIL en France) dans les meilleurs délais et au plus tard 72 heures après en avoir pris connaissance, sauf si la violation est peu susceptible d'engendrer un risque pour les droits et libertés des personnes. La notification doit décrire la nature de la violation, les catégories et le nombre approximatif de personnes concernées, les coordonnées du DPO, les conséquences probables et les mesures prises ou envisagées. Si toutes les informations ne sont pas disponibles dans les 72 heures, une notification initiale partielle est possible, complétée ultérieurement, accompagnée des motifs du retard. L'Article 34 impose en plus de communiquer la violation aux personnes concernées dans les meilleurs délais lorsque celle-ci est susceptible d'engendrer un risque élevé pour leurs droits et libertés — ce qui est le cas ici compte tenu de l'accès à des données financières (historiques de paiement), qui présente un risque de fraude. La communication aux personnes doit être rédigée en termes clairs et simples. Toute violation doit également être documentée en interne dans un registre, même celles non notifiées (Article 33(5)).",
+  "key_facts": [
+    "Article 33 : notification à la CNIL dans un délai maximum de 72 heures",
+    "Délai court à partir de la prise de connaissance, pas de l'incident lui-même",
+    "Notification non requise si la violation ne présente aucun risque pour les personnes",
+    "Notification partielle possible avec complément ultérieur",
+    "Contenu minimum : nature, catégories, nombre de personnes, DPO, conséquences, mesures",
+    "Article 34 : communication aux personnes concernées en cas de risque élevé",
+    "Données financières et historiques de paiement = risque élevé typique",
+    "Communication aux personnes en termes clairs et simples",
+    "Documentation interne obligatoire de toute violation (Article 33(5))"
+  ]
+},
+  {
+  "id": "r8",
+  "question": "Quelles sont les pratiques d'intelligence artificielle interdites par le règlement européen sur l'IA ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "5"}
+  ],
+  "answer": "L'Article 5 du règlement (UE) 2024/1689 (AI Act) interdit huit catégories de pratiques d'intelligence artificielle, applicables depuis le 2 février 2025. Sont prohibées : (1) les systèmes utilisant des techniques subliminales ou manipulatrices qui altèrent matériellement le comportement et causent un préjudice significatif ; (2) les systèmes exploitant les vulnérabilités liées à l'âge, au handicap ou à la situation socio-économique ; (3) le scoring social, c'est-à-dire l'évaluation ou la classification de personnes sur la base de leur comportement social ou de caractéristiques personnelles, conduisant à un traitement défavorable injustifié ou disproportionné ; (4) les systèmes d'évaluation prédictive du risque de criminalité fondés uniquement sur le profilage ; (5) la création ou l'extension de bases de données de reconnaissance faciale par scraping non ciblé d'images sur internet ou de vidéosurveillance ; (6) la reconnaissance des émotions sur le lieu de travail et dans les établissements d'enseignement ; (7) la catégorisation biométrique permettant d'inférer des attributs sensibles (opinion politique, orientation sexuelle, etc.) ; (8) l'identification biométrique à distance en temps réel dans les espaces accessibles au public à des fins répressives, sauf exceptions strictement encadrées. Les violations sont passibles d'amendes pouvant atteindre 35 millions d'euros ou 7% du chiffre d'affaires mondial annuel.",
+  "key_facts": [
+    "Article 5 du règlement (UE) 2024/1689 (AI Act)",
+    "Applicable depuis le 2 février 2025",
+    "Huit catégories de pratiques interdites",
+    "Techniques subliminales ou manipulatrices causant préjudice significatif",
+    "Exploitation de vulnérabilités (âge, handicap, situation socio-économique)",
+    "Scoring social conduisant à un traitement défavorable injustifié",
+    "Évaluation prédictive du risque criminel fondée uniquement sur le profilage",
+    "Scraping non ciblé pour bases de reconnaissance faciale",
+    "Reconnaissance des émotions au travail et en éducation",
+    "Catégorisation biométrique d'attributs sensibles",
+    "Identification biométrique à distance en temps réel dans l'espace public (avec exceptions)",
+    "Sanctions jusqu'à 35M€ ou 7% du chiffre d'affaires mondial"
+  ]
+},
+  {
+  "id": "r9",
+  "question": "Notre fintech développe un système d'IA pour évaluer la solvabilité des demandeurs de crédit. Comment savoir si notre système est considéré comme à haut risque sous le règlement IA ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "6"}
+  ],
+  "answer": "L'Article 6 du règlement (UE) 2024/1689 (AI Act) définit deux voies pour qu'un système d'IA soit qualifié de « haut risque ». Premièrement, un système est à haut risque s'il constitue un composant de sécurité d'un produit, ou est lui-même un produit, couvert par la législation d'harmonisation de l'Union listée à l'Annexe I, ET si ce produit est soumis à une évaluation de conformité par un tiers (Article 6(1)). Deuxièmement, un système est à haut risque s'il relève d'un des cas d'usage listés à l'Annexe III (Article 6(2)). Or, l'Annexe III inclut explicitement les systèmes d'IA destinés à évaluer la solvabilité ou à établir le score de crédit des personnes physiques (point 5(b)) — votre cas d'usage tombe donc directement dans cette catégorie. Une dérogation existe : un système relevant de l'Annexe III peut ne pas être qualifié de haut risque s'il ne présente pas de risque significatif pour la santé, la sécurité ou les droits fondamentaux, notamment s'il n'influence pas matériellement le résultat de la décision (Article 6(3)). Mais attention : cette dérogation ne s'applique jamais lorsque le système effectue un profilage de personnes physiques, ce qui est typiquement le cas d'un scoring de crédit. Si vous estimez ne pas être à haut risque, vous devez documenter votre évaluation avant la mise sur le marché et l'enregistrer (Article 6(4)). En pratique, un système de scoring de crédit utilisant les données personnelles des demandeurs sera presque toujours à haut risque, avec toutes les obligations associées (gestion des risques, documentation technique, transparence, supervision humaine, etc.).",
+  "key_facts": [
+    "Article 6 : deux voies de classification à haut risque",
+    "Voie 1 : composant de sécurité d'un produit listé en Annexe I avec évaluation conformité tierce (Article 6(1))",
+    "Voie 2 : cas d'usage listé en Annexe III (Article 6(2))",
+    "Scoring de crédit / évaluation de solvabilité explicitement listé en Annexe III point 5(b)",
+    "Dérogation possible si pas de risque significatif (Article 6(3))",
+    "Dérogation jamais applicable si le système effectue du profilage",
+    "Documentation obligatoire de l'évaluation si non-classification (Article 6(4))",
+    "Enregistrement obligatoire même en cas de dérogation (Article 49(2))",
+    "Conclusion pratique : un scoring crédit utilisant des données personnelles sera quasi systématiquement à haut risque"
+  ]
+},
+  {
+  "id": "r10",
+  "question": "Nous voulons déployer un système d'IA utilisant la reconnaissance faciale pour automatiser notre processus KYC d'onboarding client. Quelles sont les principales obligations réglementaires à respecter ?",
+  "expected_regulations": ["AI Act", "GDPR"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "6"},
+    {"regulation_name": "GDPR", "article_number": "9"},
+    {"regulation_name": "GDPR", "article_number": "35"}
+  ],
+  "answer": "Un système de reconnaissance faciale pour le KYC déclenche deux régimes parallèles. Sous l'AI Act, l'Article 6 classe ce système comme à haut risque car il utilise la biométrie pour identifier des personnes physiques (Annexe III point 1) — ce qui entraîne l'ensemble des obligations applicables aux systèmes à haut risque (gestion des risques, documentation technique, qualité des données, transparence, supervision humaine, robustesse, enregistrement dans la base de données européenne, marquage CE). Sous le GDPR, l'Article 9 qualifie les données biométriques utilisées pour identifier une personne de manière unique comme « catégorie particulière » : leur traitement est interdit par principe, sauf à invoquer une exception du paragraphe 2 (typiquement le consentement explicite — Article 9(2)(a) — ou un motif d'intérêt public substantiel prévu par la loi — Article 9(2)(g)). Cette exception doit être cumulée avec une base légale de l'Article 6 GDPR : pour le KYC, l'obligation légale issue de la directive LCB-FT (5e directive AML) constitue généralement la base appropriée. Enfin, l'Article 35 GDPR impose la réalisation d'une analyse d'impact relative à la protection des données (AIPD) avant tout traitement à grande échelle de données sensibles incluant un profilage automatisé — ce qui est systématiquement le cas pour un KYC biométrique. La CNIL recommande également une consultation préalable si le risque résiduel reste élevé après mesures de mitigation.",
+  "key_facts": [
+    "Système biométrique d'identification = haut risque sous Article 6 AI Act (Annexe III point 1)",
+    "Obligations AI Act haut risque : gestion risques, documentation, supervision humaine, marquage CE",
+    "Données biométriques pour identification unique = catégorie particulière sous Article 9 GDPR",
+    "Interdiction de principe sauf exception du paragraphe 2 (consentement explicite ou intérêt public)",
+    "Double licéité requise : exception Article 9(2) + base légale Article 6 GDPR",
+    "Base légale typique pour KYC : obligation légale issue de la directive LCB-FT",
+    "AIPD obligatoire sous Article 35 GDPR avant mise en œuvre",
+    "Consultation préalable de la CNIL si risque résiduel élevé"
+  ]
+},
+  {
+  "id": "r11",
+  "question": "Quelles sont les obligations générales de conduite qu'un PSCA doit respecter dans ses relations avec ses clients sous MiCA ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "66"}
+  ],
+  "answer": "L'Article 66 de MiCA fixe les obligations générales de conduite applicables à tous les PSCA, quels que soient les services fournis. Premièrement, le PSCA doit agir honnêtement, équitablement et professionnellement, dans le meilleur intérêt de ses clients et clients potentiels (Article 66(1)). Deuxièmement, toutes les informations fournies aux clients, y compris les communications marketing, doivent être correctes, claires et non trompeuses ; les communications marketing doivent être clairement identifiées comme telles (Article 66(2)). Le PSCA ne doit pas, délibérément ou par négligence, induire un client en erreur sur les avantages réels ou perçus d'un crypto-actif. Troisièmement, le PSCA doit avertir les clients des risques associés aux transactions en crypto-actifs (Article 66(3)) — risques de volatilité, risque technologique, risque de perte totale, etc. Enfin, pour certains services (exploitation d'une plateforme de négociation, échange, conseil, gestion de portefeuille), le PSCA doit fournir aux clients les hyperliens vers les livres blancs des crypto-actifs concernés (Article 66(4)). Ces obligations s'inspirent directement du régime de conduite de MiFID II et sont complétées par des obligations spécifiques selon le service (Articles 75 à 82).",
+  "key_facts": [
+    "Article 66 fixe les obligations générales de conduite des PSCA",
+    "Article 66(1) : agir honnêtement, équitablement et professionnellement dans le meilleur intérêt des clients",
+    "Article 66(2) : informations correctes, claires et non trompeuses",
+    "Communications marketing clairement identifiées comme telles",
+    "Interdiction d'induire en erreur sur les avantages d'un crypto-actif",
+    "Article 66(3) : obligation d'avertir des risques associés aux transactions",
+    "Article 66(4) : hyperliens vers les livres blancs pour certains services",
+    "Régime inspiré de MiFID II",
+    "Obligations spécifiques complémentaires selon le service (Articles 75 à 82)"
+  ]
+}
+  ,
+  {
+  "id": "r12",
+  "question": "Quelles sont les responsabilités de l'organe de direction concernant la gestion des risques liés aux TIC sous DORA ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "5"}
+  ],
+  "answer": "L'Article 5 de DORA place la gestion des risques TIC au cœur de la gouvernance de l'entité financière, avec l'organe de direction comme responsable ultime. L'entité financière doit mettre en place un cadre interne de gouvernance et de contrôle assurant une gestion efficace et prudente du risque TIC. L'organe de direction définit, approuve, supervise et est responsable de la mise en œuvre de l'ensemble des dispositifs liés au cadre de gestion des risques TIC. Concrètement, l'organe de direction doit : (a) assumer la responsabilité ultime de la gestion du risque TIC ; (b) mettre en place des politiques garantissant la disponibilité, l'authenticité, l'intégrité et la confidentialité des données ; (c) définir clairement les rôles et responsabilités de toutes les fonctions liées aux TIC ; (d) approuver la stratégie de résilience opérationnelle numérique, incluant la détermination du niveau de tolérance au risque TIC ; (e) approuver, superviser et revoir périodiquement la politique de continuité d'activité et les plans de réponse et de reprise ; (f) approuver les plans d'audit interne TIC ; (g) allouer un budget approprié à la résilience opérationnelle. Les entités financières (hors microentreprises) doivent désigner une personne ou un membre de la direction senior chargé de surveiller les accords avec les prestataires tiers de services TIC (Article 5(3)). Enfin, les membres de l'organe de direction doivent maintenir activement leurs connaissances à jour pour comprendre et évaluer le risque TIC, notamment par des formations régulières (Article 5(4)).",
+  "key_facts": [
+    "Article 5 : gouvernance et organisation du risque TIC",
+    "Cadre interne de gouvernance et contrôle obligatoire",
+    "Organe de direction = responsable ultime du risque TIC",
+    "Définition, approbation, supervision du cadre de gestion des risques TIC",
+    "Mise en place de politiques de disponibilité, authenticité, intégrité, confidentialité",
+    "Définition claire des rôles et responsabilités TIC",
+    "Approbation de la stratégie de résilience opérationnelle et du niveau de tolérance au risque",
+    "Approbation et revue périodique des plans de continuité et de reprise",
+    "Approbation des plans d'audit interne TIC",
+    "Allocation d'un budget approprié à la résilience",
+    "Désignation d'un responsable du suivi des prestataires tiers TIC (Article 5(3))",
+    "Formation continue obligatoire des membres de l'organe de direction (Article 5(4))"
+  ]
+},
+
+{
+  "id": "r13",
+  "question": "Notre néobanque traite à grande échelle les données financières de nos clients et nous voulons savoir si nous sommes obligés de désigner un DPO. Que dit le GDPR à ce sujet ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "37"}
+  ],
+  "answer": "L'Article 37 du GDPR prévoit trois cas dans lesquels la désignation d'un délégué à la protection des données (DPO) est obligatoire : (a) lorsque le traitement est effectué par une autorité publique ou un organisme public, hors juridictions ; (b) lorsque les activités de base du responsable de traitement ou du sous-traitant consistent en des opérations qui, par leur nature, leur portée ou leurs finalités, exigent un suivi régulier et systématique à grande échelle des personnes concernées ; (c) lorsque les activités de base consistent en un traitement à grande échelle de données sensibles au sens de l'Article 9 ou de données pénales au sens de l'Article 10. Pour votre néobanque, les données financières (transactions, soldes, historique bancaire) ne sont pas des données sensibles au sens de l'Article 9 — le critère (c) ne s'applique donc pas directement. En revanche, le critère (b) s'applique typiquement aux banques : la CNIL et le Comité européen de la protection des données (CEPD) considèrent que les établissements bancaires effectuent un suivi régulier et systématique à grande échelle de leurs clients (surveillance des transactions, scoring, lutte anti-blanchiment, etc.). La désignation d'un DPO est donc obligatoire dans votre cas. Le DPO peut être un salarié interne ou un prestataire externe sous contrat de service. Un groupe d'entreprises peut désigner un DPO unique, à condition qu'il soit facilement joignable depuis chaque établissement. Les coordonnées du DPO doivent être publiées et communiquées à la CNIL.",
+  "key_facts": [
+    "Article 37 fixe trois cas de désignation obligatoire du DPO",
+    "Cas (a) : autorité ou organisme public",
+    "Cas (b) : suivi régulier et systématique à grande échelle (activités de base)",
+    "Cas (c) : traitement à grande échelle de données sensibles ou pénales",
+    "Les données financières/bancaires ne sont PAS sensibles au sens de l'Article 9",
+    "Les banques relèvent typiquement du cas (b) selon CNIL et CEPD",
+    "DPO interne (salarié) ou externe (contrat de service)",
+    "Un DPO unique possible pour un groupe d'entreprises s'il est joignable depuis chaque site",
+    "Publication des coordonnées du DPO et communication à la CNIL obligatoires"
+  ]
+},
+  {
+  "id": "r14",
+  "question": "Notre fintech utilise un chatbot conversationnel basé sur GPT pour répondre aux questions des clients sur leur compte. Quelles obligations de transparence devons-nous respecter sous le règlement IA ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "50"}
+  ],
+  "answer": "L'Article 50 du règlement (UE) 2024/1689 (AI Act) impose plusieurs obligations de transparence qui s'appliquent à votre cas. Premièrement, l'Article 50(1) impose au fournisseur d'un système d'IA destiné à interagir directement avec des personnes physiques de concevoir ce système de manière à informer l'utilisateur qu'il interagit avec une IA, sauf si cela est évident pour une personne raisonnablement avertie compte tenu des circonstances. Concrètement, votre chatbot doit clairement indiquer dès le début de la conversation : « Vous interagissez avec un assistant IA ». Cette obligation pèse en premier lieu sur le fournisseur du système (par exemple OpenAI pour GPT), mais elle se propage contractuellement au déployeur que vous êtes — c'est vous qui mettez en œuvre l'interface utilisateur. Deuxièmement, l'Article 50(2) impose au fournisseur du système d'IA générative de marquer les sorties (texte, image, audio, vidéo) dans un format lisible par machine et détectable comme artificiellement généré. Cette obligation pèse principalement sur OpenAI mais vous devez vous assurer que ces marqueurs ne sont pas supprimés. En tant que déployeur, vous n'êtes pas concerné par les obligations sur les deepfakes (50(4)) ni sur la reconnaissance d'émotions (50(3)) dans ce cas d'usage. L'information doit être fournie de manière claire, distinguable et accessible, au plus tard lors de la première interaction. Ces obligations s'appliquent à partir du 2 août 2026. À noter : le GDPR impose aussi des obligations de transparence parallèles si le chatbot traite des données personnelles (Articles 13/14 GDPR).",
+  "key_facts": [
+    "Article 50 du règlement (UE) 2024/1689 fixe les obligations de transparence",
+    "Applicable à partir du 2 août 2026",
+    "Article 50(1) : obligation d'informer l'utilisateur qu'il interagit avec une IA",
+    "Exception possible si l'interaction avec une IA est évidente pour un utilisateur averti",
+    "Obligation principale sur le fournisseur (OpenAI), propagation contractuelle au déployeur",
+    "Article 50(2) : marquage des contenus générés en format lisible par machine",
+    "Marquage à la charge du fournisseur du modèle génératif",
+    "Information claire, distinguable et accessible dès la première interaction",
+    "Articles 50(3) et 50(4) non applicables au cas du chatbot client (deepfake, émotions)",
+    "Obligations complémentaires possibles sous le GDPR (Articles 13/14)"
+  ]
+},
+{
+  "id": "r15",
+  "question": "Quelles sont les pratiques d'abus de marché interdites sous MiCA pour les transactions sur crypto-actifs ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "89"},
+    {"regulation_name": "MiCA", "article_number": "90"},
+    {"regulation_name": "MiCA", "article_number": "91"}
+  ],
+  "answer": "Le Titre VI de MiCA (Articles 86 à 92) prohibe trois catégories d'abus de marché impliquant des crypto-actifs admis à la négociation ou pour lesquels une admission est demandée dans l'Union. Premièrement, l'Article 89 interdit les opérations d'initiés : il s'agit du fait pour une personne détenant une information privilégiée (au sens de l'Article 87) de l'utiliser pour acquérir ou céder, directement ou indirectement, pour son compte ou celui d'un tiers, les crypto-actifs concernés. L'interdiction s'étend également à l'annulation ou à la modification d'un ordre placé avant la réception de l'information privilégiée, ainsi qu'à la recommandation ou l'incitation à de telles opérations. Deuxièmement, l'Article 90 interdit la divulgation illicite d'informations privilégiées : aucune personne détenant une information privilégiée ne doit la communiquer à un tiers, sauf si la divulgation intervient dans l'exercice normal d'un emploi ou d'une fonction. Troisièmement, l'Article 91 interdit la manipulation de marché, qui inclut notamment : (i) la conclusion de transactions ou la passation d'ordres donnant ou susceptibles de donner des signaux faux ou trompeurs sur l'offre, la demande ou le prix d'un crypto-actif ; (ii) la fixation du prix d'un crypto-actif à un niveau anormal ou artificiel ; (iii) le recours à des procédés fictifs ou tout autre artifice ; (iv) la diffusion d'informations fausses ou trompeuses (y compris via les réseaux sociaux). Ces interdictions s'appliquent même hors plateformes de négociation et hors UE, dès lors que les crypto-actifs concernés sont négociés dans l'Union (Article 86(1)).",
+  "key_facts": [
+    "Titre VI de MiCA (Articles 86-92) régit les abus de marché sur crypto-actifs",
+    "Article 89 : interdiction des opérations d'initiés",
+    "L'interdiction couvre l'utilisation, l'annulation/modification d'ordres, et la recommandation",
+    "Article 90 : interdiction de divulgation illicite d'informations privilégiées",
+    "Exception : divulgation dans l'exercice normal d'un emploi ou d'une fonction",
+    "Article 91 : interdiction de la manipulation de marché",
+    "Manipulation inclut signaux faux/trompeurs sur offre/demande/prix",
+    "Manipulation inclut fixation de prix à niveau anormal ou artificiel",
+    "Manipulation inclut diffusion d'informations fausses (y compris réseaux sociaux)",
+    "Application extraterritoriale : tout crypto-actif négocié dans l'UE (Article 86(1))"
+  ]
+},
+  {
+  "id": "r16",
+  "question": "Notre établissement de paiement doit-il réaliser des tests de pénétration sur ses systèmes ICT sous DORA, à quelle fréquence et selon quelles modalités ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "24"},
+    {"regulation_name": "DORA", "article_number": "25"},
+    {"regulation_name": "DORA", "article_number": "26"}
+  ],
+  "answer": "DORA impose deux niveaux de tests de résilience opérationnelle qui s'appliquent différemment selon le profil de l'entité. Le premier niveau, applicable à toutes les entités financières hors microentreprises (Article 24), est un programme de tests régulier intégré au cadre de gestion des risques TIC, basé sur une approche fondée sur les risques, avec priorisation, classification et remédiation des problèmes identifiés. L'Article 25 précise les types de tests à conduire : évaluations de vulnérabilité, analyses de sécurité du code source, tests fondés sur des scénarios, tests de compatibilité et de performance, tests d'intrusion (penetration tests), tests de bout en bout. Tous les systèmes TIC supportant des fonctions critiques ou importantes doivent être testés au moins une fois par an. Le deuxième niveau, défini à l'Article 26, est le test avancé basé sur le TLPT (Threat-Led Penetration Testing) — l'équivalent d'un red team intelligence-led. Le TLPT n'est PAS obligatoire pour toutes les entités : il ne concerne que les entités financières « significatives » désignées par l'autorité compétente sur la base de critères de risque, taille, profil systémique et impact sur le marché. Pour un établissement de paiement de taille moyenne, le TLPT ne sera généralement pas requis, sauf désignation spécifique par l'ACPR. Lorsqu'il s'applique, le TLPT doit être conduit au moins tous les 3 ans, sur les systèmes en production réelle, couvrir les fonctions critiques ou importantes, et inclure les prestataires tiers TIC critiques. Le cadre méthodologique de référence est TIBER-EU. Les modalités détaillées sont fixées par le Règlement délégué (UE) 2025/1190.",
+  "key_facts": [
+    "DORA impose deux niveaux de tests de résilience opérationnelle",
+    "Article 24 : programme de tests régulier obligatoire (toutes entités sauf microentreprises)",
+    "Article 25 : types de tests (vulnérabilité, code source, scénarios, pénétration, end-to-end)",
+    "Systèmes supportant fonctions critiques testés au moins une fois par an",
+    "Article 26 : tests avancés TLPT (Threat-Led Penetration Testing)",
+    "TLPT obligatoire uniquement pour entités financières significatives désignées",
+    "Désignation par autorité compétente selon critères de risque, taille, profil systémique",
+    "TLPT au moins tous les 3 ans",
+    "TLPT sur systèmes en production réelle, fonctions critiques, incluant prestataires tiers TIC",
+    "Cadre méthodologique de référence : TIBER-EU",
+    "Modalités détaillées : Règlement délégué (UE) 2025/1190"
+  ]
+},
+  {
+  "id": "r17",
+  "question": "Quels sont les droits dont disposent les personnes concernées sur leurs données personnelles sous le GDPR ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "15"},
+    {"regulation_name": "GDPR", "article_number": "16"},
+    {"regulation_name": "GDPR", "article_number": "17"},
+    {"regulation_name": "GDPR", "article_number": "18"},
+    {"regulation_name": "GDPR", "article_number": "20"},
+    {"regulation_name": "GDPR", "article_number": "21"},
+    {"regulation_name": "GDPR", "article_number": "22"}
+  ],
+  "answer": "Le Chapitre III du GDPR (Articles 15 à 22) reconnaît sept droits substantiels aux personnes concernées. L'Article 15 consacre le droit d'accès : toute personne peut obtenir du responsable de traitement la confirmation que ses données sont traitées et, le cas échéant, en obtenir une copie ainsi que des informations sur les finalités, les destinataires, la durée de conservation et l'origine des données. L'Article 16 prévoit le droit de rectification des données inexactes ou incomplètes. L'Article 17 institue le droit à l'effacement (dit « droit à l'oubli ») qui s'applique dans six cas (finalité atteinte, retrait du consentement, opposition, traitement illicite, obligation légale, données d'enfants). L'Article 18 reconnaît le droit à la limitation du traitement, qui permet à la personne de demander un gel temporaire du traitement dans certaines situations (contestation de l'exactitude, traitement illicite, etc.). L'Article 20 consacre le droit à la portabilité : la personne peut recevoir ses données dans un format structuré, couramment utilisé et lisible par machine, et les transmettre à un autre responsable de traitement. L'Article 21 prévoit le droit d'opposition au traitement, notamment pour les traitements fondés sur l'intérêt légitime ou la prospection commerciale (opposition absolue dans ce dernier cas). Enfin, l'Article 22 protège contre les décisions individuelles automatisées fondées uniquement sur un traitement automatisé produisant des effets juridiques ou significatifs — la personne a le droit de ne pas y être soumise, sauf exceptions limitatives. Le responsable de traitement doit répondre dans un délai d'un mois, prolongeable de deux mois pour les demandes complexes.",
+  "key_facts": [
+    "Article 15 : droit d'accès aux données et aux informations sur leur traitement",
+    "Article 16 : droit de rectification des données inexactes ou incomplètes",
+    "Article 17 : droit à l'effacement (droit à l'oubli) — applicable dans 6 cas",
+    "Article 18 : droit à la limitation du traitement",
+    "Article 20 : droit à la portabilité (format structuré, lisible par machine)",
+    "Article 21 : droit d'opposition (absolu pour la prospection commerciale)",
+    "Article 22 : protection contre les décisions automatisées individuelles",
+    "Délai de réponse du responsable de traitement : 1 mois (prolongeable 2 mois)",
+    "Article 19 (obligation de notification) complète ces droits côté responsable"
+  ]
+},{
+  "id": "r18",
+  "question": "Sous le règlement IA, quelle est la différence entre un fournisseur et un déployeur de système d'IA ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "3"}
+  ],
+  "answer": "L'Article 3 du règlement (UE) 2024/1689 définit les différents acteurs de la chaîne de valeur d'un système d'IA. Le « fournisseur » (Article 3(3)) est toute personne physique ou morale, autorité publique, agence ou autre organisme qui développe un système d'IA ou un modèle d'IA à usage général — ou qui le fait développer — et qui le place sur le marché ou le met en service sous son propre nom ou sa propre marque, à titre onéreux ou gratuit. Le « déployeur » (Article 3(4)) est toute personne physique ou morale, autorité publique, agence ou autre organisme qui utilise un système d'IA sous son autorité, sauf lorsque l'usage relève d'une activité personnelle non professionnelle. La distinction est fondamentale car elle détermine la répartition des obligations : le fournisseur porte la responsabilité principale de la conformité du système (évaluation de conformité, documentation technique, marquage CE, gestion des risques, qualité des données d'entraînement), tandis que le déployeur a des obligations de mise en œuvre (utilisation conformément aux instructions, supervision humaine effective, surveillance du fonctionnement, conservation des logs, information des personnes concernées). Concrètement, pour un fintech qui utilise GPT-4 via API : OpenAI est le fournisseur, le fintech est le déployeur. Attention : un déployeur peut devenir « fournisseur en aval » s'il modifie substantiellement le système ou en change la finalité prévue (Article 25(1)). L'Article 3 définit également d'autres acteurs : représentant autorisé (3(5)), importateur (3(6)), distributeur (3(7)), tous regroupés sous le terme « opérateur » (3(8)).",
+  "key_facts": [
+    "Article 3 fixe 68 définitions du règlement, dont les rôles d'acteurs",
+    "Article 3(3) : fournisseur = développe et place sur le marché sous son nom",
+    "Article 3(4) : déployeur = utilise le système sous son autorité",
+    "Exception déployeur : usage personnel non professionnel exclu",
+    "Fournisseur : responsabilité principale de conformité (CE, documentation, gestion risques)",
+    "Déployeur : obligations de mise en œuvre (supervision humaine, logs, information)",
+    "Cas pratique : OpenAI = fournisseur, entreprise utilisatrice = déployeur",
+    "Un déployeur peut devenir fournisseur en aval (Article 25(1)) en cas de modification substantielle",
+    "Autres acteurs définis : représentant autorisé, importateur, distributeur",
+    "Tous regroupés sous le terme « opérateur » (Article 3(8))"
+  ]
+},{
+  "id": "r19",
+  "question": "Notre néobanque vient de subir une cyberattaque par ransomware qui a chiffré nos serveurs et exfiltré des données clients incluant des informations bancaires. Quelles sont nos obligations de notification réglementaire et dans quels délais ?",
+  "expected_regulations": ["DORA", "GDPR"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "19"},
+    {"regulation_name": "GDPR", "article_number": "33"},
+    {"regulation_name": "GDPR", "article_number": "34"}
+  ],
+  "answer": "Cet incident déclenche simultanément deux régimes de notification parallèles avec des délais et destinataires différents. Sous DORA (Article 19), si l'incident est classifié comme « incident majeur » selon les critères de l'Article 18 et du Règlement délégué (UE) 2024/1772 — ce qui est très probable étant donné l'ampleur (chiffrement des serveurs, exfiltration de données clients) —, vous devez notifier l'ACPR via trois rapports successifs : notification initiale dans les 4 heures après classification (au plus tard 24h après détection), rapport intermédiaire dans les 72 heures après la notification initiale ou dès rétablissement de l'activité, et rapport final dans le mois suivant le dernier rapport intermédiaire. Si l'incident a un impact sur les services de paiement, l'Article 23 DORA impose en plus une information des clients sans délai indu. Sous le GDPR (Article 33), vous devez notifier la CNIL dans les 72 heures après en avoir pris connaissance, puisque l'exfiltration de données clients constitue une violation de données à caractère personnel présentant un risque pour les droits et libertés des personnes. Cette notification doit décrire la nature de la violation, les catégories et le nombre approximatif de personnes affectées, les coordonnées du DPO, les conséquences probables et les mesures prises. L'Article 34 GDPR impose en outre une communication directe aux personnes concernées sans délai indu, car les informations bancaires exfiltrées constituent un risque élevé pour les droits et libertés (fraude, usurpation d'identité, démarchage frauduleux). Concrètement, vous aurez trois flux de notification depuis le même incident : ACPR (4h/72h/1 mois), CNIL (72h), clients (sans délai indu). Une gouvernance d'incident unifiée avec implication conjointe du DPO et du responsable conformité DORA est indispensable pour gérer ces obligations simultanées.",
+  "key_facts": [
+    "Deux régimes de notification parallèles : DORA et GDPR",
+    "DORA Article 19 : notification initiale à l'ACPR dans les 4h après classification",
+    "DORA Article 19 : rapport intermédiaire 72h après notification initiale",
+    "DORA Article 19 : rapport final dans le mois suivant le dernier rapport intermédiaire",
+    "DORA Article 23 : information des clients si impact sur services de paiement",
+    "GDPR Article 33 : notification à la CNIL dans les 72h après prise de connaissance",
+    "GDPR Article 34 : communication aux personnes concernées si risque élevé",
+    "Informations bancaires exfiltrées = risque élevé typique (fraude, usurpation)",
+    "Trois flux de notification distincts : ACPR, CNIL, clients",
+    "Gouvernance unifiée DPO + responsable conformité DORA recommandée"
+  ]
+},{
+  "id": "r20",
+  "question": "Notre société prépare son dossier de demande d'autorisation PSCA. Quelles sont les exigences de gouvernance que nous devons démontrer concernant nos dirigeants et notre organisation interne sous MiCA ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "68"}
+  ],
+  "answer": "L'Article 68 de MiCA fixe les exigences de gouvernance que tout PSCA doit respecter, à démontrer dès la demande d'autorisation. Premièrement, les membres de l'organe de direction doivent être de bonne réputation et posséder, individuellement et collectivement, les connaissances, compétences et expérience appropriées (Article 68(1)). En pratique, l'AMF vérifie l'absence de condamnations en matière de blanchiment, fraude ou criminalité financière, ainsi qu'une expérience professionnelle pertinente (crypto, fintech ou finance traditionnelle). Selon les lignes directrices conjointes EBA/ESMA de 2024, les dirigeants doivent également être en mesure de consacrer suffisamment de temps à leurs fonctions — le CEO à 100% (1 ETP) et les membres du conseil exécutif au moins 50% (0,5 ETP). Deuxièmement, les actionnaires détenant une participation qualifiée (≥10% du capital ou des droits de vote) doivent également satisfaire aux exigences de bonne réputation (Article 68(2)). Troisièmement, le PSCA doit adopter des politiques et procédures suffisamment efficaces pour assurer la conformité à MiCA (Article 68(4)). Quatrièmement, les employés doivent disposer des connaissances, compétences et expertise nécessaires à leurs fonctions (Article 68(5)). Cinquièmement, l'organe de direction doit revoir périodiquement l'efficacité des dispositifs et corriger les défaillances identifiées (Article 68(6)). Sixièmement, le PSCA doit disposer d'une politique de continuité d'activité et de plans de reprise (Article 68(7)) — laquelle s'articule avec les obligations de résilience opérationnelle de DORA. Enfin, le PSCA doit tenir un registre de tous les services, ordres et transactions sur crypto-actifs pendant au moins cinq ans (Article 68(9)). En substance, l'AMF examinera votre structure organisationnelle, vos lignes de reporting, l'indépendance des fonctions de contrôle, votre politique de gestion des conflits d'intérêts, votre dispositif de rémunération et vos arrangements de continuité.",
+  "key_facts": [
+    "Article 68 fixe les exigences de gouvernance des PSCA",
+    "Article 68(1) : organe de direction de bonne réputation, connaissances et compétences adéquates (individuelles et collectives)",
+    "Pas de condamnations en blanchiment, fraude ou criminalité financière",
+    "Suffisance temporelle : CEO à 100%, membres exécutifs ≥50% (lignes directrices EBA/ESMA 2024)",
+    "Article 68(2) : actionnaires qualifiés (≥10%) de bonne réputation",
+    "Article 68(4) : politiques et procédures efficaces de conformité",
+    "Article 68(5) : employés avec connaissances et compétences adéquates",
+    "Article 68(6) : revue périodique de l'efficacité par l'organe de direction",
+    "Article 68(7) : politique de continuité d'activité et plans de reprise",
+    "Article 68(9) : tenue de registres pendant au moins 5 ans",
+    "Articulation avec DORA pour la continuité d'activité TIC"
+  ]
+},{
+  "id": "r21",
+  "question": "Que doit contenir le cadre de gestion des risques liés aux TIC qu'une entité financière doit mettre en place sous DORA ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "6"}
+  ],
+  "answer": "L'Article 6 de DORA impose à toute entité financière de mettre en place un cadre de gestion des risques liés aux TIC solide, complet et bien documenté, intégré au système global de gestion des risques de l'entité. Ce cadre doit permettre de traiter les risques TIC rapidement, efficacement et de manière exhaustive, afin d'assurer un niveau élevé de résilience opérationnelle numérique. Concrètement, le cadre doit inclure au minimum : (i) les stratégies, politiques, procédures, protocoles TIC et outils nécessaires pour protéger l'ensemble des actifs informationnels et TIC — logiciels, matériel, serveurs, ainsi que les composants physiques et infrastructures comme les locaux, centres de données et zones sensibles ; (ii) des mesures permettant de minimiser l'impact du risque TIC. Les entités financières (hors microentreprises) doivent confier la responsabilité de la gestion et de la supervision du risque TIC à une fonction de contrôle dotée d'un niveau d'indépendance approprié, en évitant les conflits d'intérêts (Article 6(4)). L'organisation doit respecter le modèle des trois lignes de défense — séparation et indépendance entre la fonction de gestion des risques TIC, les fonctions de contrôle et l'audit interne — ou un modèle équivalent (Article 6(4)). Le cadre doit faire l'objet d'un audit interne régulier par des auditeurs possédant les compétences nécessaires en risque TIC et une indépendance appropriée (Article 6(6)). Sur la base de cet audit, un processus formel de suivi avec vérification et remédiation des constats critiques doit être établi (Article 6(7)). Enfin, le cadre doit inclure une stratégie de résilience opérationnelle numérique définissant la tolérance au risque TIC, les objectifs de sécurité de l'information et l'approche en matière de gestion des tiers TIC (Article 6(8)). Les tâches de vérification de conformité peuvent être externalisées intra-groupe ou à des tiers, mais l'entité reste pleinement responsable (Article 6(10)).",
+  "key_facts": [
+    "Article 6 : cadre de gestion des risques TIC obligatoire pour toute entité financière",
+    "Cadre solide, complet et bien documenté, intégré au système global de gestion des risques",
+    "Doit inclure stratégies, politiques, procédures, protocoles TIC et outils",
+    "Protection de tous les actifs informationnels et TIC (logiciels, matériel, infrastructures)",
+    "Article 6(4) : fonction de contrôle indépendante pour les entités hors microentreprises",
+    "Modèle des trois lignes de défense ou modèle équivalent",
+    "Article 6(6) : audit interne régulier par des auditeurs compétents et indépendants",
+    "Article 6(7) : processus formel de suivi et remédiation des constats critiques",
+    "Article 6(8) : stratégie de résilience opérationnelle numérique avec tolérance au risque TIC",
+    "Article 6(10) : externalisation possible de la vérification de conformité, mais responsabilité conservée"
+  ]
+},
+  {
+  "id": "r22",
+  "question": "Nous lançons une nouvelle application mobile collectant des données utilisateurs et nous voulons construire notre conformité GDPR sur des bases solides. Quels sont les principes fondamentaux que tout traitement de données personnelles doit respecter ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "5"}
+  ],
+  "answer": "L'Article 5 du GDPR énonce sept principes cumulatifs qui conditionnent la licéité de tout traitement de données personnelles. L'Article 5(1) en énumère six : (a) licéité, loyauté et transparence — le traitement doit reposer sur une base légale valable de l'Article 6, être loyal envers les personnes (pas de tromperie), et transparent (information claire) ; (b) limitation des finalités — les données ne peuvent être collectées que pour des finalités déterminées, explicites et légitimes, et ne peuvent être traitées ultérieurement de manière incompatible ; (c) minimisation — seules les données adéquates, pertinentes et limitées à ce qui est nécessaire peuvent être collectées ; (d) exactitude — les données doivent être exactes et tenues à jour, avec mécanisme de correction ; (e) limitation de la conservation — les données ne doivent être conservées que le temps nécessaire à la finalité poursuivie ; (f) intégrité et confidentialité — les données doivent être protégées par des mesures techniques et organisationnelles appropriées contre l'accès non autorisé, la perte ou la destruction. L'Article 5(2) ajoute le septième principe transversal : l'accountability (« responsabilité ») — le responsable de traitement doit être en mesure de démontrer le respect des six premiers principes à tout moment. C'est ce principe qui justifie l'obligation de tenir un registre des traitements, de documenter les décisions, et de conserver les preuves de conformité. Le non-respect d'un seul de ces principes suffit à fonder une sanction, indépendamment de toute violation de données. Les sanctions relèvent du plafond maximal de l'Article 83(5) : 20 millions d'euros ou 4% du chiffre d'affaires mondial annuel.",
+  "key_facts": [
+    "Article 5 énonce 7 principes cumulatifs (6 substantiels + accountability)",
+    "Article 5(1)(a) : licéité, loyauté, transparence",
+    "Article 5(1)(b) : limitation des finalités (déterminées, explicites, légitimes)",
+    "Article 5(1)(c) : minimisation des données",
+    "Article 5(1)(d) : exactitude des données",
+    "Article 5(1)(e) : limitation de la conservation",
+    "Article 5(1)(f) : intégrité et confidentialité",
+    "Article 5(2) : accountability (responsabilité du responsable de traitement)",
+    "Distinction Article 5 (principes) / Article 6 (bases légales)",
+    "Le non-respect d'un seul principe suffit à fonder une sanction",
+    "Sanctions plafonnées à 20M€ ou 4% du CA mondial (Article 83(5))"
+  ]
+},
+  {
+  "id": "r23",
+  "question": "Notre fintech développe un système d'IA pour le scoring de crédit qui sera classifié comme à haut risque. Quelles sont les exigences techniques et organisationnelles que nous devons respecter avant de le mettre sur le marché ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "9"},
+    {"regulation_name": "AI Act", "article_number": "10"},
+    {"regulation_name": "AI Act", "article_number": "11"},
+    {"regulation_name": "AI Act", "article_number": "12"},
+    {"regulation_name": "AI Act", "article_number": "13"},
+    {"regulation_name": "AI Act", "article_number": "14"},
+    {"regulation_name": "AI Act", "article_number": "15"}
+  ],
+  "answer": "La Section 2 du Chapitre III de l'AI Act (Articles 9 à 15) fixe sept exigences cumulatives applicables à tout système d'IA à haut risque. L'Article 9 impose la mise en place d'un système de gestion des risques continu et documenté tout au long du cycle de vie du système — identification des risques connus et raisonnablement prévisibles, mesures de mitigation, surveillance post-commercialisation. L'Article 10 fixe des exigences strictes sur la qualité des données d'entraînement, de validation et de test : pertinence, représentativité, absence d'erreurs, gouvernance documentée des jeux de données — un point particulièrement sensible pour un scoring crédit où les biais sur des variables protégées (genre, origine, etc.) peuvent entraîner des sanctions. L'Article 11 exige la rédaction d'une documentation technique complète (conformément à l'Annexe IV) à tenir avant la mise sur le marché et à actualiser. L'Article 12 impose la journalisation automatique des événements (logs) pendant tout le cycle de vie pour garantir la traçabilité du fonctionnement. L'Article 13 impose la transparence : le système doit être conçu pour être suffisamment transparent envers les déployeurs, avec notice d'utilisation détaillée sur les capacités, limitations, et conditions d'usage. L'Article 14 impose la mise en place d'un contrôle humain effectif : le système doit être conçu pour permettre une supervision humaine, capable d'éviter ou de minimiser les risques pour les droits fondamentaux. Pour un scoring crédit, cela signifie qu'un humain doit pouvoir intervenir sur les décisions automatisées (ce qui se cumule avec l'Article 22 GDPR). Enfin, l'Article 15 impose des niveaux appropriés d'exactitude, de robustesse et de cybersécurité — métriques de performance, résistance aux erreurs et attaques adverses, mesures de cybersécurité. Ces sept exigences doivent être satisfaites *avant* la mise sur le marché, vérifiées via une évaluation de conformité (Article 43) avec apposition du marquage CE, puis maintenues tout au long de l'exploitation par un système de gestion de la qualité (Article 17) et une surveillance post-commercialisation.",
+  "key_facts": [
+    "Section 2 du Chapitre III (Articles 9-15) fixe les exigences pour systèmes IA à haut risque",
+    "Article 9 : système de gestion des risques continu sur tout le cycle de vie",
+    "Article 10 : qualité, gouvernance et représentativité des données (entraînement, validation, test)",
+    "Article 11 : documentation technique complète (Annexe IV)",
+    "Article 12 : journalisation automatique des événements (logs)",
+    "Article 13 : transparence et notice d'utilisation pour les déployeurs",
+    "Article 14 : contrôle humain effectif (cumule avec Article 22 GDPR pour décisions automatisées)",
+    "Article 15 : exactitude, robustesse, cybersécurité",
+    "Conformité à vérifier avant mise sur le marché via évaluation de conformité (Article 43)",
+    "Marquage CE obligatoire après évaluation",
+    "Surveillance post-commercialisation continue requise"
+  ]
+},
+  {
+  "id": "r24",
+  "question": "Notre plateforme PSCA détient à la fois des crypto-actifs et des euros de nos clients sur leurs comptes. Quelles sont nos obligations de sauvegarde de ces actifs et que se passe-t-il en cas de faillite ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "70"}
+  ],
+  "answer": "L'Article 70 de MiCA impose aux PSCA un régime de sauvegarde strict des actifs clients, à la fois en termes opérationnels et en cas d'insolvabilité. Pour les crypto-actifs des clients, le PSCA doit prendre les dispositions nécessaires pour garantir les droits de propriété des clients, en particulier en cas d'insolvabilité — ce qui implique une séparation juridique (les crypto-actifs des clients ne peuvent être atteints par les créanciers du PSCA) et une séparation opérationnelle sur le registre distribué (les adresses ou comptes contenant les crypto-actifs des clients doivent être distincts de ceux contenant les crypto-actifs propres du PSCA). Le PSCA doit également tenir un registre des positions ouvertes au nom de chaque client, correspondant aux droits de chacun sur les crypto-actifs concernés, et y enregistrer rapidement tout mouvement consécutif aux instructions reçues. L'utilisation des crypto-actifs des clients pour le compte propre du PSCA est strictement interdite, sauf consentement explicite du client. Pour les fonds en monnaie fiat (euros de vos clients), le PSCA doit, au plus tard à la fin du jour ouvrable suivant la réception, déposer ces fonds auprès d'une banque centrale ou d'un établissement de crédit, sur des comptes ségrégués distincts de ses propres comptes. Cette exigence ne s'applique pas aux PSCA qui sont également des établissements de monnaie électronique, des établissements de paiement ou des établissements de crédit (qui suivent leurs propres régimes). En cas de faillite, la séparation juridique et opérationnelle garantit que les crypto-actifs et fonds des clients ne tombent pas dans la masse de la faillite et peuvent être restitués aux clients. Cette protection s'inspire directement des règles MiFID II et constitue la réponse directe à des événements comme la faillite de FTX, où les actifs clients avaient été confondus avec les actifs propres de la plateforme.",
+  "key_facts": [
+    "Article 70 : sauvegarde des crypto-actifs ET des fonds des clients",
+    "Crypto-actifs : séparation juridique pour protection contre créanciers en cas d'insolvabilité",
+    "Crypto-actifs : séparation opérationnelle sur le DLT (adresses distinctes)",
+    "Tenue obligatoire d'un registre des positions par client",
+    "Enregistrement rapide des mouvements suite aux instructions du client",
+    "Interdiction d'utilisation des crypto-actifs clients pour compte propre du PSCA",
+    "Fonds fiat : dépôt en banque centrale ou établissement de crédit",
+    "Délai : fin du jour ouvrable suivant la réception des fonds",
+    "Comptes ségrégués distincts des comptes propres du PSCA",
+    "Exemption pour PSCA qui sont aussi EME, EP ou EC",
+    "Régime inspiré de MiFID II",
+    "Réponse directe à la faillite FTX (confusion d'actifs)"
+  ]
+},
+  {
+  "id": "r25",
+  "question": "Sous DORA, pouvons-nous échanger des informations sur les cybermenaces avec d'autres entités financières et sous quelles conditions ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "45"}
+  ],
+  "answer": "L'Article 45 de DORA autorise et encadre le partage d'informations sur les cybermenaces entre entités financières. Les entités financières peuvent échanger entre elles des informations et du renseignement sur les cybermenaces, notamment des indicateurs de compromission (IoC), des tactiques, techniques et procédures (TTP), des alertes de cybersécurité et des outils de configuration. Ce partage est soumis à trois conditions cumulatives. Premièrement, il doit viser à renforcer la résilience opérationnelle numérique des entités financières — sensibilisation aux cybermenaces, limitation de leur propagation, soutien aux capacités de défense, techniques de détection, stratégies de mitigation ou de réponse et de reprise. Deuxièmement, le partage doit avoir lieu au sein de communautés de confiance d'entités financières. Troisièmement, il doit être mis en œuvre via des dispositifs de partage qui protègent la nature potentiellement sensible des informations échangées, gouvernés par des règles de conduite respectant la confidentialité commerciale, la protection des données personnelles conformément au GDPR, et les lignes directrices en matière de concurrence. Les dispositifs de partage doivent préciser les conditions de participation, y compris l'implication éventuelle d'autorités publiques et de prestataires tiers TIC, ainsi que les éléments opérationnels (plateformes IT dédiées). Les entités financières doivent notifier leur autorité compétente de leur participation à ces dispositifs dès la validation de leur adhésion, ainsi que de leur sortie le cas échéant. En France, la notification se fait à l'ACPR ou à l'AMF selon le statut. Le forum FS-ISAC est un exemple typique de communauté de confiance reconnue pour ce type d'échanges au niveau européen.",
+  "key_facts": [
+    "Article 45 : partage d'informations sur les cybermenaces autorisé entre entités financières",
+    "Échange possible d'IoC, TTP, alertes de cybersécurité, outils de configuration",
+    "Condition 1 : objectif de renforcement de la résilience opérationnelle numérique",
+    "Condition 2 : partage au sein de communautés de confiance d'entités financières",
+    "Condition 3 : dispositifs protégeant la sensibilité, respectant GDPR et règles de concurrence",
+    "Dispositifs précisant conditions de participation et éléments opérationnels",
+    "Notification obligatoire à l'autorité compétente de l'adhésion et de la sortie",
+    "Compatibilité avec GDPR (Règlement (UE) 2016/679)",
+    "Respect de la confidentialité commerciale et des règles de concurrence",
+    "Exemple : forum FS-ISAC"
+  ]
+},
+  {
+  "id": "r26",
+  "question": "Notre fintech veut envoyer des communications marketing à nos clients existants pour leur proposer de nouveaux produits financiers. Sur quelle base légale du GDPR pouvons-nous nous appuyer pour ce traitement ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "6"}
+  ],
+  "answer": "L'Article 6 du GDPR énumère limitativement six bases légales sur lesquelles un traitement de données personnelles peut être fondé : (a) le consentement de la personne concernée ; (b) l'exécution d'un contrat auquel la personne est partie ou de mesures précontractuelles ; (c) le respect d'une obligation légale ; (d) la sauvegarde des intérêts vitaux de la personne ou d'un tiers ; (e) l'exécution d'une mission d'intérêt public ; (f) l'intérêt légitime du responsable de traitement, sous réserve que ne prévalent pas les droits et libertés des personnes concernées. Pour votre cas de prospection commerciale envers des clients existants, deux bases sont théoriquement envisageables. Premièrement, le consentement (Article 6(1)(a)) — c'est la base la plus protectrice et clairement valable, mais elle suppose un opt-in explicite et révocable à tout moment. Deuxièmement, l'intérêt légitime (Article 6(1)(f)) — la CNIL et l'EDPB admettent que la prospection commerciale envers des clients existants pour des produits ou services analogues peut s'appuyer sur l'intérêt légitime, à condition de réaliser une mise en balance documentée des intérêts, d'informer clairement les personnes au moment de la collecte initiale, et de prévoir un droit d'opposition simple et accessible (typiquement un lien de désabonnement dans chaque communication). Attention toutefois : si vos communications sont envoyées par voie électronique (email, SMS), la directive ePrivacy transposée en France à l'article L.34-5 du Code des postes et des communications électroniques impose en principe le consentement préalable (opt-in), avec une exception pour les clients existants si le produit proposé est analogue au produit déjà fourni. L'exécution contractuelle (Article 6(1)(b)) n'est pas appropriée ici car le marketing n'est pas nécessaire à l'exécution du contrat initial. Quelle que soit la base choisie, elle doit être documentée dans votre registre des traitements (Article 30) et communiquée aux personnes via les informations de l'Article 13.",
+  "key_facts": [
+    "Article 6 énumère 6 bases légales limitatives",
+    "Article 6(1)(a) : consentement",
+    "Article 6(1)(b) : exécution d'un contrat ou mesures précontractuelles",
+    "Article 6(1)(c) : obligation légale",
+    "Article 6(1)(d) : sauvegarde des intérêts vitaux",
+    "Article 6(1)(e) : mission d'intérêt public",
+    "Article 6(1)(f) : intérêt légitime (sous réserve de mise en balance)",
+    "Pour la prospection commerciale : consentement OU intérêt légitime",
+    "Intérêt légitime accepté pour produits analogues à clients existants (CNIL/EDPB)",
+    "Mise en balance documentée requise pour intérêt légitime",
+    "Droit d'opposition simple obligatoire (lien désabonnement)",
+    "Articulation avec ePrivacy : opt-in préalable par défaut pour voie électronique",
+    "Exception ePrivacy : produit analogue à client existant",
+    "Documentation obligatoire dans registre des traitements (Article 30)"
+  ]
+},
+
+  {
+  "id": "r27",
+  "question": "Notre société souhaite émettre un stablecoin adossé à un panier de devises et de matières premières dans l'Union européenne. Quelles sont les exigences d'autorisation et de transparence sous MiCA ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "16"},
+    {"regulation_name": "MiCA", "article_number": "18"},
+    {"regulation_name": "MiCA", "article_number": "19"},
+    {"regulation_name": "MiCA", "article_number": "20"}
+  ],
+  "answer": "Un stablecoin adossé à un panier de devises et de matières premières relève de la catégorie des « jetons se référant à des actifs » (ART) sous MiCA, régie par le Titre III (Articles 16 à 47). L'Article 16 pose le principe fondamental : nul ne peut offrir au public ou demander l'admission à la négociation d'un ART dans l'Union sans être (i) une personne morale ou une autre entreprise établie dans l'Union, et (ii) autorisée par l'autorité compétente de son État membre d'origine, sauf exception (notamment les établissements de crédit déjà autorisés qui suivent le régime allégé de l'Article 17). En France, l'autorité compétente est l'ACPR (et non l'AMF comme pour les PSCA), compte tenu de la nature parabancaire des ART. L'Article 18 fixe le contenu détaillé de la demande d'autorisation, qui doit inclure : statuts, identité des dirigeants et actionnaires qualifiés, programme d'opérations, description des dispositifs de gouvernance, mécanisme de stabilisation, politique de gestion des actifs de réserve, plan de redressement, opinion juridique attestant que le crypto-actif relève bien de MiCA et n'est pas un EMT. La demande doit obligatoirement inclure le projet de livre blanc. L'Article 19 fixe le contenu obligatoire du livre blanc ART : informations sur l'émetteur, sur le projet, sur les droits et obligations attachés au jeton, sur la technologie sous-jacente, sur les risques, sur le mécanisme de stabilisation et les actifs de réserve, et sur l'impact climatique. Le livre blanc est soumis à approbation préalable de l'autorité compétente (contrairement aux crypto-actifs ordinaires du Titre II qui ne nécessitent qu'une notification). L'Article 20 fixe la procédure d'instruction : 25 jours ouvrables pour vérifier la complétude du dossier, puis 60 jours ouvrables pour rendre la décision motivée d'autorisation ou de refus, après consultation obligatoire de l'EBA, de l'ESMA et de la BCE (ou de la banque centrale nationale concernée). Une autorisation accordée vaut passeport européen et autorise l'offre au public dans toute l'UE. Note : les algorithmes de stabilisation sans réserves d'actifs réels sont de facto interdits.",
+  "key_facts": [
+    "Stablecoin à panier d'actifs = jeton se référant à des actifs (ART), Titre III MiCA",
+    "Article 16 : obligation d'autorisation par l'autorité compétente de l'État membre d'origine",
+    "Personne morale établie dans l'Union requise",
+    "Autorité compétente en France : ACPR (différente des PSCA → AMF)",
+    "Exception Article 17 : régime allégé pour établissements de crédit",
+    "Article 18 : contenu détaillé de la demande d'autorisation",
+    "Inclut statuts, dirigeants, gouvernance, mécanisme de stabilisation, actifs de réserve, opinion juridique",
+    "Projet de livre blanc obligatoire dans la demande",
+    "Article 19 : contenu obligatoire du livre blanc ART",
+    "Inclut informations sur émetteur, projet, droits, technologie, risques, réserves, impact climatique",
+    "Approbation préalable du livre blanc requise (vs notification simple pour Titre II)",
+    "Article 20 : 25 jours pour complétude, 60 jours pour décision",
+    "Consultation obligatoire de l'EBA, ESMA et BCE",
+    "Passeport européen accordé une fois autorisé",
+    "Stablecoins algorithmiques sans réserves de facto interdits"
+  ]
+},
+  {
+  "id": "r28",
+  "question": "Notre néobanque va déployer un système d'IA tiers de scoring de crédit (déjà certifié par le fournisseur). Quelles sont nos obligations en tant que déployeur d'un système d'IA à haut risque ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "26"}
+  ],
+  "answer": "L'Article 26 de l'AI Act fixe douze obligations cumulatives pour tout déployeur d'un système d'IA à haut risque, indépendamment des obligations du fournisseur. Premièrement (Art. 26(1)), vous devez prendre des mesures techniques et organisationnelles appropriées pour utiliser le système conformément à la notice d'utilisation fournie. Deuxièmement (Art. 26(2)), vous devez assigner le contrôle humain à des personnes physiques compétentes, formées, dotées de l'autorité et du soutien nécessaires. Troisièmement (Art. 26(4)), dans la mesure où vous contrôlez les données d'entrée, vous devez vous assurer qu'elles sont pertinentes et suffisamment représentatives au regard de la finalité du système — point crucial pour un scoring crédit où les données clients alimentent les décisions. Quatrièmement (Art. 26(5)), vous devez surveiller le fonctionnement du système et informer le fournisseur de toute anomalie. Si vous identifiez un risque pour la santé, la sécurité ou les droits fondamentaux, vous devez sans délai informer le fournisseur, le distributeur et l'autorité de surveillance, et suspendre l'utilisation. En cas d'incident grave, vous devez immédiatement informer le fournisseur puis l'autorité de surveillance du marché. Spécificité importante pour votre néobanque : les institutions financières soumises à des exigences de gouvernance interne sous le droit financier européen (CRR/CRD, MiFID, DORA, etc.) sont réputées satisfaire à cette obligation de monitoring en respectant leurs règles de gouvernance interne. Cinquièmement (Art. 26(6)), vous devez conserver les logs automatiquement générés par le système pendant au moins 6 mois (durée pouvant être étendue par d'autres lois, notamment le GDPR) ; pour une institution financière, ces logs doivent être conservés dans le cadre de la documentation existante exigée par le droit financier. Sixièmement (Art. 26(7)), si le système est utilisé en contexte d'emploi, vous devez informer les travailleurs et leurs représentants avant le déploiement. Septièmement (Art. 26(9)), vous devez utiliser les informations fournies par le fournisseur au titre de l'Article 13 pour réaliser votre analyse d'impact relative à la protection des données (AIPD) requise par l'Article 35 GDPR. Huitièmement (Art. 26(8)), vous devez vérifier que le système est enregistré dans la base de données européenne de l'Article 71 ; sinon, vous ne pouvez pas l'utiliser. Neuvièmement (Art. 26(10)), pour les systèmes de l'Annexe III prenant ou assistant des décisions concernant des personnes physiques, vous devez informer ces personnes qu'elles sont soumises à l'utilisation d'un système IA à haut risque — obligation directement applicable au scoring crédit. Dixièmement (Art. 26(11)), vous devez coopérer avec les autorités compétentes. Enfin, pour les déployeurs publics ou certains déployeurs privés à fort impact, l'Article 27 impose en complément une analyse d'impact sur les droits fondamentaux (FRIA) avant le déploiement.",
+  "key_facts": [
+    "Article 26 fixe 12 paragraphes d'obligations pour les déployeurs IA haut risque",
+    "Article 26(1) : utilisation conforme à la notice du fournisseur",
+    "Article 26(2) : contrôle humain par personnes compétentes, formées, avec autorité",
+    "Article 26(4) : données d'entrée pertinentes et représentatives (si contrôlées par déployeur)",
+    "Article 26(5) : surveillance du fonctionnement et information du fournisseur",
+    "Article 26(5) : notification sans délai si risque pour droits fondamentaux + suspension",
+    "Article 26(5) : exemption monitoring pour institutions financières via gouvernance interne",
+    "Article 26(6) : conservation des logs pendant au moins 6 mois",
+    "Article 26(7) : information des travailleurs avant déploiement en contexte d'emploi",
+    "Article 26(8) : vérification de l'enregistrement dans la base européenne (Article 71)",
+    "Article 26(9) : utilisation des infos Article 13 pour l'AIPD (Article 35 GDPR)",
+    "Article 26(10) : information des personnes physiques concernées par décisions Annexe III",
+    "Article 26(11) : coopération avec les autorités compétentes",
+    "Article 27 : FRIA complémentaire pour certains déployeurs"
+  ]
+}
+,
+  {
+  "id": "r29",
+  "question": "Suite à une attaque ransomware ayant chiffré une partie de notre infrastructure, nous devons rétablir nos services. Quelles sont nos obligations DORA en matière de continuité d'activité, de plans de reprise et de restauration des données ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "11"},
+    {"regulation_name": "DORA", "article_number": "12"}
+  ],
+  "answer": "Les Articles 11 et 12 de DORA forment le socle de la résilience opérationnelle face à un incident TIC majeur comme un ransomware. L'Article 11 impose à toute entité financière de mettre en place une politique de continuité d'activité TIC documentée, déclinée en plans, procédures et mécanismes dédiés. Ces dispositifs doivent permettre : (i) de répondre et résoudre les incidents TIC en limitant les dommages et en priorisant la reprise des activités ; (ii) de minimiser rapidement l'impact via des mesures de réponse et de reprise appropriées ; (iii) d'activer sans délai des plans dédiés permettant les mesures de confinement, processus et technologies adaptés à chaque type d'incident ; (iv) d'estimer les impacts préliminaires, dommages et pertes ; (v) de définir des actions de communication et de gestion de crise conformément à l'Article 14, avec reporting aux autorités compétentes selon l'Article 19. L'Article 11(4) impose la mise en place d'une analyse d'impact sur l'activité (BIA — Business Impact Analysis) prenant en compte les scénarios de risques sévères mais plausibles, et l'Article 11(5) exige que les actifs et services TIC soient conçus en pleine cohérence avec cette BIA, notamment via la redondance des composants critiques. L'Article 11(6) impose un test annuel des plans de continuité et de reprise, et pour les entités hors microentreprises, les scénarios doivent inclure des cyberattaques et des bascules entre infrastructure primaire et capacités redondantes. L'Article 12 complète en imposant des politiques de sauvegarde et procédures de restauration. Vous devez documenter : (i) les politiques de sauvegarde précisant le périmètre des données et la fréquence minimale selon la criticité ; (ii) les procédures de restauration et de reprise. Point critique pour un scénario ransomware : l'Article 12(3) impose des systèmes de sauvegarde activables conformément à la politique, et l'Article 12(4) exige que les systèmes de restauration soient physiquement et logiquement ségrégés du système source — précisément pour éviter que le ransomware ne se propage aux sauvegardes. Ces systèmes doivent être protégés contre tout accès non autorisé ou corruption. L'Article 12(5) impose des objectifs de temps de reprise (RTO) et de point de reprise (RPO). L'Article 12(7) exige des vérifications, contrôles multiples et rapprochements lors de la reprise, pour garantir le plus haut niveau d'intégrité des données restaurées — y compris lors de reconstructions à partir de parties externes. Enfin, l'Article 11(8) impose de tenir des enregistrements accessibles des activités avant et pendant les événements de disruption.",
+  "key_facts": [
+    "Article 11 : politique de continuité d'activité TIC documentée",
+    "Article 11(2) : plans dédiés pour réponse, confinement, reprise rapide",
+    "Article 11(4) : analyse d'impact sur l'activité (BIA) avec scénarios sévères mais plausibles",
+    "Article 11(5) : conception des actifs TIC alignée sur la BIA avec redondance des composants critiques",
+    "Article 11(6) : tests annuels des plans de continuité et de reprise",
+    "Tests incluant scénarios de cyberattaques et bascules vers infrastructure redondante",
+    "Article 11(8) : tenue d'enregistrements accessibles avant et pendant les disruptions",
+    "Articulation avec Article 14 (communication de crise) et Article 19 (reporting incident)",
+    "Article 12 : politiques de sauvegarde et procédures de restauration documentées",
+    "Article 12(1) : périmètre et fréquence minimale des sauvegardes selon criticité",
+    "Article 12(3) : systèmes de sauvegarde activables",
+    "Article 12(4) : ségrégation physique et logique des systèmes de restauration (protection ransomware)",
+    "Article 12(5) : objectifs de temps de reprise (RTO) et point de reprise (RPO)",
+    "Article 12(7) : vérifications et rapprochements pour intégrité des données restaurées"
+  ]
+},
+  {
+  "id": "r30",
+  "question": "Notre fintech utilise plusieurs outils SaaS hébergés aux États-Unis (CRM, support client, infrastructure cloud) qui traitent des données de nos clients européens. Quels sont les mécanismes juridiques disponibles sous le GDPR pour encadrer ces transferts internationaux et quelles obligations en découlent ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "44"},
+    {"regulation_name": "GDPR", "article_number": "45"},
+    {"regulation_name": "GDPR", "article_number": "46"},
+    {"regulation_name": "GDPR", "article_number": "49"}
+  ],
+  "answer": "Le Chapitre V du GDPR (Articles 44 à 49) encadre strictement les transferts de données personnelles vers des pays tiers. L'Article 44 pose le principe général : tout transfert vers un pays tiers ou une organisation internationale ne peut avoir lieu que si les conditions du Chapitre V sont respectées, afin que le niveau de protection garanti par le GDPR ne soit pas compromis. Ce principe s'applique également aux transferts ultérieurs (« onward transfers »). Trois mécanismes principaux peuvent fonder le transfert, dans un ordre de préférence hiérarchique. Premièrement, l'Article 45 prévoit les transferts fondés sur une décision d'adéquation : la Commission européenne reconnaît qu'un pays offre un niveau de protection essentiellement équivalent. Pour les États-Unis, la décision d'adéquation du 10 juillet 2023 (EU-US Data Privacy Framework) permet le transfert libre vers les organisations américaines certifiées DPF. Vous devez donc vérifier que chacun de vos fournisseurs SaaS est effectivement certifié DPF sur le site officiel dataprivacyframework.gov, et documenter cette vérification. Deuxièmement, en l'absence de certification DPF (ou en cas d'invalidation future, hypothèse à ne pas écarter compte tenu de l'historique Safe Harbor puis Privacy Shield), l'Article 46 impose la mise en place de garanties appropriées. Le mécanisme le plus utilisé est celui des clauses contractuelles types (CCT) adoptées par la Commission via la Décision 2021/914, à signer avec chaque fournisseur en choisissant le module approprié (1 : RT-RT, 2 : RT-ST, 3 : ST-ST, 4 : ST-RT). Depuis l'arrêt Schrems II (CJUE, 16 juillet 2020, C-311/18), les CCT seules ne suffisent pas : vous devez conduire une analyse d'impact du transfert (Transfer Impact Assessment, TIA) selon la méthodologie des Recommandations 01/2020 du CEPD, évaluer la législation du pays destinataire (notamment FISA 702 et EO 12333 pour les États-Unis), et déployer si nécessaire des mesures supplémentaires techniques (chiffrement de bout en bout avec gestion locale des clés, pseudonymisation) ou organisationnelles. Les règles d'entreprise contraignantes (BCR) de l'Article 47 sont une alternative, mais réservées aux transferts intra-groupe et nécessitent une instruction par la CNIL chef de file. Troisièmement, l'Article 49 prévoit des dérogations pour situations particulières (consentement explicite informé, nécessité contractuelle, intérêts vitaux, etc.). Ces dérogations sont d'interprétation stricte selon les Lignes directrices 2/2018 du CEPD et ne peuvent fonder des transferts massifs, répétitifs ou structurels — donc inadaptées à votre cas de SaaS récurrent. En pratique, vos obligations incluent : cartographier tous les transferts dans votre registre Article 30, identifier le mécanisme pour chaque flux, signer les CCT à jour pour les fournisseurs non DPF, conduire et documenter une TIA par fournisseur non adéquat, déployer les mesures supplémentaires nécessaires, informer les personnes concernées via l'Article 13(1)(f), et réexaminer périodiquement les TIA. La sanction maximale en cas de manquement relève du plafond haut de l'Article 83(5) : 20 millions d'euros ou 4% du chiffre d'affaires mondial annuel.",
+  "key_facts": [
+    "Chapitre V du GDPR (Articles 44-49) encadre les transferts hors EEE",
+    "Article 44 : principe général de continuité du niveau de protection, y compris pour transferts ultérieurs",
+    "Article 45 : décision d'adéquation de la Commission européenne",
+    "EU-US Data Privacy Framework (10 juillet 2023) pour les organisations US certifiées",
+    "Vérification de la certification DPF sur dataprivacyframework.gov requise",
+    "Article 46 : garanties appropriées (CCT, BCR, codes de conduite, certifications)",
+    "Clauses contractuelles types : Décision 2021/914 avec 4 modules",
+    "Schrems II (CJUE C-311/18, 16 juillet 2020) : TIA obligatoire pour transferts sous CCT",
+    "Transfer Impact Assessment selon Recommandations 01/2020 du CEPD",
+    "Mesures supplémentaires : chiffrement de bout en bout, pseudonymisation",
+    "Article 47 : BCR pour transferts intra-groupe (instruction CNIL chef de file)",
+    "Article 49 : dérogations d'interprétation stricte, inadaptées aux flux récurrents",
+    "Inscription au registre des traitements (Article 30) obligatoire",
+    "Information des personnes concernées via Article 13(1)(f)",
+    "Sanction maximale : 20M€ ou 4% du CA mondial (Article 83(5))"
+  ]
+},
+
+
+{
+  "id": "r31",
+  "question": "Notre fintech souhaite émettre un euro-stablecoin (EMT) adossé 1:1 à l'euro pour faciliter les paiements de nos clients. Quelles sont les exigences d'autorisation, d'émission et de remboursement sous MiCA, et pouvons-nous offrir des intérêts à nos clients qui détiennent ces tokens ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "48"},
+    {"regulation_name": "MiCA", "article_number": "49"},
+    {"regulation_name": "MiCA", "article_number": "50"}
+  ],
+  "answer": "Un stablecoin adossé 1:1 à une seule monnaie officielle relève de la catégorie des « jetons de monnaie électronique » (EMT) sous MiCA, régie par le Titre IV (Articles 48 à 58). L'Article 48 fixe les conditions d'accès : nul ne peut offrir au public ou demander l'admission à la négociation d'un EMT sans être (i) un établissement de crédit autorisé sous CRR/CRD, ou (ii) un établissement de monnaie électronique (EME) autorisé sous la Directive 2009/110/CE. Aucune autorisation MiCA spécifique n'est créée pour les EMT — il faut nécessairement passer par l'un de ces deux statuts préexistants. En France, l'agrément EME est délivré par l'ACPR. Vous devez en outre notifier un livre blanc crypto-actif à l'autorité compétente au moins 40 jours ouvrables avant l'offre publique et le publier conformément à l'Article 51 (contrairement aux ART, le livre blanc EMT n'est pas soumis à approbation préalable). L'Article 49 fixe les règles d'émission et de remboursement, qui dérogent à l'Article 11 de la Directive 2009/110/CE : (i) les détenteurs d'EMT ont une créance directe sur l'émetteur ; (ii) les EMT sont émis au pair (« par value ») à la réception des fonds ; (iii) sur demande du détenteur, l'émetteur doit rembourser à tout moment et au pair en monnaie autre que monnaie électronique ; (iv) les conditions de remboursement doivent être clairement indiquées dans le livre blanc ; (v) le remboursement est en principe gratuit (sans frais), sauf exception prévue à l'Article 46. Concernant votre question sur les intérêts, la réponse est catégoriquement non : l'Article 50 interdit strictement à l'émetteur d'EMT, ainsi qu'aux PSCA offrant des services liés aux EMT, d'accorder un intérêt aux détenteurs. Cette interdiction est large et couvre toute rémunération ou avantage équivalent : compensation nette, remises, bénéfices liés à la durée de détention du token, qu'ils soient versés directement par l'émetteur ou indirectement par un tiers, et qu'ils soient associés directement au token ou inclus dans la tarification d'autres produits. Cette interdiction vise à empêcher les EMT de concurrencer les dépôts bancaires et constitue un obstacle structurel aux modèles yield-bearing populaires aux États-Unis. Pour générer du rendement pour vos clients, vous devrez nécessairement passer par des produits distincts (compte rémunéré séparé, OPCVM monétaire) sans aucun lien automatique avec la détention de l'EMT. En complément, l'Article 54 impose que les fonds reçus en contrepartie des EMT soient placés à hauteur d'au moins 30% sur des comptes ségrégés auprès d'établissements de crédit, le reste en actifs sûrs à faible risque conformément à des actes délégués spécifiques.",
+  "key_facts": [
+    "EMT = jeton de monnaie électronique, Titre IV MiCA (Articles 48-58)",
+    "Article 48 : émetteur doit être établissement de crédit (CRR/CRD) ou EME (Directive 2009/110/CE)",
+    "Pas d'autorisation MiCA dédiée pour les EMT, statut préexistant requis",
+    "En France : agrément EME délivré par l'ACPR",
+    "Notification du livre blanc à l'autorité compétente 40 jours ouvrables avant offre",
+    "Livre blanc EMT non soumis à approbation préalable (contrairement aux ART)",
+    "Article 49 : déroge à l'Article 11 de la Directive 2009/110/CE",
+    "Article 49(2) : détenteurs ont une créance directe sur l'émetteur",
+    "Article 49(3) : émission au pair à la réception des fonds",
+    "Article 49(4) : remboursement à tout moment et au pair en monnaie non électronique",
+    "Article 49(6) : remboursement gratuit en principe",
+    "Article 50 : interdiction stricte d'accorder des intérêts aux détenteurs d'EMT",
+    "Interdiction étendue aux PSCA offrant des services liés aux EMT",
+    "Interdiction large : compensation, remises, bénéfices liés à la durée de détention",
+    "Objectif : empêcher concurrence avec dépôts bancaires, blocage des modèles yield-bearing"
+  ]
+},
+
+{
+  "id": "r32",
+  "question": "Notre néobanque souhaite déployer un chatbot IA générative pour conseiller nos clients sur leurs produits financiers (épargne, crédit). Le modèle est fourni par un prestataire externe et le chatbot pourra suggérer des produits adaptés au profil du client. Quelles obligations réglementaires devons-nous respecter sous l'AI Act, le GDPR et DORA ?",
+  "expected_regulations": ["AI Act", "GDPR", "DORA"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "50"},
+    {"regulation_name": "GDPR", "article_number": "22"},
+    {"regulation_name": "DORA", "article_number": "28"}
+  ],
+  "answer": "Ce déploiement active simultanément trois régimes réglementaires complémentaires. Sous l'AI Act, votre chatbot relève en premier lieu de l'Article 50 qui impose des obligations de transparence pour les systèmes IA interagissant directement avec des personnes physiques. Vous devez concevoir le système de manière à ce que les clients soient clairement informés qu'ils interagissent avec une IA — cette information doit être fournie dès le début de l'interaction, de manière compréhensible et accessible. En tant que système d'IA générative, les sorties produites par le chatbot doivent également être marquées dans un format lisible par machine et détectables comme artificiellement générées (deepfake provisions de l'Article 50(2)), sauf exceptions strictes. Point critique pour votre cas : si le chatbot évalue le profil du client pour suggérer des produits financiers, vous devez analyser s'il franchit le seuil du haut risque sous l'Article 6 et l'Annexe III (point 5(b) : évaluation de solvabilité). Un simple conseil n'est généralement pas du haut risque, mais une recommandation de crédit personnalisée peut basculer dans cette catégorie, déclenchant alors les obligations des Articles 9 à 15 et 26. Sous le GDPR, l'Article 22 est central : si vos suggestions de produits sont fondées sur un traitement automatisé du profil client (scoring comportemental, analyse des transactions, segmentation) et produisent des effets juridiques ou significatifs sur la personne (par exemple, refus implicite d'un crédit ou exclusion d'une offre), la personne a le droit de ne pas être soumise à une décision exclusivement automatisée. Vous devez soit obtenir un consentement explicite, soit fonder le traitement sur la nécessité contractuelle ou une disposition légale, et dans tous les cas garantir une intervention humaine, le droit d'exprimer un point de vue et de contester la décision. Vous devez en outre fournir les informations de l'Article 13(2)(f) sur la logique sous-jacente, l'importance et les conséquences prévues du traitement. Une AIPD (Article 35) est probablement obligatoire compte tenu du recours à un nouveau traitement à grande échelle utilisant l'IA. Sous DORA enfin, votre prestataire de modèle d'IA constitue un prestataire tiers de services TIC au sens de l'Article 3(19). Si le chatbot supporte une fonction critique ou importante (conseil financier client = potentiellement critique selon votre BIA), l'Article 28 s'applique pleinement : (i) vous devez tenir un registre de ces arrangements contractuels et le communiquer annuellement à l'ACPR ; (ii) le contrat doit inclure les clauses obligatoires de l'Article 30 (description précise des services, lieux de traitement, niveaux de service, droits d'audit, coopération avec autorités, stratégies de sortie) ; (iii) vous devez conduire une évaluation préalable des risques liés au prestataire, notamment sur sa résilience opérationnelle, sa concentration et sa sous-traitance ; (iv) le contrat doit prévoir des modalités de résiliation et un plan de sortie crédible. En cas d'incident TIC majeur affectant le chatbot, l'obligation de reporting de l'Article 19 s'applique. En pratique, votre conformité doit articuler ces trois régimes : une analyse d'impact unifiée intégrant FRIA (si haut risque AI Act), AIPD (GDPR) et évaluation des risques tiers (DORA) constitue la meilleure pratique.",
+  "key_facts": [
+    "Trois régimes simultanés : AI Act, GDPR, DORA",
+    "AI Act Article 50 : obligation de transparence pour chatbots IA",
+    "Information dès le début de l'interaction que l'utilisateur dialogue avec une IA",
+    "Article 50(2) : marquage machine-readable des sorties d'IA générative",
+    "Vérification du seuil haut risque (Article 6 + Annexe III point 5(b))",
+    "Recommandation de crédit personnalisée peut basculer en haut risque",
+    "GDPR Article 22 : droit de ne pas faire l'objet d'une décision exclusivement automatisée",
+    "Effets juridiques ou significatifs : refus implicite, exclusion d'offre",
+    "Bases légales : consentement explicite, nécessité contractuelle ou loi",
+    "Intervention humaine garantie + droit de contestation",
+    "Article 13(2)(f) : information sur logique, importance, conséquences",
+    "AIPD probablement obligatoire (Article 35 GDPR)",
+    "DORA Article 28 : prestataire de modèle IA = tiers TIC",
+    "Registre des arrangements contractuels communiqué annuellement à l'ACPR",
+    "Clauses contractuelles obligatoires (Article 30)",
+    "Évaluation préalable des risques (résilience, concentration, sous-traitance)",
+    "Plan de sortie crédible obligatoire",
+    "Articulation pratique : FRIA + AIPD + évaluation tiers TIC unifiées"
+  ]
+},
+  {
+  "id": "r33",
+  "question": "Sous l'AI Act, à quelles conditions un modèle d'IA à usage général est-il classifié comme présentant un risque systémique ?",
+  "expected_regulations": ["AI Act"],
+  "expected_articles": [
+    {"regulation_name": "AI Act", "article_number": "51"}
+  ],
+  "answer": "L'Article 51 de l'AI Act définit deux conditions alternatives de classification d'un modèle d'IA à usage général (GPAI) comme présentant un risque systémique. Premièrement (Article 51(1)(a)), le modèle dispose de capacités à fort impact, évaluées sur la base d'outils techniques et méthodologies appropriés, incluant des indicateurs et benchmarks. L'Article 51(2) instaure une présomption automatique : un modèle est présumé avoir des capacités à fort impact lorsque la quantité cumulée de calcul utilisée pour son entraînement, mesurée en opérations en virgule flottante (FLOP), dépasse 10^25. Deuxièmement (Article 51(1)(b)), la Commission européenne peut, d'office ou après alerte qualifiée du panel scientifique, désigner un modèle comme présentant un risque systémique si ses capacités ou son impact sont équivalents au seuil du point (a), sur la base des critères de l'Annexe XIII (nombre de paramètres, qualité ou taille du jeu de données, calcul utilisé, modalités d'entrée/sortie, benchmarks, niveau d'autonomie et d'évolutivité, accès au marché, nombre d'utilisateurs professionnels). L'Article 51(3) permet à la Commission d'adopter des actes délégués (selon Article 97) pour modifier ces seuils et compléter les benchmarks à mesure des évolutions technologiques (améliorations algorithmiques, efficacité matérielle). La procédure de désignation est précisée à l'Article 52 : le fournisseur doit notifier la Commission dans les deux semaines du moment où il sait ou devrait savoir que les critères sont remplis, peut présenter des arguments démontrant que son modèle ne présente pas de risque systémique malgré le franchissement du seuil, et peut être désigné par décision motivée de la Commission. La classification entraîne l'application des obligations renforcées de l'Article 55 (évaluations standardisées du modèle, identification et atténuation des risques systémiques, reporting des incidents graves à l'AI Office, cybersécurité du modèle et de l'infrastructure).",
+  "key_facts": [
+    "Article 51 : classification d'un modèle GPAI comme à risque systémique",
+    "Deux conditions alternatives : capacités à fort impact OU décision de la Commission",
+    "Article 51(2) : présomption de fort impact si entraînement > 10^25 FLOP",
+    "Article 51(1)(b) : désignation par la Commission selon critères de l'Annexe XIII",
+    "Critères Annexe XIII : paramètres, jeu de données, calcul, modalités, benchmarks, autonomie, marché, utilisateurs",
+    "Article 51(3) : actes délégués pour ajuster les seuils selon évolutions technologiques",
+    "Article 52 : procédure (notification dans 2 semaines, arguments du fournisseur, décision motivée)",
+    "Classification déclenche les obligations renforcées de l'Article 55",
+    "Obligations Article 55 : évaluations standardisées, atténuation des risques, reporting incidents graves à l'AI Office, cybersécurité"
+  ]
+},{
+  "id": "r34",
+  "question": "Notre établissement de paiement doit cartographier son patrimoine informatique pour DORA. Quelles sont précisément nos obligations d'identification, de classification et de cartographie des actifs TIC ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "8"}
+  ],
+  "answer": "L'Article 8 de DORA, qui s'inscrit dans le cadre de gestion des risques TIC de l'Article 6, impose un exercice complet d'identification, classification et cartographie. L'Article 8(1) exige d'identifier, classifier et documenter de manière adéquate l'ensemble des fonctions métier supportées par les TIC, les rôles et responsabilités associés, les actifs informationnels et actifs TIC supportant ces fonctions, ainsi que leurs rôles et dépendances en matière de risque TIC. Cette classification doit être revue selon les besoins et au moins annuellement. L'Article 8(2) impose une identification continue de toutes les sources de risque TIC, en particulier l'exposition aux et depuis les autres entités financières, et l'évaluation des cybermenaces et vulnérabilités TIC pertinentes. L'Article 8(3) exige une réévaluation des risques TIC en cas de changement majeur de l'infrastructure réseau ou d'incident. L'Article 8(4) est le cœur de la cartographie : vous devez identifier tous les actifs informationnels et actifs TIC, y compris ceux sur sites distants, ressources réseau et équipements matériels, et cartographier ceux considérés comme critiques. La cartographie doit couvrir la configuration des actifs et les liens et interdépendances entre eux. L'Article 8(5) impose un volet tiers TIC : vous devez identifier et documenter tous les processus dépendants de prestataires tiers TIC, et identifier les interconnexions avec les prestataires qui fournissent des services supportant des fonctions critiques ou importantes — cette notion de fonction critique ou importante (définie à l'Article 3(22)) déclenche par ailleurs les obligations renforcées des Articles 28 et 30. L'Article 8(6) exige des inventaires tenus à jour périodiquement et lors de chaque changement majeur. L'Article 8(7) impose, pour les entités financières hors microentreprises, une évaluation régulière (au moins annuelle) des risques TIC ; et l'Article 8(8) ajoute, pour les mêmes entités, l'obligation d'évaluer après tout changement majeur de l'infrastructure ou des processus l'impact sur la posture de risque. La cartographie obtenue est le socle qui alimente la BIA de l'Article 11, les plans de continuité, le registre des prestataires tiers TIC et le reporting d'incidents.",
+  "key_facts": [
+    "Article 8 : identification, classification et cartographie des actifs TIC",
+    "S'inscrit dans le cadre de gestion des risques TIC de l'Article 6",
+    "Article 8(1) : identification de toutes les fonctions métier TIC et actifs supportants",
+    "Revue de la classification au moins annuelle",
+    "Article 8(2) : identification continue des sources de risque TIC et cybermenaces",
+    "Article 8(3) : réévaluation lors de changements majeurs ou incidents",
+    "Article 8(4) : cartographie des actifs critiques (configuration, liens, interdépendances)",
+    "Inclut sites distants, ressources réseau, équipements matériels",
+    "Article 8(5) : identification des processus dépendant de tiers TIC",
+    "Identification des interconnexions avec tiers TIC supportant fonctions critiques/importantes",
+    "Notion de fonction critique ou importante : Article 3(22)",
+    "Déclenche les obligations renforcées des Articles 28 et 30",
+    "Article 8(6) : inventaires à jour périodiquement et lors de changements majeurs",
+    "Article 8(7-8) : évaluation annuelle des risques (hors microentreprises)",
+    "Cartographie = socle pour BIA (Article 11), continuité, registre tiers, reporting incidents"
+  ]
+},
+  {
+  "id": "r35",
+  "question": "Nous développons une nouvelle plateforme de gestion financière qui traitera des données sensibles de nos clients. Quelles obligations le GDPR nous impose-t-il en matière de protection des données dès la conception et de sécurité du traitement ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "25"},
+    {"regulation_name": "GDPR", "article_number": "32"}
+  ],
+  "answer": "Les Articles 25 et 32 forment le socle des obligations techniques et organisationnelles du GDPR, applicables conjointement dès la phase de conception et tout au long du traitement. L'Article 25(1) impose la protection des données dès la conception (« privacy by design ») : vous devez mettre en œuvre des mesures techniques et organisationnelles appropriées, tant au moment de la détermination des moyens du traitement qu'au moment du traitement lui-même, afin de mettre en application les principes de protection des données de l'Article 5 (notamment la minimisation) et d'intégrer les garanties nécessaires. Ces mesures doivent tenir compte de l'état des connaissances, des coûts de mise en œuvre, de la nature, de la portée, du contexte et des finalités du traitement, ainsi que des risques pour les droits et libertés des personnes. L'Article 25(2) impose en complément la protection des données par défaut (« privacy by default ») : par défaut, seules les données nécessaires au regard de chaque finalité spécifique doivent être traitées, et ce paramétrage doit couvrir la quantité de données collectées, l'étendue du traitement, la durée de conservation et l'accessibilité. L'Article 25(3) prévoit qu'un mécanisme de certification approuvé peut servir d'élément démontrant le respect de ces exigences. L'Article 32(1) impose au responsable de traitement et au sous-traitant de mettre en œuvre des mesures techniques et organisationnelles appropriées pour garantir un niveau de sécurité adapté au risque, en tenant compte des mêmes critères de proportionnalité. L'Article 32(1) énumère quatre catégories de mesures à envisager : (a) pseudonymisation et chiffrement des données ; (b) capacité de garantir la confidentialité, l'intégrité, la disponibilité et la résilience constantes des systèmes et services de traitement ; (c) capacité de rétablir la disponibilité des données et l'accès dans des délais appropriés en cas d'incident physique ou technique ; (d) procédure de test, d'analyse et d'évaluation régulières de l'efficacité de ces mesures. L'Article 32(2) impose d'évaluer le niveau de sécurité approprié en tenant compte particulièrement des risques liés à un traitement, notamment l'accès non autorisé, la perte, la destruction ou la divulgation accidentelle ou illicite. L'Article 32(3) reconnaît qu'un code de conduite ou une certification peut servir d'élément démontrant la conformité. L'Article 32(4) impose au responsable de traitement et au sous-traitant de s'assurer que toute personne agissant sous leur autorité et ayant accès aux données ne les traite que sur instruction. Pour une plateforme financière, les attentes pratiques de la CNIL incluent : chiffrement des données au repos et en transit (TLS 1.3, AES-256), authentification multifacteur, segmentation réseau, journalisation et traçabilité, gestion des habilitations avec principe du moindre privilège, sauvegardes chiffrées et testées, plans de réponse aux incidents. Les sanctions récentes confirment que l'absence de mesures élémentaires constitue un manquement substantiel indépendamment de la survenance d'une violation effective. La sanction maximale relève du plafond bas de l'Article 83(4) : 10 millions d'euros ou 2% du chiffre d'affaires mondial annuel.",
+  "key_facts": [
+    "Article 25 : protection des données dès la conception et par défaut",
+    "Article 25(1) : mesures techniques et organisationnelles dès la conception",
+    "Critères de proportionnalité : état des connaissances, coûts, nature, portée, contexte, finalités, risques",
+    "Article 25(2) : par défaut, seules les données nécessaires sont traitées",
+    "Couvre quantité, étendue, durée de conservation, accessibilité",
+    "Article 25(3) : certification approuvée comme élément de preuve",
+    "Article 32 : sécurité du traitement (responsable ET sous-traitant)",
+    "Article 32(1)(a) : pseudonymisation et chiffrement",
+    "Article 32(1)(b) : confidentialité, intégrité, disponibilité, résilience",
+    "Article 32(1)(c) : capacité de rétablissement après incident",
+    "Article 32(1)(d) : tests et évaluations réguliers de l'efficacité",
+    "Article 32(2) : évaluation du niveau approprié de sécurité selon les risques",
+    "Article 32(4) : traitement uniquement sur instruction",
+    "Sanctions plafond bas Article 83(4) : 10M€ ou 2% du CA mondial",
+    "Articulation avec Articles 5 (principes), 24 (responsabilité), 35 (AIPD)"
+  ]
+},
+  {
+  "id": "r36",
+  "question": "Nous prévoyons une offre publique de notre crypto-actif (token utilitaire, non-ART, non-EMT) auprès du grand public. Quelles obligations MiCA s'appliquent en matière de droit de rétractation des consommateurs ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "13"}
+  ],
+  "answer": "L'Article 13 de MiCA instaure un droit de rétractation (cooling-off period) au profit des détenteurs retail, dans le cadre du Titre II applicable aux crypto-actifs autres que les ART et les EMT. Le détenteur retail est défini comme toute personne physique agissant à des fins étrangères à son activité commerciale, industrielle, artisanale ou professionnelle libérale. Ce droit s'applique lorsque le détenteur retail achète directement auprès d'un offreur de crypto-actifs ou auprès d'un PSCA assurant le placement de crypto-actifs pour le compte de cet offreur. Le mécanisme est précis : dans un délai de 14 jours calendaires à compter de la date de l'accord d'achat, le détenteur retail peut se rétracter sans encourir de frais ni de coûts, et sans avoir à fournir de motif. Cette protection s'inspire directement du régime européen existant pour les ventes à distance (Directive 2011/83/UE). En cas d'exercice du droit de rétractation, tous les paiements reçus du détenteur retail, y compris les frais éventuels, doivent être remboursés sans délai indu et au plus tard dans les 14 jours suivant la notification de rétractation. Plusieurs exclusions importantes s'appliquent. Premièrement, le droit de rétractation ne s'applique pas aux crypto-actifs admis à la négociation sur une plateforme de négociation de crypto-actifs — la logique étant que ces actifs ont déjà un marché secondaire liquide. Deuxièmement, il ne s'applique pas si l'offreur a fixé une période limitée pour son offre publique (par exemple un ICO time-boxed) et que la période de souscription a expiré. Troisièmement, par construction, il ne s'applique ni aux ART (régis par le Titre III) ni aux EMT (Titre IV). Vous devez impérativement inclure dans votre livre blanc l'information sur l'existence du droit de rétractation, sa durée, ses modalités d'exercice et les conséquences d'un défaut d'information. À défaut d'inclusion de cette information dans le livre blanc, le livre blanc est considéré comme incomplet et engage la responsabilité de l'offreur au titre de l'Article 15. En pratique, vos systèmes de souscription doivent intégrer un mécanisme technique permettant : (i) d'horodater précisément la date de l'accord d'achat ; (ii) d'identifier les détenteurs retail (par opposition aux investisseurs professionnels qui ne bénéficient pas du droit) ; (iii) de traiter automatiquement les demandes de rétractation et déclencher le remboursement dans les délais légaux ; (iv) de tracer les rétractations pour preuve en cas de contrôle de l'AMF.",
+  "key_facts": [
+    "Article 13 MiCA : droit de rétractation des détenteurs retail",
+    "Applicable aux crypto-actifs autres que ART et EMT (Titre II)",
+    "Détenteur retail = personne physique hors activité professionnelle",
+    "Délai : 14 jours calendaires à compter de la date de l'accord d'achat",
+    "Sans frais, sans coûts, sans motif",
+    "Remboursement sous 14 jours suivant la notification de rétractation",
+    "Inspiration : Directive 2011/83/UE sur les ventes à distance",
+    "Exclusion : crypto-actifs admis à la négociation sur plateforme",
+    "Exclusion : offres time-boxed après expiration de la période de souscription",
+    "Information sur le droit obligatoire dans le livre blanc",
+    "Défaut d'information : livre blanc incomplet + responsabilité Article 15",
+    "Mécanismes techniques requis : horodatage, identification retail, traitement automatisé"
+  ]
+},
+  {
+  "id": "r37",
+  "question": "Suite à un incident TIC majeur, nous voulons mettre en place un processus d'analyse post-mortem et améliorer la formation de nos équipes. Quelles sont les obligations DORA en matière d'apprentissage post-incident et de sensibilisation du personnel ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "13"}
+  ],
+  "answer": "L'Article 13 de DORA, intitulé « Apprentissage et évolution », impose un cycle continu d'amélioration de la résilience opérationnelle numérique fondé sur la collecte d'informations, l'analyse post-incident et la formation. L'Article 13(1) exige de mettre en place des capacités et du personnel dédiés à la collecte d'informations sur les vulnérabilités, les cybermenaces et les incidents TIC — en particulier les cyberattaques — et à l'analyse de leur impact probable sur la résilience opérationnelle numérique. L'Article 13(2) impose un processus formel de revue post-incident (post-mortem) après tout incident TIC majeur ayant perturbé les activités essentielles. Cette revue doit analyser les causes de la perturbation et identifier les améliorations nécessaires aux opérations TIC ou à la politique de continuité d'activité TIC (Article 11). L'Article 13(3) précise que la revue post-incident doit déterminer si les procédures établies ont été suivies et si les actions prises ont été efficaces, en analysant notamment : (a) la rapidité de réponse aux alertes de sécurité et de détermination de l'impact et de la sévérité de l'incident ; (b) la qualité et la rapidité de l'analyse forensique, lorsque appropriée ; (c) l'efficacité de l'escalade interne ; (d) l'efficacité de la communication interne et externe. Les entités financières hors microentreprises doivent, sur demande, communiquer à l'autorité compétente les changements implémentés à la suite de ces revues. L'Article 13(4) impose une surveillance continue des évolutions technologiques pertinentes pour la sécurité. L'Article 13(5) exige d'inclure les conclusions opérationnelles des tests de résilience (Articles 24-26) et des analyses post-incident dans le processus d'évaluation des risques TIC. L'Article 13(6) constitue l'obligation de formation : les entités financières doivent développer des programmes de sensibilisation à la sécurité TIC et de formation à la résilience opérationnelle numérique comme modules obligatoires dans leurs plans de formation du personnel. Ces programmes doivent s'appliquer à tous les employés et aux membres de la direction générale, avec un niveau de complexité proportionnel à la nature de leurs fonctions. L'Article 13(7) impose, lors de l'engagement avec des prestataires tiers TIC supportant des fonctions critiques ou importantes, de surveiller les évolutions technologiques pertinentes et d'évaluer leur impact potentiel. En pratique, votre processus doit combiner : (i) un template structuré de revue post-incident couvrant les quatre dimensions de l'Article 13(3) ; (ii) un mécanisme d'intégration formelle des leçons apprises dans la politique de continuité et le cadre de gestion des risques TIC ; (iii) un programme de formation annuel obligatoire avec modules différenciés selon les fonctions ; (iv) des exercices de simulation périodiques (exercices de gestion de crise, tabletop exercises) ; (v) un suivi par la fonction de contrôle des risques TIC.",
+  "key_facts": [
+    "Article 13 : apprentissage et évolution post-incident",
+    "Article 13(1) : capacités de collecte d'informations sur vulnérabilités, cybermenaces, incidents",
+    "Article 13(2) : revue post-incident obligatoire après incident TIC majeur",
+    "Analyse des causes et identification des améliorations à la politique de continuité (Article 11)",
+    "Article 13(3) : quatre dimensions à évaluer dans la revue post-incident",
+    "(a) rapidité de réponse aux alertes",
+    "(b) qualité et rapidité de l'analyse forensique",
+    "(c) efficacité de l'escalade interne",
+    "(d) efficacité de la communication interne et externe",
+    "Communication à l'autorité compétente des changements implémentés (sur demande)",
+    "Article 13(5) : intégration des conclusions dans l'évaluation des risques TIC",
+    "Article 13(6) : programmes de sensibilisation et formation obligatoires",
+    "Applicables à tous les employés et à la direction générale",
+    "Complexité proportionnelle aux fonctions",
+    "Article 13(7) : surveillance des évolutions technologiques chez les tiers TIC"
+  ]
+},
+  {
+  "id": "r38",
+  "question": "Notre PSCA propose un service de garde de crypto-actifs pour ses clients institutionnels. Quelles sont nos obligations spécifiques sous MiCA en matière de garde et d'administration de crypto-actifs ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "75"}
+  ],
+  "answer": "L'Article 75 de MiCA encadre spécifiquement le service de garde et d'administration de crypto-actifs pour le compte de clients, défini à l'Article 3(1)(17) comme la conservation ou le contrôle de crypto-actifs ou des moyens d'accès à ces crypto-actifs (typiquement les clés cryptographiques privées) pour le compte de clients. Premièrement (Article 75(1)), vous devez conclure avec chaque client un accord de garde précisant les droits et obligations de chaque partie, le type de service, le système d'information utilisé, la politique de garde, les modalités de communication, les frais, le droit applicable, et — pour les contrats avec des particuliers — une copie du livre blanc des crypto-actifs concernés. Deuxièmement (Article 75(2)), vous devez tenir un registre des positions ouvert au nom de chaque client, reflétant ses droits sur les crypto-actifs détenus, et y enregistrer dans les meilleurs délais tout mouvement consécutif aux instructions du client. Troisièmement (Article 75(3)), vous devez établir et mettre en œuvre une politique de garde écrite, incluant les règles et procédures internes relatives à la conservation ou au contrôle des crypto-actifs ou des moyens d'accès. Cette politique doit être communiquée aux clients sur demande. Quatrièmement (Article 75(4)), vous devez faciliter l'exercice des droits attachés aux crypto-actifs ; tout événement susceptible de créer ou modifier les droits d'un client doit être immédiatement enregistré dans son registre. Les modalités de partage des bénéfices résultant de ces droits doivent être convenues avec le client. Cinquièmement (Article 75(5)), vous devez fournir au client un relevé de positions au moins une fois par trimestre et à chaque demande. Sixièmement (Article 75(6)), vous devez mettre en place les procédures nécessaires pour restituer les crypto-actifs détenus pour le compte des clients ou leurs moyens d'accès dans les meilleurs délais — la clarification ESMA Q&A 2320 précise que vous devez restituer le même type de crypto-actif (pas une conversion forcée en fiat). Septièmement et c'est crucial (Article 75(7)), vous devez assurer la séparation des crypto-actifs des clients sur le registre distribué : les adresses utilisées pour les crypto-actifs des clients doivent être distinctes de celles utilisées pour les crypto-actifs propres du PSCA ; l'ESMA Q&A 2578 précise que les crypto-actifs des entités du même groupe ne sont pas considérés comme « propres » mais leur mélange avec ceux des clients introduit des conflits d'intérêts à éviter. Huitièmement (Article 75(8)), votre responsabilité est engagée en cas de perte des crypto-actifs ou des moyens d'accès des clients résultant d'un incident, à hauteur de la valeur marchande au moment de la perte, sauf si vous prouvez que la perte est due à un événement extérieur indépendant de votre contrôle raisonnable. Neuvièmement (Article 75(9)), le recours à un sous-conservateur tiers est possible mais nécessite (a) que ce tiers soit lui-même un PSCA autorisé pour la garde, (b) que vous informiez vos clients. La sous-traitance ne délègue pas votre responsabilité et n'altère pas la relation client.",
+  "key_facts": [
+    "Article 75 : garde et administration de crypto-actifs pour le compte de clients",
+    "Article 75(1) : accord de garde écrit obligatoire avec chaque client",
+    "Article 75(2) : registre des positions par client, mise à jour en temps réel",
+    "Article 75(3) : politique de garde écrite, communiquée aux clients sur demande",
+    "Article 75(4) : facilitation de l'exercice des droits attachés aux crypto-actifs",
+    "Article 75(5) : relevé de positions au moins trimestriel et sur demande",
+    "Article 75(6) : restitution dans les meilleurs délais du même type de crypto-actif (ESMA Q&A 2320)",
+    "Article 75(7) : séparation on-chain des crypto-actifs clients vs propres",
+    "Adresses distinctes pour clients et compte propre",
+    "Article 75(8) : responsabilité du PSCA en cas de perte (valeur marchande au moment de la perte)",
+    "Exception : événement extérieur indépendant du contrôle raisonnable",
+    "Article 75(9) : sous-traitance conditionnée à autorisation du tiers + information du client",
+    "Pas de délégation de responsabilité par sous-traitance",
+    "Articulation avec Article 70 (sauvegarde générale) et Article 72 (conflits d'intérêts)"
+  ]
+}
+  ,
+  {
+  "id": "r39",
+  "question": "Quelles informations devons-nous obligatoirement inclure dans notre registre des activités de traitement sous le GDPR ?",
+  "expected_regulations": ["GDPR"],
+  "expected_articles": [
+    {"regulation_name": "GDPR", "article_number": "30"}
+  ],
+  "answer": "L'Article 30 du GDPR impose au responsable de traitement et au sous-traitant de tenir un registre écrit (y compris électronique) des activités de traitement, qui constitue le socle documentaire de l'accountability et le premier document demandé par la CNIL en contrôle. L'Article 30(1) liste précisément les mentions obligatoires du registre du responsable de traitement : (a) le nom et les coordonnées du responsable de traitement et, le cas échéant, du responsable conjoint, du représentant et du DPO ; (b) les finalités du traitement ; (c) une description des catégories de personnes concernées et des catégories de données à caractère personnel ; (d) les catégories de destinataires auxquels les données ont été ou seront communiquées, y compris les destinataires dans des pays tiers ou des organisations internationales ; (e) le cas échéant, les transferts de données vers un pays tiers ou une organisation internationale, en identifiant ce pays ou cette organisation et, pour les transferts visés à l'Article 49(1) deuxième alinéa, les documents attestant des garanties appropriées ; (f) dans la mesure du possible, les délais prévus pour l'effacement des différentes catégories de données ; (g) dans la mesure du possible, une description générale des mesures de sécurité techniques et organisationnelles visées à l'Article 32(1). L'Article 30(2) impose un registre distinct au sous-traitant, contenant : (a) le nom et les coordonnées des sous-traitants et de chaque responsable de traitement pour lequel ils agissent, ainsi que des représentants et du DPO ; (b) les catégories de traitements effectués pour le compte de chaque responsable ; (c) les transferts vers pays tiers avec les garanties appropriées ; (d) dans la mesure du possible, la description générale des mesures de sécurité. L'Article 30(3) précise que ces registres se présentent sous une forme écrite, y compris électronique. L'Article 30(4) impose de mettre le registre à la disposition de l'autorité de contrôle sur demande — c'est le premier document demandé par la CNIL lors d'un contrôle. L'Article 30(5) prévoit une dispense limitée pour les organismes de moins de 250 employés, sauf si le traitement (i) est susceptible de comporter un risque pour les droits et libertés des personnes, (ii) n'est pas occasionnel, ou (iii) porte sur les catégories particulières de données de l'Article 9(1) ou sur les données pénales de l'Article 10. En pratique, cette dispense est très limitée car la plupart des traitements (paie, RH, clients) ne sont pas occasionnels. Pour un fintech traitant systématiquement des données financières clients, le registre est toujours obligatoire. La CNIL recommande de tenir deux registres distincts si vous êtes à la fois responsable et sous-traitant.",
+  "key_facts": [
+    "Article 30 : registre des activités de traitement obligatoire",
+    "Responsable de traitement ET sous-traitant",
+    "Article 30(1) : 7 mentions obligatoires pour le responsable",
+    "(a) identité responsable, responsable conjoint, représentant, DPO",
+    "(b) finalités du traitement",
+    "(c) catégories de personnes et catégories de données",
+    "(d) catégories de destinataires, y compris pays tiers",
+    "(e) transferts internationaux avec documents de garanties",
+    "(f) délais d'effacement par catégorie",
+    "(g) mesures de sécurité de l'Article 32(1)",
+    "Article 30(2) : registre distinct pour le sous-traitant",
+    "Article 30(3) : forme écrite, y compris électronique",
+    "Article 30(4) : mise à disposition de l'autorité de contrôle sur demande",
+    "Article 30(5) : dispense limitée pour < 250 employés (3 conditions cumulatives)",
+    "Dispense inapplicable pour traitements financiers récurrents",
+    "CNIL : tenir 2 registres distincts si double casquette responsable/sous-traitant"
+  ]
+},
+  {
+  "id": "r40",
+  "question": "Pendant un incident TIC majeur, comment devons-nous organiser notre communication interne et externe sous DORA, et qui doit être désigné comme porte-parole ?",
+  "expected_regulations": ["DORA"],
+  "expected_articles": [
+    {"regulation_name": "DORA", "article_number": "14"}
+  ],
+  "answer": "L'Article 14 de DORA, bien que court (trois paragraphes), structure l'ensemble du dispositif de communication en situation d'incident TIC, en complément des Articles 11 (réponse et reprise), 13 (apprentissage) et 19 (reporting réglementaire). L'Article 14(1) impose, dans le cadre de gestion des risques TIC de l'Article 6(1), de mettre en place des plans de communication de crise permettant une divulgation responsable, au minimum, des incidents TIC majeurs ou vulnérabilités majeures aux clients et contreparties ainsi qu'au public, le cas échéant. La notion de « divulgation responsable » implique un équilibre entre transparence (information des parties prenantes) et prudence (ne pas amplifier le risque, par exemple en divulguant des vulnérabilités exploitables avant leur remédiation). La notion d'« incident TIC majeur » est définie à l'Article 3(10) comme un incident ayant un impact adverse élevé sur les réseaux et systèmes d'information supportant des fonctions critiques ou importantes ; les critères de matérialité sont précisés par le Règlement délégué (UE) 2024/1772. L'Article 14(2) impose la mise en œuvre de politiques de communication distinctes pour le personnel interne et pour les parties prenantes externes. Pour le personnel interne, la politique doit différencier les agents impliqués dans la gestion des risques TIC (en particulier les équipes de réponse et reprise), qui doivent recevoir une information opérationnelle complète et en temps réel, des autres collaborateurs qui doivent simplement être tenus informés à un niveau approprié — cette distinction évite à la fois la rétention d'information critique des équipes opérationnelles et la diffusion de détails sensibles à des collaborateurs non concernés. Pour les parties prenantes externes (clients, contreparties, partenaires, public, médias), une politique distincte adaptée doit être déployée. L'Article 14(3) impose qu'au moins une personne au sein de l'entité financière soit chargée de mettre en œuvre la stratégie de communication relative aux incidents TIC et d'assumer la fonction de porte-parole envers le public et les médias — il s'agit en pratique d'un Crisis Communications Officer, généralement rattaché à la direction de la communication ou au RSSI, avec des suppléants identifiés pour assurer la continuité 24/7. En articulation pratique avec l'Article 11(2)(e), les actions de communication et de gestion de crise doivent assurer que des informations actualisées sont transmises à toutes les parties prenantes internes et externes en accord avec l'Article 14, et coordonnées avec le reporting aux autorités compétentes selon l'Article 19. Pour les services de paiement spécifiquement, l'Article 19(3) impose en outre une information sans délai indu des clients lorsque l'incident a un impact ou peut avoir un impact sur leurs intérêts financiers. En pratique, votre plan doit inclure : (i) des templates de messages préparés selon le type d'incident (cyberattaque, défaillance, fuite de données) ; (ii) une matrice d'escalade et de validation ; (iii) une grille de décision sur la divulgation publique ; (iv) un Crisis Communications Officer désigné avec suppléants ; (v) un test annuel intégré aux exercices de continuité (Article 11(6)) ; (vi) une coordination avec le DPO si l'incident concerne des données personnelles.",
+  "key_facts": [
+    "Article 14 : communication en situation d'incident TIC",
+    "S'inscrit dans le cadre de gestion des risques TIC (Article 6(1))",
+    "Article 14(1) : plans de communication de crise pour divulgation responsable",
+    "Divulgation au minimum des incidents TIC majeurs et vulnérabilités majeures",
+    "Destinataires : clients, contreparties, public selon pertinence",
+    "Notion d'incident TIC majeur définie à l'Article 3(10) + Règlement délégué (UE) 2024/1772",
+    "Article 14(2) : politiques de communication distinctes interne / externe",
+    "Différenciation interne : équipes ICT risk vs autres collaborateurs",
+    "Article 14(3) : porte-parole désigné pour public et médias (Crisis Communications Officer)",
+    "Articulation avec Article 11(2)(e) : actions de communication intégrées aux plans de continuité",
+    "Articulation avec Article 19 : reporting aux autorités compétentes",
+    "Article 19(3) : information des clients sans délai indu pour services de paiement",
+    "Coordination avec DPO si données personnelles affectées (GDPR Articles 33-34)"
+  ]
+}
+
+
+]

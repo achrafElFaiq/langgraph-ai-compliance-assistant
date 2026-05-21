@@ -15,13 +15,27 @@ from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 
 def generate_questions(state: State) -> dict:
     print("Generating questions...")
-    response = llm.invoke(
-        [
-            SystemMessage(content=load_question_generation_prompt()),
-            HumanMessage(content=state["input_text"]),
-        ]
-    )
-    print("Generated questions:", response.content)
+
+    messages = [
+        SystemMessage(content=load_question_generation_prompt()),
+        HumanMessage(content=state["input_text"]),
+    ]
+
+    if state.get("critic_opinion"):
+        messages.append(
+            HumanMessage(
+                content=(
+                    "The previous answer was criticized for the following reasons:\n"
+                    f"{state['critic_opinion']}\n\n"
+                    "Revise the search query so it better captures the missing points, "
+                    "but keep the original user intent."
+                )
+            )
+        )
+
+    response = llm.invoke(messages)
+
+    print("Generated questions")
     return {"retrieval_query": response.content}
 
 
@@ -55,7 +69,7 @@ def answer(state: State) -> dict:
         HumanMessage(content=f"Query: {state['retrieval_query']}\n\nArticles:\n{articles_text}")
     ])
 
-    print("Answer:", response.content)
+    print("Answered question")
     return {
         "answer": response.content,
         "messages": [
@@ -66,10 +80,10 @@ def answer(state: State) -> dict:
 
 
 def critic_answer(state: State) -> dict:
-    articles_text = "\n\n".join([
+    articles_text = "\n\n".join(
         f"{a.breadcrumb}:\n{a.content}"
         for a in state["retrieved_articles"]
-    ])
+    )
 
     response = llm.invoke([
         SystemMessage(content=load_critic_prompt()),
@@ -78,9 +92,11 @@ def critic_answer(state: State) -> dict:
 
     feedback = response.content.strip()
     print("Critic answer:", response.content)
+
     if feedback.upper() == "APPROVED":
-        return {"critic_feedback": ""}
-    return {"critic_feedback": feedback}
+        return {"critic_opinion": ""}
+
+    return {"critic_opinion": feedback}
 
 
 def synthesize(state: State) -> dict:

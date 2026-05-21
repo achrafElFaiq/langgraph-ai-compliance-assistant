@@ -5,6 +5,7 @@ and extracts article metadata and body text for downstream ingestion.
 """
 
 import logging
+from datetime import date
 from typing import Optional
 
 from bs4 import BeautifulSoup
@@ -56,10 +57,10 @@ class EurLexParser():
         logger.info("Parse completed regulation=%s article_count=%s", regulation_name, len(articles))
         return articles
 
-    def _extract_article_number(self, article_div) -> int:
-        """Read numeric article id from element id like `art_16`."""
+    def _extract_article_number(self, article_div) -> str:
+        """Read article id from element id like `art_16` or `art_42b`."""
         article_id = article_div.get("id")  # "art_16"
-        return int(article_id.split("_")[1])
+        return article_id.split("_", 1)[1]
 
     def _extract_article_title(self, article_div) -> Optional[str]:
         """Return article heading text when present."""
@@ -86,6 +87,7 @@ class EurLexParser():
         article_number = self._extract_article_number(article_div)
         article_title = self._extract_article_title(article_div)
         content = self._extract_content(article_div)
+        valid_from_date = date.fromisoformat(valid_from)
 
         breadcrumb_parts = [regulation_name]
         if title_num:
@@ -103,7 +105,7 @@ class EurLexParser():
             article_title=article_title,
             breadcrumb=breadcrumb,
             content=content,
-            valid_from=valid_from,
+            valid_from=valid_from_date,
             valid_until=None,
             source_url=source_url,
         )

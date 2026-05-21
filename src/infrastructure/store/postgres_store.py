@@ -1,5 +1,5 @@
 import logging
-from typing import List
+from typing import Dict, List
 
 import psycopg
 
@@ -41,7 +41,7 @@ class PostgresRegulationRepository(RegulationRepository):
         await self.connection.execute("DELETE FROM articles")
         await self.connection.commit()
 
-    async def store_articles(self, articles: List[Article]) -> dict[int, int]:
+    async def store_articles(self, articles: List[Article]) -> Dict[str, int]:
         """Store articles and return a map of article number to database id."""
         if not self.connection:
             raise RuntimeError("Database connection is not initialized")
@@ -50,11 +50,11 @@ class PostgresRegulationRepository(RegulationRepository):
             return {}
 
         logger.info("Storing articles count=%s regulation=%s", len(articles), articles[0].regulation_name)
-        article_ids = {}
+        article_ids: Dict[str, int] = {}
         try:
             for article in articles:
                 article_id = await self._insert_article(article)
-                article_ids[article.article_number] = article_id
+                article_ids[str(article.article_number)] = article_id
             await self.connection.commit()
         except Exception:
             logger.exception("Failed while storing articles regulation=%s", articles[0].regulation_name)
@@ -89,7 +89,7 @@ class PostgresRegulationRepository(RegulationRepository):
             row = await cur.fetchone()
             return row[0]
 
-    async def store_chunks(self, chunks: List[ArticleChunk], article_ids: dict[int, int]) -> None:
+    async def store_chunks(self, chunks: List[ArticleChunk], article_ids: Dict[str, int]) -> None:
         """Store article chunks using the provided article-number to id mapping."""
         if not self.connection:
             raise RuntimeError("Database connection is not initialized")
@@ -101,7 +101,7 @@ class PostgresRegulationRepository(RegulationRepository):
         logger.info("Storing chunks count=%s regulation=%s", len(chunks), chunks[0].regulation_name)
         try:
             for chunk in chunks:
-                article_id = article_ids[chunk.article_number]
+                article_id = article_ids[str(chunk.article_number)]
                 await self._insert_chunk(chunk, article_id)
             await self.connection.commit()
         except Exception:

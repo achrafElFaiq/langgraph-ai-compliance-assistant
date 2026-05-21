@@ -1,3 +1,3 @@
-from src.infrastructure.transformers_embed import TransformersEmbedder
+from src.infrastructure.embed.transformers_embed import TransformersEmbedder
 
 embedder = TransformersEmbedder()
