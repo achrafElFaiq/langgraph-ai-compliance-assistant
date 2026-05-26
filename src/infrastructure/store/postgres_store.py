@@ -138,7 +138,7 @@ class PostgresRegulationRepository(RegulationRepository):
             )
         )
 
-    async def retrieve(self, embedding: list[float], query: str, top_k: int = 10) -> list[Article]:
+    async def retrieve(self, embedding: list[float], query: str, top_k: int = 20) -> list[Article]:
         """Retrieve top matching articles using hybrid vector + BM25 ranking."""
         if not self.connection:
             raise RuntimeError("Database connection is not initialized")

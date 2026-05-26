@@ -29,3 +29,5 @@ def load_critic_prompt() -> str:
 def load_synthesis_prompt() -> str:
     return _load("synthesis.yaml")
 
+def load_ground_prompt() -> str:
+    return _load("ground.yaml")

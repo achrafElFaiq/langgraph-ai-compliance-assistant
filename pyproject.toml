@@ -6,10 +6,12 @@ readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.14.3",
+    "deepeval>=4.0.3",
     "httpx>=0.28.1",
     "langchain-mistralai>=1.1.4",
     "langchain-openai>=1.2.1",
     "langchain-text-splitters>=1.1.2",
+    "langfuse>=4.6.1",
     "langgraph>=1.1.9",
     "psycopg[binary]>=3.3.3",
     "python-dotenv>=1.2.2",

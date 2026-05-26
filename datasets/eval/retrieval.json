@@ -1,45 +1,51 @@
 [
   {
-    "id": "r1",
-    "question": "Selon MiCA, quelles sont les obligations applicables à un émetteur qui offre au public un crypto-actif autre qu'un jeton se référant à des actifs ou un jeton de monnaie électronique ?",
-    "expected_regulations": ["MiCA"],
-    "expected_articles": [
-      {"regulation_name": "MiCA", "article_number": "6"},
-      {"regulation_name": "MiCA", "article_number": "7"},
-      {"regulation_name": "MiCA", "article_number": "8"},
-      {"regulation_name": "MiCA", "article_number": "9"}
-    ],
-    "answer": "Un émetteur qui offre au public un crypto-actif autre qu'un jeton se référant à des actifs (ART) ou un jeton de monnaie électronique (EMT) doit, en vertu du Titre II de MiCA, rédiger un livre blanc de crypto-actif conforme aux exigences de contenu et de format de l'Article 6. Si des communications marketing accompagnent l'offre, elles doivent respecter l'Article 7. Le livre blanc doit être notifié à l'autorité compétente de l'État membre d'origine avant publication, conformément à l'Article 8 (notification au moins 20 jours ouvrables avant publication). Une fois la notification effectuée, le livre blanc et les communications marketing doivent être publiés conformément à l'Article 9. À noter qu'aucune approbation préalable n'est requise pour ce type de crypto-actif — seule une notification est nécessaire.",
-    "key_facts": [
-      "Rédaction d'un livre blanc conforme à l'Article 6 (contenu et format)",
-      "Communications marketing conformes à l'Article 7",
-      "Notification du livre blanc à l'autorité compétente de l'État membre d'origine (Article 8)",
-      "Notification au moins 20 jours ouvrables avant publication",
-      "Publication du livre blanc et des communications marketing selon l'Article 9",
-      "Pas d'approbation préalable requise, seulement une notification"
-    ]
-  },
+  "id": "r1",
+  "question": "Selon MiCA, quelles sont les obligations applicables à un émetteur qui offre au public un crypto-actif autre qu'un jeton se référant à des actifs ou un jeton de monnaie électronique ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "6"},
+    {"regulation_name": "MiCA", "article_number": "7"},
+    {"regulation_name": "MiCA", "article_number": "8"},
+    {"regulation_name": "MiCA", "article_number": "9"}
+  ],
+  "answer": "Un émetteur qui offre au public un crypto-actif autre qu'un jeton se référant à des actifs (ART) ou un jeton de monnaie électronique (EMT) doit rédiger un livre blanc conforme aux exigences de contenu de l'Article 6 : informations sur l'offreur, le projet, l'offre, le crypto-actif, les droits et obligations attachés, la technologie sous-jacente, les risques et les incidences environnementales. Le livre blanc doit contenir une déclaration de non-approbation, une déclaration de risque, une déclaration de l'organe de direction, un résumé, la date de notification et une table des matières. Il doit être loyal, clair et non trompeur, et disponible dans un format lisible par machine. Si des communications commerciales accompagnent l'offre, elles doivent respecter l'Article 7 : être clairement identifiables comme telles, loyales et non trompeuses, cohérentes avec le livre blanc, et mentionner la déclaration de non-approbation. Aucune communication commerciale ne peut être diffusée avant la publication du livre blanc. Le livre blanc doit être notifié à l'autorité compétente de l'État membre d'origine au moins 20 jours ouvrables avant sa date de publication, accompagné d'une explication pourquoi le crypto-actif n'est pas un ART ni un EMT (Article 8). Aucune approbation préalable n'est requise. Le livre blanc et les communications commerciales doivent être publiés sur le site internet de l'offreur avant la date de début de l'offre et rester disponibles tant que les crypto-actifs sont détenus par le public (Article 9).",
+  "key_facts": [
+    "Rédaction d'un livre blanc conforme à l'Article 6",
+    "Contenu obligatoire : offreur, projet, offre, crypto-actif, droits, technologie, risques, incidences environnementales",
+    "Déclaration de non-approbation, déclaration de risque, déclaration de l'organe de direction, résumé, table des matières",
+    "Livre blanc loyal, clair, non trompeur, format lisible par machine",
+    "Communications commerciales conformes à l'Article 7 si applicable",
+    "Aucune communication commerciale avant publication du livre blanc",
+    "Notification à l'autorité compétente de l'État membre d'origine au moins 20 jours ouvrables avant publication (Article 8)",
+    "Aucune approbation préalable requise",
+    "Publication sur site internet avant date de début de l'offre (Article 9)",
+    "Livre blanc disponible tant que les crypto-actifs sont détenus par le public"
+  ]
+},
   {
-    "id": "r2",
-    "question": "Que dois-je faire pour être autorisé en tant que prestataire de services sur crypto-actifs (PSCA) dans l'Union européenne ?",
-    "expected_regulations": ["MiCA"],
-    "expected_articles": [
-      {"regulation_name": "MiCA", "article_number": "59"},
-      {"regulation_name": "MiCA", "article_number": "60"},
-      {"regulation_name": "MiCA", "article_number": "62"},
-      {"regulation_name": "MiCA", "article_number": "63"}
-    ],
-    "answer": "Sous MiCA, depuis le 30 décembre 2024, seuls les prestataires de services sur crypto-actifs (PSCA) autorisés peuvent fournir des services sur crypto-actifs dans l'Union (Article 59). Deux voies existent : soit une autorisation complète délivrée par l'autorité nationale compétente conformément à l'Article 63, soit, pour certaines entités financières déjà régulées (établissements de crédit, entreprises d'investissement, EME, OPCVM, AIFM, etc.), une simple notification au titre de l'Article 60. Pour la voie d'autorisation complète, l'Article 62 détaille le contenu du dossier de demande, qui doit notamment inclure les statuts, la description des services proposés, le plan d'affaires, les garanties prudentielles, les dispositifs de gouvernance et le programme d'opérations. L'autorité compétente évalue la complétude du dossier sous 25 jours ouvrables puis rend sa décision sous 40 jours ouvrables après réception d'un dossier complet (Article 63). En France, l'autorité compétente est l'AMF. Une fois autorisé, le PSCA bénéficie du passeport européen lui permettant d'opérer dans tous les États membres.",
-    "key_facts": [
-      "Autorisation obligatoire pour fournir des services sur crypto-actifs dans l'UE (Article 59)",
-      "Voie 1 : autorisation complète selon Article 63",
-      "Voie 2 : notification simplifiée pour entités financières déjà régulées (Article 60)",
-      "Dossier de demande détaillé selon Article 62 (gouvernance, fonds propres, plan d'affaires)",
-      "Délais d'instruction : 25 jours pour complétude, 40 jours pour décision",
-      "Autorité compétente en France : AMF",
-      "Passeport européen une fois autorisé"
-    ]
-  },
+  "id": "r2",
+  "question": "Que dois-je faire pour être autorisé en tant que prestataire de services sur crypto-actifs (PSCA) dans l'Union européenne ?",
+  "expected_regulations": ["MiCA"],
+  "expected_articles": [
+    {"regulation_name": "MiCA", "article_number": "59"},
+    {"regulation_name": "MiCA", "article_number": "60"},
+    {"regulation_name": "MiCA", "article_number": "62"},
+    {"regulation_name": "MiCA", "article_number": "63"}
+  ],
+  "answer": "Selon l'Article 59 de MiCA, nul ne peut fournir des services sur crypto-actifs dans l'Union sans être soit (a) une personne morale agréée en tant que PSCA conformément à l'Article 63, soit (b) une entité financière déjà réglementée (établissement de crédit, entreprise d'investissement, établissement de monnaie électronique, société de gestion d'OPCVM, gestionnaire de fonds alternatifs, opérateur de marché, dépositaire central de titres) autorisée à fournir des services équivalents via notification conformément à l'Article 60. Pour la voie notification (Article 60), l'entité notifie les informations requises à l'autorité compétente de son État membre d'origine au moins 40 jours ouvrables avant de fournir les services pour la première fois. Pour la voie agrément complet (Article 62), la demande doit contenir : dénomination et forme juridique, statuts, programme d'activité, preuve des garanties prudentielles, dispositif de gouvernance, honorabilité et compétences des membres de l'organe de direction et des actionnaires qualifiés, mécanismes de contrôle interne et procédures LCB-FT, documentation TIC, procédure de ségrégation des actifs clients, procédures de traitement des réclamations, et selon les services prévus : politique de conservation, règles de la plateforme, politique commerciale, politique d'exécution ou preuve de compétences des conseillers. L'autorité compétente dispose de 25 jours ouvrables pour vérifier la complétude du dossier, puis de 40 jours ouvrables à compter de la réception d'un dossier complet pour rendre une décision motivée d'octroi ou de refus (Article 63). L'agrément précise les services autorisés et confère le droit de fournir ces services sur tout le territoire de l'Union (Article 59, paragraphe 7).",
+  "key_facts": [
+    "Article 59 : autorisation obligatoire pour fournir des services sur crypto-actifs dans l'UE",
+    "Voie 1 : agrément complet selon Article 63",
+    "Voie 2 : notification simplifiée pour entités financières déjà réglementées (Article 60)",
+    "Article 60 : notification au moins 40 jours ouvrables avant de fournir les services pour la première fois",
+    "Article 62 : dossier incluant statuts, programme d'activité, garanties prudentielles, gouvernance, honorabilité des dirigeants et actionnaires qualifiés, contrôles internes LCB-FT, documentation TIC, ségrégation des actifs",
+    "Article 63 : 25 jours ouvrables pour vérification de complétude",
+    "Article 63 : 40 jours ouvrables pour décision motivée à compter du dossier complet",
+    "L'agrément précise les services sur crypto-actifs autorisés",
+    "Droit de fournir les services sur tout le territoire de l'Union (Article 59, paragraphe 7)"
+  ]
+},
   {
     "id": "r3",
     "question": "Notre société est un PSCA opérant une plateforme de négociation de crypto-actifs. Quel est le montant minimum de fonds propres que nous devons détenir en permanence et sur quelle base le calculer ?",
@@ -67,15 +73,18 @@
       {"regulation_name": "DORA", "article_number": "18"},
       {"regulation_name": "DORA", "article_number": "19"}
     ],
-    "answer": "Sous DORA, vous devez d'abord déclencher votre processus de gestion des incidents liés aux TIC (Article 17) pour détecter, contenir et documenter l'incident. Vous devez ensuite classifier l'incident selon les critères de l'Article 18 et du Règlement délégué (UE) 2024/1772 : un incident est considéré comme majeur s'il remplit au moins 2 critères primaires, ou 1 critère primaire plus le seuil d'impact économique (100 000 EUR). Si l'incident est classifié comme majeur, l'Article 19 impose trois reportings successifs à l'autorité compétente : une notification initiale dans les 4 heures suivant la classification (et au plus tard 24 heures après détection), un rapport intermédiaire dans les 72 heures suivant la notification initiale ou dès rétablissement de l'activité normale, et un rapport final dans le mois suivant le dernier rapport intermédiaire. Comme l'incident a affecté la disponibilité des services aux clients, l'Article 19(3) vous impose également d'informer les clients concernés sans délai indu, ainsi que les mesures prises pour atténuer l'impact.",
+    "answer": "Sous DORA, vous devez en premier lieu déclencher votre processus de gestion des incidents liés aux TIC tel que défini à l'Article 17. Celui-ci impose que les entités financières définissent, établissent et mettent en œuvre un processus permettant de détecter, gérer et notifier les incidents liés aux TIC. Ce processus doit notamment enregistrer tous les incidents et cybermenaces importantes, identifier et documenter les causes originelles, attribuer les rôles et responsabilités pour différents types et scénarios d'incidents, et définir des procédures de réponse afin d'atténuer les effets et de garantir que les services redeviennent opérationnels et sécurisés en temps utile (Article 17, paragraphes 1 à 3).\n\nVous devez ensuite classifier l'incident selon les critères de l'Article 18. Les entités financières classent les incidents liés aux TIC et déterminent leur incidence en évaluant : le nombre et l'importance des clients ou contreparties touchés et le volume de transactions affectées, la durée de l'incident y compris les interruptions de service, la répartition géographique des zones touchées (notamment si plus de deux États membres sont affectés), les pertes de données en matière de disponibilité, d'authenticité, d'intégrité ou de confidentialité, la criticité des services affectés, et les conséquences économiques directes et indirectes (Article 18, paragraphe 1). Les seuils précis permettant de qualifier un incident de « majeur lié aux TIC » sont définis par des normes techniques de réglementation communes élaborées par les AES en concertation avec la BCE et l'ENISA, conformément à l'Article 18, paragraphe 3.\n\nSi l'incident est qualifié d'incident majeur lié aux TIC, l'Article 19 impose de le déclarer à l'autorité compétente pertinente visée à l'Article 46. La déclaration suit une séquence de trois rapports à soumettre dans les délais fixés conformément à l'Article 20 : (a) une notification initiale, (b) un rapport intermédiaire dès que la situation de l'incident a sensiblement changé ou que le traitement a évolué sur la base de nouvelles informations, suivi de notifications actualisées si nécessaire, et (c) un rapport final lorsque l'analyse des causes originelles est terminée et que les chiffres relatifs aux incidences réelles sont disponibles (Article 19, paragraphe 4). Ces rapports sont établis en utilisant les modèles visés à l'Article 20.\n\nEnfin, la cyberattaque ayant compromis la disponibilité des services de paiement aux clients, l'Article 19, paragraphe 3, impose d'informer les clients concernés de l'incident majeur et des mesures prises pour atténuer ses effets préjudiciables, sans délai injustifié dès que vous en avez connaissance.",
     "key_facts": [
-      "Activation du processus de gestion d'incidents TIC (Article 17)",
-      "Classification de l'incident selon Article 18 et RTS 2024/1772",
-      "Incident majeur = au moins 2 critères primaires OU 1 critère primaire + seuil 100 000 EUR",
-      "Notification initiale : 4h après classification, max 24h après détection",
-      "Rapport intermédiaire : 72h après notification initiale",
-      "Rapport final : 1 mois après dernier rapport intermédiaire",
-      "Information des clients concernés sans délai indu (Article 19(3))"
+      "Déclencher le processus de gestion des incidents TIC (Article 17, para 1) : détecter, gérer, notifier",
+      "Enregistrer l'incident et documenter les causes originelles ; surveiller et assurer le suivi (Article 17, para 2)",
+      "Procédures de réponse : atténuer les effets et rétablir les services en temps utile (Article 17, para 3f)",
+      "Classifier l'incident selon Article 18, para 1 : clients touchés, durée, répartition géographique, pertes de données, criticité des services, impact économique",
+      "Les seuils pour qualifier un incident de 'majeur' sont définis par les normes techniques de réglementation des AES (Article 18, para 3) — pas dans DORA lui-même",
+      "Si incident majeur : déclaration obligatoire à l'autorité compétente (Article 19, para 1)",
+      "Trois rapports successifs : notification initiale, rapport intermédiaire, rapport final (Article 19, para 4)",
+      "Les délais de soumission sont fixés conformément à l'Article 20 (Article 19, para 4 renvoie à l'Article 20)",
+      "Rapports établis selon les modèles de l'Article 20",
+      "Information des clients sans délai injustifié si l'incident affecte leurs intérêts financiers (Article 19, para 3)"
     ]
   },
   {
@@ -288,8 +297,7 @@
     "Articles 50(3) et 50(4) non applicables au cas du chatbot client (deepfake, émotions)",
     "Obligations complémentaires possibles sous le GDPR (Articles 13/14)"
   ]
-},
-{
+},{
   "id": "r15",
   "question": "Quelles sont les pratiques d'abus de marché interdites sous MiCA pour les transactions sur crypto-actifs ?",
   "expected_regulations": ["MiCA"],
@@ -298,18 +306,21 @@
     {"regulation_name": "MiCA", "article_number": "90"},
     {"regulation_name": "MiCA", "article_number": "91"}
   ],
-  "answer": "Le Titre VI de MiCA (Articles 86 à 92) prohibe trois catégories d'abus de marché impliquant des crypto-actifs admis à la négociation ou pour lesquels une admission est demandée dans l'Union. Premièrement, l'Article 89 interdit les opérations d'initiés : il s'agit du fait pour une personne détenant une information privilégiée (au sens de l'Article 87) de l'utiliser pour acquérir ou céder, directement ou indirectement, pour son compte ou celui d'un tiers, les crypto-actifs concernés. L'interdiction s'étend également à l'annulation ou à la modification d'un ordre placé avant la réception de l'information privilégiée, ainsi qu'à la recommandation ou l'incitation à de telles opérations. Deuxièmement, l'Article 90 interdit la divulgation illicite d'informations privilégiées : aucune personne détenant une information privilégiée ne doit la communiquer à un tiers, sauf si la divulgation intervient dans l'exercice normal d'un emploi ou d'une fonction. Troisièmement, l'Article 91 interdit la manipulation de marché, qui inclut notamment : (i) la conclusion de transactions ou la passation d'ordres donnant ou susceptibles de donner des signaux faux ou trompeurs sur l'offre, la demande ou le prix d'un crypto-actif ; (ii) la fixation du prix d'un crypto-actif à un niveau anormal ou artificiel ; (iii) le recours à des procédés fictifs ou tout autre artifice ; (iv) la diffusion d'informations fausses ou trompeuses (y compris via les réseaux sociaux). Ces interdictions s'appliquent même hors plateformes de négociation et hors UE, dès lors que les crypto-actifs concernés sont négociés dans l'Union (Article 86(1)).",
+  "answer": "Le règlement (UE) 2023/1114 (MiCA) interdit trois catégories de pratiques d'abus de marché impliquant des crypto-actifs. L'Article 89 interdit les opérations d'initiés. L'Article 89§1 définit l'opération d'initié comme le fait pour une personne détenant une information privilégiée d'utiliser cette information pour acquérir ou céder, pour son propre compte ou celui d'un tiers, directement ou indirectement, des crypto-actifs auxquels cette information se rapporte. L'utilisation d'une information privilégiée pour annuler ou modifier un ordre placé avant la détention de l'information, ou pour soumettre, modifier ou retirer une offre, constitue également une opération d'initié. L'Article 89§2 interdit à toute personne de se livrer ou de tenter de se livrer à des opérations d'initiés, ainsi que de recommander ou d'inciter une autre personne à s'y livrer. L'Article 89§3 précise qu'aucune personne détenant une information privilégiée ne peut recommander ou inciter une autre personne à acquérir ou céder des crypto-actifs, ou à annuler ou modifier un ordre. L'Article 89§4 prévoit que l'utilisation d'une telle recommandation ou incitation constitue une opération d'initié lorsque la personne sait ou devrait savoir qu'elle est fondée sur une information privilégiée. L'Article 89§5 s'applique à toute personne détenant une information privilégiée du fait : (a) de sa qualité de membre des organes d'administration, de direction ou de surveillance de l'émetteur, de l'offreur ou de la personne demandant l'admission à la négociation ; (b) de sa participation au capital ; (c) de l'exercice de son emploi, de sa profession ou de ses fonctions, y compris en lien avec la technologie des registres distribués ; (d) de sa participation à des activités criminelles. L'article s'applique également à toute personne détenant une information privilégiée dans d'autres circonstances, dès lors qu'elle sait ou devrait savoir qu'il s'agit d'une information privilégiée. L'Article 89§6 précise que lorsque la personne est une personne morale, l'article s'applique aux personnes physiques qui participent à la décision d'acquérir, de céder, d'annuler ou de modifier un ordre pour le compte de cette personne morale. L'Article 90 interdit la divulgation illicite d'informations privilégiées. L'Article 90§1 prévoit qu'aucune personne détenant une information privilégiée ne peut la divulguer illicitement à une autre personne, sauf si la divulgation intervient dans l'exercice normal d'un emploi, d'une profession ou de fonctions. L'Article 90§2 précise que la transmission ultérieure de recommandations ou d'incitations visées à l'Article 89§4 constitue une divulgation illicite d'information privilégiée lorsque la personne qui transmet sait ou devrait savoir que la recommandation est fondée sur une information privilégiée. L'Article 91 interdit la manipulation de marché. L'Article 91§1 interdit à toute personne de se livrer ou de tenter de se livrer à une manipulation de marché. L'Article 91§2 définit la manipulation de marché comme : (a) sauf pour des raisons légitimes, le fait de conclure une transaction, de passer un ordre ou d'adopter tout autre comportement qui donne ou est susceptible de donner des signaux faux ou trompeurs sur l'offre, la demande ou le prix d'un crypto-actif, ou qui fixe ou est susceptible de fixer le prix à un niveau anormal ou artificiel ; (b) le fait de conclure une transaction, de passer un ordre ou d'adopter tout autre comportement affectant le prix en recourant à un procédé fictif ou à toute autre forme de tromperie ou d'artifice ; (c) la diffusion d'informations par les médias, y compris internet, ou par tout autre moyen, qui donne ou est susceptible de donner des signaux faux ou trompeurs, y compris la diffusion de rumeurs, lorsque la personne savait ou aurait dû savoir que l'information était fausse ou trompeuse. L'Article 91§3 précise que sont notamment considérés comme des manipulations de marché : (a) l'acquisition d'une position dominante sur l'offre ou la demande ayant pour effet de fixer les prix ou de créer des conditions de négociation inéquitables ; (b) le passage d'ordres perturbant le fonctionnement de la plateforme, rendant difficile l'identification des ordres authentiques, ou créant des signaux faux ou trompeurs ; (c) le fait d'émettre une opinion sur un crypto-actif via les médias après avoir pris des positions et d'en tirer profit, sans avoir divulgué ce conflit d'intérêts au public.",
   "key_facts": [
-    "Titre VI de MiCA (Articles 86-92) régit les abus de marché sur crypto-actifs",
-    "Article 89 : interdiction des opérations d'initiés",
-    "L'interdiction couvre l'utilisation, l'annulation/modification d'ordres, et la recommandation",
-    "Article 90 : interdiction de divulgation illicite d'informations privilégiées",
-    "Exception : divulgation dans l'exercice normal d'un emploi ou d'une fonction",
-    "Article 91 : interdiction de la manipulation de marché",
-    "Manipulation inclut signaux faux/trompeurs sur offre/demande/prix",
-    "Manipulation inclut fixation de prix à niveau anormal ou artificiel",
-    "Manipulation inclut diffusion d'informations fausses (y compris réseaux sociaux)",
-    "Application extraterritoriale : tout crypto-actif négocié dans l'UE (Article 86(1))"
+    "Article 89§1 : l'opération d'initié inclut l'acquisition/cession, l'annulation/modification d'ordres antérieurs, et la soumission/modification/retrait d'offres fondés sur une information privilégiée",
+    "Article 89§2 : interdiction de se livrer ou tenter de se livrer à des opérations d'initiés, de recommander ou d'inciter autrui",
+    "Article 89§3 : interdiction de recommander ou inciter à acquérir/céder ou annuler/modifier des ordres sur la base d'une information privilégiée",
+    "Article 89§4 : l'utilisation d'une recommandation constitue une opération d'initié si la personne sait ou devrait savoir qu'elle est fondée sur une information privilégiée",
+    "Article 89§5 : s'applique aux membres des organes de direction, détenteurs de capital, personnes liées par emploi/profession/fonctions/DLT, et participants à des activités criminelles — ainsi qu'à toute personne sachant ou devant savoir qu'il s'agit d'une information privilégiée",
+    "Article 89§6 : pour les personnes morales, s'applique aux personnes physiques participant à la décision",
+    "Article 90§1 : interdiction de divulguer une information privilégiée sauf dans l'exercice normal d'un emploi, d'une profession ou de fonctions",
+    "Article 90§2 : la transmission de recommandations fondées sur une information privilégiée constitue une divulgation illicite",
+    "Article 91§1 : interdiction de se livrer ou de tenter de se livrer à une manipulation de marché",
+    "Article 91§2(a) : signaux faux/trompeurs sur l'offre, la demande ou le prix, ou fixation de prix à niveau anormal/artificiel (sauf raisons légitimes)",
+    "Article 91§2(b) : recours à un procédé fictif ou à toute autre forme de tromperie ou d'artifice",
+    "Article 91§2(c) : diffusion d'informations fausses/trompeuses par les médias, internet ou tout autre moyen, y compris rumeurs",
+    "Article 91§3 : exemples supplémentaires — position dominante fixant les prix, ordres perturbant les plateformes, opinion publique avec positions non divulguées (pump-and-dump)"
   ]
 },
   {

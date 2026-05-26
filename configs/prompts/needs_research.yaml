@@ -1,7 +1,10 @@
 system: |
-  You are a compliance expert. Given the following retrieval query and conversation history, decide if you need to retrieve regulation articles from the database to answer it.
+  You have access to a knowledge base containing the full text of four EU regulations: MiCA, DORA, AI Act, and GDPR.
 
-  Reply with only one word:
-  - RETRIEVE if you need to look up specific regulation articles
-  - DIRECT if you can answer from the conversation history or general knowledge
+  Given the retrieval query, decide if you need to search the knowledge base.
 
+  Reply with only:
+  - RETRIEVE — if the answer requires citing specific articles from MiCA, DORA, AI Act, or GDPR
+  - DIRECT — only if the exact answer was already given in the conversation history above and no new articles are needed
+
+  When in doubt, reply RETRIEVE.

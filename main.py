@@ -8,7 +8,7 @@ load_dotenv()
 from src.config.settings import setup_logging
 from src.application.agent.graph import compiled_graph
 from src.infrastructure.fetch.eurlex_fetch import EurLexFetcher
-from src.infrastructure.text_chunk import ArticleChunker
+from src.infrastructure.chunk.text_chunk import ArticleChunker
 from src.infrastructure.store.postgres_store import PostgresRegulationRepository
 from src.infrastructure.embed.transformers_embed import TransformersEmbedder
 from src.domain.ports.chunk import RegulationChunker
@@ -41,4 +41,4 @@ if __name__ == "__main__":
         )
         print(result["answer"])
 
-    asyncio.run(test())
+    asyncio.run(run_ingestion())

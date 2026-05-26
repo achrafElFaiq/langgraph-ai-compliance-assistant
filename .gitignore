@@ -16,4 +16,10 @@ __pycache__/
 # Env
 .env
 *.env
+
 .venv
+
+datasets/eval/ppp.json
+datasets/eval/results_deepeval.json
+datasets/eval/results.json
+datasets/eval/dataset.json

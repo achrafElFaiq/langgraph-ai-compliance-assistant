@@ -8,26 +8,26 @@ from src.application.agent.nodes import (
     retrieve_articles,
     answer,
     critic_answer,
-    synthesize
+    synthesize, ground
 )
 
 
 checkpointer = MemorySaver()
 
 def needs_report(state: State) -> str:
-    if state["input_text"] == "Generate synthesis":
+    if state.input_text == "Generate synthesis":
         return "synthesize"
     return "generate_query"
 
 def route_research(state: State) -> str:
-    if state["needs_research"]:
+    if state.needs_research:
         return "retrieve_articles"
     return "answer"
 
 def route_critic(state: State) -> str:
-    if state["critic_opinion"]:
-        return "generate_query"
-    return "END"
+    if state.critic_opinion == "" or state.retry_count >= 3:
+        return "END"
+    return "answer"
 
 graph = StateGraph(State)
 
@@ -36,6 +36,7 @@ graph.add_node("generate_query", generate_questions)
 graph.add_node("needs_research", needs_research)
 graph.add_node("retrieve_articles", retrieve_articles)
 graph.add_node("answer", answer)
+graph.add_node("ground", ground)
 graph.add_node("critic_answer", critic_answer)
 graph.add_node("synthesize", synthesize)
 
@@ -52,12 +53,12 @@ graph.add_conditional_edges("needs_research", route_research, {
     "answer": "answer"
 })
 
-graph.add_edge("retrieve_articles", "answer")
+graph.add_edge("retrieve_articles", "ground")
+graph.add_edge("ground", "answer")
 graph.add_edge("answer", "critic_answer")
 
-
 graph.add_conditional_edges("critic_answer", route_critic, {
-    "generate_query": "generate_query",
+    "answer": "answer",
     "END": END
 })
 
