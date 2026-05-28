@@ -17,7 +17,7 @@ llm = ChatOpenAI(
 
 
 critic_llm = ChatOpenAI(
-    model="google/gemini-2.0-flash-lite-001",
+    model="google/gemini-2.5-flash",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     max_tokens=8192,
@@ -27,7 +27,7 @@ critic_llm = ChatOpenAI(
 
 
 grounder_llm = ChatOpenAI(
-    model="google/gemini-2.0-flash-lite-001",
+    model="google/gemini-2.5-flash",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     max_tokens=4096,

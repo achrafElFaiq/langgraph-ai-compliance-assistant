@@ -9,6 +9,7 @@ class State:
     retrieval_query: str = ""
     needs_research: bool = True
     retrieved_articles: list[Article] = field(default_factory=list)
+    grounded_skeleton: str = ""
     answer: str = ""
     critic_opinion: str = ""
     retry_count: int = 0

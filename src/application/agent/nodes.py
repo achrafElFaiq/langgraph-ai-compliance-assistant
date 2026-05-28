@@ -43,7 +43,7 @@ def generate_questions(state: State) -> dict:
 
 def needs_research(state: State) -> dict:
     print("[Current Node] Needs Research")
-    if not state.messages or state.critic_opinion:
+    if not state.messages:
         print("Needs Research: True")
         return {"needs_research": True}
 
@@ -67,14 +67,12 @@ async def retrieve_articles(state: State) -> dict:
         for a in articles
     }
 
-    skeleton_json = json.dumps(skeleton, ensure_ascii=False, indent=2)
     print(f"Retrieved {len(articles)} articles")
     print("Research Ended In : ", (datetime.now() - time).total_seconds(), " seconds")
     return {
         "retrieved_articles": articles,
-        "answer": skeleton_json
+        "grounded_skeleton": json.dumps(skeleton, ensure_ascii=False, indent=2)
     }
-
 
 async def ground(state: State) -> dict:
     print("[Current Node] ground")
@@ -83,6 +81,7 @@ async def ground(state: State) -> dict:
     time = datetime.now()
 
     ground_prompt = load_ground_prompt()
+    skeleton_init = json.loads(state.grounded_skeleton)
 
     async def _ground_article(article):
         response = await grounder_llm.ainvoke([
@@ -100,7 +99,18 @@ async def ground(state: State) -> dict:
 
     results = await asyncio.gather(*[_ground_article(a) for a in state.retrieved_articles])
 
-    skeleton = {breadcrumb: slots for breadcrumb, slots in results}
+    skeleton = {}
+    for breadcrumb, slots in results:
+        if breadcrumb not in skeleton_init:
+            print(f"[ground] WARNING: unexpected breadcrumb '{breadcrumb}', skipping")
+            continue
+        skeleton[breadcrumb] = slots
+
+    for breadcrumb in skeleton_init:
+        if breadcrumb not in skeleton:
+            print(f"[ground] WARNING: missing article '{breadcrumb}', using fallback")
+            skeleton[breadcrumb] = {"relevant": False, "excerpt_basis": "", "how_it_applies": "Non applicable."}
+
     skeleton_json = json.dumps(skeleton, ensure_ascii=False, indent=2)
 
     write_to_file(skeleton_json, "run/grounderresponse.md")
@@ -110,17 +120,13 @@ async def ground(state: State) -> dict:
         f.write(skeleton_json)
 
     print(f"Grounding Ended In : {(datetime.now() - time).total_seconds()} seconds ({len(state.retrieved_articles)} articles in parallel)")
-    return {"answer": skeleton_json}
+    return {"grounded_skeleton": skeleton_json}
 
 def answer(state: State) -> dict:
     print("[Current Node] answer")
     time = datetime.now()
 
-    raw = state.answer
-    if "---" in raw:
-        raw = raw.split("---", 1)[1].strip()
-
-    skeleton = json.loads(raw)
+    skeleton = json.loads(state.grounded_skeleton)
     relevant = {k: v for k, v in skeleton.items() if v.get("relevant") is True}
     relevant_json = json.dumps(relevant, ensure_ascii=False, indent=2)
 
@@ -139,15 +145,14 @@ def answer(state: State) -> dict:
         *state.messages,
         HumanMessage(content=f"User input: {state.input_text}\n\nRetrieval query: {state.retrieval_query}{critic_section}\n\nSkeleton to answer from:\n{relevant_json}")
     ])
-
-    final_answer = f"{response.content}\n\n---\n{relevant_json}"
+    write_to_file(response.content, f"run/answer.md")
     print("Answering Ended In : ", (datetime.now() - time).total_seconds(), " seconds")
     return {
-        "answer": final_answer,
+        "answer": response.content,
         "retry_count": retry_count,
         "messages": [
             HumanMessage(content=state.input_text),
-            AIMessage(content=final_answer)
+            AIMessage(content=response.content)
         ]
     }
 
@@ -155,19 +160,18 @@ def answer(state: State) -> dict:
 def critic_answer(state: State) -> dict:
     print("[Current Node] critic ")
     time = datetime.now()
-    articles_text = "\n\n".join(
-        f"{a.breadcrumb}:\n{a.content}"
-        for a in state.retrieved_articles
-    )
 
     if state.critic_opinion:
         user_content = (
-            f"Previous feedback you gave:\n{state.critic_opinion}\n\n"
+            f"Previous rounds of feedback:\n{state.critic_opinion}\n\n"
             f"New answer to verify:\n{state.answer}\n\n"
-            f"Articles:\n{articles_text}"
+            f"Grounded skeleton:\n{state.grounded_skeleton}"
         )
     else:
-        user_content = f"Answer: {state.answer}\n\nArticles:\n{articles_text}"
+        user_content = (
+            f"Answer:\n{state.answer}\n\n"
+            f"Grounded skeleton:\n{state.grounded_skeleton}"
+        )
 
     write_to_file(user_content, "run/promptforcritic.md")
     response = critic_llm.invoke([
@@ -183,9 +187,9 @@ def critic_answer(state: State) -> dict:
         return {"critic_opinion": ""}
 
     if state.critic_opinion:
-        accumulated = state.critic_opinion + f"\n\n[Round {state.retry_count + 1} remaining issues]:\n{feedback}"
+        accumulated = state.critic_opinion + f"\n\n[Round {state.retry_count + 1}]:\n{feedback}"
     else:
-        accumulated = feedback
+        accumulated = f"[Round 0]:\n{feedback}"
 
     return {"critic_opinion": accumulated}
 
