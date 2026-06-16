@@ -1,0 +1,47 @@
+{
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article is relevant as it mentions an evaluation of the appropriateness of prudential requirements for crypto-asset service providers and the need to align them with initial capital and own funds requirements for investment firms, which directly relates to the query about minimum capital requirements and their calculation for PSCA."
+  },
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article specifies the minimum prudential safeguards, including capital requirements, for crypto-asset service providers, which directly addresses the query's request for information on minimum capital for PSCA."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "e) la preuve que le candidat prestataire de services sur crypto-actifs satisfait aux exigences de garanties prudentielles prévues par l’article 67;",
+    "how_it_applies": "This article is relevant because it states that a crypto-asset service provider (PSCA) must provide proof of satisfying the prudential safeguard requirements set out in Article 67 as part of its authorization application. This directly relates to the query's mention of minimum permanent own funds and capital requirements for PSCAs."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 15": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

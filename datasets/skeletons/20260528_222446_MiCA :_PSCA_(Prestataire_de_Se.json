@@ -1,0 +1,62 @@
+{
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "15) «prestataire de services sur crypto-actifs»: une personne morale ou une autre entreprise dont l’occupation ou l’activité consiste à fournir un ou plusieurs services sur crypto-actifs à des clients à titre professionnel, et qui est autorisée à fournir des services sur crypto-actifs conformément à l’article 59; 16) «service sur crypto-actifs»: l’un ou l’autre des services et activités suivants lié à un crypto-actif: a) la conservation et l’administration de crypto-actifs pour le compte de clients; b) l’exploitation d’une plate-forme de négociation de crypto-actifs; c) l’échange de crypto-actifs contre des fonds; d) l’échange de crypto-actifs contre d’autres crypto-actifs; e) l’exécution d’ordres sur crypto-actifs pour le compte de clients; f) le placement de crypto-actifs; g) la réception et la transmission d’ordres sur crypto-actifs pour le compte de clients; h) la fourniture de conseils en crypto-actifs; i) la fourniture de services de gestion de portefeuille de crypto-actifs; j) la fourniture de services de transfert de crypto-actifs pour le compte de clients; 18) «exploitation d’une plate-forme de négociation de crypto-actifs»: la gestion d’un ou de plusieurs systèmes multilatéraux, qui réunissent ou facilitent la rencontre de multiples intérêts acheteurs et vendeurs exprimés par des tiers pour des crypto-actifs, au sein du système et conformément à ses règles, d’une manière qui aboutit à un contrat, soit par l’échange de crypto-actifs contre des fonds, soit par l’échange de crypto-actifs contre d’autres crypto-actifs;",
+    "how_it_applies": "This article defines \"prestataire de services sur crypto-actifs\" (crypto-asset service provider) and lists the services they provide, including the operation of a crypto-asset trading platform."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les personnes morales ou les autres entreprises qui ont l’intention de fournir des services sur crypto-actifs soumettent leur demande d’agrément en tant que prestataire de services sur crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "This article discusses the process for entities intending to provide crypto-asset services to submit an application for authorization as a crypto-asset service provider to the competent authority of their home Member State."
+  },
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article requires crypto-asset service providers to have prudential safeguards, with the amount being the higher of the minimum permanent capital requirements (as per Annex IV) or a quarter of the previous year's fixed overheads."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article discusses the evaluation of prudential requirements for crypto-asset service providers and the need to align these requirements with those for investment firms regarding initial capital and own funds."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": true,
+    "excerpt_basis": "Les membres de l’organe de direction des prestataires de services sur crypto-actifs jouissent d’une honorabilité suffisante et possèdent les connaissances, les compétences et l’expérience adéquates, tant à titre individuel que collectif, pour exercer leurs fonctions.",
+    "how_it_applies": "This article states that members of the management body of crypto-asset service providers must have sufficient good repute and the appropriate knowledge, skills, and experience to perform their duties. This is relevant to the query because it addresses the requirements for crypto-asset service providers."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "Aux fins du présent règlement, on entend par: 1) «résilience opérationnelle numérique»: la capacité d’une entité financière à développer, garantir et réévaluer son intégrité et sa fiabilité opérationnelles en assurant directement ou indirectement par le recours aux services fournis par des prestataires tiers de services TIC, l’intégralité des capacités liées aux TIC nécessaires pour garantir la sécurité des réseaux et des systèmes d’information qu’elle utilise, et qui sous-tendent la fourniture continue de services financiers et leur qualité, y compris en cas de perturbations;",
+    "how_it_applies": "This article defines \"digital operational resilience\" as the ability of a financial entity to develop, ensure, and re-evaluate its operational integrity and reliability. This includes ensuring the security of networks and information systems, which is relevant to the query regarding DORA's operational resilience requirements."
+  },
+  "MiCA > Titre 5 > Article 66": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs agissent d’une manière honnête, loyale et professionnelle, au mieux des intérêts de leurs clients et clients potentiels.",
+    "how_it_applies": "This article requires crypto-asset service providers to act honestly, fairly, and professionally, prioritizing the best interests of their clients and potential clients."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les prestataires de services sur crypto-actifs qui fournissent des conseils en crypto-actifs ou des services de gestion de portefeuille de crypto-actifs évaluent si les services sur crypto-actifs ou les crypto-actifs sont adéquats pour leurs clients ou clients potentiels, en prenant en considération les connaissances et l’expérience de ceux-ci en matière d’investissement dans les crypto-actifs, leurs objectifs en matière d’investissement, y compris leur tolérance au risque, et leur situation financière, y compris leur capacité à supporter des pertes.",
+    "how_it_applies": "This article requires crypto-asset service providers offering advice or portfolio management to assess the suitability of crypto-assets for their clients, considering their investment knowledge, experience, objectives, risk tolerance, and financial situation."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs fixent, maintiennent et appliquent des règles de fonctionnement de la plate-forme de négociation claires et transparentes.",
+    "how_it_applies": "This article requires crypto-asset service providers operating a crypto-asset trading platform to establish, maintain, and enforce clear and transparent operating rules for the trading platform."
+  },
+  "MiCA > Titre 5 > Article 75": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui assurent la conservation et l’administration de crypto-actifs pour le compte de clients concluent avec leurs clients une convention précisant leurs missions et leurs responsabilités.",
+    "how_it_applies": "This article requires crypto-asset service providers who conserve and administer crypto-assets for clients to have an agreement with their clients that specifies their missions and responsibilities."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs qui détiennent des crypto-actifs appartenant à des clients, ou les moyens d’accès à ces crypto-actifs, prennent des dispositions adéquates pour protéger les droits de propriété des clients, en particulier en cas d’insolvabilité du prestataire de services sur crypto-actifs, et pour empêcher l’utilisation pour leur compte propre des crypto-actifs des clients.",
+    "how_it_applies": "This article addresses the protection of client crypto-assets by crypto-asset service providers, particularly in cases of insolvency, and preventing the use of client crypto-assets for their own account."
+  },
+  "MiCA > Titre 5 > Article 77": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui échangent des crypto-actifs contre des fonds ou contre d’autres crypto-actifs établissent une politique commerciale non discriminatoire qui indique, en particulier, le type de clients avec lesquels ils acceptent de traiter et les conditions que ces clients doivent remplir.",
+    "how_it_applies": "This article applies to crypto-asset service providers that exchange crypto-assets for funds or other crypto-assets. It requires them to establish a non-discriminatory commercial policy that specifies the types of clients they will serve and the conditions those clients must meet."
+  }
+}

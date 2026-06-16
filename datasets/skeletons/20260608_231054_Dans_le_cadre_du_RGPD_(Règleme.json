@@ -1,0 +1,92 @@
+{
+  "GDPR > Chapitre 4 > Article 33": {
+    "relevant": true,
+    "excerpt_basis": "En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques. Lorsque la notification à l'autorité de contrôle n'a pas lieu dans les 72 heures, elle est accompagnée des motifs du retard.",
+    "how_it_applies": "Cet article établit l'obligation pour le responsable du traitement de notifier une violation de données à caractère personnel à l'autorité de contrôle compétente dans les 72 heures suivant sa découverte, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques."
+  },
+  "GDPR > Chapitre 4 > Article 34": {
+    "relevant": true,
+    "excerpt_basis": "Lorsqu'une violation de données à caractère personnel est susceptible d'engendrer un risque élevé pour les droits et libertés d'une personne physique, le responsable du traitement communique la violation de données à caractère personnel à la personne concernée dans les meilleurs délais.",
+    "how_it_applies": "Cet article stipule que le responsable du traitement doit communiquer une violation de données à caractère personnel à la personne concernée sans délai si cette violation est susceptible d'engendrer un risque élevé pour ses droits et libertés, ce qui correspond à la partie de la requête concernant l'information des personnes concernées."
+  },
+  "GDPR > Chapitre 9 > Article 88": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 8 > Article 77": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 57": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 9 > Article 90": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 58": {
+    "relevant": true,
+    "excerpt_basis": "e) ordonner au responsable du traitement de communiquer à la personne concernée une violation de données à caractère personnel;",
+    "how_it_applies": "This article grants the supervisory authority the power to order a controller to communicate a personal data breach to the data subject, which is relevant to the query's mention of informing individuals about high-risk breaches."
+  },
+  "GDPR > Chapitre 8 > Article 79": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 15": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 19": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 51": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 40": {
+    "relevant": true,
+    "excerpt_basis": "i) la notification aux autorités de contrôle des violations de données à caractère personnel et la communication de ces violations aux personnes concernées;",
+    "how_it_applies": "Cet article indique que les codes de conduite peuvent préciser les modalités d'application du règlement concernant la notification des violations de données aux autorités de contrôle et aux personnes concernées, ce qui est directement lié à la question de l'utilisateur."
+  },
+  "GDPR > Chapitre 7 > Article 70": {
+    "relevant": true,
+    "excerpt_basis": "g) de publier des lignes directrices, des recommandations et des bonnes pratiques conformément au point e) du présent paragraphe, en vue d'établir les violations de données à caractère personnel, de déterminer les meilleurs délais visés à l'article 33, paragraphes 1 et 2, et de préciser les circonstances particulières dans lesquelles un responsable du traitement ou un sous-traitant est tenu de notifier la violation de données à caractère personnel; h) de publier des lignes directrices, des recommandations et des bonnes pratiques conformément au point e) du présent paragraphe concernant les circonstances dans lesquelles une violation de données à caractère personnel est susceptible d'engendrer un risque élevé pour les droits et libertés des personnes physiques comme le prévoit l'article 34, paragraphe 1;",
+    "how_it_applies": "Cet article est pertinent car il décrit les missions du Comité, notamment la publication de lignes directrices et de bonnes pratiques concernant les violations de données à caractère personnel, les délais de notification (article 33) et les circonstances où un risque élevé pour les droits et libertés des personnes physiques est susceptible d'être engendré (article 34)."
+  },
+  "GDPR > Chapitre 4 > Article 38": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 13": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 16": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 7 > Article 56": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

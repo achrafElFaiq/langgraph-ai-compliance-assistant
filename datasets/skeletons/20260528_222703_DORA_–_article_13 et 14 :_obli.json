@@ -1,0 +1,72 @@
+{
+  "DORA > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "le présent règlement définit les exigences uniformes relatives à la sécurité des réseaux et des systèmes d’information sous-tendant les processus opérationnels des entités financières, comme suit: a) les exigences applicables aux entités financières en ce qui concerne: ii) la notification, aux autorités compétentes, des incidents majeurs liés aux TIC",
+    "how_it_applies": "The regulation defines uniform requirements for the security of networks and information systems, including the notification of major ICT incidents to competent authorities by financial entities."
+  },
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article.",
+    "how_it_applies": "Financial entities must report major ICT incidents to the relevant competent authority, as stated in Article 19, paragraph 1."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 73": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les fournisseurs de systèmes d’IA à haut risque mis sur le marché de l’Union signalent tout incident grave aux autorités de surveillance du marché des États membres dans lesquels cet incident s’est produit.",
+    "how_it_applies": "This article requires providers of high-risk AI systems to report any serious incidents to market surveillance authorities in the member states where the incident occurred."
+  },
+  "DORA > Chapitre 2 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les entités financières disposent de capacités et d’effectifs pour recueillir des informations sur les vulnérabilités et les cybermenaces, et sur les incidents liés aux TIC, en particulier les cyberattaques, et analyser leurs incidences probables sur leur résilience opérationnelle numérique.",
+    "how_it_applies": "This article requires financial entities to gather information on vulnerabilities, cyber threats, and ICT incidents, including cyberattacks, and to analyze their potential impact on digital operational resilience."
+  },
+  "MiCA > Titre 5 > Article 83": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 6": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 7 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 9 > Article 58": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 33": {
+    "relevant": true,
+    "excerpt_basis": "1.  En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques.",
+    "how_it_applies": "This article discusses the notification of personal data breaches to the competent supervisory authority. It specifies that the notification should be made as soon as possible, and if possible, no later than 72 hours after the breach is known."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "1. Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC.",
+    "how_it_applies": "This article requires financial entities to establish a process for managing ICT-related incidents, including the notification of such incidents. This aligns with the query's focus on incident notification obligations for financial entities."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

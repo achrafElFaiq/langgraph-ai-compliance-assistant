@@ -1,0 +1,62 @@
+{
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article is relevant as it mentions an evaluation of the appropriateness of prudential requirements for crypto-asset service providers and the need to align these with initial capital and own funds requirements, which directly relates to the query about minimum own funds for PSCA."
+  },
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article specifies that crypto-asset service providers (PSCA) must at all times have prudential safeguards equal to the higher of two amounts: permanent minimum capital requirements based on the type of service, or one-quarter of the previous year's fixed overheads."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "15) «prestataire de services sur crypto-actifs»: une personne morale ou une autre entreprise dont l’occupation ou l’activité consiste à fournir un ou plusieurs services sur crypto-actifs à des clients à titre professionnel, et qui est autorisée à fournir des services sur crypto-actifs conformément à l’article 59; 16) «service sur crypto-actifs»: l’un ou l’autre des services et activités suivants lié à un crypto-actif: [...] b) l’exploitation d’une plate-forme de négociation de crypto-actifs;",
+    "how_it_applies": "This article defines 'prestataire de services sur crypto-actifs' (PSCA) as an entity providing crypto-asset services professionally, including the operation of a crypto-asset trading platform, which is relevant to the query's mention of PSCA operating such a platform."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 83": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 59": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 75": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 66": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 7 > Article 46": {
+    "relevant": true,
+    "excerpt_basis": "d) pour les prestataires de services sur crypto-actifs, agréés en vertu du règlement sur les marchés de crypto-actifs et les émetteurs de jetons se référant à un ou des actifs, l’autorité compétente désignée conformément à la disposition pertinente dudit règlement;",
+    "how_it_applies": "Cet article est pertinent car il identifie les autorités compétentes responsables de la conformité pour les prestataires de services sur crypto-actifs et les émetteurs de jetons, qui sont des entités mentionnées dans la question de l'utilisateur concernant les obligations du règlement MiCA."
+  },
+  "MiCA > Titre 2 > Article 8": {
+    "relevant": true,
+    "excerpt_basis": "Les offreurs, les personnes qui demandent l’admission à la négociation ou les exploitants de plate-formes de négociation de crypto-actifs autres que des jetons se référant à un ou des actifs ou des jetons de monnaie électronique notifient leur livre blanc sur les crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "Cet article impose l'obligation de notifier le livre blanc sur les crypto-actifs à l'autorité compétente, ce qui est une forme de notification et d'enregistrement auprès des autorités compétentes mentionnée dans la requête."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": true,
+    "excerpt_basis": "Un établissement de crédit peut fournir des services sur crypto-actifs s’il notifie les informations visées au paragraphe 7 à l’autorité compétente de son État membre d’origine, au moins 40 jours ouvrables avant de fournir ces services pour la première fois.",
+    "how_it_applies": "Cet article impose une obligation de notification aux établissements de crédit souhaitant fournir des services sur crypto-actifs, ce qui est une forme d'obligation de notification et d'enregistrement mentionnée dans la requête."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": true,
+    "excerpt_basis": "Les entités concernées incluent les émetteurs de crypto-actifs, qui doivent également veiller à la conformité avec les exigences de gouvernance et de gestion des risques.",
+    "how_it_applies": "This article is relevant because it outlines the governance and risk management requirements for crypto-asset service providers, which are a type of crypto-asset issuer."
+  },
+  "MiCA > Titre 7 > Article 94": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

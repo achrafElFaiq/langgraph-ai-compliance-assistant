@@ -7,7 +7,7 @@ from ragas.llms import llm_factory
 
 # Agent LLM (générateur)
 llm = ChatOpenAI(
-    model="openai/gpt-oss-120b:free",
+    model="openai/gpt-4o-mini",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     temperature=0,
@@ -27,7 +27,7 @@ critic_llm = ChatOpenAI(
 
 
 grounder_llm = ChatOpenAI(
-    model="google/gemini-2.5-flash",
+    model="openai/gpt-4o-mini",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     max_tokens=4096,

@@ -1,0 +1,67 @@
+{
+  "MiCA > Titre 6 > Article 91": {
+    "relevant": true,
+    "excerpt_basis": "1. Il est interdit de se livrer ou de tenter de se livrer à des manipulations de marché. 2. Aux fins du présent règlement, la notion de «manipulation de marché» englobe les activités suivantes: a) à moins que cela ne soit pour des raisons légitimes, le fait d’effectuer une transaction, de passer un ordre ou d’adopter tout autre comportement qui: i) donne ou est susceptible de donner des indications fausses ou trompeuses en ce qui concerne l’offre, la demande ou le prix d’un crypto-actif; ii) fixe ou est susceptible de fixer à un niveau anormal ou artificiel le prix d’un ou de plusieurs crypto-actifs; b) le fait d’effectuer une transaction, de passer un ordre, d’effectuer toute autre activité ou d’adopter tout autre comportement influençant ou étant susceptible d’influencer le prix d’un ou de plusieurs crypto-actifs, en ayant recours à des procédés fictifs ou à toute autre forme de tromperie ou d’artifice; c) le fait de diffuser des informations, que ce soit par l’intermédiaire des médias, dont l’internet, ou par tout autre moyen, qui donnent ou sont susceptibles de donner des indications fausses ou trompeuses en ce qui concerne l’offre, la demande ou le prix d’un ou de plusieurs crypto-actifs, ou fixent ou sont susceptibles de fixer à un niveau anormal ou artificiel le prix d’un ou de plusieurs crypto-actifs, y compris le fait de répandre des rumeurs, alors que la personne ayant procédé à une telle diffusion savait ou aurait dû savoir que ces informations étaient fausses ou trompeuses. 3. Les comportements suivants sont, entre autres, considérés comme des manipulations de marché: a) le fait de s’assurer une position dominante sur l’offre ou la demande d’un crypto-actif, avec pour effet, réel ou potentiel, la fixation directe ou indirecte des prix d’achat ou des prix de vente ou la création, réelle ou potentielle, d’autres conditions de transaction inéquitables; b) le fait de passer des ordres à une plate-forme de négociation de crypto-actifs, y compris d’annuler ou de modifier ces ordres, en ayant recours à tout moyen de négociation disponible, lorsque cela a l’un des effets visés au paragraphe 2, point a): i) en perturbant ou en retardant le fonctionnement de la plate-forme de négociation de crypto-actifs ou en se livrant à toute activité susceptible d’avoir cet effet; ii) en compliquant la reconnaissance, par d’autres personnes, des véritables ordres passés sur la plate-forme de négociation de crypto-actifs ou en se livrant à toute activité susceptible d’avoir cet effet, y compris en émettant des ordres qui entraînent une déstabilisation du fonctionnement normal de la plate-forme de négociation de crypto-actifs; iii) en créant une indication fausse ou trompeuse quant à l’offre, à la demande ou au prix d’un crypto-actif, notamment en émettant des ordres visant à initier ou à exacerber une tendance, ou en se livrant à toute activité susceptible d’avoir cet effet; c) le fait de tirer parti d’un accès occasionnel ou régulier aux médias traditionnels ou électroniques, en émettant un avis sur un crypto-actif après avoir pris des positions sur ce crypto-actif et en profitant ensuite de l’impact de cet avis sur le prix de ce crypto-actif, sans avoir simultanément porté ce conflit d’intérêts à la connaissance du public, de manière appropriée et efficace.",
+    "how_it_applies": "This article directly addresses the query by prohibiting market manipulation in crypto-assets and defining various activities that constitute such manipulation, including those that give false or misleading indications or fix prices at abnormal levels."
+  },
+  "MiCA > Titre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "e) les mesures visant à prévenir les opérations d’initiés, la divulgation illicite d’informations privilégiées et les manipulations de marché liées aux crypto-actifs, afin de garantir l’intégrité des marchés de crypto-actifs.",
+    "how_it_applies": "This article is relevant as it explicitly states that the regulation establishes measures to prevent insider trading, unlawful disclosure of inside information, and market manipulation related to crypto-assets to ensure market integrity."
+  },
+  "MiCA > Titre 9 > Article 141": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 6 > Article 92": {
+    "relevant": true,
+    "excerpt_basis": "Toute personne qui organise ou exécute à titre professionnel des transactions portant sur des crypto-actifs dispose de dispositifs, de systèmes et de procédures efficaces pour prévenir et détecter les abus de marché. Cette personne est soumise aux règles de notification de l’État membre dans lequel elle a son siège statutaire ou son siège social ou, dans le cas d’une succursale, de l’État membre dans lequel la succursale est implantée, et déclare sans retard à l’autorité compétente de cet État membre toute suspicion raisonnable concernant un ordre ou une transaction, y compris l’annulation ou la modification d’un ordre ou d’une transaction, et d’autres aspects du fonctionnement de la technologie des registres distribués, tels que le mécanisme de consensus, lorsque des circonstances pourraient indiquer qu’un abus de marché a été commis, est en train d’être commis ou est susceptible d’être commis.",
+    "how_it_applies": "Cet article impose aux professionnels organisant ou exécutant des transactions sur crypto-actifs de mettre en place des dispositifs pour prévenir et détecter les abus de marché, et de notifier sans délai toute suspicion aux autorités compétentes, ce qui est directement lié à la surveillance et au reporting mentionnés dans la requête."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": true,
+    "excerpt_basis": "f) une description des règles de fonctionnement de la plate-forme de négociation ainsi que des procédures et du système de détection des abus de marché, lorsqu’il est prévu d’exploiter une plate-forme de négociation de crypto-actifs;",
+    "how_it_applies": "Cet article est pertinent car il exige qu'une description des procédures et du système de détection des abus de marché soit notifiée à l'autorité compétente lors de l'exploitation d'une plateforme de négociation de crypto-actifs."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": true,
+    "excerpt_basis": "7. Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs disposent de systèmes, de procédures et de dispositifs efficaces pour garantir que leurs systèmes de négociation: (...) g) sont en mesure de prévenir et de détecter les abus de marché; h) sont suffisamment robustes pour empêcher leur détournement à des fins de blanchiment de capitaux ou de financement du terrorisme. 8. Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs informent leur autorité compétente lorsqu’ils constatent des cas d’abus de marché ou des tentatives d’abus de marché commis sur ou via leurs systèmes de négociation. (...) 13. Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs veillent à ce que leurs structures tarifaires soient transparentes, équitables et non discriminatoires et à ce qu’elles ne créent pas d’incitations à passer, modifier ou annuler des ordres ou à exécuter des transactions d’une façon qui contribue à des conditions de négociation de nature à perturber le bon ordre du marché ou à des abus de marché tels que visés au titre VI.",
+    "how_it_applies": "Cet article impose aux prestataires de services sur crypto-actifs exploitant une plateforme de négociation de disposer de systèmes pour prévenir et détecter les abus de marché, d'informer l'autorité compétente en cas d'abus de marché, et de veiller à ce que leurs structures tarifaires ne créent pas d'incitations à des abus de marché."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "n) lorsque le candidat prestataire de services sur crypto-actifs prévoit d’exploiter une plate-forme de négociation de crypto-actifs, une description des règles de fonctionnement de la plate-forme de négociation et de la procédure et du système de détection des abus de marché;",
+    "how_it_applies": "This article requires a crypto-asset service provider applying for authorization to describe its procedures and systems for detecting market abuse if it plans to operate a trading platform for crypto-assets."
+  },
+  "MiCA > Titre 5 > Article 66": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 72": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 77": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 7 > Article 94": {
+    "relevant": true,
+    "excerpt_basis": "3. Afin de mener à bien leurs missions en vertu du titre VI, les autorités compétentes sont dotées, conformément au droit national, au moins des pouvoirs de surveillance et d’enquête ci-après, en plus des pouvoirs visés au paragraphe 1: ... c) pénétrer dans les locaux de personnes physiques et morales afin de saisir des documents et des données, sous quelque forme que ce soit, lorsqu’il existe une suspicion raisonnable que des documents ou des données liés à l’objet de l’inspection ou de l’enquête pourraient se révéler importants pour apporter la preuve d’un cas d’opération d’initié ou de manipulation de marché; ... h) prendre toutes les mesures nécessaires pour garantir que le public est correctement informé, entre autres en corrigeant des informations fausses ou trompeuses qui ont été divulguées, y compris en exigeant d’un offreur, d’une personne qui demande l’admission à la négociation, d’un émetteur ou de toute autre personne ayant publié ou diffusé des informations fausses ou trompeuses qu’ils publient un correctif.",
+    "how_it_applies": "This article grants competent authorities powers to investigate and address market manipulation and the dissemination of false or misleading information, which are types of market abuse mentioned in the query. It allows them to seize documents related to insider trading or market manipulation and to require corrections for false or misleading information."
+  }
+}

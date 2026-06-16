@@ -1,0 +1,82 @@
+{
+  "MiCA > Titre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "1. Le présent règlement établit des exigences uniformes pour l’offre au public et l’admission à la négociation sur une plate-forme de négociation de crypto-actifs autres que les jetons se référant à un ou des actifs et les jetons de monnaie électronique, de jetons se référant à un ou des actifs et de jetons de monnaie électronique, ainsi que des exigences applicables aux prestataires de services sur crypto-actifs. 2. En particulier, le présent règlement établit ce qui suit: a) les exigences de transparence et d’information pour l’émission, l’offre au public et l’admission à la négociation de crypto-actifs sur une plate-forme de négociation de crypto-actifs (ci-après dénommée «admission à la négociation»); b) les exigences relatives à l’agrément et la surveillance des prestataires de services sur crypto-actifs, des émetteurs de jetons se référant à un ou des actifs et des émetteurs de jetons de monnaie électronique, ainsi qu’à leur fonctionnement, à leur organisation et à leur gouvernance; c) les exigences relatives à la protection des détenteurs de crypto-actifs dans le cadre de l’émission, de l’offre au public et de l’admission à la négociation de crypto-actifs; d) les exigences relatives à la protection des clients des prestataires de services sur crypto-actifs; e) les mesures visant à prévenir les opérations d’initiés, la divulgation illicite d’informations privilégiées et les manipulations de marché liées aux crypto-actifs, afin de garantir l’intégrité des marchés de crypto-actifs.",
+    "how_it_applies": "Cet article établit le champ d'application du règlement MiCA, incluant les exigences de transparence et d'information pour l'émission et l'offre au public de crypto-actifs (hors jetons référant à des actifs et jetons de monnaie électronique), ainsi que les exigences relatives à l'agrément, la surveillance, le fonctionnement, l'organisation et la gouvernance des émetteurs de jetons se référant à un ou des actifs et des émetteurs de jetons de monnaie électronique."
+  },
+  "MiCA > Titre 7 > Article 109": {
+    "relevant": true,
+    "excerpt_basis": "L’AEMF établit un registre: a) des livres blancs sur les crypto-actifs pour les crypto-actifs autres que les jetons se référant à un ou des actifs et les jetons de monnaie électronique;",
+    "how_it_applies": "Cet article est pertinent car il indique que l'AEMF établit un registre des livres blancs pour les crypto-actifs autres que les jetons se référant à un ou des actifs et les jetons de monnaie électronique, ce qui correspond à la catégorie d'émetteurs mentionnée dans la requête."
+  },
+  "MiCA > Titre 4 > Article 51": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 7 > Article 94": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 7": {
+    "relevant": true,
+    "excerpt_basis": "Toutes communications commerciales relatives à une offre au public d’un crypto-actif autre qu’un jeton se référant à un ou des actifs ou un jeton de monnaie électronique, ou à l’admission à la négociation d’un tel crypto-actif, respectent l’ensemble des exigences suivantes: a) les communications commerciales sont clairement identifiables en tant que telles; b) les informations figurant dans les communications commerciales sont loyales, claires et non trompeuses; c) les informations figurant dans les communications commerciales correspondent aux informations figurant dans le livre blanc sur les crypto-actifs, lorsqu’un tel livre blanc est requis en vertu de l’article 4 ou 5; d) les communications commerciales indiquent clairement qu’un livre blanc sur les crypto-actifs a été publié et mentionnent clairement l’adresse du site internet de l’offreur, de la personne qui demande l’admission à la négociation ou de l’exploitant de la plate-forme de négociation du crypto-actif concerné, ainsi qu’un numéro de téléphone et une adresse électronique permettant de contacter cette personne; e) les communications commerciales contiennent la déclaration claire et bien visible suivante: «La présente communication commerciale n’a été ni examinée ni approuvée par une autorité compétente d’un État membre de l’Union européenne. L’offreur du crypto-actif est seul responsable du contenu de la présente communication commerciale.»",
+    "how_it_applies": "This article outlines transparency requirements for commercial communications related to the public offering or admission to trading of crypto-assets, excluding asset-referenced tokens and e-money tokens, which aligns with the query's mention of transparency requirements for crypto-asset issuers."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 8": {
+    "relevant": true,
+    "excerpt_basis": "Les offreurs, les personnes qui demandent l’admission à la négociation ou les exploitants de plate-formes de négociation de crypto-actifs autres que des jetons se référant à un ou des actifs ou des jetons de monnaie électronique notifient leur livre blanc sur les crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "Cet article établit l'obligation pour les offreurs de crypto-actifs (hors jetons référant à des actifs et hors jetons de monnaie électronique) de notifier leur livre blanc à l'autorité compétente, ce qui correspond à une exigence d'enregistrement et de transparence mentionnée dans la requête."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 26": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "1. Un livre blanc sur les crypto-actifs pour un jeton se référant à un ou des actifs contient l’ensemble des informations suivantes, énoncées plus en détail à l’annexe II: a) des informations sur l’émetteur du jeton se référant à un ou des actifs; b) des informations sur le jeton se référant à un ou des actifs; c) des informations sur l’offre au public du jeton se référant à un ou des actifs ou sur son admission à la négociation; d) des informations sur les droits et obligations attachés au jeton se référant à un ou des actifs; e) des informations sur la technologie sous-jacente; f) des informations sur les risques; g) des informations sur la réserve d’actifs; h) des informations sur les principales incidences négatives sur le climat et d’autres incidences négatives liées à l’environnement du mécanisme de consensus utilisé pour émettre le jeton se référant à un ou des actifs.",
+    "how_it_applies": "This article specifies the transparency requirements for issuers of asset-referenced tokens, detailing the information that must be included in the crypto-asset white paper, such as information on the issuer, the token, the offer to the public, rights and obligations, underlying technology, risks, and environmental impact."
+  },
+  "MiCA > Titre 3 > Article 18": {
+    "relevant": true,
+    "excerpt_basis": "Les personnes morales ou les autres entreprises qui envisagent d’offrir au public des jetons se référant à un ou des actifs ou de demander leur admission à la négociation soumettent leur demande en vue de l’obtention de l’agrément visé à l’article 16 à l’autorité compétente de leur État membre d’origine. La demande visée au paragraphe 1 contient l’ensemble des informations suivantes: ... f) une description détaillée du dispositif de gouvernance du candidat émetteur prévu à l’article 34, paragraphe 1; g) lorsqu’il existe des accords de coopération avec certains prestataires de services sur crypto-actifs, une description de leurs mécanismes et procédures de contrôle interne visant à garantir le respect des obligations en matière de prévention de blanchiment de capitaux et de financement du terrorisme au titre de la directive (UE) 2015/849; ... o) une description des mécanismes de contrôle interne et des procédures de gestion des risques visés à l’article 34, paragraphe 10; p) une description des systèmes et des procédures mis en place pour garantir la disponibilité, l’authenticité, l’intégrité et la confidentialité des données, visés à l’article 34, paragraphe 11;",
+    "how_it_applies": "Cet article détaille les informations que les émetteurs de jetons se référant à un ou des actifs doivent inclure dans leur demande d'agrément, notamment des descriptions de leur dispositif de gouvernance, des mécanismes de contrôle interne pour la lutte contre le blanchiment de capitaux et le financement du terrorisme, des procédures de gestion des risques, et des systèmes pour la sécurité et la confidentialité des données."
+  },
+  "MiCA > Titre 7 > Article 98": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 14": {
+    "relevant": true,
+    "excerpt_basis": "Les offreurs et les personnes qui demandent l’admission à la négociation de crypto-actifs autres que des jetons se référant à un ou des actifs ou des jetons de monnaie électronique: a) agissent de manière honnête, loyale et professionnelle; b) communiquent avec les détenteurs et les détenteurs potentiels des crypto-actifs de manière loyale, claire et non trompeuse; c) détectent, préviennent, gèrent et communiquent tout conflit d’intérêts qui pourrait se produire; d) maintiennent l’ensemble de leurs systèmes et de leurs protocoles d’accès de sécurité en conformité avec les normes de l’Union adéquates.",
+    "how_it_applies": "This article outlines general conduct requirements for issuers of crypto-assets (excluding asset-referenced tokens and e-money tokens), including acting honestly, communicating clearly, managing conflicts of interest, and maintaining security systems in line with Union standards."
+  },
+  "MiCA > Titre 3 > Article 25": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

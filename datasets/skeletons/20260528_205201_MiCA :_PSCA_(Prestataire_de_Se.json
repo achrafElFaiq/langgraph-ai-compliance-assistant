@@ -1,0 +1,57 @@
+{
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article requires crypto-asset service providers to have prudential safeguards, with the amount determined by either the minimum capital requirements from Annex IV or a quarter of the previous year's fixed overheads, whichever is higher."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article evaluates the appropriateness of prudential requirements for crypto-asset service providers and the need to align these requirements with initial capital and own funds requirements applicable to investment firms."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "Les personnes morales ou les autres entreprises qui ont l’intention de fournir des services sur crypto-actifs soumettent leur demande d’agrément en tant que prestataire de services sur crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "This article discusses the requirements for entities intending to provide crypto-asset services, including submitting an application for authorization to the relevant authority in their home Member State."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "15) «prestataire de services sur crypto-actifs»: une personne morale ou une autre entreprise dont l’occupation ou l’activité consiste à fournir un ou plusieurs services sur crypto-actifs à des clients à titre professionnel, et qui est autorisée à fournir des services sur crypto-actifs conformément à l’article 59; 16) «service sur crypto-actifs»: l’un ou l’autre des services et activités suivants lié à un crypto-actif: a) la conservation et l’administration de crypto-actifs pour le compte de clients; b) l’exploitation d’une plate-forme de négociation de crypto-actifs; c) l’échange de crypto-actifs contre des fonds; d) l’échange de crypto-actifs contre d’autres crypto-actifs; e) l’exécution d’ordres sur crypto-actifs pour le compte de clients; f) le placement de crypto-actifs; g) la réception et la transmission d’ordres sur crypto-actifs pour le compte de clients; h) la fourniture de conseils en crypto-actifs; i) la fourniture de services de gestion de portefeuille de crypto-actifs; j) la fourniture de services de transfert de crypto-actifs pour le compte de clients; 18) «exploitation d’une plate-forme de négociation de crypto-actifs»: la gestion d’un ou de plusieurs systèmes multilatéraux, qui réunissent ou facilitent la rencontre de multiples intérêts acheteurs et vendeurs exprimés par des tiers pour des crypto-actifs, au sein du système et conformément à ses règles, d’une manière qui aboutit à un contrat, soit par l’échange de crypto-actifs contre des fonds, soit par l’échange de crypto-actifs contre d’autres crypto-actifs;",
+    "how_it_applies": "The article defines \"prestataire de services sur crypto-actifs\" (PSCA) and \"exploitation d’une plate-forme de négociation de crypto-actifs\", which are relevant to the query regarding MiCA and the obligations of a PSCA operating a crypto-asset trading platform."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "55) «prestataire de services sur crypto-actifs»: un prestataire de services sur crypto-actifs au sens de la disposition pertinente du règlement sur les marchés de crypto-actifs;",
+    "how_it_applies": "This article defines a crypto-asset service provider as per the relevant provision of the Markets in Crypto-Assets Regulation (MiCA)."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": true,
+    "excerpt_basis": "7. Les prestataires de services sur crypto-actifs prennent toutes les mesures raisonnables en vue de garantir la continuité et la régularité de leurs prestations de services sur crypto-actifs. À cette fin, ils utilisent des ressources et des procédures appropriées et proportionnées, notamment des systèmes de TIC résilients et sûrs conformes au règlement (UE) 2022/2554.",
+    "how_it_applies": "This article requires crypto-asset service providers to take reasonable measures to ensure the continuity and regularity of their services, including using resilient and secure ICT systems compliant with Regulation (EU) 2022/2554."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 75": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 83": {
+    "relevant": true,
+    "excerpt_basis": "Toute personne physique ou morale, agissant seule ou de concert avec d’autres, qui a pris la décision soit d’acquérir, directement ou indirectement (ci-après dénommé «candidat acquéreur»), une participation qualifiée dans un prestataire de services sur crypto-actifs, soit de procéder, directement ou indirectement, à une augmentation de cette participation qualifiée, de telle façon que la proportion de droits de vote ou de parts de capital détenue atteigne ou dépasse 20 %, 30 % ou 50 % ou que le prestataire de services sur crypto-actifs devienne sa filiale, notifie par écrit à l’autorité compétente de ce prestataire de services sur crypto-actifs le montant de la participation envisagée et les informations requises en vertu des normes techniques de réglementation adoptées par la Commission conformément à l’article 84, paragraphe 4.",
+    "how_it_applies": "This article requires any person or entity planning to acquire a qualified holding in a crypto-asset service provider to notify the competent authority of the planned acquisition and the amount of the planned holding."
+  }
+}

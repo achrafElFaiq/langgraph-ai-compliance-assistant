@@ -1,0 +1,37 @@
+{
+  "MiCA > Titre 2 > Article 4": {
+    "relevant": true,
+    "excerpt_basis": "Une personne ne peut pas offrir au public un crypto-actif autre qu’un jeton se référant à un ou des actifs ou un jeton de monnaie électronique dans l’Union sauf si cette personne: ... b) a rédigé un livre blanc sur les crypto-actifs portant sur ce crypto-actif conformément à l’article 6; c) a notifié le livre blanc sur les crypto-actifs conformément à l’article 8; d) a publié le livre blanc sur les crypto-actifs conformément à l’article 9;",
+    "how_it_applies": "Cet article impose à l'émetteur de rédiger, notifier et publier un livre blanc sur les crypto-actifs avant d'offrir au public un crypto-actif autre qu'un jeton se référant à des actifs ou un jeton de monnaie électronique."
+  },
+  "MiCA > Titre 4 > Article 51": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 11": {
+    "relevant": true,
+    "excerpt_basis": "Après publication du livre blanc sur les crypto-actifs conformément à l’article 9 et, le cas échéant, du livre blanc sur les crypto-actifs modifié conformément à l’article 12, les offreurs peuvent offrir des crypto-actifs autres que des jetons se référant à un ou des actifs ou des jetons de monnaie électronique dans toute l’Union.",
+    "how_it_applies": "Cet article précise que les émetteurs peuvent offrir des crypto-actifs après avoir publié leur livre blanc, sans exigences d'information supplémentaires pour l'offre au public."
+  },
+  "MiCA > Titre 3 > Article 19": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 9": {
+    "relevant": true,
+    "excerpt_basis": "Les offreurs et les personnes qui demandent l’admission à la négociation de crypto-actifs autres que des jetons se référant à un ou des actifs ou des jetons de monnaie électronique publient leurs livres blancs sur les crypto-actifs et, le cas échéant, leurs communications commerciales sur leur site internet, qui est accessible au public dans un délai raisonnable avant l’offre au public de leurs crypto-actifs.",
+    "how_it_applies": "Cet article impose aux émetteurs de crypto-actifs de publier leurs livres blancs sur leur site internet avant l'offre au public."
+  },
+  "MiCA > Titre 2 > Article 6": {
+    "relevant": true,
+    "excerpt_basis": "Un livre blanc sur les crypto-actifs contient l’ensemble des informations suivantes, énoncées plus en détail à l’annexe I: a) des informations sur l’offreur ou la personne qui demande l’admission à la négociation; b) des informations sur l’émetteur, lorsque celui-ci diffère de l’offreur ou de la personne qui demande l’admission à la négociation; e) des informations sur l’offre au public du crypto-actif ou son admission à la négociation; f) des informations sur le crypto-actif; g) des informations sur les droits et obligations attachés au crypto-actif.",
+    "how_it_applies": "Cet article énonce les informations que le livre blanc sur les crypto-actifs doit contenir, ce qui est essentiel pour l'offre au public d'un crypto-actif."
+  },
+  "MiCA > Titre 2 > Article 8": {
+    "relevant": true,
+    "excerpt_basis": "Les offreurs notifient leur livre blanc sur les crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "Cet article impose aux émetteurs de crypto-actifs de notifier leur livre blanc à l'autorité compétente avant l'offre au public."
+  }
+}

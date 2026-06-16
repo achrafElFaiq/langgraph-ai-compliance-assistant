@@ -1,0 +1,67 @@
+{
+  "AI Act > Chapitre 9 > Article 73": {
+    "relevant": true,
+    "excerpt_basis": "Les fournisseurs de systèmes d’IA à haut risque mis sur le marché de l’Union signalent tout incident grave aux autorités de surveillance du marché des États membres dans lesquels cet incident s’est produit.",
+    "how_it_applies": "Suppliers of high-risk AI systems must report any serious incidents to the market surveillance authorities of the Member States where the incident occurred. This is an obligation under the AI Act."
+  },
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article.",
+    "how_it_applies": "Financial entities must report major ICT incidents to the relevant competent authority, as specified in Article 46 and in accordance with paragraph 4 of this article."
+  },
+  "AI Act > Chapitre 3 > Article 31": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "35) «établissement de paiement»: un établissement de paiement au sens de l’article 4, point 4), de la directive (UE) 2015/2366;",
+    "how_it_applies": "This article defines an \"établissement de paiement\" (payment institution) by referencing Article 4, point 4, of Directive (EU) 2015/2366."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "1. Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC.",
+    "how_it_applies": "This article requires financial entities to establish a process for managing ICT-related incidents, including detection, management, and notification of such incidents."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": true,
+    "excerpt_basis": "Un établissement de crédit peut fournir des services sur crypto-actifs s’il notifie les informations visées au paragraphe 7 à l’autorité compétente de son État membre d’origine, au moins 40 jours ouvrables avant de fournir ces services pour la première fois.",
+    "how_it_applies": "An establishment of credit can provide crypto-asset services if it notifies the competent authority of its home Member State at least 40 working days before providing these services for the first time."
+  },
+  "AI Act > Chapitre 9 > Article 78": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "1) «système d’IA», un système automatisé qui est conçu pour fonctionner à différents niveaux d’autonomie et peut faire preuve d’une capacité d’adaptation après son déploiement, et qui, pour des objectifs explicites ou implicites, déduit, à partir des entrées qu’il reçoit, la manière de générer des sorties telles que des prédictions, du contenu, des recommandations ou des décisions qui peuvent influencer les environnements physiques ou virtuels;",
+    "how_it_applies": "The article defines an AI system, which is relevant to the query regarding the AI Act. The definition provided is a system that can operate with autonomy and adapt after deployment, generating outputs like predictions or decisions."
+  },
+  "DORA > Chapitre 2 > Article 5": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières disposent d’un cadre de gouvernance et de contrôle interne qui garantit une gestion efficace et prudente du risque lié aux TIC, conformément à l’article 6, paragraphe 4, en vue d’atteindre un niveau élevé de résilience opérationnelle numérique.",
+    "how_it_applies": "This article requires financial entities to have an internal governance and control framework to ensure effective and prudent management of ICT risk, aiming for a high level of digital operational resilience."
+  },
+  "MiCA > Titre 7 > Article 111": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 3 > Article 23": {
+    "relevant": true,
+    "excerpt_basis": "Les exigences énoncées au présent chapitre s’appliquent également aux incidents opérationnels ou de sécurité liés au paiement et aux incidents opérationnels ou de sécurité majeurs liés au paiement lorsqu’ils concernent des établissements de crédit, des établissements de paiement, des prestataires de services d’information sur les comptes et des établissements de monnaie électronique.",
+    "how_it_applies": "This article states that the requirements in this chapter apply to operational or security incidents related to payment, including major ones, when they involve payment institutions."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 33": {
+    "relevant": true,
+    "excerpt_basis": "En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques.",
+    "how_it_applies": "This article requires a data controller to notify the competent supervisory authority of a personal data breach within 72 hours of becoming aware of it, unless the breach is unlikely to pose a risk to the rights and freedoms of natural persons."
+  }
+}

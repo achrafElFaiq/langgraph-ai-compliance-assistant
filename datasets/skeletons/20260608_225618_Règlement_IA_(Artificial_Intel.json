@@ -1,0 +1,72 @@
+{
+  "AI Act > Chapitre 4 > Article 50": {
+    "relevant": true,
+    "excerpt_basis": "Les fournisseurs veillent à ce que les systèmes d’IA destinés à interagir directement avec des personnes physiques soient conçus et développés de manière que les personnes physiques concernées soient informées qu’elles interagissent avec un système d’IA, sauf si cela ressort clairement du point de vue d’une personne physique normalement informée et raisonnablement attentive et avisée, compte tenu des circonstances et du contexte d’utilisation.",
+    "how_it_applies": "Cet article s'applique à la question en exigeant que les fournisseurs de systèmes d'IA, comme un chatbot conversationnel, informent les utilisateurs qu'ils interagissent avec une IA, ce qui est une obligation de transparence clé mentionnée dans la requête."
+  },
+  "AI Act > Chapitre 3 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "1. La conception et le développement des systèmes d’IA à haut risque sont tels que le fonctionnement de ces systèmes est suffisamment transparent pour permettre aux déployeurs d’interpréter les sorties d’un système et de les utiliser de manière appropriée. Un type et un niveau adéquats de transparence sont garantis afin de veiller au respect des obligations pertinentes incombant au fournisseur et au déployeur énoncées à la section 3. 2. Les systèmes d’IA à haut risque sont accompagnés d’une notice d’utilisation dans un format numérique approprié ou autre, contenant des informations concises, complètes, exactes et claires, qui soient pertinentes, accessibles et compréhensibles pour les déployeurs. 3. La notice d’utilisation contient au moins les informations suivantes: a) l’identité et les coordonnées du fournisseur et, le cas échéant, de son mandataire; b) les caractéristiques, les capacités et les limites de performance du système d’IA à haut risque, notamment: i) sa destination; ii) le niveau d’exactitude, y compris les indicateurs utilisés, de robustesse et de cybersécurité visé à l’article 15 qui a servi de référence pour les tests et la validation du système d’IA à haut risque et qui peut être attendu, ainsi que toutes circonstances connues et prévisibles susceptibles d’avoir une incidence sur le niveau attendu d’exactitude, de robustesse et de cybersécurité; iii) toutes circonstances connues ou prévisibles liées à l’utilisation du système d’IA à haut risque conformément à sa destination ou dans des conditions de mauvaise utilisation raisonnablement prévisible, susceptibles d’entraîner des risques pour la santé et la sécurité ou pour les droits fondamentaux visés à l’article 9, paragraphe 2; iv) le cas échéant, les capacités et caractéristiques techniques du système d’IA à haut risque à fournir des informations pertinentes pour expliquer ses sorties; v) le cas échéant, sa performance en ce qui concerne des personnes ou groupes de personnes spécifiques à l’égard desquels le système est destiné à être utilisé; vi) le cas échéant, les spécifications relatives aux données d’entrée, ou toute autre information pertinente concernant les jeux de données d’entraînement, de validation et de test utilisés, compte tenu de la destination du système d’IA à haut risque; vii) le cas échéant, les informations permettant aux déployeurs d’interpréter les sorties du système d’IA à haut risque et de les utiliser de manière appropriée; c) les modifications du système d’IA à haut risque et de sa performance qui ont été prédéterminées par le fournisseur au moment de l’évaluation initiale de la conformité, le cas échéant; d) les mesures de contrôle humain visées à l’article 14, notamment les mesures techniques mises en place pour faciliter l’interprétation des sorties des systèmes d’IA à haut risque par les déployeurs; e) les ressources informatiques et matérielles nécessaires, la durée de vie attendue du système d’IA à haut risque et toutes les mesures de maintenance et de suivi, y compris leur fréquence, nécessaires pour assurer le bon fonctionnement de ce système d’IA, notamment en ce qui concerne les mises à jour logicielles; f) le cas échéant, une description des mécanismes compris dans le système d’IA à haut risque qui permet aux déployeurs de collecter, stocker et interpréter correctement les journaux, conformément à l’article 12.",
+    "how_it_applies": "Cet article détaille les obligations de transparence pour les systèmes d'IA à haut risque, exigeant une notice d'utilisation claire et complète pour les déployeurs, incluant des informations sur les capacités, les limites, les données d'entraînement, les mesures de contrôle humain et les mécanismes de journalisation."
+  },
+  "AI Act > Chapitre 3 > Article 25": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 8": {
+    "relevant": true,
+    "excerpt_basis": "Les systèmes d’IA à haut risque respectent les exigences énoncées dans la présente section, en tenant compte de leur destination ainsi que de l’état de la technique généralement reconnu en matière d’IA et de technologies liées à l’IA.",
+    "how_it_applies": "This article states that high-risk AI systems must comply with the requirements outlined in this section, which would include transparency obligations for a conversational chatbot used by a fintech company."
+  },
+  "AI Act > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "15) «notice d’utilisation», les indications communiquées par le fournisseur pour informer le déployeur, en particulier, de la destination et de l’utilisation correcte d’un système d’IA;",
+    "how_it_applies": "This article defines 'notice d'utilisation' as information provided by the supplier to the deployer regarding the intended purpose and correct use of an AI system, which is relevant to the query's mention of providing clear and understandable information to users."
+  },
+  "AI Act > Chapitre 9 > Article 79": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 6": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "Le présent règlement établit: [...] c) des exigences spécifiques applicables aux systèmes d’IA à haut risque et des obligations imposées aux opérateurs de ces systèmes; d) des règles harmonisées en matière de transparence applicables à certains systèmes d’IA;",
+    "how_it_applies": "This article is relevant as it states that the regulation establishes specific requirements for high-risk AI systems and harmonized transparency rules for certain AI systems, which aligns with the query's focus on transparency obligations for high-risk AI systems."
+  },
+  "AI Act > Chapitre 3 > Article 21": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 16": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 80": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "1. Les fournisseurs de systèmes d’IA à haut risque mettent en place un système de gestion de la qualité garantissant le respect du présent règlement. Ce système est documenté de manière méthodique et ordonnée sous la forme de politiques, de procédures et d’instructions écrites, et comprend au moins les aspects suivants: ... f) les systèmes et procédures de gestion des données, notamment l’acquisition, la collecte, l’analyse, l’étiquetage, le stockage, la filtration, l’exploration, l’agrégation, la conservation des données et toute autre opération concernant les données qui est effectuée avant la mise sur le marché ou la mise en service de systèmes d’IA à haut risque et aux fins de celles-ci; ... k) les systèmes et procédures de conservation de tous les documents et informations pertinents;",
+    "how_it_applies": "Cet article exige des fournisseurs de systèmes d'IA à haut risque, tels qu'un chatbot conversationnel utilisé par une fintech, de mettre en place un système de gestion de la qualité documenté, incluant des procédures pour la gestion des données et la conservation des documents et informations pertinents, ce qui contribue aux obligations de documentation technique mentionnées dans la requête."
+  },
+  "AI Act > Chapitre 9 > Article 74": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 82": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

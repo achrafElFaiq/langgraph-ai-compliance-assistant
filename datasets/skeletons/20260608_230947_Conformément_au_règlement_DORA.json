@@ -1,0 +1,72 @@
+{
+  "DORA > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "ii) la notification, aux autorités compétentes, des incidents majeurs liés aux TIC et la notification, à titre volontaire, des cybermenaces importantes aux autorités compétentes; iii) la notification aux autorités compétentes, par les entités financières visées à l’article 2, paragraphe 1, points a) à d), des incidents opérationnels ou de sécurité majeurs liés au paiement;",
+    "how_it_applies": "This article establishes the requirement for financial entities to notify competent authorities of major ICT-related incidents and major operational or security payment-related incidents."
+  },
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article. [...] La notification initiale et les rapports visés au paragraphe 4 comprennent toutes les informations nécessaires pour permettre à l’autorité compétente de déterminer l’importance de l’incident majeur lié aux TIC et d’évaluer les éventuelles incidences transfrontières.",
+    "how_it_applies": "Cet article stipule que les entités financières doivent déclarer les incidents majeurs liés aux TIC à l'autorité compétente et fournir toutes les informations nécessaires pour évaluer l'importance de l'incident et ses incidences potentielles, ce qui correspond à l'exigence de notification et de fourniture d'informations détaillées mentionnée dans la requête."
+  },
+  "DORA > Chapitre 2 > Article 13": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 6": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 6 > Article 45": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 9": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières conçoivent, acquièrent et mettent en œuvre des stratégies, des politiques, des procédures, des protocoles et des outils de sécurité de TIC qui visent à garantir la résilience, la continuité et la disponibilité des systèmes de TIC, en particulier ceux qui soutiennent des fonctions critiques ou importantes, et à maintenir des normes élevées en matière de disponibilité, d’authenticité, d’intégrité et de confidentialité des données, que ce soit au repos, en cours d’utilisation ou en transit.",
+    "how_it_applies": "Cet article exige que les entités financières mettent en œuvre des stratégies et des outils de sécurité des TIC pour garantir la résilience, la continuité et la disponibilité des systèmes, ce qui correspond à la nécessité de mesures de sécurité appropriées pour la continuité des services mentionnée dans la requête."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC.",
+    "how_it_applies": "Cet article est pertinent car il exige que les entités financières mettent en œuvre un processus de gestion des incidents liés aux TIC pour détecter, gérer et notifier ces incidents, ce qui correspond à l'exigence de notification en cas d'incident de cybersécurité mentionnée dans la requête."
+  },
+  "DORA > Chapitre 2 > Article 5": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 4 > Article 24": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 10": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières mettent en place des mécanismes permettant de détecter rapidement les activités anormales, y compris les problèmes de performance des réseaux de TIC et les incidents liés aux TIC, ainsi que de repérer les points uniques de défaillance potentiellement significatifs.",
+    "how_it_applies": "Cet article exige que les entités financières mettent en place des mécanismes pour détecter rapidement les incidents liés aux TIC, ce qui est pertinent pour la partie de la requête concernant la détection des incidents de cybersécurité."
+  },
+  "DORA > Chapitre 2 > Article 7": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 11": {
+    "relevant": true,
+    "excerpt_basis": "e) définir des mesures de communication et de gestion des crises qui garantissent la transmission d’informations actualisées à tous les membres du personnel interne et à toutes les parties prenantes externes concernés, conformément à l’article 14, et leur déclaration aux autorités compétentes, conformément à l’article 19.",
+    "how_it_applies": "Cet article stipule que les entités financières doivent définir des mesures de communication et de gestion des crises, incluant la déclaration aux autorités compétentes conformément à l'article 19, ce qui est pertinent pour la notification des incidents de cybersécurité."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "GDPR > Chapitre 2 > Article 7": {
+    "relevant": true,
+    "excerpt_basis": "1. Dans les cas où le traitement repose sur le consentement, le responsable du traitement est en mesure de démontrer que la personne concernée a donné son consentement au traitement de données à caractère personnel la concernant. 2. Si le consentement de la personne concernée est donné dans le cadre d'une déclaration écrite qui concerne également d'autres questions, la demande de consentement est présentée sous une forme qui la distingue clairement de ces autres questions, sous une forme compréhensible et aisément accessible, et formulée en des termes clairs et simples. Aucune partie de cette déclaration qui constitue une violation du présent règlement n'est contraignante. 3. La personne concernée a le droit de retirer son consentement à tout moment. Le retrait du consentement ne compromet pas la licéité du traitement fondé sur le consentement effectué avant ce retrait. La personne concernée en est informée avant de donner son consentement. Il est aussi simple de retirer que de donner son consentement. 4. Au moment de déterminer si le consentement est donné librement, il y a lieu de tenir le plus grand compte de la question de savoir, entre autres, si l'exécution d'un contrat, y compris la fourniture d'un service, est subordonnée au consentement au traitement de données à caractère personnel qui n'est pas nécessaire à l'exécution dudit contrat.",
+    "how_it_applies": "This article details the conditions for valid consent, including the controller's obligation to demonstrate consent, the requirement for clear and separate presentation of consent requests, the right to withdraw consent easily, and considerations for free consent in the context of contracts."
+  },
+  "GDPR > Chapitre 3 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "Lorsque des données à caractère personnel relatives à une personne concernée sont collectées auprès de cette personne, le responsable du traitement lui fournit, au moment où les données en question sont obtenues, toutes les informations suivantes: a) l'identité et les coordonnées du responsable du traitement et, le cas échéant, du représentant du responsable du traitement b) le cas échéant, les coordonnées du délégué à la protection des données; c) les finalités du traitement auquel sont destinées les données à caractère personnel ainsi que la base juridique du traitement; ... En plus des informations visées au paragraphe 1, le responsable du traitement fournit à la personne concernée, au moment où les données à caractère personnel sont obtenues, les informations complémentaires suivantes qui sont nécessaires pour garantir un traitement équitable et transparent: ... c) lorsque le traitement est fondé sur l'article 6, paragraphe 1, point a), ou sur l'article 9, paragraphe 2, point a), l'existence du droit de retirer son consentement à tout moment, sans porter atteinte à la licéité du traitement fondé sur le consentement effectué avant le retrait de celui-ci;",
+    "how_it_applies": "This article specifies the detailed information that must be provided to a data subject when personal data is collected, which is a component of obtaining informed consent. It also explicitly mentions the right to withdraw consent when processing is based on consent."
+  },
+  "GDPR > Chapitre 5 > Article 46": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 42": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 14": {
+    "relevant": true,
+    "excerpt_basis": "d) lorsque le traitement est fondé sur l'article 6, paragraphe 1, point a), ou sur l'article 9, paragraphe 2, point a), l'existence du droit de retirer le consentement à tout moment, sans porter atteinte à la licéité du traitement fondé sur le consentement effectué avant le retrait de celui-ci;",
+    "how_it_applies": "This article is relevant because it specifies that when processing is based on consent (Article 6(1)(a) or Article 9(2)(a)), the data subject must be informed of their right to withdraw consent at any time."
+  },
+  "GDPR > Chapitre 6 > Article 58": {
+    "relevant": true,
+    "excerpt_basis": "i) imposer une amende administrative en application de l'article 83, en complément ou à la place des mesures visées au présent paragraphe, en fonction des caractéristiques propres à chaque cas;",
+    "how_it_applies": "This article is relevant because it states that supervisory authorities have the power to impose administrative fines in accordance with Article 83, which is mentioned in the query regarding sanctions for non-compliance."
+  },
+  "GDPR > Chapitre 4 > Article 28": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 5 > Article 47": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 35": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 32": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 1 > Article 4": {
+    "relevant": true,
+    "excerpt_basis": "11) «consentement» de la personne concernée, toute manifestation de volonté, libre, spécifique, éclairée et univoque par laquelle la personne concernée accepte, par une déclaration ou par un acte positif clair, que des données à caractère personnel la concernant fassent l'objet d'un traitement;",
+    "how_it_applies": "This article defines 'consent' as a free, specific, informed, and unambiguous indication of the data subject's agreement to the processing of personal data, which directly addresses the query's mention of consent validity requirements."
+  },
+  "GDPR > Chapitre 3 > Article 15": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 2 > Article 6": {
+    "relevant": true,
+    "excerpt_basis": "Le traitement n'est licite que si, et dans la mesure où, au moins une des conditions suivantes est remplie: a) la personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques;",
+    "how_it_applies": "This article establishes that the processing of personal data is lawful if the data subject has consented to it for one or more specific purposes, which is directly relevant to the query's mention of consent validity requirements."
+  },
+  "GDPR > Chapitre 9 > Article 90": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

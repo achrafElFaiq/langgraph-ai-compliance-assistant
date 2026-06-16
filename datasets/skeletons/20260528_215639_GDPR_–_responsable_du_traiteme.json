@@ -1,0 +1,82 @@
+{
+  "GDPR > Chapitre 2 > Article 7": {
+    "relevant": true,
+    "excerpt_basis": "1. Dans les cas où le traitement repose sur le consentement, le responsable du traitement est en mesure de démontrer que la personne concernée a donné son consentement au traitement de données à caractère personnel la concernant.",
+    "how_it_applies": "This article addresses the requirements for consent in data processing. It states that the controller must be able to demonstrate that the data subject has consented to the processing of their personal data."
+  },
+  "GDPR > Chapitre 3 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "1.   Lorsque des données à caractère personnel relatives à une personne concernée sont collectées auprès de cette personne, le responsable du traitement lui fournit, au moment où les données en question sont obtenues, toutes les informations suivantes: a) l'identité et les coordonnées du responsable du traitement et, le cas échéant, du représentant du responsable du traitement",
+    "how_it_applies": "Article 13 requires the data controller to provide specific information to the data subject when collecting personal data from them, including the identity and contact details of the data controller and their representative, if applicable."
+  },
+  "GDPR > Chapitre 3 > Article 14": {
+    "relevant": true,
+    "excerpt_basis": "Lorsque les données à caractère personnel n'ont pas été collectées auprès de la personne concernée, le responsable du traitement fournit à celle-ci toutes les informations suivantes:",
+    "how_it_applies": "When personal data has not been collected from the data subject, the controller must provide the data subject with certain information. This article outlines the information that must be provided by the controller."
+  },
+  "GDPR > Chapitre 4 > Article 42": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 5 > Article 46": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 43": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 15": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 28": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 5 > Article 47": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 58": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 32": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 35": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 2 > Article 6": {
+    "relevant": true,
+    "excerpt_basis": "1.   Le traitement n'est licite que si, et dans la mesure où, au moins une des conditions suivantes est remplie: a) la personne concernée a consenti au traitement de ses données à caractère personnel pour une ou plusieurs finalités spécifiques;",
+    "how_it_applies": "This article states that processing is only lawful if the data subject has consented to the processing of their personal data for one or more specific purposes. This relates to the query's focus on consent requirements under GDPR."
+  },
+  "GDPR > Chapitre 1 > Article 4": {
+    "relevant": true,
+    "excerpt_basis": "11) «consentement» de la personne concernée, toute manifestation de volonté, libre, spécifique, éclairée et univoque par laquelle la personne concernée accepte, par une déclaration ou par un acte positif clair, que des données à caractère personnel la concernant fassent l'objet d'un traitement;",
+    "how_it_applies": "The article defines \"consent\" as a freely given, specific, informed, and unambiguous indication of a person's agreement to the processing of their personal data. This definition is relevant to the query regarding the validity requirements of consent under GDPR."
+  },
+  "GDPR > Chapitre 2 > Article 9": {
+    "relevant": true,
+    "excerpt_basis": "a) la personne concernée a donné son consentement explicite au traitement de ces données à caractère personnel pour une ou plusieurs finalités spécifiques, sauf lorsque le droit de l'Union ou le droit de l'État membre prévoit que l'interdiction visée au paragraphe 1 ne peut pas être levée par la personne concernée;",
+    "how_it_applies": "This article addresses the processing of special categories of personal data and states that processing is prohibited unless the data subject has given explicit consent for one or more specific purposes."
+  },
+  "GDPR > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "b) la personne concernée retire le consentement sur lequel est fondé le traitement, conformément à l'article 6, paragraphe 1, point a), ou à l'article 9, paragraphe 2, point a), et il n'existe pas d'autre fondement juridique au traitement;",
+    "how_it_applies": "This article addresses the right to erasure of personal data, including when a person withdraws their consent, as per Article 6(1)(a) or Article 9(2)(a), and there is no other legal basis for the processing."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "MiCA > Titre 5 > Article 72": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs mettent en œuvre et maintiennent des politiques et des procédures efficaces, compte tenu de l’ampleur, de la nature et de l’éventail des services sur crypto-actifs fournis, pour détecter, prévenir, gérer et communiquer les conflits d’intérêts entre: a) eux-mêmes et: [...] v) leurs clients; ou b) au moins deux de leurs clients qui sont en situation de conflit d’intérêts l’un vis-à-vis de l’autre.",
+    "how_it_applies": "Cet article est pertinent car il détaille l'obligation pour les prestataires de services sur crypto-actifs (PSCA) de mettre en œuvre des politiques et procédures pour gérer les conflits d'intérêts avec leurs clients, ce qui est une composante essentielle des obligations générales de conduite."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs fixent, maintiennent et appliquent des règles de fonctionnement de la plate-forme de négociation claires et transparentes. Au minimum, ces règles de fonctionnement: a) fixent les procédures d’approbation, y compris des obligations de vigilance à l’égard de la clientèle proportionnées au risque de blanchiment de capitaux ou de financement du terrorisme que présente le demandeur conformément à la directive (UE) 2015/849, qui sont applicables avant l’admission de crypto-actifs à la négociation sur la plate-forme de négociation; d) fixent, pour la participation aux activités de négociation, des règles objectives et non discriminatoires, ainsi que des critères proportionnés qui promeuvent un accès ouvert et équitable des clients voulant négocier à la plate-forme de négociation; e) établissent des règles et procédures non discrétionnaires de nature à garantir une négociation équitable et ordonnée et fixent des critères objectifs en vue de l’exécution efficace des ordres; ... 6. Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs ne sont autorisés à pratiquer la négociation par appariement avec interposition du compte propre que si le client a donné son consentement audit processus. ... L’autorité compétente ... s’assure que leurs opérations de négociation par appariement avec interposition du compte propre ... ne donnent pas lieu à des conflits d’intérêts entre les prestataires de services sur crypto-actifs et leurs clients. ... 13. Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs veillent à ce que leurs structures tarifaires soient transparentes, équitables et non discriminatoires et à ce qu’elles ne créent pas d’incitations à passer, modifier ou annuler des ordres ou à exécuter des transactions d’une façon qui contribue à des conditions de négociation de nature à perturber le bon ordre du marché ou à des abus de marché tels que visés au titre VI.",
+    "how_it_applies": "Cet article établit des obligations pour les PSCA exploitant une plateforme de négociation, notamment la mise en place de règles de fonctionnement claires et transparentes, des procédures de vigilance à l'égard de la clientèle, des règles objectives et non discriminatoires pour l'accès à la négociation, des règles pour garantir une négociation équitable et ordonnée, l'obtention du consentement du client pour la négociation par appariement avec interposition du compte propre et la prévention des conflits d'intérêts, ainsi que des structures tarifaires transparentes, équitables et non discriminatoires."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui fournissent des conseils en crypto-actifs ou des services de gestion de portefeuille de crypto-actifs évaluent si les services sur crypto-actifs ou les crypto-actifs sont adéquats pour leurs clients ou clients potentiels, en prenant en considération les connaissances et l’expérience de ceux-ci en matière d’investissement dans les crypto-actifs, leurs objectifs en matière d’investissement, y compris leur tolérance au risque, et leur situation financière, y compris leur capacité à supporter des pertes.",
+    "how_it_applies": "Cet article établit l'obligation pour les PSCA de réaliser une évaluation d'adéquation pour leurs clients, en tenant compte de leurs connaissances, expérience, objectifs d'investissement, tolérance au risque et situation financière, afin de s'assurer que les services ou crypto-actifs proposés sont appropriés."
+  },
+  "MiCA > Titre 5 > Article 66": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs agissent d’une manière honnête, loyale et professionnelle, au mieux des intérêts de leurs clients et clients potentiels. Les prestataires de services sur crypto-actifs fournissent à leurs clients des informations loyales, claires et non trompeuses, y compris dans leurs communications commerciales, qui doivent être identifiées comme telles. Les prestataires de services sur crypto-actifs n’induisent pas un client en erreur, que ce soit délibérément ou par négligence, quant aux avantages réels ou supposés d’un crypto-actif. Les prestataires de services sur crypto-actifs avertissent leurs clients des risques liés aux transactions portant sur des crypto-actifs.",
+    "how_it_applies": "Cet article établit les obligations générales de conduite pour les prestataires de services sur crypto-actifs, exigeant qu'ils agissent de manière honnête, loyale et professionnelle dans le meilleur intérêt de leurs clients, fournissent des informations claires et non trompeuses, et avertissent des risques liés aux transactions sur crypto-actifs."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 75": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs qui assurent la conservation et l’administration de crypto-actifs pour le compte de clients concluent avec leurs clients une convention précisant leurs missions et leurs responsabilités. Une telle convention contient au moins les informations suivantes: a) l’identité des parties à la convention; b) la nature du service sur crypto-actifs fourni et une description de ce service; c) la politique de conservation; d) les moyens de communication entre le prestataire de services sur crypto-actifs et le client, y compris le système d’authentification du client; e) une description des systèmes de sécurité utilisés par le prestataire de services sur crypto-actifs; f) les frais, coûts et charges appliqués par le prestataire de services sur crypto-actifs; g) le droit applicable.",
+    "how_it_applies": "Cet article détaille les obligations contractuelles et d'information précontractuelle spécifiques aux PSCA qui assurent la conservation et l'administration de crypto-actifs, incluant la nécessité d'une convention précisant les missions, responsabilités, et diverses informations essentielles pour le client."
+  },
+  "MiCA > Titre 5 > Article 78": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui exécutent des ordres sur crypto-actifs pour le compte de clients prennent toutes les mesures nécessaires pour obtenir, lorsqu’ils exécutent des ordres, le meilleur résultat possible pour leurs clients, compte tenu des facteurs que sont le prix, les coûts, la rapidité, la probabilité de l’exécution et du règlement, le montant de l’ordre, sa nature, les conditions de conservation des crypto-actifs ou toute autre considération pertinente pour l’exécution de l’ordre.",
+    "how_it_applies": "Cet article établit l'obligation pour les prestataires de services sur crypto-actifs d'agir dans le meilleur intérêt de leurs clients en prenant toutes les mesures nécessaires pour obtenir le meilleur résultat possible lors de l'exécution des ordres, ce qui inclut la transparence et la bonne conduite."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui détiennent des crypto-actifs appartenant à des clients, ou les moyens d’accès à ces crypto-actifs, prennent des dispositions adéquates pour protéger les droits de propriété des clients, en particulier en cas d’insolvabilité du prestataire de services sur crypto-actifs, et pour empêcher l’utilisation pour leur compte propre des crypto-actifs des clients.",
+    "how_it_applies": "Cet article s'applique à la question en détaillant les obligations spécifiques des PSCA concernant la protection des droits de propriété des clients et la prévention de l'utilisation abusive des crypto-actifs et des fonds des clients."
+  },
+  "MiCA > Titre 5 > Article 79": {
+    "relevant": true,
+    "excerpt_basis": "Les règles appliquées par les prestataires de services sur crypto-actifs relatives aux conflits d’intérêts visées à l’article 72, paragraphe 1, prévoient la mise en place de procédures adéquates spécifiques pour détecter, prévenir, gérer et communiquer tout conflit d’intérêts découlant des situations suivantes: a) les prestataires de services sur crypto-actifs placent les crypto-actifs auprès de leurs propres clients; b) le prix proposé pour le placement des crypto-actifs a été surestimé ou sous-estimé; c) des incitations, y compris des incitations non pécuniaires, sont payées ou accordées par l’offreur aux prestataires de services sur crypto-actifs.",
+    "how_it_applies": "Cet article s'applique à la gestion des conflits d'intérêts par les PSCA, en exigeant des procédures spécifiques pour détecter, prévenir, gérer et communiquer les conflits d'intérêts, notamment lorsque les PSCA placent des crypto-actifs auprès de leurs propres clients ou en cas d'incitations reçues."
+  }
+}

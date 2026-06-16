@@ -157,34 +157,63 @@ def answer(state: State) -> dict:
     }
 
 
-def critic_answer(state: State) -> dict:
-    print("[Current Node] critic ")
+async def critic_answer(state: State) -> dict:
+    print("[Current Node] critic")
     time = datetime.now()
 
-    if state.critic_opinion:
-        user_content = (
-            f"Previous rounds of feedback:\n{state.critic_opinion}\n\n"
-            f"New answer to verify:\n{state.answer}\n\n"
-            f"Grounded skeleton:\n{state.grounded_skeleton}"
-        )
-    else:
-        user_content = (
-            f"Answer:\n{state.answer}\n\n"
-            f"Grounded skeleton:\n{state.grounded_skeleton}"
-        )
-
-    write_to_file(user_content, "run/promptforcritic.md")
-    response = critic_llm.invoke([
-        SystemMessage(content=load_critic_prompt()),
-        HumanMessage(content=user_content)
+    articles_text = "\n\n".join([
+        f"{a.breadcrumb}:\n{a.content}"
+        for a in state.retrieved_articles
     ])
 
-    feedback = response.content.strip()
-    write_to_file(feedback, "run/criticfeedback.md")
-    print("Critic Ended In : ", (datetime.now() - time).total_seconds(), " seconds")
-    print("Critic Feedback: ", feedback)
-    if feedback.upper() == "APPROVED":
+    # Extract atomic claims from the answer
+    try:
+        claims_response = await critic_llm.ainvoke([
+            SystemMessage(content="Extrayez chaque affirmation factuelle de la réponse sous forme de liste. Une affirmation par ligne. Phrases courtes uniquement. Pas de numérotation."),
+            HumanMessage(content=state.answer)
+        ])
+        claims = [
+            line.strip().lstrip("0123456789.-) ")
+            for line in claims_response.content.strip().split("\n")
+            if line.strip()
+        ]
+    except Exception as e:
+        print(f"[critic] claim extraction error: {type(e).__name__}: {e}")
+        claims = []
+
+    # Check each claim against full article text
+    async def _check_claim(claim):
+        try:
+            response = await critic_llm.ainvoke([
+                SystemMessage(content=(
+                    "Répondez uniquement par OUI ou NON. "
+                    "Cette affirmation est-elle soutenue par au moins un des articles fournis ? "
+                    "Une inférence directe et logique du texte compte comme soutenue. "
+                    "Répondez NON uniquement si l'affirmation contredit les articles ou n'a aucune base dans leur texte."
+                )),
+                HumanMessage(content=f"Affirmation : \"{claim}\"\n\nArticles :\n{articles_text}")
+            ])
+            supported = response.content.strip().upper().startswith("OUI")
+            return claim, supported
+        except Exception as e:
+            print(f"[critic] claim check error: {type(e).__name__}: {e}")
+            return claim, True
+
+    claim_results = await asyncio.gather(*[_check_claim(c) for c in claims]) if claims else []
+
+    invented = [claim for claim, supported in claim_results if not supported]
+
+    if not invented:
+        print("[critic] APPROUVÉ")
+        print(f"Critic Ended In: {(datetime.now() - time).total_seconds()} seconds")
         return {"critic_opinion": ""}
+
+    feedback_lines = [f"- \"{claim}\" [IN ANSWER, NOT IN SKELETON]" for claim in invented]
+    feedback = "\n".join(feedback_lines)
+
+    write_to_file(feedback, "run/criticfeedback.md")
+    print(f"Critic Ended In: {(datetime.now() - time).total_seconds()} seconds")
+    print(f"Critic Feedback:\n{feedback}")
 
     if state.critic_opinion:
         accumulated = state.critic_opinion + f"\n\n[Round {state.retry_count + 1}]:\n{feedback}"

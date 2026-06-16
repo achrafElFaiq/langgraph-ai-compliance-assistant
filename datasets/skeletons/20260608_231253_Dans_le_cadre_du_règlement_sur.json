@@ -1,0 +1,82 @@
+{
+  "AI Act > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "L’objectif du présent règlement est d’améliorer le fonctionnement du marché intérieur et de promouvoir l’adoption d’une intelligence artificielle (IA) axée sur l’humain et digne de confiance, tout en garantissant un niveau élevé de protection de la santé, de la sécurité et des droits fondamentaux consacrés dans la Charte, notamment la démocratie, l’état de droit et la protection de l’environnement, contre les effets néfastes des systèmes d’IA dans l’Union, et en soutenant l’innovation.",
+    "how_it_applies": "Cet article établit l'objectif général du règlement, qui est de garantir un niveau élevé de protection des droits fondamentaux contre les effets néfastes des systèmes d'IA, ce qui inclut les préoccupations de transparence et de protection des données mentionnées dans la requête."
+  },
+  "AI Act > Chapitre 3 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "1. La conception et le développement des systèmes d’IA à haut risque sont tels que le fonctionnement de ces systèmes est suffisamment transparent pour permettre aux déployeurs d’interpréter les sorties d’un système et de les utiliser de manière appropriée. Un type et un niveau adéquats de transparence sont garantis afin de veiller au respect des obligations pertinentes incombant au fournisseur et au déployeur énoncées à la section 3. 2. Les systèmes d’IA à haut risque sont accompagnés d’une notice d’utilisation dans un format numérique approprié ou autre, contenant des informations concises, complètes, exactes et claires, qui soient pertinentes, accessibles et compréhensibles pour les déployeurs. 3. La notice d’utilisation contient au moins les informations suivantes: a) l’identité et les coordonnées du fournisseur et, le cas échéant, de son mandataire; b) les caractéristiques, les capacités et les limites de performance du système d’IA à haut risque, notamment: i) sa destination; ii) le niveau d’exactitude, y compris les indicateurs utilisés, de robustesse et de cybersécurité visé à l’article 15 qui a servi de référence pour les tests et la validation du système d’IA à haut risque et qui peut être attendu, ainsi que toutes circonstances connues et prévisibles susceptibles d’avoir une incidence sur le niveau attendu d’exactitude, de robustesse et de cybersécurité; iii) toutes circonstances connues ou prévisibles liées à l’utilisation du système d’IA à haut risque conformément à sa destination ou dans des conditions de mauvaise utilisation raisonnablement prévisible, susceptibles d’entraîner des risques pour la santé et la sécurité ou pour les droits fondamentaux visés à l’article 9, paragraphe 2; iv) le cas échéant, les capacités et caractéristiques techniques du système d’IA à haut risque à fournir des informations pertinentes pour expliquer ses sorties; v) le cas échéant, sa performance en ce qui concerne des personnes ou groupes de personnes spécifiques à l’égard desquels le système est destiné à être utilisé; vi) le cas échéant, les spécifications relatives aux données d’entrée, ou toute autre information pertinente concernant les jeux de données d’entraînement, de validation et de test utilisés, compte tenu de la destination du système d’IA à haut risque; vii) le cas échéant, les informations permettant aux déployeurs d’interpréter les sorties du système d’IA à haut risque et de les utiliser de manière appropriée; c) les modifications du système d’IA à haut risque et de sa performance qui ont été prédéterminées par le fournisseur au moment de l’évaluation initiale de la conformité, le cas échéant; d) les mesures de contrôle humain visées à l’article 14, notamment les mesures techniques mises en place pour faciliter l’interprétation des sorties des systèmes d’IA à haut risque par les déployeurs; e) les ressources informatiques et matérielles nécessaires, la durée de vie attendue du système d’IA à haut risque et toutes les mesures de maintenance et de suivi, y compris leur fréquence, nécessaires pour assurer le bon fonctionnement de ce système d’IA, notamment en ce qui concerne les mises à jour logicielles; f) le cas échéant, une description des mécanismes compris dans le système d’IA à haut risque qui permet aux déployeurs de collecter, stocker et interpréter correctement les journaux, conformément à l’article 12.",
+    "how_it_applies": "Cet article détaille les obligations de transparence pour les systèmes d'IA à haut risque, exigeant une notice d'utilisation claire et complète pour les déployeurs, incluant des informations sur les caractéristiques, capacités, limites de performance et la destination du système, ce qui correspond à la nécessité de fournir des informations sur le fonctionnement du chatbot, ses capacités et ses limites."
+  },
+  "AI Act > Chapitre 3 > Article 8": {
+    "relevant": true,
+    "excerpt_basis": "Les systèmes d’IA à haut risque respectent les exigences énoncées dans la présente section, en tenant compte de leur destination ainsi que de l’état de la technique généralement reconnu en matière d’IA et de technologies liées à l’IA. Pour garantir le respect de ces exigences, il est tenu compte du système de gestion des risques prévu à l’article 9.",
+    "how_it_applies": "Cet article stipule que les systèmes d'IA à haut risque doivent respecter les exigences énoncées dans cette section, ce qui inclut les obligations de transparence mentionnées dans la requête pour les systèmes d'IA à haut risque."
+  },
+  "AI Act > Chapitre 4 > Article 50": {
+    "relevant": true,
+    "excerpt_basis": "1. Les fournisseurs veillent à ce que les systèmes d’IA destinés à interagir directement avec des personnes physiques soient conçus et développés de manière que les personnes physiques concernées soient informées qu’elles interagissent avec un système d’IA, sauf si cela ressort clairement du point de vue d’une personne physique normalement informée et raisonnablement attentive et avisée, compte tenu des circonstances et du contexte d’utilisation. Cette obligation ne s’applique pas aux systèmes d’IA dont la loi autorise l’utilisation à des fins de prévention ou de détection des infractions pénales, d’enquêtes ou de poursuites en la matière, sous réserve de garanties appropriées pour les droits et libertés des tiers, sauf si ces systèmes sont mis à la disposition du public pour permettre le signalement d’une infraction pénale.",
+    "how_it_applies": "Cet article s'applique à la requête en exigeant que les fournisseurs de systèmes d'IA, comme le chatbot de la fintech, informent les utilisateurs qu'ils interagissent avec un système d'IA, ce qui correspond à l'obligation de transparence mentionnée dans la requête."
+  },
+  "AI Act > Chapitre 9 > Article 80": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 25": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 6": {
+    "relevant": true,
+    "excerpt_basis": "Un système d’IA mis sur le marché ou mis en service, qu’il soit ou non indépendant des produits visés aux points a) et b), est considéré comme étant à haut risque lorsque les deux conditions suivantes sont remplies: a) le système d’IA est destiné à être utilisé comme composant de sécurité d’un produit couvert par la législation d’harmonisation de l’Union dont la liste figure à l’annexe I, ou le système d’IA constitue lui-même un tel produit; b) le produit dont le composant de sécurité visé au point a) est le système d’IA, ou le système d’IA lui-même en tant que produit, est soumis à une évaluation de conformité par un tiers en vue de la mise sur le marché ou de la mise en service de ce produit conformément à la législation d’harmonisation de l’Union dont la liste figure à l’annexe I. 2. Outre les systèmes d’IA à haut risque visés au paragraphe 1, les systèmes d’IA visés à l’annexe III sont considérés comme étant à haut risque.",
+    "how_it_applies": "Cet article définit les critères selon lesquels un système d'IA est considéré comme étant à haut risque, ce qui est pertinent pour la fintech qui fournit un système d'IA à haut risque."
+  },
+  "AI Act > Chapitre 9 > Article 79": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 16": {
+    "relevant": true,
+    "excerpt_basis": "Les fournisseurs de systèmes d’IA à haut risque: a) veillent à ce que leurs systèmes d’IA à haut risque soient conformes aux exigences énoncées à la section 2; b) indiquent sur le système d’IA à haut risque ou, lorsque cela n’est pas possible, sur son emballage ou dans la documentation l’accompagnant, selon le cas, leur nom, raison sociale ou marque déposée, l’adresse à laquelle ils peuvent être contactés; c) mettent en place un système de gestion de la qualité conforme à l’article 17; d) assurent la conservation de la documentation visée à l’article 18; e) assurent la tenue des journaux générés automatiquement par leurs systèmes d’IA à haut risque, lorsque ces journaux se trouvent sous leur contrôle, conformément à l’article 19; f) veillent à ce que le système d’IA à haut risque soit soumis à la procédure d’évaluation de la conformité applicable visée à l’article 43, avant sa mise sur le marché ou sa mise en service; g) élaborent une déclaration UE de conformité conformément à l’article 47; h) apposent le marquage CE sur le système d’IA à haut risque ou, lorsque cela n’est pas possible, sur son emballage ou dans la documentation l’accompagnant, selon le cas, afin d’indiquer la conformité avec le présent règlement, conformément à l’article 48; i) respectent les obligations en matière d’enregistrement prévues à l’article 49, paragraphe 1; j) prennent les mesures correctives nécessaires et fournissent les informations requises à l’article 20; k) à la demande motivée d’une autorité nationale compétente, prouvent la conformité du système d’IA à haut risque avec les exigences énoncées à la section 2; l) veillent à ce que le système d’IA à haut risque soit conforme aux exigences en matière d’accessibilité conformément aux directives (UE) 2016/2102 et (UE) 2019/882.",
+    "how_it_applies": "Cet article énumère les obligations générales des fournisseurs de systèmes d'IA à haut risque, y compris l'obligation de se conformer aux exigences de la section 2, ce qui est pertinent pour la fintech mentionnée dans la requête."
+  },
+  "AI Act > Chapitre 9 > Article 74": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 78": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "1. Les fournisseurs de systèmes d’IA à haut risque mettent en place un système de gestion de la qualité garantissant le respect du présent règlement. Ce système est documenté de manière méthodique et ordonnée sous la forme de politiques, de procédures et d’instructions écrites, et comprend au moins les aspects suivants: a) une stratégie de respect de la réglementation, notamment le respect des procédures d’évaluation de la conformité et des procédures de gestion des modifications apportées aux systèmes d’IA à haut risque; f) les systèmes et procédures de gestion des données, notamment l’acquisition, la collecte, l’analyse, l’étiquetage, le stockage, la filtration, l’exploration, l’agrégation, la conservation des données et toute autre opération concernant les données qui est effectuée avant la mise sur le marché ou la mise en service de systèmes d’IA à haut risque et aux fins de celles-ci;",
+    "how_it_applies": "Cet article est pertinent car il exige des fournisseurs de systèmes d'IA à haut risque, comme la fintech mentionnée, de mettre en place un système de gestion de la qualité incluant une stratégie de respect de la réglementation et des procédures de gestion des données, ce qui est essentiel pour la conformité avec le GDPR et les obligations de transparence."
+  },
+  "AI Act > Chapitre 9 > Article 82": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 75": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 5 > Article 53": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

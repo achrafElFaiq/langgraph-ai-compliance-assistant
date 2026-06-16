@@ -1,0 +1,77 @@
+{
+  "GDPR > Chapitre 4 > Article 37": {
+    "relevant": true,
+    "excerpt_basis": "Le responsable du traitement et le sous-traitant désignent en tout état de cause un délégué à la protection des données lorsque: [...] b) les activités de base du responsable du traitement ou du sous-traitant consistent en des opérations de traitement qui, du fait de leur nature, de leur portée et/ou de leurs finalités, exigent un suivi régulier et systématique à grande échelle des personnes concernées; ou c) les activités de base du responsable du traitement ou du sous-traitant consistent en un traitement à grande échelle de catégories particulières de données visées à l'article 9 et de données à caractère personnel relatives à des condamnations pénales et à des infractions visées à l'article 10.",
+    "how_it_applies": "This article specifies the conditions under which a data controller or processor must appoint a Data Protection Officer (DPO), particularly when their core activities involve large-scale, regular and systematic monitoring of data subjects, or large-scale processing of special categories of data, which is relevant for a neobank handling sensitive financial data."
+  },
+  "GDPR > Chapitre 4 > Article 39": {
+    "relevant": true,
+    "excerpt_basis": "Les missions du délégué à la protection des données sont au moins les suivantes: a) informer et conseiller le responsable du traitement ou le sous-traitant ainsi que les employés qui procèdent au traitement sur les obligations qui leur incombent en vertu du présent règlement et d'autres dispositions du droit de l'Union ou du droit des États membres en matière de protection des données; b) contrôler le respect du présent règlement, d'autres dispositions du droit de l'Union ou du droit des États membres en matière de protection des données et des règles internes du responsable du traitement ou du sous-traitant en matière de protection des données à caractère personnel, y compris en ce qui concerne la répartition des responsabilités, la sensibilisation et la formation du personnel participant aux opérations de traitement, et les audits s'y rapportant; c) dispenser des conseils, sur demande, en ce qui concerne l'analyse d'impact relative à la protection des données et vérifier l'exécution de celle-ci en vertu de l'article 35; d) coopérer avec l'autorité de contrôle; e) faire office de point de contact pour l'autorité de contrôle sur les questions relatives au traitement, y compris la consultation préalable visée à l'article 36, et mener des consultations, le cas échéant, sur tout autre sujet.",
+    "how_it_applies": "Cet article détaille les missions du Délégué à la Protection des Données (DPO), incluant l'information et le conseil, le contrôle du respect du règlement, la sensibilisation et la formation du personnel, la coopération avec l'autorité de contrôle, et le rôle de point de contact, ce qui répond directement à la partie de la requête concernant les missions du DPO."
+  },
+  "GDPR > Chapitre 4 > Article 38": {
+    "relevant": true,
+    "excerpt_basis": "1. Le responsable du traitement et le sous-traitant veillent à ce que le délégué à la protection des données soit associé, d'une manière appropriée et en temps utile, à toutes les questions relatives à la protection des données à caractère personnel. 2. Le responsable du traitement et le sous-traitant aident le délégué à la protection des données à exercer les missions visées à l'article 39 en fournissant les ressources nécessaires pour exercer ces missions, ainsi que l'accès aux données à caractère personnel et aux opérations de traitement, et lui permettant d'entretenir ses connaissances spécialisées. 3. Le responsable du traitement et le sous-traitant veillent à ce que le délégué à la protection des données ne reçoive aucune instruction en ce qui concerne l'exercice des missions. Le délégué à la protection des données ne peut être relevé de ses fonctions ou pénalisé par le responsable du traitement ou le sous-traitant pour l'exercice de ses missions. Le délégué à la protection des données fait directement rapport au niveau le plus élevé de la direction du responsable du traitement ou du sous-traitant. 4. Les personnes concernées peuvent prendre contact avec le délégué à la protection des données au sujet de toutes les questions relatives au traitement de leurs données à caractère personnel et à l'exercice des droits que leur confère le présent règlement. 5. Le délégué à la protection des données est soumis au secret professionnel ou à une obligation de confidentialité en ce qui concerne l'exercice de ses missions, conformément au droit de l'Union ou au droit des États membres. 6. Le délégué à la protection des données peut exécuter d'autres missions et tâches. Le responsable du traitement ou le sous-traitant veillent à ce que ces missions et tâches n'entraînent pas de conflit d'intérêts.",
+    "how_it_applies": "This article details the position of the Data Protection Officer (DPO) within an organization, outlining the responsibilities of the controller and processor towards the DPO, the DPO's independence, and their role as a contact point for data subjects. It directly addresses aspects of the DPO's missions, independence, and role as a contact point, as requested in the query."
+  },
+  "GDPR > Chapitre 4 > Article 27": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 1 > Article 4": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 2 > Article 6": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "b) le cas échéant, les coordonnées du délégué à la protection des données;",
+    "how_it_applies": "This article mentions the Data Protection Officer (DPO) by stating that the controller must provide the DPO's contact details if applicable, but it does not specify the conditions for appointing a DPO."
+  },
+  "GDPR > Chapitre 2 > Article 9": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 5 > Article 45": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 23": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 9 > Article 88": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 35": {
+    "relevant": true,
+    "excerpt_basis": "Lorsqu'il effectue une analyse d'impact relative à la protection des données, le responsable du traitement demande conseil au délégué à la protection des données, si un tel délégué a été désigné.",
+    "how_it_applies": "This article specifies that the data protection officer (DPO) should be consulted when a data protection impact assessment (DPIA) is carried out, indicating a role for the DPO in certain data processing activities."
+  },
+  "GDPR > Chapitre 2 > Article 11": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 15": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 58": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

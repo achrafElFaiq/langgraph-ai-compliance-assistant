@@ -1,0 +1,57 @@
+{
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article is relevant as it specifies the minimum permanent capital requirements for crypto-asset service providers (PSCA), stating they must hold prudential safeguards equal to the higher of the minimum permanent capital requirements from Annex IV or one-quarter of the previous year's fixed overheads."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "e) la preuve que le candidat prestataire de services sur crypto-actifs satisfait aux exigences de garanties prudentielles prévues par l’article 67;",
+    "how_it_applies": "This article is relevant because it states that a crypto-asset service provider (PSCA) must provide proof of satisfying the prudential safeguard requirements outlined in Article 67 as part of its authorization application."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "1) «résilience opérationnelle numérique»: la capacité d’une entité financière à développer, garantir et réévaluer son intégrité et sa fiabilité opérationnelles en assurant directement ou indirectement par le recours aux services fournis par des prestataires tiers de services TIC, l’intégralité des capacités liées aux TIC nécessaires pour garantir la sécurité des réseaux et des systèmes d’information qu’elle utilise, et qui sous-tendent la fourniture continue de services financiers et leur qualité, y compris en cas de perturbations;",
+    "how_it_applies": "This article defines 'digital operational resilience' as the capacity of a financial entity to ensure operational integrity and reliability, including through the use of third-party ICT services, which is relevant to the query's mention of DORA and operational resilience obligations impacting capital requirements due to reliance on ICT service providers."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article is relevant as it mandates a report to evaluate the appropriateness of prudential requirements for crypto-asset service providers, including the need to align them with initial capital and own funds requirements for investment firms, which directly addresses the query's concern about permanent minimum own funds requirements for PSCA."
+  },
+  "DORA > Chapitre 5 > Article 30": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 9": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières conçoivent, acquièrent et mettent en œuvre des stratégies, des politiques, des procédures, des protocoles et des outils de sécurité de TIC qui visent à garantir la résilience, la continuité et la disponibilité des systèmes de TIC, en particulier ceux qui soutiennent des fonctions critiques ou importantes, et à maintenir des normes élevées en matière de disponibilité, d’authenticité, d’intégrité et de confidentialité des données, que ce soit au repos, en cours d’utilisation ou en transit.",
+    "how_it_applies": "This article outlines the operational resilience obligations for financial entities regarding ICT systems, which could indirectly impact capital requirements if dependencies on ICT service providers lead to increased operational risk."
+  },
+  "MiCA > Titre 5 > Article 83": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

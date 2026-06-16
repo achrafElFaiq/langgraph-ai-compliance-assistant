@@ -1,0 +1,62 @@
+{
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article. [...] Aux fins du premier alinéa, les entités financières établissent, après avoir recueilli et analysé toutes les informations pertinentes, la notification initiale et les rapports visés au paragraphe 4 du présent article en utilisant les modèles visés à l’article 20, et les soumettent à l’autorité compétente. S’il s’avère qu’une impossibilité technique empêche la soumission de la notification initiale au moyen du modèle, les entités financières le notifient à l’autorité compétente par d’autres moyens. La notification initiale et les rapports visés au paragraphe 4 comprennent toutes les informations nécessaires pour permettre à l’autorité compétente de déterminer l’importance de l’incident majeur lié aux TIC et d’évaluer les éventuelles incidences transfrontières.",
+    "how_it_applies": "Cet article établit l'obligation pour les entités financières de déclarer les incidents majeurs liés aux TIC à l'autorité compétente, en précisant que la notification initiale et les rapports doivent inclure toutes les informations nécessaires pour évaluer l'importance et les incidences de l'incident."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC.",
+    "how_it_applies": "This article is relevant as it mandates financial entities to define, establish, and implement an ICT-related incident management process for detecting, managing, and notifying incidents, which aligns with the query's focus on incident notification obligations."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "ii) la notification, aux autorités compétentes, des incidents majeurs liés aux TIC et la notification, à titre volontaire, des cybermenaces importantes aux autorités compétentes; iii) la notification aux autorités compétentes, par les entités financières visées à l’article 2, paragraphe 1, points a) à d), des incidents opérationnels ou de sécurité majeurs liés au paiement;",
+    "how_it_applies": "This article establishes the requirement for financial entities to notify competent authorities of major ICT-related incidents and major operational or security payment-related incidents."
+  },
+  "DORA > Chapitre 2 > Article 5": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 73": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 3 > Article 18": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières classent les incidents liés aux TIC et déterminent leur incidence sur la base des critères suivants: a) le nombre et/ou l’importance des clients ou des contreparties financières touchés et, le cas échéant, le volume ou le nombre de transactions touchées par l’incident lié aux TIC, et si cet incident a porté atteinte à la réputation; b) la durée de l’incident lié aux TIC, y compris les interruptions de service; c) la répartition géographique en ce qui concerne les zones touchées par l’incident lié aux TIC, en particulier si celui-ci touche plus de deux États membres; d) les pertes de données occasionnées par l’incident lié aux TIC en ce qui concerne la disponibilité, l’authenticité, l’intégrité ou la confidentialité des données; e) la criticité des services touchés, y compris les transactions et les opérations de l’entité financière; f) les conséquences économiques, en particulier les coûts et pertes directs et indirects, en termes absolus et relatifs, de l’incident lié aux TIC.",
+    "how_it_applies": "This article is relevant as it outlines the criteria financial entities must use to classify ICT-related incidents and assess their impact, which is a foundational step in the incident notification process mentioned in the query."
+  },
+  "DORA > Chapitre 3 > Article 23": {
+    "relevant": true,
+    "excerpt_basis": "Les exigences énoncées au présent chapitre s’appliquent également aux incidents opérationnels ou de sécurité liés au paiement et aux incidents opérationnels ou de sécurité majeurs liés au paiement lorsqu’ils concernent des établissements de crédit, des établissements de paiement, des prestataires de services d’information sur les comptes et des établissements de monnaie électronique.",
+    "how_it_applies": "This article confirms that the requirements of the chapter, which include incident notification, apply to payment institutions, as mentioned in the query regarding a payment institution's cybersecurity incident notification obligations."
+  },
+  "DORA > Chapitre 2 > Article 10": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 13": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 12": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

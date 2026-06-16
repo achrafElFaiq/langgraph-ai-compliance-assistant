@@ -1,0 +1,62 @@
+{
+  "DORA > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "a) les exigences applicables aux entités financières en ce qui concerne: i) la gestion des risques liés aux technologies de l’information et de la communication (TIC); ii) la notification, aux autorités compétentes, des incidents majeurs liés aux TIC et la notification, à titre volontaire, des cybermenaces importantes aux autorités compétentes; iii) la notification aux autorités compétentes, par les entités financières visées à l’article 2, paragraphe 1, points a) à d), des incidents opérationnels ou de sécurité majeurs liés au paiement;",
+    "how_it_applies": "This article is relevant as it outlines the uniform requirements for financial entities regarding the management of ICT risks and the notification of major ICT-related incidents and significant cyber threats to competent authorities, including major operational or security incidents related to payment."
+  },
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "1. Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article. ... 4. Les entités financières soumettent, dans les délais à fixer conformément à l’article 20, premier alinéa, point a) ii), à l’autorité compétente concernée les éléments suivants: a) une notification initiale; b) un rapport intermédiaire après la notification initiale visée au point a), dès que la situation de l’incident initial a sensiblement changé ou que le traitement de l’incident majeur lié aux TIC a changé sur la base des nouvelles informations disponibles, suivi, le cas échéant, de notifications actualisées chaque fois qu’une mise à jour pertinente de la situation est disponible, ainsi que sur demande spécifique de l’autorité compétente; c) un rapport final, lorsque l’analyse des causes originelles est terminée, que des mesures d’atténuation aient déjà été mises en œuvre ou non, et lorsque les chiffres relatifs aux incidences réelles sont disponibles en lieu et place des estimations. ... 3. Lorsqu’un incident majeur lié aux TIC survient et a une incidence sur les intérêts financiers des clients, les entités financières informent leurs clients de cet incident majeur lié aux TIC et des mesures qui ont été prises pour atténuer les effets préjudiciables de cet incident sans retard injustifié, dès qu’elles en ont connaissance.",
+    "how_it_applies": "Cet article établit l'obligation pour les entités financières de déclarer les incidents majeurs liés aux TIC à l'autorité compétente, en spécifiant les types de rapports (initial, intermédiaire, final) et les délais à respecter. Il précise également l'obligation d'informer les clients en cas d'incident majeur ayant un impact sur leurs intérêts financiers."
+  },
+  "DORA > Chapitre 2 > Article 13": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières réalisent des examens post-incident lié aux TIC après qu’un incident majeur lié aux TIC a perturbé leurs activités principales, afin d’analyser les causes de la perturbation et de déterminer les améliorations à apporter aux opérations de TIC ou dans le cadre de la politique de continuité des activités de TIC visée à l’article 11. Les entités financières, autres que les microentreprises, communiquent, sur demande, aux autorités compétentes les changements qui ont été apportés à la suite des examens post-incident lié aux TIC visés au premier alinéa.",
+    "how_it_applies": "This article requires financial entities to conduct post-incident reviews for major ICT incidents to analyze causes and identify improvements, and for non-microenterprises to communicate these changes to competent authorities upon request."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "1. Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC. 2. Les entités financières enregistrent tous les incidents liés aux TIC et les cybermenaces importantes. Les entités financières mettent en place des procédures et des processus adéquats pour assurer une surveillance, un traitement et un suivi cohérents et intégrés des incidents liés aux TIC, pour veiller à ce que les causes originelles soient identifiées et documentées et qu’il y soit remédié pour éviter que de tels incidents ne se produisent. 3. Le processus de gestion des incidents liés aux TIC visé au paragraphe 1: a) met en place des indicateurs d’alerte précoce; b) instaure des procédures destinées à identifier, suivre, consigner, catégoriser et classer les incidents liés aux TIC en fonction de leur priorité et de leur gravité et en fonction de la criticité des services touchés, conformément aux critères fixés à l’article 18, paragraphe 1; c) attribue les rôles et les responsabilités qui doivent être activés pour différents types et scénarios d’incidents liés aux TIC; d) établit des plans pour la communication à l’intention du personnel, des parties prenantes externes et des médias, conformément à l’article 14, et pour la notification aux clients, les procédures internes de remontée des informations, y compris les plaintes des clients liées aux TIC, ainsi que pour la fourniture d’informations aux entités financières qui agissent en tant que contreparties, le cas échéant; e) permet de notifier au minimum les incidents majeurs liés aux TIC aux membres de la direction concernés et de communiquer à l’organe de direction au minimum des informations sur les incidents majeurs liés aux TIC, expliquant leurs incidences, la réponse à leur apporter et les contrôles supplémentaires à mettre en place à la suite de tels incidents; f) définit des procédures de réponse en cas d’incident lié aux TIC, afin d’en atténuer les effets et de garantir que les services redeviennent opérationnels et sécurisés en temps utile.",
+    "how_it_applies": "Cet article établit l'obligation pour les entités financières de définir, d'établir et de mettre en œuvre un processus de gestion des incidents liés aux TIC, incluant la détection, la gestion, la notification, l'enregistrement, la documentation des causes originelles, la catégorisation par gravité, la communication aux parties prenantes et la notification des incidents majeurs à la direction."
+  },
+  "DORA > Chapitre 2 > Article 6": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "8) «incident lié aux TIC»: un événement ou une série d’événements liés entre eux que l’entité financière n’a pas prévu qui compromet la sécurité des réseaux et des systèmes d’information, et a une incidence négative sur la disponibilité, l’authenticité, l’intégrité ou la confidentialité des données ou sur les services fournis par l’entité financière; 10) «incident majeur lié aux TIC»: un incident lié aux TIC qui a une incidence négative élevée sur les réseaux et les systèmes d’information qui soutiennent les fonctions critiques ou importantes de l’entité financière; 35) «établissement de paiement»: un établissement de paiement au sens de l’article 4, point 4), de la directive (UE) 2015/2366;",
+    "how_it_applies": "This article defines key terms such as 'incident lié aux TIC', 'incident majeur lié aux TIC', and 'établissement de paiement', which are relevant to understanding the scope of incident management and notification obligations for payment institutions under DORA."
+  },
+  "AI Act > Chapitre 9 > Article 73": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 3 > Article 23": {
+    "relevant": true,
+    "excerpt_basis": "Les exigences énoncées au présent chapitre s’appliquent également aux incidents opérationnels ou de sécurité liés au paiement et aux incidents opérationnels ou de sécurité majeurs liés au paiement lorsqu’ils concernent des établissements de crédit, des établissements de paiement, des prestataires de services d’information sur les comptes et des établissements de monnaie électronique.",
+    "how_it_applies": "This article confirms that the requirements of the chapter, which include incident management and notification, apply to payment institutions concerning operational or security incidents related to payment."
+  },
+  "DORA > Chapitre 4 > Article 24": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 5": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 12": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

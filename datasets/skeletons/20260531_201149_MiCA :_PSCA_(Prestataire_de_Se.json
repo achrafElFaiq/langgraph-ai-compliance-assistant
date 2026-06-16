@@ -1,0 +1,67 @@
+{
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article establishes the minimum permanent capital requirements for crypto-asset service providers, which must be the higher of the amount specified in Annex IV or one-quarter of the previous year's fixed overheads."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article is relevant as it mentions an evaluation of the appropriateness of prudential requirements for crypto-asset service providers and the need to align these with initial capital and own funds requirements for investment firms, which directly relates to the query's mention of minimum permanent own funds for PSCA."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "e) la preuve que le candidat prestataire de services sur crypto-actifs satisfait aux exigences de garanties prudentielles prévues par l’article 67;",
+    "how_it_applies": "This article is relevant because it states that a crypto-asset service provider (PSCA) must provide proof of satisfying the prudential safeguard requirements outlined in Article 67 as part of its authorization application."
+  },
+  "AI Act > Chapitre 9 > Article 78": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 5 > Article 30": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 7 > Article 111": {
+    "relevant": true,
+    "excerpt_basis": "1. Sans préjudice de toute sanction pénale et des pouvoirs de surveillance et d’enquête des autorités compétentes énumérées à l’article 94, les États membres, conformément au droit national, prévoient que les autorités compétentes ont le pouvoir de prendre des sanctions administratives et d’autres mesures administratives appropriées au moins en ce qui concerne les infractions suivantes: a) les infractions aux articles 4 à 14; b) les infractions aux articles 16, 17, 19, 22, 23 et 25, 27 à 41 et 46 et 47; c) les infractions aux articles 48 à 51 et aux articles 53, 54 et 55; d) les infractions aux articles 59, 60 et 64 et 65 à 83; e) les infractions aux articles 88 à 92; f) le refus de coopérer ou de se soumettre à une enquête, une inspection ou une demande visées à l’article 94, paragraphe 3.",
+    "how_it_applies": "Cet article est pertinent car il détaille les types d'infractions aux articles de MiCA (y compris les articles 5, 6 et 7 mentionnés dans la requête) pour lesquelles des sanctions administratives peuvent être imposées, ce qui pourrait avoir un impact sur les fonds propres d'une entité."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "15) «prestataire de services sur crypto-actifs»: une personne morale ou une autre entreprise dont l’occupation ou l’activité consiste à fournir un ou plusieurs services sur crypto-actifs à des clients à titre professionnel, et qui est autorisée à fournir des services sur crypto-actifs conformément à l’article 59;",
+    "how_it_applies": "This article defines 'prestataire de services sur crypto-actifs' (PSCA), which is a key term in the user's query regarding MiCA and capital requirements."
+  },
+  "MiCA > Titre 5 > Article 75": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 9 > Article 141": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

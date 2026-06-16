@@ -1,0 +1,77 @@
+{
+  "GDPR > Chapitre 4 > Article 33": {
+    "relevant": true,
+    "excerpt_basis": "En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques. Lorsque la notification à l'autorité de contrôle n'a pas lieu dans les 72 heures, elle est accompagnée des motifs du retard. (...) Le responsable du traitement documente toute violation de données à caractère personnel, en indiquant les faits concernant la violation des données à caractère personnel, ses effets et les mesures prises pour y remédier. La documentation ainsi constituée permet à l'autorité de contrôle de vérifier le respect du présent article.",
+    "how_it_applies": "This article establishes the obligation for the data controller to notify the supervisory authority of a personal data breach within 72 hours of becoming aware of it, unless the breach is unlikely to result in a risk to the rights and freedoms of natural persons. It also requires the data controller to document any personal data breach, including its facts, effects, and remedial actions."
+  },
+  "GDPR > Chapitre 4 > Article 34": {
+    "relevant": true,
+    "excerpt_basis": "Lorsqu'une violation de données à caractère personnel est susceptible d'engendrer un risque élevé pour les droits et libertés d'une personne physique, le responsable du traitement communique la violation de données à caractère personnel à la personne concernée dans les meilleurs délais.",
+    "how_it_applies": "This article establishes the obligation for the data controller to communicate a personal data breach to the data subject without undue delay when the breach is likely to result in a high risk to their rights and freedoms."
+  },
+  "GDPR > Chapitre 6 > Article 57": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 36": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 58": {
+    "relevant": true,
+    "excerpt_basis": "Chaque autorité de contrôle dispose du pouvoir d'adopter toutes les mesures correctrices suivantes: e) ordonner au responsable du traitement de communiquer à la personne concernée une violation de données à caractère personnel;",
+    "how_it_applies": "This article grants supervisory authorities the power to order a controller to communicate a personal data breach to the data subject, which is relevant to the query's mention of the obligation to inform affected individuals."
+  },
+  "GDPR > Chapitre 4 > Article 28": {
+    "relevant": true,
+    "excerpt_basis": "f) aide le responsable du traitement à garantir le respect des obligations prévues aux articles 32 à 36, compte tenu de la nature du traitement et des informations à la disposition du sous-traitant;",
+    "how_it_applies": "This article is relevant because it states that a processor must assist the controller in ensuring compliance with obligations under Articles 32 to 36, which include security measures, data breach notifications, and data protection impact assessments mentioned in the query."
+  },
+  "GDPR > Chapitre 5 > Article 47": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 24": {
+    "relevant": true,
+    "excerpt_basis": "Compte tenu de la nature, de la portée, du contexte et des finalités du traitement ainsi que des risques, dont le degré de probabilité et de gravité varie, pour les droits et libertés des personnes physiques, le responsable du traitement met en œuvre des mesures techniques et organisationnelles appropriées pour s'assurer et être en mesure de démontrer que le traitement est effectué conformément au présent règlement.",
+    "how_it_applies": "This article requires the data controller to implement appropriate technical and organizational measures to ensure and demonstrate that processing complies with the regulation, which is relevant to the query's mention of implementing appropriate security measures."
+  },
+  "GDPR > Chapitre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 13": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 9 > Article 90": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 3 > Article 15": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 35": {
+    "relevant": true,
+    "excerpt_basis": "1. Lorsqu'un type de traitement, en particulier par le recours à de nouvelles technologies, et compte tenu de la nature, de la portée, du contexte et des finalités du traitement, est susceptible d'engendrer un risque élevé pour les droits et libertés des personnes physiques, le responsable du traitement effectue, avant le traitement, une analyse de l'impact des opérations de traitement envisagées sur la protection des données à caractère personnel.",
+    "how_it_applies": "This article establishes the obligation for the data controller to conduct a Data Protection Impact Assessment (DPIA) before processing, especially when the processing is likely to result in a high risk to the rights and freedoms of natural persons."
+  },
+  "GDPR > Chapitre 3 > Article 12": {
+    "relevant": true,
+    "excerpt_basis": "Le responsable du traitement prend des mesures appropriées pour fournir toute information visée aux articles 13 et 14 ainsi que pour procéder à toute communication au titre des articles 15 à 22 et de l'article 34 en ce qui concerne le traitement à la personne concernée d'une façon concise, transparente, compréhensible et aisément accessible, en des termes clairs et simples, en particulier pour toute information destinée spécifiquement à un enfant.",
+    "how_it_applies": "This article is relevant because it mentions Article 34, which is cited in the query regarding the obligation to inform data subjects without undue delay when a breach is likely to result in a high risk to their rights and freedoms."
+  },
+  "GDPR > Chapitre 4 > Article 42": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

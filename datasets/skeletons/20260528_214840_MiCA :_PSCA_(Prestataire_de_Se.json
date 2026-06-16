@@ -1,0 +1,62 @@
+{
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": true,
+    "excerpt_basis": "r) une évaluation du caractère approprié des exigences prudentielles applicables aux prestataires de services sur crypto-actifs et de la nécessité d’aligner ces exigences sur les exigences relatives au capital initial et aux fonds propres applicables aux entreprises d’investissement en vertu du règlement (UE) 2019/2033 du Parlement européen et du Conseil(46)et de la directive (UE) 2019/2034 du Parlement européen et du Conseil(47);",
+    "how_it_applies": "This article discusses the evaluation of prudential requirements for crypto-asset service providers and the need to align these requirements with those for investment firms regarding initial capital and own funds."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les personnes morales ou les autres entreprises qui ont l’intention de fournir des services sur crypto-actifs soumettent leur demande d’agrément en tant que prestataire de services sur crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "This article discusses the requirements for entities intending to provide crypto-asset services, including submitting an application for authorization as a crypto-asset service provider to the relevant authority in their home Member State."
+  },
+  "MiCA > Titre 5 > Article 67": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les prestataires de services sur crypto-actifs disposent à tout moment de garanties prudentielles d’un montant au moins égal au plus élevé des deux montants suivants: a) le montant des exigences de capital minimal permanent indiquées à l’annexe IV, en fonction du type de services sur crypto-actifs fourni; b) un quart des frais généraux fixes de l’année précédente, qui sont recalculés chaque année.",
+    "how_it_applies": "This article states that crypto-asset service providers must have prudential guarantees at least equal to the higher of two amounts: the minimum permanent capital requirements in Annex IV, or a quarter of the previous year's fixed overheads."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": true,
+    "excerpt_basis": "1.   Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs fixent, maintiennent et appliquent des règles de fonctionnement de la plate-forme de négociation claires et transparentes.",
+    "how_it_applies": "This article requires crypto-asset service providers operating a crypto-asset trading platform to establish, maintain, and apply clear and transparent operating rules for the trading platform."
+  },
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "15) «prestataire de services sur crypto-actifs»: une personne morale ou une autre entreprise dont l’occupation ou l’activité consiste à fournir un ou plusieurs services sur crypto-actifs à des clients à titre professionnel, et qui est autorisée à fournir des services sur crypto-actifs conformément à l’article 59; 16) «service sur crypto-actifs»: l’un ou l’autre des services et activités suivants lié à un crypto-actif: a) la conservation et l’administration de crypto-actifs pour le compte de clients; b) l’exploitation d’une plate-forme de négociation de crypto-actifs; c) l’échange de crypto-actifs contre des fonds; d) l’échange de crypto-actifs contre d’autres crypto-actifs; e) l’exécution d’ordres sur crypto-actifs pour le compte de clients; f) le placement de crypto-actifs; g) la réception et la transmission d’ordres sur crypto-actifs pour le compte de clients; h) la fourniture de conseils en crypto-actifs; i) la fourniture de services de gestion de portefeuille de crypto-actifs; j) la fourniture de services de transfert de crypto-actifs pour le compte de clients; 18) «exploitation d’une plate-forme de négociation de crypto-actifs»: la gestion d’un ou de plusieurs systèmes multilatéraux, qui réunissent ou facilitent la rencontre de multiples intérêts acheteurs et vendeurs exprimés par des tiers pour des crypto-actifs, au sein du système et conformément à ses règles, d’une manière qui aboutit à un contrat, soit par l’échange de crypto-actifs contre des fonds, soit par l’échange de crypto-actifs contre d’autres crypto-actifs;",
+    "how_it_applies": "This article defines \"prestataire de services sur crypto-actifs\" (crypto-asset service provider) and \"service sur crypto-actifs\" (crypto-asset service), including the operation of a crypto-asset trading platform, which is relevant to the query."
+  },
+  "MiCA > Titre 5 > Article 68": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 83": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 15": {
+    "relevant": true,
+    "excerpt_basis": "Lorsqu’un offreur, une personne qui demande l’admission à la négociation ou l’exploitant d’une plate-forme de négociation a enfreint l’article 6 en fournissant, dans son livre blanc sur les crypto-actifs ou dans un livre blanc sur les crypto-actifs modifié, des informations qui ne sont pas complètes, loyales ou claires ou qui sont trompeuses, l’offreur, la personne qui demande l’admission à la négociation ou l’exploitant d’une plate-forme de négociation et les membres de son organe d’administration, de direction ou de surveillance sont responsables, à l’égard d’un détenteur du crypto-actif, de toute perte subie en raison de cette infraction.",
+    "how_it_applies": "This article addresses the responsibilities of those operating a crypto-asset trading platform. If the platform operator provides incomplete, unfair, unclear, or misleading information in its white paper, it can be held liable for any losses incurred by crypto-asset holders."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 5 > Article 30": {
+    "relevant": true,
+    "excerpt_basis": "Les droits et obligations de l’entité financière et du prestataire tiers de services TIC sont définis clairement et consignés par écrit.",
+    "how_it_applies": "This article addresses the rights and obligations of financial entities and third-party ICT service providers, requiring them to be clearly defined and documented in writing."
+  },
+  "AI Act > Chapitre 9 > Article 78": {
+    "relevant": true,
+    "excerpt_basis": "AI Act : si la plateforme utilise des systèmes d’IA pour le matching ou la surveillance – obligations de conformité aux exigences de transparence et de gestion des risques qui peuvent influencer les exigences de fonds propres",
+    "how_it_applies": "The article addresses the AI Act and mentions that if a platform uses AI systems for matching or surveillance, it has obligations to comply with transparency and risk management requirements, which can influence capital requirements. This means that the AI Act's requirements could potentially affect the platform's capital requirements."
+  }
+}

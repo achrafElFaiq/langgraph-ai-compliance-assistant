@@ -1,0 +1,142 @@
+[
+  {
+    "id": "r3",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 0.7142857142857143,
+    "ContextualPrecisionMetric": 0.7,
+    "AnswerRelevancyMetric": 0.875
+  },
+  {
+    "id": "r4",
+    "FaithfulnessMetric": 0.6666666666666666,
+    "ContextualRecallMetric": 0.5714285714285714,
+    "ContextualPrecisionMetric": 0.7947781385281386,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r1",
+    "FaithfulnessMetric": 0.6666666666666666,
+    "ContextualRecallMetric": 0.6470588235294118,
+    "ContextualPrecisionMetric": 0.7961904761904762,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r2",
+    "FaithfulnessMetric": 0.9459459459459459,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.8218253968253969,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r6",
+    "FaithfulnessMetric": 0.8571428571428571,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.9704861111111112,
+    "AnswerRelevancyMetric": 0.9166666666666666
+  },
+  {
+    "id": "r7",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 0.8,
+    "ContextualPrecisionMetric": 0.9704861111111112,
+    "AnswerRelevancyMetric": 0.9090909090909091
+  },
+  {
+    "id": "r5",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.9526289682539681,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r8",
+    "FaithfulnessMetric": 0.8888888888888888,
+    "ContextualRecallMetric": 0.85,
+    "ContextualPrecisionMetric": 1.0,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r9",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 0.7692307692307693,
+    "ContextualPrecisionMetric": 0.961734693877551,
+    "AnswerRelevancyMetric": 0.6666666666666666
+  },
+  {
+    "id": "r13",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 1.0,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r12",
+    "FaithfulnessMetric": 0.7333333333333333,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.7833925333925335,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r10",
+    "FaithfulnessMetric": 0.9285714285714286,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.9395245277598219,
+    "AnswerRelevancyMetric": 0.8
+  },
+  {
+    "id": "r16",
+    "FaithfulnessMetric": 0.9333333333333333,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.8803619909502262,
+    "AnswerRelevancyMetric": 0.6923076923076923
+  },
+  {
+    "id": "r11",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 0.8076923076923077,
+    "ContextualPrecisionMetric": 0.5128167641325535,
+    "AnswerRelevancyMetric": 0.6666666666666666
+  },
+  {
+    "id": "r15",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.7667594310451452,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r14",
+    "FaithfulnessMetric": 0.9,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.8728715728715729,
+    "AnswerRelevancyMetric": 0.8
+  },
+  {
+    "id": "r17",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 0.9444444444444444,
+    "ContextualPrecisionMetric": 0.7989469862018881,
+    "AnswerRelevancyMetric": 0.8571428571428571
+  },
+  {
+    "id": "r18",
+    "FaithfulnessMetric": 1.0,
+    "ContextualRecallMetric": 0.8571428571428571,
+    "ContextualPrecisionMetric": 1.0,
+    "AnswerRelevancyMetric": 0.25
+  },
+  {
+    "id": "r19",
+    "FaithfulnessMetric": 0.8,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.6269841269841269,
+    "AnswerRelevancyMetric": 1.0
+  },
+  {
+    "id": "r20",
+    "FaithfulnessMetric": 0.9333333333333333,
+    "ContextualRecallMetric": 1.0,
+    "ContextualPrecisionMetric": 0.7996598639455782,
+    "AnswerRelevancyMetric": 0.9473684210526315
+  }
+]

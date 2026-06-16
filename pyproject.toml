@@ -7,6 +7,7 @@ requires-python = ">=3.12"
 dependencies = [
     "beautifulsoup4>=4.14.3",
     "deepeval>=4.0.3",
+    "fastapi>=0.136.3",
     "httpx>=0.28.1",
     "langchain-mistralai>=1.1.4",
     "langchain-openai>=1.2.1",
@@ -18,4 +19,5 @@ dependencies = [
     "pyyaml>=6.0.3",
     "ragas>=0.4.3",
     "sentence-transformers>=5.4.1",
+    "uvicorn>=0.49.0",
 ]

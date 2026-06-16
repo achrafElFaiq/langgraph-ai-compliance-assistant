@@ -1,0 +1,37 @@
+{
+  "MiCA > Titre 5 > Article 70": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui détiennent des crypto-actifs appartenant à des clients, ou les moyens d’accès à ces crypto-actifs, prennent des dispositions adéquates pour protéger les droits de propriété des clients, en particulier en cas d’insolvabilité du prestataire de services sur crypto-actifs, et pour empêcher l’utilisation pour leur compte propre des crypto-actifs des clients.",
+    "how_it_applies": "Cet article s'applique à la requête en détaillant une obligation spécifique pour les prestataires de services sur crypto-actifs (PSCA) concernant la protection des crypto-actifs des clients, notamment en cas d'insolvabilité, ce qui contribue à la protection des consommateurs mentionnée dans la requête."
+  },
+  "MiCA > Titre 5 > Article 59": {
+    "relevant": true,
+    "excerpt_basis": "Une personne ne peut pas fournir des services sur crypto-actifs, au sein de l’Union, sauf si cette personne est: a) une personne morale ou une autre entreprise agréée en tant que prestataire de services sur crypto-actifs conformément à l’article 63; ou b) un établissement de crédit, un dépositaire central de titres, une entreprise d’investissement, un opérateur de marché, un établissement de monnaie électronique, une société de gestion d’OPCVM ou un gestionnaire de fonds d’investissement alternatifs autorisé à fournir des services sur crypto-actifs conformément à l’article 60.",
+    "how_it_applies": "Cet article établit l'exigence fondamentale pour toute entité souhaitant fournir des services sur crypto-actifs dans l'Union européenne : elle doit être agréée en tant que prestataire de services sur crypto-actifs (PSCA) ou être une entité financière déjà réglementée et autorisée à fournir de tels services."
+  },
+  "MiCA > Titre 5 > Article 63": {
+    "relevant": true,
+    "excerpt_basis": "Dans un délai de 40 jours ouvrables à compter de la date de réception d’une demande complète, les autorités compétentes évaluent si le candidat prestataire de services sur crypto-actifs respecte le présent titre et adoptent une décision dûment motivée lui octroyant ou lui refusant l’agrément en tant que prestataire de services sur crypto-actifs. Les autorités compétentes notifient au candidat prestataire de services sur crypto-actifs leur décision dans un délai de cinq jours ouvrables à compter de la date de ladite décision.",
+    "how_it_applies": "Cet article est pertinent car il décrit le processus d'évaluation et de décision des autorités compétentes concernant l'octroi ou le refus de l'agrément en tant que prestataire de services sur crypto-actifs (PSCA), y compris les délais associés."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": true,
+    "excerpt_basis": "Les personnes morales ou les autres entreprises qui ont l’intention de fournir des services sur crypto-actifs soumettent leur demande d’agrément en tant que prestataire de services sur crypto-actifs à l’autorité compétente de leur État membre d’origine. La demande visée au paragraphe 1 contient l’ensemble des informations suivantes: ... i) une description des mécanismes, politiques et procédures de contrôle interne du candidat prestataire de services sur crypto-actifs qui permettent de détecter, d’évaluer et de gérer les risques, notamment en matière de blanchiment de capitaux et de financement du terrorisme, ainsi que son plan de continuité des activités;",
+    "how_it_applies": "Cet article est pertinent car il stipule que les entités souhaitant être agréées en tant que PSCA doivent soumettre une demande d'agrément incluant une description de leurs mécanismes, politiques et procédures de contrôle interne pour la détection, l'évaluation et la gestion des risques, y compris ceux liés au blanchiment de capitaux et au financement du terrorisme."
+  },
+  "MiCA > Titre 5 > Article 81": {
+    "relevant": true,
+    "excerpt_basis": "Les prestataires de services sur crypto-actifs qui fournissent des conseils en crypto-actifs ou des services de gestion de portefeuille de crypto-actifs évaluent si les services sur crypto-actifs ou les crypto-actifs sont adéquats pour leurs clients ou clients potentiels, en prenant en considération les connaissances et l’expérience de ceux-ci en matière d’investissement dans les crypto-actifs, leurs objectifs en matière d’investissement, y compris leur tolérance au risque, et leur situation financière, y compris leur capacité à supporter des pertes.",
+    "how_it_applies": "Cet article s'applique à la requête en détaillant les obligations spécifiques des prestataires de services sur crypto-actifs (PSCA) en matière d'évaluation de l'adéquation des services et crypto-actifs pour leurs clients, ce qui est une composante de la protection des consommateurs mentionnée dans la requête."
+  },
+  "MiCA > Titre 5 > Article 76": {
+    "relevant": true,
+    "excerpt_basis": "1. Les prestataires de services sur crypto-actifs qui exploitent une plate-forme de négociation de crypto-actifs fixent, maintiennent et appliquent des règles de fonctionnement de la plate-forme de négociation claires et transparentes. Au minimum, ces règles de fonctionnement: a) fixent les procédures d’approbation, y compris des obligations de vigilance à l’égard de la clientèle proportionnées au risque de blanchiment de capitaux ou de financement du terrorisme que présente le demandeur conformément à la directive (UE) 2015/849, qui sont applicables avant l’admission de crypto-actifs à la négociation sur la plate-forme de négociation;",
+    "how_it_applies": "Cet article s'applique en détaillant les obligations spécifiques pour les prestataires de services sur crypto-actifs (PSCA) qui exploitent une plateforme de négociation, notamment l'établissement de règles de fonctionnement claires et transparentes incluant des procédures d'approbation et des obligations de vigilance à l'égard de la clientèle pour la lutte contre le blanchiment d'argent et le financement du terrorisme."
+  },
+  "MiCA > Titre 9 > Article 140": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

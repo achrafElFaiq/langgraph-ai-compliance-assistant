@@ -122,9 +122,11 @@ class DeepEvalJudge(Judge):
                 if isinstance(result, dict):
                     answer = result.get("answer", "")
                     retrieved_articles = result.get("retrieved_articles") or []
+                    retry_count = result.get("retry_count", 0)
                 else:
                     answer = getattr(result, "answer", "")
                     retrieved_articles = getattr(result, "retrieved_articles", None) or []
+                    retry_count = getattr(result, "retry_count", 0)
 
                 if not isinstance(answer, str):
                     answer = str(answer)
@@ -156,18 +158,20 @@ class DeepEvalJudge(Judge):
                     for metric in self._metrics
                 ])
                 scores = {m.__class__.__name__: s for m, s in zip(self._metrics, scores_list)}
+                scores["retry_count"] = retry_count
                 await _write_result(item["id"], scores)
                 return scores
 
         all_scores = await asyncio.gather(*[_eval_item(item) for item in dataset])
 
-        faithfulness, recall, precision, relevancy, hallucination = [], [], [], [], []
+        faithfulness, recall, precision, relevancy, hallucination, retries = [], [], [], [], [], []
         for scores in all_scores:
             faithfulness.append(scores.get("FaithfulnessMetric", 0))
             recall.append(scores.get("ContextualRecallMetric", 0))
             precision.append(scores.get("ContextualPrecisionMetric", 0))
             relevancy.append(scores.get("AnswerRelevancyMetric", 0))
             hallucination.append(scores.get("HallucinationMetric", 0))
+            retries.append(scores.get("retry_count", 0))
 
         print("\n=== DeepEval Results ===")
         print(f"Faithfulness:     {sum(faithfulness) / len(faithfulness):.3f}")
@@ -175,6 +179,24 @@ class DeepEvalJudge(Judge):
         print(f"Ctx Recall:       {sum(recall) / len(recall):.3f}")
         print(f"Ctx Precision:    {sum(precision) / len(precision):.3f}")
         print(f"Hallucination:    {sum(hallucination) / len(hallucination):.3f}")
+
+        print("\n=== Retry Stats ===")
+        print(f"Avg retries:      {sum(retries) / len(retries):.2f}")
+        print(f"Max retries:      {max(retries)}")
+        print(f"Hit cap (3):      {sum(1 for r in retries if r >= 3)} / {len(retries)} questions")
+        print("\n  Per question:")
+        for scores in sorted(all_scores, key=lambda x: x.get("retry_count", 0), reverse=True):
+            item_id = next(
+                item["id"] for item in dataset
+                if f"eval-deepeval-{run_id}-{item['id']}" or True
+            )
+
+        results_data = json.loads(results_path.read_text())
+        for entry in sorted(results_data, key=lambda x: x.get("retry_count", 0), reverse=True):
+            r = entry.get("retry_count", 0)
+            bar = "█" * r + "░" * (3 - min(r, 3))
+            flag = " ← hit cap" if r >= 3 else ""
+            print(f"    {entry['id']:<6} {bar} {r} retries{flag}")
 
         return EvaluationResult(
             faithfulness=faithfulness,

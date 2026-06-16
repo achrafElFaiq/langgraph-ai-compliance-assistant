@@ -1,0 +1,92 @@
+{
+  "GDPR > Chapitre 4 > Article 33": {
+    "relevant": true,
+    "excerpt_basis": "En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques.",
+    "how_it_applies": "Cet article établit l'obligation pour le responsable du traitement de notifier une violation de données à caractère personnel à l'autorité de contrôle compétente dans les 72 heures suivant la prise de connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques."
+  },
+  "AI Act > Chapitre 9 > Article 78": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article.",
+    "how_it_applies": "Cet article stipule que les entités financières doivent déclarer les incidents majeurs liés aux TIC à l'autorité compétente, ce qui inclut les cyberattaques significatives mentionnées dans la requête."
+  },
+  "GDPR > Chapitre 9 > Article 88": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 57": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 34": {
+    "relevant": true,
+    "excerpt_basis": "Lorsqu'une violation de données à caractère personnel est susceptible d'engendrer un risque élevé pour les droits et libertés d'une personne physique, le responsable du traitement communique la violation de données à caractère personnel à la personne concernée dans les meilleurs délais.",
+    "how_it_applies": "Cet article s'applique à la partie de la requête concernant l'obligation de notifier les personnes concernées en cas de violation de données personnelles présentant un risque élevé pour leurs droits et libertés."
+  },
+  "DORA > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "ii) la notification, aux autorités compétentes, des incidents majeurs liés aux TIC et la notification, à titre volontaire, des cybermenaces importantes aux autorités compétentes;",
+    "how_it_applies": "This article establishes the requirement for financial entities to notify competent authorities of major ICT-related incidents, which aligns with the query's mention of notifying authorities about significant cyberattacks."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 7 > Article 70": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 9 > Article 90": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 51": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 3 > Article 31": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 9 > Article 73": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 9": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC.",
+    "how_it_applies": "Cet article est pertinent car il stipule que les entités financières doivent mettre en œuvre un processus de gestion des incidents liés aux TIC pour détecter, gérer et notifier ces incidents, ce qui inclut les cyberattaques mentionnées dans la requête."
+  },
+  "GDPR > Chapitre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 2 > Article 5": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

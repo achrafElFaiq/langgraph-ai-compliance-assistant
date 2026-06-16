@@ -1,0 +1,37 @@
+{
+  "MiCA > Titre 7 > Article 94": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 7": {
+    "relevant": true,
+    "excerpt_basis": "toutes communications commerciales relatives à une offre au public d’un crypto-actif autre qu’un jeton se référant à un ou des actifs ou un jeton de monnaie électronique, ou à l’admission à la négociation d’un tel crypto-actif, respectent l’ensemble des exigences suivantes: a) les communications commerciales sont clairement identifiables en tant que telles; b) les informations figurant dans les communications commerciales sont loyales, claires et non trompeuses; c) les informations figurant dans les communications commerciales correspondent aux informations figurant dans le livre blanc sur les crypto-actifs, lorsqu’un tel livre blanc est requis en vertu de l’article 4 ou 5.",
+    "how_it_applies": "Cet article impose des exigences spécifiques concernant les communications commerciales pour les offres de crypto-actifs, y compris l'obligation de fournir des informations claires et loyales, ce qui est en ligne avec les obligations de transparence et de divulgation d'informations financières mentionnées dans la requête."
+  },
+  "MiCA > Titre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "le présent règlement établit ce qui suit: a) les exigences de transparence et d’information pour l’émission, l’offre au public et l’admission à la négociation de crypto-actifs sur une plate-forme de négociation de crypto-actifs; c) les exigences relatives à la protection des détenteurs de crypto-actifs dans le cadre de l’émission, de l’offre au public et de l’admission à la négociation de crypto-actifs.",
+    "how_it_applies": "Cet article impose des exigences de transparence et d'information pour l'émission et l'offre au public de crypto-actifs, ainsi que des exigences relatives à la protection des détenteurs de crypto-actifs, ce qui correspond aux obligations mentionnées dans la requête."
+  },
+  "MiCA > Titre 2 > Article 4": {
+    "relevant": true,
+    "excerpt_basis": "Une personne ne peut pas offrir au public un crypto-actif autre qu’un jeton se référant à un ou des actifs ou un jeton de monnaie électronique dans l’Union sauf si cette personne: a) est une personne morale; b) a rédigé un livre blanc sur les crypto-actifs portant sur ce crypto-actif conformément à l’article 6; c) a notifié le livre blanc sur les crypto-actifs conformément à l’article 8; d) a publié le livre blanc sur les crypto-actifs conformément à l’article 9; e) a rédigé les communications commerciales éventuelles portant sur ce crypto-actif conformément à l’article 7; f) a publié les communications commerciales éventuelles portant sur ce crypto-actif conformément à l’article 9; g) respecte les exigences applicables aux offreurs fixées à l’article 14.",
+    "how_it_applies": "Cet article impose des obligations spécifiques à un émetteur qui souhaite offrir un crypto-actif au public, notamment la rédaction et la publication d'un livre blanc contenant des informations sur le crypto-actif, ce qui répond directement aux exigences de transparence et de divulgation d'informations financières mentionnées dans la requête."
+  },
+  "MiCA > Titre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 8": {
+    "relevant": true,
+    "excerpt_basis": "Les offreurs, les personnes qui demandent l’admission à la négociation ou les exploitants de plate-formes de négociation de crypto-actifs autres que des jetons se référant à un ou des actifs ou des jetons de monnaie électronique notifient leur livre blanc sur les crypto-actifs à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "Cet article impose aux émetteurs de crypto-actifs de notifier leur livre blanc, qui doit contenir des informations sur les caractéristiques, les droits et les risques associés au crypto-actif, à l'autorité compétente, répondant ainsi aux obligations de transparence et de divulgation d'informations financières."
+  },
+  "MiCA > Titre 3 > Article 18": {
+    "relevant": true,
+    "excerpt_basis": "La demande visée au paragraphe 1 contient l’ensemble des informations suivantes: ... k) un livre blanc sur les crypto-actifs tel qu’il est décrit à l’article 19; ... o) une description des mécanismes de contrôle interne et des procédures de gestion des risques visés à l’article 34, paragraphe 10; ... p) une description des systèmes et des procédures mis en place pour garantir la disponibilité, l’authenticité, l’intégrité et la confidentialité des données, visés à l’article 34, paragraphe 11;",
+    "how_it_applies": "Cet article impose aux émetteurs de fournir un livre blanc et de décrire les mécanismes de contrôle interne et de gestion des risques, ce qui répond aux obligations de transparence et de protection des investisseurs mentionnées dans la requête."
+  }
+}

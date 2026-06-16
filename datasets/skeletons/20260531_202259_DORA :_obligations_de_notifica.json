@@ -1,0 +1,92 @@
+{
+  "GDPR > Chapitre 4 > Article 33": {
+    "relevant": true,
+    "excerpt_basis": "En cas de violation de données à caractère personnel, le responsable du traitement en notifie la violation en question à l'autorité de contrôle compétente conformément à l'article 55, dans les meilleurs délais et, si possible, 72 heures au plus tard après en avoir pris connaissance, à moins que la violation en question ne soit pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques. Lorsque la notification à l'autorité de contrôle n'a pas lieu dans les 72 heures, elle est accompagnée des motifs du retard.",
+    "how_it_applies": "Cet article établit l'obligation pour le responsable du traitement de notifier une violation de données à caractère personnel à l'autorité de contrôle compétente dans les 72 heures suivant la prise de connaissance, sauf si la violation n'est pas susceptible d'engendrer un risque pour les droits et libertés des personnes physiques."
+  },
+  "DORA > Chapitre 3 > Article 19": {
+    "relevant": true,
+    "excerpt_basis": "1. Les entités financières déclarent à l’autorité compétente pertinente visée à l’article 46 les incidents majeurs liés aux TIC, conformément au paragraphe 4 du présent article. (...) 3. Lorsqu’un incident majeur lié aux TIC survient et a une incidence sur les intérêts financiers des clients, les entités financières informent leurs clients de cet incident majeur lié aux TIC et des mesures qui ont été prises pour atténuer les effets préjudiciables de cet incident sans retard injustifié, dès qu’elles en ont connaissance. En cas de cybermenace importante, les entités financières informent, le cas échéant, leurs clients susceptibles d’être affectés de toute mesure de protection appropriée que ces derniers pourraient envisager de prendre. 4. Les entités financières soumettent, dans les délais à fixer conformément à l’article 20, premier alinéa, point a) ii), à l’autorité compétente concernée les éléments suivants: a) une notification initiale; b) un rapport intermédiaire après la notification initiale visée au point a), dès que la situation de l’incident initial a sensiblement changé ou que le traitement de l’incident majeur lié aux TIC a changé sur la base des nouvelles informations disponibles, suivi, le cas échéant, de notifications actualisées chaque fois qu’une mise à jour pertinente de la situation est disponible, ainsi que sur demande spécifique de l’autorité compétente; c) un rapport final, lorsque l’analyse des causes originelles est terminée, que des mesures d’atténuation aient déjà été mises en œuvre ou non, et lorsque les chiffres relatifs aux incidences réelles sont disponibles en lieu et place des estimations.",
+    "how_it_applies": "Cet article établit les obligations de notification des incidents majeurs liés aux TIC par les entités financières à l'autorité compétente, ainsi que l'information des clients en cas d'impact sur leurs intérêts financiers. Il détaille également les types de rapports à soumettre (notification initiale, rapport intermédiaire, rapport final) et les informations qu'ils doivent contenir."
+  },
+  "AI Act > Chapitre 9 > Article 78": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 1 > Article 3": {
+    "relevant": true,
+    "excerpt_basis": "8) «incident lié aux TIC»: un événement ou une série d’événements liés entre eux que l’entité financière n’a pas prévu qui compromet la sécurité des réseaux et des systèmes d’information, et a une incidence négative sur la disponibilité, l’authenticité, l’intégrité ou la confidentialité des données ou sur les services fournis par l’entité financière; 10) «incident majeur lié aux TIC»: un incident lié aux TIC qui a une incidence négative élevée sur les réseaux et les systèmes d’information qui soutiennent les fonctions critiques ou importantes de l’entité financière;",
+    "how_it_applies": "This article defines what constitutes an 'incident lié aux TIC' and an 'incident majeur lié aux TIC' under DORA, which are central to the query's discussion of cybersecurity incident notification obligations for financial institutions."
+  },
+  "AI Act > Chapitre 9 > Article 73": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 4 > Article 34": {
+    "relevant": true,
+    "excerpt_basis": "Lorsqu'une violation de données à caractère personnel est susceptible d'engendrer un risque élevé pour les droits et libertés d'une personne physique, le responsable du traitement communique la violation de données à caractère personnel à la personne concernée dans les meilleurs délais.",
+    "how_it_applies": "This article specifies the obligation for a data controller to communicate a personal data breach to the data subject without undue delay when the breach is likely to result in a high risk to their rights and freedoms."
+  },
+  "DORA > Chapitre 1 > Article 1": {
+    "relevant": true,
+    "excerpt_basis": "ii) la notification, aux autorités compétentes, des incidents majeurs liés aux TIC et la notification, à titre volontaire, des cybermenaces importantes aux autorités compétentes; iii) la notification aux autorités compétentes, par les entités financières visées à l’article 2, paragraphe 1, points a) à d), des incidents opérationnels ou de sécurité majeurs liés au paiement;",
+    "how_it_applies": "This article establishes the requirement for financial entities to notify competent authorities of major ICT-related incidents and, voluntarily, of significant cyber threats, as well as major operational or security payment-related incidents."
+  },
+  "MiCA > Titre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 60": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 2 > Article 9": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 3 > Article 17": {
+    "relevant": true,
+    "excerpt_basis": "1. Les entités financières définissent, établissent et mettent en œuvre un processus de gestion des incidents liés aux TIC afin de détecter, de gérer et de notifier les incidents liés aux TIC. 2. Les entités financières enregistrent tous les incidents liés aux TIC et les cybermenaces importantes. Les entités financières mettent en place des procédures et des processus adéquats pour assurer une surveillance, un traitement et un suivi cohérents et intégrés des incidents liés aux TIC, pour veiller à ce que les causes originelles soient identifiées et documentées et qu’il y soit remédié pour éviter que de tels incidents ne se produisent. 3. Le processus de gestion des incidents liés aux TIC visé au paragraphe 1: a) met en place des indicateurs d’alerte précoce; b) instaure des procédures destinées à identifier, suivre, consigner, catégoriser et classer les incidents liés aux TIC en fonction de leur priorité et de leur gravité et en fonction de la criticité des services touchés, conformément aux critères fixés à l’article 18, paragraphe 1; c) attribue les rôles et les responsabilités qui doivent être activés pour différents types et scénarios d’incidents liés aux TIC; d) établit des plans pour la communication à l’intention du personnel, des parties prenantes externes et des médias, conformément à l’article 14, et pour la notification aux clients, les procédures internes de remontée des informations, y compris les plaintes des clients liées aux TIC, ainsi que pour la fourniture d’informations aux entités financières qui agissent en tant que contreparties, le cas échéant; e) permet de notifier au minimum les incidents majeurs liés aux TIC aux membres de la direction concernés et de communiquer à l’organe de direction au minimum des informations sur les incidents majeurs liés aux TIC, expliquant leurs incidences, la réponse à leur apporter et les contrôles supplémentaires à mettre en place à la suite de tels incidents; f) définit des procédures de réponse en cas d’incident lié aux TIC, afin d’en atténuer les effets et de garantir que les services redeviennent opérationnels et sécurisés en temps utile.",
+    "how_it_applies": "Cet article établit les exigences pour les entités financières concernant la gestion des incidents liés aux TIC, y compris la détection, la classification, la communication et les mesures d'atténuation, ce qui est directement pertinent pour les obligations de notification d'incident de cybersécurité mentionnées dans la requête."
+  },
+  "DORA > Chapitre 6 > Article 45": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 7 > Article 111": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "GDPR > Chapitre 6 > Article 57": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 1 > Article 3": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "DORA > Chapitre 7 > Article 50": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 12 > Article 99": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "AI Act > Chapitre 12 > Article 100": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}
