@@ -1,3 +1,3 @@
-from src.infrastructure.embed.transformers_embed import TransformersEmbedder
+from src.infrastructure.embed.openrouter_embedder import OpenRouterEmbedder
 
-embedder = TransformersEmbedder()
+embedder = OpenRouterEmbedder("openai/text-embedding-3-small")

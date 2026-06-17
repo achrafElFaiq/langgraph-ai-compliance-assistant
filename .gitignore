@@ -18,6 +18,7 @@ __pycache__/
 *.env
 
 .venv
+run/
 
 datasets/eval/ppp.json
 datasets/eval/results_deepeval.json
