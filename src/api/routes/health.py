@@ -13,7 +13,7 @@ async def ready():
     checks = {}
 
     try:
-        await store.retrieve(embedding=[0.0] * 1024, query="test")
+        await store.retrieve(embedding=[0.0] * 1536, query="test")
         checks["vector_store"] = "ok"
     except Exception as e:
         checks["vector_store"] = f"error: {str(e)}"

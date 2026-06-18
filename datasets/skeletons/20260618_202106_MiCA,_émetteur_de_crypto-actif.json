@@ -1,0 +1,37 @@
+{
+  "MiCA > Titre 3 > Article 17": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 16": {
+    "relevant": true,
+    "excerpt_basis": "Une personne ne peut pas offrir au public un jeton se référant à un ou des actifs ou demander l’admission à la négociation d’un jeton se référant à un ou des actifs, au sein de l’Union, sauf si cette personne est l’émetteur de ce jeton se référant à un ou des actifs et est: a) une personne morale ou une autre entreprise établie dans l’Union et a été agréée conformément à l’article 21 par l’autorité compétente de son État membre d’origine;",
+    "how_it_applies": "Cet article impose à l'émetteur d'un jeton se référant à un ou des actifs d'obtenir un agrément préalable de l'autorité compétente de son État membre d'origine avant toute offre au public ou demande d'admission à la négociation dans l'Union, ce qui inclut le lancement d'un tel jeton en France."
+  },
+  "MiCA > Titre 3 > Article 18": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 2 > Article 4": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 7 > Article 98": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 28": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 4 > Article 48": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}

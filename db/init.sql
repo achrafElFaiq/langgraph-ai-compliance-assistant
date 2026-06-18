@@ -30,6 +30,6 @@ CREATE TABLE IF NOT EXISTS article_chunks (
     valid_from      DATE NOT NULL,
     valid_until     DATE,
     source_url      TEXT NOT NULL,
-    embedding       vector(1024),
+    embedding       vector(1536),
     CONSTRAINT unique_chunk UNIQUE (regulation_name, article_number, chunk_index)
 );

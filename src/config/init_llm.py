@@ -7,7 +7,7 @@ from ragas.llms import llm_factory
 
 # Agent LLM (générateur)
 llm = ChatOpenAI(
-    model="openai/gpt-4o-mini",
+    model="deepseek/deepseek-v4-flash",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     temperature=0,
@@ -17,7 +17,7 @@ llm = ChatOpenAI(
 
 
 critic_llm = ChatOpenAI(
-    model="google/gemini-2.5-flash",
+    model="deepseek/deepseek-v4-flash",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     max_tokens=8192,
@@ -27,7 +27,7 @@ critic_llm = ChatOpenAI(
 
 
 grounder_llm = ChatOpenAI(
-    model="openai/gpt-4o-mini",
+    model="deepseek/deepseek-v4-flash",
     api_key=os.getenv("OPENROUTER_API_KEY"),
     base_url="https://openrouter.ai/api/v1",
     max_tokens=4096,
@@ -37,7 +37,7 @@ grounder_llm = ChatOpenAI(
 
 # Evaluator LLM (juge) — famille différente
 evaluator_llm = llm_factory(
-    model="openai/gpt-4o-mini",
+    model="deepseek/deepseek-v4-flash",
     client=OpenAI(
         api_key=os.getenv("OPENROUTER_API_KEY"),
         base_url="https://openrouter.ai/api/v1",

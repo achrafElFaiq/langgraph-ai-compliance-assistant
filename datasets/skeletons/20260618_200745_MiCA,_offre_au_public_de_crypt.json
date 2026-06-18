@@ -1,0 +1,32 @@
+{
+  "MiCA > Titre 2 > Article 4": {
+    "relevant": true,
+    "excerpt_basis": "Une personne ne peut pas offrir au public un crypto-actif autre qu’un jeton se référant à un ou des actifs ou un jeton de monnaie électronique dans l’Union sauf si cette personne: a) est une personne morale; b) a rédigé un livre blanc sur les crypto-actifs portant sur ce crypto-actif conformément à l’article 6; c) a notifié le livre blanc sur les crypto-actifs conformément à l’article 8; d) a publié le livre blanc sur les crypto-actifs conformément à l’article 9; e) a rédigé les communications commerciales éventuelles portant sur ce crypto-actif conformément à l’article 7; f) a publié les communications commerciales éventuelles portant sur ce crypto-actif conformément à l’article 9; g) respecte les exigences applicables aux offreurs fixées à l’article 14.",
+    "how_it_applies": "Cet article impose à l'émetteur de crypto-actifs (hors ART et EMT) d'être une personne morale, de rédiger, notifier et publier un livre blanc, de respecter les règles sur les communications commerciales et les exigences de l'article 14 avant toute offre au public. Il constitue la condition de base pour offrir licitement des crypto-actifs dans l'UE et encadre les obligations de déclaration et notification à l'autorité compétente."
+  },
+  "MiCA > Titre 7 > Article 98": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 5 > Article 63": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 3 > Article 18": {
+    "relevant": true,
+    "excerpt_basis": "Les personnes morales ou les autres entreprises qui envisagent d’offrir au public des jetons se référant à un ou des actifs ou de demander leur admission à la négociation soumettent leur demande en vue de l’obtention de l’agrément visé à l’article 16 à l’autorité compétente de leur État membre d’origine.",
+    "how_it_applies": "Cet article impose aux émetteurs de jetons se référant à un ou des actifs (ART) de soumettre une demande d'agrément à l'autorité compétente de leur État membre d'origine avant toute offre au public ou admission à la négociation, en fournissant les informations détaillées listées au paragraphe 2."
+  },
+  "MiCA > Titre 5 > Article 62": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  },
+  "MiCA > Titre 7 > Article 94": {
+    "relevant": false,
+    "excerpt_basis": "",
+    "how_it_applies": "Non applicable."
+  }
+}
