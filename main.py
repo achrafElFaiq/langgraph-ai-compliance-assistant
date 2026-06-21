@@ -1,6 +1,5 @@
 import argparse
 import asyncio
-import json
 import os
 
 from dotenv import load_dotenv
@@ -12,13 +11,13 @@ from src.config.init_langfuse import langfuse_handler
 from src.application.agent.graph import compiled_graph
 from src.infrastructure.fetch.eurlex_fetch import EurLexFetcher
 from src.infrastructure.chunk.text_chunk import ArticleChunker
-from src.infrastructure.eval.deepeval_judge import DeepEvalJudge, OpenRouterDeepEvalLLM
 from src.infrastructure.store.postgres_store import PostgresRegulationRepository
 from src.infrastructure.embed.openrouter_embedder import OpenRouterEmbedder
 from src.domain.ports.chunk import RegulationChunker
 from src.domain.ports.embed import ArtcileEmbedder
 from src.domain.ports.fetch import RegulationFetcher
 from src.domain.ports.store import RegulationRepository
+from src.pipelines.evaluation import run_evaluation_pipeline
 from src.pipelines.ingestion import run_ingestion_pipeline
 
 
@@ -54,27 +53,7 @@ async def run_query(question: str, thread_id: str = "test-1"):
 
 async def run_eval(dataset_path: str = "datasets/eval/dataset.json"):
     setup_logging()
-    from src.config.init_store import store
-
-    with open(dataset_path, "r") as f:
-        dataset = json.load(f)
-
-    await store.connect()
-    try:
-        model = OpenRouterDeepEvalLLM(
-            model="openai/gpt-4o-mini",
-            api_key=os.getenv("OPENROUTER_API_KEY"),
-            max_tokens=8192,
-        )
-        judge = DeepEvalJudge(model=model)
-        result = await judge.eval(dataset=dataset, agent=compiled_graph)
-    finally:
-        await store.close()
-
-    print(f"Faithfulness:  {result.faithfulness}")
-    print(f"Factual:       {result.factual_correctness}")
-    print(f"Ctx Recall:    {result.context_recall}")
-    print(f"Ctx Precision: {result.context_precision}")
+    await run_evaluation_pipeline(dataset_path=dataset_path)
 
 
 def build_parser() -> argparse.ArgumentParser:

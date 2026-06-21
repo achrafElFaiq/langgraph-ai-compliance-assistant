@@ -10,20 +10,8 @@ def _load(filename: str) -> str:
     return data["system"]
 
 
-def load_question_generation_prompt() -> str:
-    return _load("question_generation.yaml")
-
-
-def load_needs_research_prompt() -> str:
-    return _load("needs_research.yaml")
-
-
 def load_answer_prompt() -> str:
     return _load("answer.yaml")
-
-
-def load_critic_prompt() -> str:
-    return _load("critic.yaml")
 
 
 def load_synthesis_prompt() -> str:
@@ -31,3 +19,7 @@ def load_synthesis_prompt() -> str:
 
 def load_ground_prompt() -> str:
     return _load("ground.yaml")
+
+
+def load_apply_prompt() -> str:
+    return _load("apply.yaml")

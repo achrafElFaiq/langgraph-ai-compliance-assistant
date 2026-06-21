@@ -138,34 +138,51 @@ class PostgresRegulationRepository(RegulationRepository):
             )
         )
 
-    async def retrieve(self, embedding: list[float], query: str, top_k: int = 8) -> list[Article]:
+    async def retrieve(
+            self,
+            embedding: list[float],
+            query: str,
+            top_k: int = 8,
+            regulations: list[str] | None = None
+    ) -> list[Article]:
         """Retrieve top matching articles using hybrid vector + BM25 ranking."""
         if not self.connection:
             raise RuntimeError("Database connection is not initialized")
 
+        reg_filter = ""
+        reg_params = []
+        if regulations:
+            placeholders = ",".join(["%s"] * len(regulations))
+            reg_filter = f"AND regulation_name IN ({placeholders})"
+            reg_params = regulations
+
         async with self.connection.cursor() as cur:
             await cur.execute(
-                """
-                WITH vector_search AS (SELECT article_id,
-                                              ROW_NUMBER() OVER (ORDER BY embedding <=> %s::vector) AS rank
-                                       FROM article_chunks
-                                       ORDER BY embedding
-                    <=> %s::vector
+                f"""
+                WITH vector_search AS (
+                    SELECT article_id,
+                           ROW_NUMBER() OVER (ORDER BY embedding <=> %s::vector) AS rank
+                    FROM article_chunks
+                    WHERE true {reg_filter}
+                    ORDER BY embedding <=> %s::vector
                     LIMIT %s
-                    )
-                   , bm25_search AS (
-                SELECT article_id, ROW_NUMBER() OVER (ORDER BY ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s)) DESC) AS rank
-                FROM article_chunks
-                WHERE to_tsvector('french', content) @@ plainto_tsquery('french', %s)
-                ORDER BY ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s)) DESC
+                ),
+                bm25_search AS (
+                    SELECT article_id,
+                           ROW_NUMBER() OVER (ORDER BY ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s)) DESC) AS rank
+                    FROM article_chunks
+                    WHERE to_tsvector('french', content) @@ plainto_tsquery('french', %s)
+                    {reg_filter}
+                    ORDER BY ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s)) DESC
                     LIMIT %s
-                    ), rrf AS (
-                SELECT
-                    COALESCE (v.article_id, b.article_id) AS article_id, COALESCE (1.0 / (60 + v.rank), 0) + COALESCE (1.0 / (60 + b.rank), 0) AS rrf_score
-                FROM vector_search v
-                    FULL OUTER JOIN bm25_search b
-                ON v.article_id = b.article_id
-                    )
+                ),
+                rrf AS (
+                    SELECT
+                        COALESCE(v.article_id, b.article_id) AS article_id,
+                        COALESCE(1.0 / (60 + v.rank), 0) + COALESCE(1.0 / (60 + b.rank), 0) AS rrf_score
+                    FROM vector_search v
+                    FULL OUTER JOIN bm25_search b ON v.article_id = b.article_id
+                )
                 SELECT a.regulation_name,
                        a.title_number,
                        a.chapter_number,
@@ -177,11 +194,17 @@ class PostgresRegulationRepository(RegulationRepository):
                        a.valid_until,
                        a.source_url
                 FROM rrf
-                         JOIN articles a ON a.id = rrf.article_id
+                JOIN articles a ON a.id = rrf.article_id
                 ORDER BY rrf_score DESC
-                    LIMIT %s
+                LIMIT %s
                 """,
-                (embedding, embedding, top_k, query, query, query, top_k, top_k)
+                (
+                    embedding, *reg_params,  # vector_search WHERE
+                    embedding, top_k,  # vector_search ORDER + LIMIT
+                    query, query, *reg_params,  # bm25_search WHERE
+                    query, top_k,  # bm25_search ORDER + LIMIT
+                    top_k  # final LIMIT
+                )
             )
 
             rows = await cur.fetchall()
