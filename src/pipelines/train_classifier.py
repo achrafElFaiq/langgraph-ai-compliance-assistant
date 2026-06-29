@@ -23,8 +23,8 @@ logging.basicConfig(
 )
 log = logging.getLogger(__name__)
 
-DATASET_FILE = "../../datasets/classifier/questions.csv"
-OUTPUT_DIR = "../../datasets/classifier/model"
+DATASET_FILE = "../../datasets/ml-classifier-eval/questions.csv"
+OUTPUT_DIR = "../../models"
 REGULATIONS = ["MiCA", "AI Act", "GDPR", "DORA"]
 
 

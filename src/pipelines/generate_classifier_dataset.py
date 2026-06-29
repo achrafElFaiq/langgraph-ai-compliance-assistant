@@ -11,7 +11,7 @@ from openai import AsyncOpenAI
 load_dotenv()
 
 CONCURRENCY = 10
-OUTPUT_FILE = "datasets/classifier/questions.csv"
+OUTPUT_FILE = "datasets/ml-classifier-eval/questions.csv"
 REGULATIONS = ["MiCA", "AI Act", "GDPR", "DORA"]
 
 client = AsyncOpenAI(
@@ -164,7 +164,7 @@ async def fetch_articles(conn) -> list[dict]:
 
 
 async def main():
-    os.makedirs("datasets/classifier", exist_ok=True)
+    os.makedirs("datasets/ml-classifier-eval", exist_ok=True)
 
     print("Connecting to DB...")
     conn = await psycopg.AsyncConnection.connect(os.getenv("DATABASE_URL"))

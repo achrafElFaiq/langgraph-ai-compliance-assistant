@@ -1,3 +1,5 @@
+"""classify_intent node — routes incoming messages to research, followup, chitchat, or synthesis."""
+
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from src.application.agent.state import State
 from src.config.init_llm import llm

@@ -4,17 +4,13 @@ import os
 from openai import AsyncOpenAI
 
 from src.domain.models.models import ArticleChunk
-from src.domain.ports.embed import ArtcileEmbedder
+from src.domain.ports.embed import ArticleEmbedder
 
 logger = logging.getLogger(__name__)
 
 
-class OpenRouterEmbedder(ArtcileEmbedder):
-    """Sentence-Transformers implementation of the embedding port.
-
-    Loads a transformer model once and enriches `ArticleChunk` items with
-    vector embeddings.
-    """
+class OpenRouterEmbedder(ArticleEmbedder):
+    """OPen router implementation of the embedding port."""
 
     def __init__(self, model_name: str = "openai/text-embedding-3-small") -> None:
         """Initialize OpenAI client for embeddings."""

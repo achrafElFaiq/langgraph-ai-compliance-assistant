@@ -1,3 +1,6 @@
+"""Retrieval nodes — ML regulation classifier, hybrid vector/BM25 article retrieval, and fallback search."""
+
+
 import joblib
 import numpy as np
 import json
@@ -8,10 +11,10 @@ from src.config.init_store import store
 
 
 # Load model artifacts once at module level (not on every call)
-_classifier = joblib.load("datasets/classifier/model/classifier.joblib")
-_vectorizer  = joblib.load("datasets/classifier/model/vectorizer.joblib")
-_mlb         = joblib.load("datasets/classifier/model/mlb.joblib")
-_thresholds  = joblib.load("datasets/classifier/model/thresholds.joblib")
+_classifier = joblib.load("models/classifier.joblib")
+_vectorizer  = joblib.load("models/vectorizer.joblib")
+_mlb         = joblib.load("models/mlb.joblib")
+_thresholds  = joblib.load("models/thresholds.joblib")
 
 
 

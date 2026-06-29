@@ -6,7 +6,13 @@ from uuid import uuid4
 
 router = APIRouter()
 
-@router.post("/chat", response_model=ChatResponse)
+@router.post(
+    "/chat",
+    response_model=ChatResponse,
+    summary="Send a compliance query",
+    description="Runs the full RAG pipeline synchronously and returns the complete answer. Use `/chat/stream` for streaming responses.",
+    tags=["chat"],
+)
 async def chat(request: ChatRequest) -> ChatResponse:
     thread_id = request.thread_id or uuid4().hex
 

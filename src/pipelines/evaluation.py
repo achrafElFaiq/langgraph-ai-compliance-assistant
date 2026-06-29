@@ -1,3 +1,4 @@
+import tempfile
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -25,12 +26,12 @@ def _git_commit() -> str:
 
 def _load_classifier_thresholds() -> dict:
     import joblib
-    mlb = joblib.load("datasets/classifier/model/mlb.joblib")
-    thresholds = joblib.load("datasets/classifier/model/thresholds.joblib")
+    mlb = joblib.load("models/mlb.joblib")
+    thresholds = joblib.load("models/thresholds.joblib")
     return {reg: float(thresholds[i]) for i, reg in enumerate(mlb.classes_)}
 
 
-async def run_evaluation_pipeline(dataset_path: str = "datasets/eval/dataset.json"):
+async def run_evaluation_pipeline(dataset_path: str = "datasets/agent-eval/dataset.json"):
     with open(dataset_path, "r") as f:
         dataset = json.load(f)
 
@@ -70,12 +71,12 @@ async def run_evaluation_pipeline(dataset_path: str = "datasets/eval/dataset.jso
             mlflow.log_artifact("configs/regulations.yaml", artifact_path="prompts")
 
             # ── Graph structure ───────────────────────────────────────
-            os.makedirs("run", exist_ok=True)
-            graph_png_path = "run/graph.png"
-            png_bytes = compiled_graph.get_graph().draw_mermaid_png()
-            with open(graph_png_path, "wb") as f:
-                f.write(png_bytes)
-            mlflow.log_artifact(graph_png_path, artifact_path="graph")
+            with tempfile.TemporaryDirectory() as tmp:
+                graph_png_path = os.path.join(tmp, "graph.png")
+                png_bytes = compiled_graph.get_graph().draw_mermaid_png()
+                with open(graph_png_path, "wb") as f:
+                    f.write(png_bytes)
+                mlflow.log_artifact(graph_png_path, artifact_path="graph")
 
 
 
@@ -111,7 +112,7 @@ async def run_evaluation_pipeline(dataset_path: str = "datasets/eval/dataset.jso
                 }
                 for i in range(len(result.faithfulness))
             }
-            per_q_path = "run/per_question.json"
+            per_q_path = os.path.join(tmp, "per_question.json")
             Path(per_q_path).write_text(json.dumps(per_q, indent=2, ensure_ascii=False))
             mlflow.log_artifact(per_q_path, artifact_path="results")
 

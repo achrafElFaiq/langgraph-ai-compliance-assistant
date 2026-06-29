@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #fafaf5;
+  --bg-secondary: #f0f0e8;
+  --primary: #2d6a4f;
+  --primary-hover: #1b4332;
+  --text: #1a1a1a;
+  --text-muted: #888888;
+  --border: #d4d4c8;
+  --border-light: #eeeeee;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 13px;
+}
+
+/* Markdown content styling */
+.md p { margin: 6px 0; line-height: 1.7; }
+.md ul, .md ol { padding-left: 20px; margin: 8px 0; }
+.md li { margin: 3px 0; line-height: 1.6; }
+.md strong { font-weight: 700; }
+.md h1, .md h2, .md h3 { color: var(--primary); font-weight: 700; margin: 12px 0 6px; }
+.md code { background: var(--bg-secondary); padding: 1px 5px; border-radius: 3px; font-size: 12px; }
+.md pre { background: var(--bg-secondary); padding: 12px; border-radius: 6px; overflow-x: auto; }
+.md blockquote { border-left: 2px solid var(--border); padding-left: 12px; color: var(--text-muted); margin: 8px 0; }
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes pulse-bracket {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+.step-cursor {
+  animation: blink 1s step-end infinite;
+}
+
+.step-bracket-active {
+  animation: pulse-bracket 1.2s ease-in-out infinite;
+}

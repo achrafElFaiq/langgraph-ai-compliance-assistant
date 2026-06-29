@@ -4,3 +4,14 @@ __pycache__
 *.pyc
 datasets/skeletons
 run/
+mlflow.db
+mlruns/
+.env
+data.md
+specs.md
+setup.md
+datasets/agent-eval/
+datasets/ml-classifier-eval/model/
+src/ui/.next/
+src/ui/node_modules/
+.deepeval/

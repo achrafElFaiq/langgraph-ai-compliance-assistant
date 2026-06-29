@@ -14,7 +14,7 @@ from src.infrastructure.chunk.text_chunk import ArticleChunker
 from src.infrastructure.store.postgres_store import PostgresRegulationRepository
 from src.infrastructure.embed.openrouter_embedder import OpenRouterEmbedder
 from src.domain.ports.chunk import RegulationChunker
-from src.domain.ports.embed import ArtcileEmbedder
+from src.domain.ports.embed import ArticleEmbedder
 from src.domain.ports.fetch import RegulationFetcher
 from src.domain.ports.store import RegulationRepository
 from src.pipelines.evaluation import run_evaluation_pipeline

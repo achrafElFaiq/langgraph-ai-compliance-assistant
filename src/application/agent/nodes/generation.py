@@ -1,3 +1,5 @@
+"""Generation nodes — answer drafting, direct chitchat responses, and synthesis report generation."""
+
 import json
 from datetime import datetime
 

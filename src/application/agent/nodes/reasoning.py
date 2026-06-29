@@ -1,3 +1,5 @@
+"""Reasoning nodes — article grounding, law application, and critic verification loop."""
+
 import asyncio
 import json
 import os
@@ -16,8 +18,6 @@ from src.config.init_prompts import (
 # For each retrieved article it produces if it's relevant to the question and if so it adds the exact excrept
 async def ground(state: State) -> dict:
     print("[Started Node] ground")
-    os.makedirs("run", exist_ok=True)
-    os.makedirs("datasets/skeletons", exist_ok=True)
     time = datetime.now()
 
     ground_prompt = load_ground_prompt()

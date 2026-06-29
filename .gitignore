@@ -20,11 +20,14 @@ __pycache__/
 .venv
 run/
 
-datasets/eval/ppp.json
-datasets/eval/results_deepeval.json
-datasets/eval/results.json
-datasets/eval/dataset.json
+datasets/agent-eval/ppp.json
+datasets/agent-eval/results_deepeval.json
+datasets/agent-eval/results.json
+datasets/agent-eval/dataset.json
 
 
 mlruns/
 mlflow.db
+.DS_Store
+
+.deepeval/
