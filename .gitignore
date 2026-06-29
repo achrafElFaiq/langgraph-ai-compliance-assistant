@@ -31,3 +31,6 @@ mlflow.db
 .DS_Store
 
 .deepeval/
+
+src/ui/node_modules/
+src/ui/.next/
