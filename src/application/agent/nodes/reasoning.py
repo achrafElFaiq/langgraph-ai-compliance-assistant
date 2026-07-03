@@ -2,11 +2,11 @@
 
 import asyncio
 import json
-import os
+import logging
 import re
 from datetime import datetime
 
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
+from langchain_core.messages import HumanMessage, SystemMessage
 from src.application.agent.state import State
 from src.config.init_llm import llm, grounder_llm
 from src.config.init_llm import critic_llm
@@ -15,9 +15,12 @@ from src.config.init_prompts import (
     load_apply_prompt
 )
 
-# For each retrieved article it produces if it's relevant to the question and if so it adds the exact excrept
+logger = logging.getLogger(__name__)
+
+
 async def ground(state: State) -> dict:
-    print("[Started Node] ground")
+    """For each retrieved article, judge relevance to the question and extract the exact supporting excerpts."""
+    logger.info("ground | started articles=%d", len(state.retrieved_articles))
     time = datetime.now()
 
     ground_prompt = load_ground_prompt()
@@ -39,6 +42,7 @@ async def ground(state: State) -> dict:
                 parsed["excerpts"] = [parsed["excerpts"]] if parsed.get("excerpts") else []
         except json.JSONDecodeError:
             parsed = {"relevant": False, "excerpts": []}
+
         return article.breadcrumb, parsed
 
     results = await asyncio.gather(*[_ground_article(a) for a in state.retrieved_articles])
@@ -46,41 +50,46 @@ async def ground(state: State) -> dict:
     skeleton = {}
     for breadcrumb, slots in results:
         if breadcrumb not in skeleton_init:
-            print(f"[ground] WARNING: unexpected breadcrumb '{breadcrumb}', skipping")
+            logger.warning("ground | unexpected breadcrumb '%s', skipping", breadcrumb)
             continue
         skeleton[breadcrumb] = slots
 
     for breadcrumb in skeleton_init:
         if breadcrumb not in skeleton:
-            print(f"[ground] WARNING: missing article '{breadcrumb}', using fallback")
+            logger.warning("ground | missing article '%s', using fallback", breadcrumb)
             skeleton[breadcrumb] = {"relevant": False, "excerpts": []}
 
+    relevant_count = sum(1 for v in skeleton.values() if v.get("relevant") is True)
+    duration = (datetime.now() - time).total_seconds()
+
+    logger.info("ground | finished relevant=%d/%d duration=%.2fs", relevant_count, len(skeleton), duration)
+    if relevant_count == 0:
+        logger.warning("ground | zero relevant articles found")
+    logger.debug(
+        "ground | relevance=%s duration=%.2fs",
+        {bc: v.get("relevant") for bc, v in skeleton.items()},
+        duration,
+    )
+
     skeleton_json = json.dumps(skeleton, ensure_ascii=False, indent=2)
-
-
-    print(f"[Finished Node] ground Ended In: {(datetime.now() - time).total_seconds()} seconds ({len(state.retrieved_articles)} articles in parallel)")
     return {"grounded_skeleton": skeleton_json}
 
 
-# Node: apply the relevant law according to the grounder for each article: how does this article apply for the questions context, and then analyses the gaps in the question
-# In case no relevant we go to the relevant fallback node
 async def apply(state: State) -> dict:
-    print("[Started Node] apply")
+    """For each relevant article, analyse how it applies to the user's situation and surface any gaps."""
+    logger.info("apply | started")
     time = datetime.now()
 
     skeleton = json.loads(state.grounded_skeleton)
     relevant = {k: v for k, v in skeleton.items() if v.get("relevant") is True}
 
     if not relevant:
-        empty = json.dumps({
-            "findings": [],
-            "gaps": ["Aucun article pertinent trouvé pour cette question."]
-        }, ensure_ascii=False)
+        logger.info("apply | finished relevant=0 (no relevant articles)")
+        empty = json.dumps({"findings": []}, ensure_ascii=False)
         return {"apply_output": empty}
 
     apply_prompt = load_apply_prompt()
 
-    # ── Step 1: parallel per-article findings ─────────────────
     async def _apply_article(breadcrumb: str, data: dict) -> dict:
         excerpts_text = "\n".join([f"- {e}" for e in data["excerpts"]])
 
@@ -108,43 +117,19 @@ async def apply(state: State) -> dict:
         _apply_article(bc, data) for bc, data in relevant.items()
     ]))
 
-    # ── Step 2: global gap detection ──────────────────────────
-    findings_text = json.dumps(findings, ensure_ascii=False, indent=2)
-
-    gaps_response = await llm.ainvoke([
-        SystemMessage(content=(
-            "Analysez ces conclusions par rapport à la question. "
-            "Une information est manquante UNIQUEMENT si elle changerait fondamentalement la réponse. "
-            "Si la question est complètement répondue par les conclusions, retournez: [] "
-            "Soyez conservateur — en cas de doute, retournez: [] "
-            "Retournez uniquement une liste JSON de strings."
-        )),
-        HumanMessage(content=(
-            f"Question: {state.input_text}\n\n"
-            f"Conclusions:\n{findings_text}"
-        ))
-    ])
-
-    try:
-        raw_gaps = re.search(r'\[.*\]', gaps_response.content, re.DOTALL)
-        gaps = json.loads(raw_gaps.group()) if raw_gaps else []
-    except (json.JSONDecodeError, AttributeError):
-        gaps = []
-
-    # ── Output ────────────────────────────────────────────────
     apply_output = json.dumps(
-        {"findings": findings, "gaps": gaps},
+        {"findings": findings},
         ensure_ascii=False,
         indent=2
     )
 
-    print(f"[Finished Node] Ended In: {(datetime.now() - time).total_seconds()} seconds ({len(relevant)} articles in parallel)")
+    logger.info("apply | finished relevant=%d duration=%.2fs", len(relevant), (datetime.now() - time).total_seconds())
     return {"apply_output": apply_output}
 
 
-# Takes the answer given and compare the
 async def critic_answer(state: State) -> dict:
-    print("[Started Node] critic")
+    """Verify the drafted answer against the findings, flagging unsupported claims to trigger a revision."""
+    logger.info("critic_answer | started")
     time = datetime.now()
 
     apply_data = json.loads(state.apply_output)
@@ -173,7 +158,7 @@ async def critic_answer(state: State) -> dict:
             if line.strip()
         ]
     except Exception as e:
-        print(f"[critic] claim extraction error: {e}")
+        logger.debug("critic_answer | claim_extraction_error=%s", e)
         claims = []
 
     # Step 2: check each claim against findings in parallel
@@ -194,22 +179,25 @@ async def critic_answer(state: State) -> dict:
             supported = response.content.strip().upper().startswith("OUI")
             return claim, supported
         except Exception as e:
-            print(f"[critic] claim check error: {e}")
+            logger.debug("critic_answer | claim_check_error=%s", e)
             return claim, True
 
     claim_results = await asyncio.gather(*[_check_claim(c) for c in claims]) if claims else []
     invented = [claim for claim, supported in claim_results if not supported]
 
+    duration = (datetime.now() - time).total_seconds()
+
     # Approved
     if not invented:
-        print(f"[Finished Node] critic: APPROUVÉ  In: {(datetime.now() - time).total_seconds()} seconds")
+        logger.info("critic_answer | approved duration=%.2fs", duration)
         return {"critic_opinion": ""}
 
     # Build accumulated feedback
+    logger.warning("critic_answer | rejected invented_claims=%d retry=%d duration=%.2fs", len(invented), state.retry_count, duration)
+    logger.debug("critic_answer | invented=%s", invented)
+
     feedback_lines = [f"- \"{claim}\" [IN ANSWER, NOT IN SKELETON]" for claim in invented]
     feedback = "\n".join(feedback_lines)
-
-    print(f"[Finished Node] Critic: NON APPROUVÉ Ended In: {(datetime.now() - time).total_seconds()} seconds")
 
     if state.critic_opinion:
         accumulated = state.critic_opinion + f"\n\n[Round {state.retry_count + 1}]:\n{feedback}"

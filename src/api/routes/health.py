@@ -1,6 +1,5 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, Response
 from src.config.init_store import store
-from src.config.init_llm import llm
 
 router = APIRouter()
 @router.get(
@@ -16,10 +15,10 @@ async def health():
 @router.get(
     "/health/ready",
     summary="Readiness check",
-    description="Verifies the vector store is reachable. Returns `ready` if all checks pass, `degraded` otherwise.",
+    description="Verifies the vector store is reachable. Returns 200/`ready` when all checks pass, 503/`degraded` otherwise.",
     tags=["health"],
 )
-async def ready():
+async def ready(response: Response):
     checks = {}
 
     try:
@@ -29,4 +28,7 @@ async def ready():
         checks["vector_store"] = f"error: {str(e)}"
 
     all_ok = all(v == "ok" for v in checks.values())
+    if not all_ok:
+        # Signal "not ready" so orchestrators stop routing traffic to this instance.
+        response.status_code = 503
     return {"status": "ready" if all_ok else "degraded", "checks": checks}

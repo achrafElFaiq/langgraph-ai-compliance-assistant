@@ -1,12 +1,16 @@
 import json
+import logging
+import time
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
 from uuid import uuid4
 
 from src.api.schemas.chat import ChatRequest
 from src.application.agent.graph import compiled_graph
+from src.config.init_langfuse import langfuse_client, langfuse_handler
 
 router = APIRouter()
+logger = logging.getLogger(__name__)
 
 REG_NAMES = {
     "mica": "MiCA",
@@ -83,69 +87,96 @@ def _done_label(node: str, output: dict) -> str:
 )
 async def chat_stream(request: ChatRequest):
     thread_id = request.thread_id or uuid4().hex
-    config = {"configurable": {"thread_id": thread_id}}
+    config = {
+        "configurable": {"thread_id": thread_id},
+        # Nests every node + LLM call under the current "agent-run" observation.
+        "callbacks": [langfuse_handler],
+    }
 
     async def generate():
-        async for chunk in compiled_graph.astream(
-            {"input_text": request.input_text},
-            config=config,
-            stream_mode="debug",
-        ):
-            chunk_type = chunk.get("type")
-            payload = chunk.get("payload", {})
-            node = payload.get("name", "")
+        request_start = time.perf_counter()
+        logger.info("request | started thread_id=%s input_length=%d", thread_id, len(request.input_text))
 
-            if not node or node not in NODE_LABELS_ACTIVE:
-                continue
+        answer = ""
+        route = ""
 
-            if chunk_type == "task":
-                data = {
-                    "type": "node_start",
-                    "node": node,
-                    "label": NODE_LABELS_ACTIVE[node],
-                }
-                yield f"data: {json.dumps(data)}\n\n"
+        with langfuse_client.start_as_current_observation(
+            name="agent-run",
+            as_type="agent",
+            input=request.input_text,
+            metadata={"thread_id": thread_id},
+        ) as span:
+            async for chunk in compiled_graph.astream(
+                {"input_text": request.input_text},
+                config=config,
+                stream_mode="debug",
+            ):
+                chunk_type = chunk.get("type")
+                payload = chunk.get("payload", {})
+                node = payload.get("name", "")
 
-            elif chunk_type == "task_result":
+                if not node or node not in NODE_LABELS_ACTIVE:
+                    continue
+
+                if chunk_type == "task":
+                    data = {
+                        "type": "node_start",
+                        "node": node,
+                        "label": NODE_LABELS_ACTIVE[node],
+                    }
+                    yield f"data: {json.dumps(data)}\n\n"
+
+                elif chunk_type == "task_result":
+                    try:
+                        output = dict(payload.get("result", []))
+                    except (TypeError, ValueError):
+                        output = {}
+                    data = {
+                        "type": "node_end",
+                        "node": node,
+                        "label": _done_label(node, output),
+                    }
+                    yield f"data: {json.dumps(data)}\n\n"
+
+            # Final state from checkpointer
+            state = await compiled_graph.aget_state(config)
+            values = state.values
+
+            def _get(key, default=None):
+                if isinstance(values, dict):
+                    return values.get(key, default)
+                return getattr(values, key, default)
+
+            answer = _get("answer", "") or _get("final_report", "")
+            route = _get("route", "")
+
+            citations = []
+            grounded = _get("grounded_skeleton", "")
+            if grounded:
                 try:
-                    output = dict(payload.get("result", []))
-                except (TypeError, ValueError):
-                    output = {}
-                data = {
-                    "type": "node_end",
-                    "node": node,
-                    "label": _done_label(node, output),
-                }
-                yield f"data: {json.dumps(data)}\n\n"
+                    for breadcrumb, info in json.loads(grounded).items():
+                        citations.append({
+                            "breadcrumb": breadcrumb,
+                            "relevant": info.get("relevant", False),
+                            "excerpts": info.get("excerpts", []),
+                        })
+                except (json.JSONDecodeError, AttributeError):
+                    pass
 
-        # Final state from checkpointer
-        state = await compiled_graph.aget_state(config)
-        values = state.values
+            duration = time.perf_counter() - request_start
+            span.update(
+                output=answer,
+                metadata={"route": route, "duration_s": round(duration, 2)},
+            )
 
-        def _get(key, default=None):
-            if isinstance(values, dict):
-                return values.get(key, default)
-            return getattr(values, key, default)
-
-        citations = []
-        grounded = _get("grounded_skeleton", "")
-        if grounded:
-            try:
-                for breadcrumb, info in json.loads(grounded).items():
-                    citations.append({
-                        "breadcrumb": breadcrumb,
-                        "relevant": info.get("relevant", False),
-                        "excerpts": info.get("excerpts", []),
-                    })
-            except (json.JSONDecodeError, AttributeError):
-                pass
+        logger.info("request | ended thread_id=%s duration=%.2fs", thread_id, time.perf_counter() - request_start)
 
         yield f"data: {json.dumps({
             'type': 'done',
             'answer': _get('answer', ''),
             'thread_id': thread_id,
             'regulations': _get('regulations', []),
-            'route': _get('route', ''),
+            'route': route,
             'retry_count': _get('retry_count', 0),
             'fallback_attempted': _get('fallback_attempted', False),
             'citations': citations,

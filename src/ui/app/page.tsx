@@ -3,11 +3,21 @@
 import { useState, useEffect, useRef } from 'react'
 import MessageList, { Message, Citation } from '@/components/MessageList'
 import ProgressSteps, { Step } from '@/components/ProgressSteps'
+import Sidebar from '@/components/Sidebar'
 
 const S = {
+  shell: {
+    display: 'flex',
+    flexDirection: 'row' as const,
+    height: '100vh',
+    backgroundColor: 'var(--bg)',
+    color: 'var(--text)',
+  },
   root: {
     display: 'flex',
     flexDirection: 'column' as const,
+    flex: 1,
+    minWidth: 0,
     height: '100vh',
     backgroundColor: 'var(--bg)',
     color: 'var(--text)',
@@ -208,7 +218,9 @@ export default function Home() {
   }
 
   return (
-    <div style={S.root}>
+    <div style={S.shell}>
+      <Sidebar />
+      <div style={S.root}>
       {/* Header */}
       <header style={S.header}>
         <div>
@@ -301,6 +313,7 @@ export default function Home() {
           </button>
         </div>
       </footer>
+      </div>
     </div>
   )
 }

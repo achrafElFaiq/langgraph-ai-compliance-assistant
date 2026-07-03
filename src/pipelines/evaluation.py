@@ -1,3 +1,4 @@
+import logging
 import tempfile
 from pathlib import Path
 
@@ -15,6 +16,10 @@ from src.infrastructure.eval.deepeval_judge import DeepEvalJudge, OpenRouterDeep
 from src.application.agent.graph import compiled_graph
 from src.config.init_store import store
 from src.config.init_llm import llm, grounder_llm, critic_llm
+
+logger = logging.getLogger(__name__)
+
+_WARN_THRESHOLD = 0.7
 
 
 def _git_commit() -> str:
@@ -34,6 +39,8 @@ def _load_classifier_thresholds() -> dict:
 async def run_evaluation_pipeline(dataset_path: str = "datasets/agent-eval/dataset.json"):
     with open(dataset_path, "r") as f:
         dataset = json.load(f)
+
+    logger.info("eval | started n_questions=%d", len(dataset))
 
     await store.connect()
     try:
@@ -78,11 +85,34 @@ async def run_evaluation_pipeline(dataset_path: str = "datasets/agent-eval/datas
                     f.write(png_bytes)
                 mlflow.log_artifact(graph_png_path, artifact_path="graph")
 
-
-
-
             # ── Run eval ──────────────────────────────────────────────
             result = await judge.eval(dataset=dataset, agent=compiled_graph)
+
+            # ── Per-question logging ───────────────────────────────────
+            for i in range(len(result.faithfulness)):
+                q_num = i + 1
+                faith = result.faithfulness[i]
+                recall = result.context_recall[i]
+                logger.info(
+                    "eval | q=%d faithfulness=%.3f factual=%.3f ctx_recall=%.3f ctx_precision=%.3f",
+                    q_num, faith, result.factual_correctness[i], recall, result.context_precision[i],
+                )
+                if faith < _WARN_THRESHOLD or recall < _WARN_THRESHOLD:
+                    logger.warning(
+                        "eval | q=%d below threshold faithfulness=%.3f ctx_recall=%.3f threshold=%.1f",
+                        q_num, faith, recall, _WARN_THRESHOLD,
+                    )
+                logger.debug(
+                    "eval | q=%d full_metrics=%s",
+                    q_num,
+                    {
+                        "faithfulness": faith,
+                        "factual_correctness": result.factual_correctness[i],
+                        "context_recall": recall,
+                        "context_precision": result.context_precision[i],
+                        "question": dataset[i].get("question", dataset[i].get("user_input", "")),
+                    },
+                )
 
             # ── Aggregate metrics ─────────────────────────────────────
             def mean(lst):
@@ -92,6 +122,17 @@ async def run_evaluation_pipeline(dataset_path: str = "datasets/agent-eval/datas
             mlflow.log_metric("factual", mean(result.factual_correctness))
             mlflow.log_metric("ctx_recall", mean(result.context_recall))
             mlflow.log_metric("ctx_precision", mean(result.context_precision))
+
+            # ── Latency & retry metrics ───────────────────────────────
+            mlflow.log_metric("mean_latency_e2e_s", mean(result.end_to_end_latency))
+            mlflow.log_metric("mean_retry_count", mean(result.retry_counts))
+            for node, durations in result.node_latencies.items():
+                mlflow.log_metric(f"mean_latency_node_{node}_s", mean(durations))
+
+            logger.info(
+                "eval | latency_e2e=%.2fs mean_retries=%.2f",
+                mean(result.end_to_end_latency), mean(result.retry_counts),
+            )
 
             # ── Per-question metrics ───────────────────────────────────
             for i in range(len(result.faithfulness)):
@@ -112,17 +153,15 @@ async def run_evaluation_pipeline(dataset_path: str = "datasets/agent-eval/datas
                 }
                 for i in range(len(result.faithfulness))
             }
-            per_q_path = os.path.join(tmp, "per_question.json")
-            Path(per_q_path).write_text(json.dumps(per_q, indent=2, ensure_ascii=False))
-            mlflow.log_artifact(per_q_path, artifact_path="results")
+            with tempfile.TemporaryDirectory() as results_tmp:
+                per_q_path = os.path.join(results_tmp, "per_question.json")
+                Path(per_q_path).write_text(json.dumps(per_q, indent=2, ensure_ascii=False))
+                mlflow.log_artifact(per_q_path, artifact_path="results")
 
-            # ── Print summary ─────────────────────────────────────────
-            print(f"\nFaithfulness:  {result.faithfulness}")
-            print(f"Factual:       {result.factual_correctness}")
-            print(f"Ctx Recall:    {result.context_recall}")
-            print(f"Ctx Precision: {result.context_precision}")
-            print(
-                f"\nMeans → faith={mean(result.faithfulness):.3f} | factual={mean(result.factual_correctness):.3f} | recall={mean(result.context_recall):.3f} | precision={mean(result.context_precision):.3f}"
+            logger.info(
+                "eval | finished faith=%.3f factual=%.3f recall=%.3f precision=%.3f",
+                mean(result.faithfulness), mean(result.factual_correctness),
+                mean(result.context_recall), mean(result.context_precision),
             )
     finally:
         await store.close()

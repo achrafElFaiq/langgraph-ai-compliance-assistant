@@ -1,54 +1,23 @@
 """Retrieval nodes — ML regulation classifier, hybrid vector/BM25 article retrieval, and fallback search."""
 
-
-import joblib
-import numpy as np
 import json
+import logging
 from datetime import datetime
 from src.application.agent.state import State
 from src.config.init_embedder import embedder
 from src.config.init_store import store
 
-
-# Load model artifacts once at module level (not on every call)
-_classifier = joblib.load("models/classifier.joblib")
-_vectorizer  = joblib.load("models/vectorizer.joblib")
-_mlb         = joblib.load("models/mlb.joblib")
-_thresholds  = joblib.load("models/thresholds.joblib")
+logger = logging.getLogger(__name__)
 
 
-
-# Node Classify: Classify the input text into relevant regulations using a pre-trained classifier.
-def classify(state: State) -> dict:
-    print("[Started Node] classify")
-    time = datetime.now()
-
-    X = _vectorizer.transform([state.input_text])
-    probas = _classifier.predict_proba(X)
-
-    regulations = [
-        reg
-        for i, reg in enumerate(_mlb.classes_)
-        if probas[i][0][1] >= _thresholds[i]
-    ]
-
-    # Fallback: if nothing passes threshold take the highest scoring one
-    if not regulations:
-        scores = [probas[i][0][1] for i in range(len(_mlb.classes_))]
-        regulations = [_mlb.classes_[int(np.argmax(scores))]]
-
-    print(f"[Finished Node] classify In: {(datetime.now() - time).total_seconds()} seconds")
-    return {"regulations": regulations}
-
-
-# Node: Performs retrieval on the classified label
-# What happens in case the classifier doesn't do well ? Not treated
 async def retrieve_articles(state: State) -> dict:
-    print("[Started Node] retrieve articles")
+    """Hybrid vector + BM25 retrieval of candidate articles, scoped to the classified regulations."""
     time = datetime.now()
 
     query = state.input_text
+    # Budget scales with how many regulations the classifier flagged: 5 candidates each.
     top_k = 5 * len(state.regulations)
+    logger.info("retrieve_articles | started top_k=%d regulations=%s", top_k, state.regulations)
 
     embedding = await embedder.embed_query(query)
     articles = await store.retrieve(
@@ -63,16 +32,18 @@ async def retrieve_articles(state: State) -> dict:
         for a in articles
     }
 
-    print(f"[Finished Node] retrieve Ended In: {(datetime.now() - time).total_seconds()} seconds, retrieved={len(articles)}")
+    duration = (datetime.now() - time).total_seconds()
+    logger.info("retrieve_articles | count=%d top_k=%d regulations=%s duration=%.2fs", len(articles), top_k, state.regulations, duration)
+    logger.debug("retrieve_articles | query=%r breadcrumbs=%s duration=%.2fs", query, [a.breadcrumb for a in articles], duration)
     return {
         "retrieved_articles": articles,
         "grounded_skeleton": json.dumps(skeleton, ensure_ascii=False, indent=2)
     }
 
 
-# Node: In case the gounding doesn't find anything relevant we perform more general retrieval not taking in consideration the classifier decision
 async def retrieve_fallback(state: State) -> dict:
-    print("[Started Node] retrieve_fallback")
+    """Broader retrieval ignoring the regulation scope, used when grounding finds nothing relevant."""
+    logger.warning("retrieve_fallback | fallback triggered — no relevant articles found in scoped retrieval")
     time = datetime.now()
 
     embedding = await embedder.embed_query(state.input_text)
@@ -87,7 +58,9 @@ async def retrieve_fallback(state: State) -> dict:
         for a in articles
     }
 
-    print(f"[Finished Node] retrieve_fallback In: {(datetime.now() - time).total_seconds()} seconds, no filter, retrieved={len(articles)}")
+    duration = (datetime.now() - time).total_seconds()
+    logger.info("retrieve_fallback | count=%d duration=%.2fs", len(articles), duration)
+    logger.debug("retrieve_fallback | breadcrumbs=%s duration=%.2fs", [a.breadcrumb for a in articles], duration)
     return {
         "retrieved_articles": articles,
         "grounded_skeleton": json.dumps(skeleton, ensure_ascii=False, indent=2),

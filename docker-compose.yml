@@ -1,19 +1,6 @@
 services:
-  app:
-    build: .
-    ports:
-      - "8000:8000"
-    env_file:
-      - .env
-    environment:
-      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/compliance_db
-      - ALLOWED_ORIGINS=http://localhost:3000
-    depends_on:
-      postgres:
-        condition: service_healthy
-
   postgres:
-    image: pgvector/pgvector:pg16
+    image: pgvector/pgvector:pg17
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
@@ -27,5 +14,75 @@ services:
       timeout: 5s
       retries: 5
 
+  app:
+    build:
+      context: .
+      target: runtime          # lean serving image (API only)
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/compliance_db
+      - ALLOWED_ORIGINS=http://localhost:3000
+      - LANGGRAPH_ALLOWED_MSGPACK_MODULES=src.domain.models.models
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  # Offline batch jobs (ingestion, eval). Never serves traffic — run on demand:
+  #   docker compose --profile jobs run --rm jobs main.py index
+  #   docker compose --profile jobs run --rm jobs main.py eval --dataset datasets/agent-eval/dataset.json
+  # Logs to the same MLflow store (view at http://localhost:5001).
+  jobs:
+    build:
+      context: .
+      target: jobs             # prod + dev deps (deepeval)
+    profiles:
+      - jobs
+    env_file:
+      - .env
+    environment:
+      - DATABASE_URL=postgresql://postgres:postgres@postgres:5432/compliance_db
+      - MLFLOW_TRACKING_URI=http://mlflow:5000    # log through the server (artifacts proxied)
+      - LANGGRAPH_ALLOWED_MSGPACK_MODULES=src.domain.models.models
+    volumes:
+      - ./datasets:/app/datasets    # data is git/docker-ignored — mount it live at run time
+    depends_on:
+      postgres:
+        condition: service_healthy
+      mlflow:
+        condition: service_started
+
+  ui:
+    build:
+      context: ./src/ui
+      args:
+        - NEXT_PUBLIC_API_URL=http://localhost:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - app
+
+  mlflow:
+    image: ghcr.io/mlflow/mlflow:latest
+    ports:
+      - "5001:5000"
+    command: >
+      mlflow server
+        --backend-store-uri sqlite:////mlflow/mlflow.db
+        --artifacts-destination file:///mlflow/artifacts
+        --default-artifact-root mlflow-artifacts:/
+        --serve-artifacts
+        --host 0.0.0.0
+        --port 5000
+    environment:
+      - PYTHONWARNINGS=ignore::DeprecationWarning
+      # Allow the jobs container (Host: mlflow:5000) through the security middleware.
+      - MLFLOW_SERVER_ALLOWED_HOSTS=mlflow,mlflow:5000,localhost,localhost:5000,localhost:5001,127.0.0.1,127.0.0.1:5000
+    volumes:
+      - mlflow_data:/mlflow
+
 volumes:
   postgres_data:
+  mlflow_data:

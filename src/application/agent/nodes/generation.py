@@ -1,6 +1,7 @@
 """Generation nodes — answer drafting, direct chitchat responses, and synthesis report generation."""
 
 import json
+import logging
 from datetime import datetime
 
 from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
@@ -11,10 +12,14 @@ from src.config.init_prompts import (
     load_synthesis_prompt,
 )
 
-def direct_answer(state: State) -> dict:
-    print("[Current Node] direct_answer")
+logger = logging.getLogger(__name__)
 
-    response = llm.invoke([
+
+async def direct_answer(state: State) -> dict:
+    """Answer chitchat / off-topic messages conversationally, without retrieval."""
+    logger.info("direct_answer | started")
+
+    response = await llm.ainvoke([
         SystemMessage(content=(
             "Vous êtes un assistant de conformité réglementaire européenne. "
             "Répondez de manière naturelle et concise."
@@ -23,7 +28,7 @@ def direct_answer(state: State) -> dict:
         HumanMessage(content=state.input_text)
     ])
 
-    print("[Finished Node] direct_answer")
+    logger.info("direct_answer | finished")
 
     return {
         "answer": response.content,
@@ -34,9 +39,9 @@ def direct_answer(state: State) -> dict:
     }
 
 
-# Node: takes all the finding and formulates One correct answer
-def answer(state: State) -> dict:
-    print("[Started Node] answer")
+async def answer(state: State) -> dict:
+    """Compose the final grounded answer from the applied findings, incorporating any critic feedback."""
+    logger.info("answer | started retry=%d", state.retry_count)
     time = datetime.now()
 
     apply_data = json.loads(state.apply_output)
@@ -46,6 +51,7 @@ def answer(state: State) -> dict:
     critic_section = ""
     retry_count = state.retry_count
     if state.critic_opinion:
+        logger.debug("answer | using critic feedback retry=%d feedback=%r", state.retry_count, state.critic_opinion[:200])
         critic_section = (
             f"\n\nCette réponse a déjà été vérifiée. "
             f"Corrigez les points suivants sans exception:\n{state.critic_opinion}"
@@ -55,7 +61,7 @@ def answer(state: State) -> dict:
     findings_text = json.dumps(findings, ensure_ascii=False, indent=2)
     gaps_text = json.dumps(gaps, ensure_ascii=False, indent=2)
 
-    response = llm.invoke([
+    response = await llm.ainvoke([
         SystemMessage(content=load_answer_prompt()),
         *state.messages,
         HumanMessage(content=(
@@ -66,7 +72,8 @@ def answer(state: State) -> dict:
         ))
     ])
 
-    print(f"[Finished Node] answer In: {(datetime.now() - time).total_seconds()} seconds")
+    duration = (datetime.now() - time).total_seconds()
+    logger.info("answer | finished duration=%.2fs", duration)
     return {
         "answer": response.content,
         "retry_count": retry_count,
@@ -77,10 +84,16 @@ def answer(state: State) -> dict:
     }
 
 
-def synthesize(state: State) -> dict:
-    response = llm.invoke([
+async def synthesize(state: State) -> dict:
+    """Generate the end-of-conversation compliance synthesis report."""
+    logger.info("synthesize | started")
+    time = datetime.now()
+
+    response = await llm.ainvoke([
         SystemMessage(content=load_synthesis_prompt()),
         *state.messages,
         HumanMessage(content="Generate the compliance report based on our conversation.")
     ])
+
+    logger.info("synthesize | finished duration=%.2fs", (datetime.now() - time).total_seconds())
     return {"final_report": response.content}

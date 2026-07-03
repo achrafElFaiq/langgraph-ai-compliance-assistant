@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import ReactMarkdown from 'react-markdown'
+import { downloadLatexAsPdf } from '@/lib/pdfExport'
 
 export interface Citation {
   breadcrumb: string
@@ -83,7 +84,15 @@ function CitationItem({ citation }: { citation: Citation }) {
 
 function AssistantMessage({ message }: { message: Message }) {
   const [showCitations, setShowCitations] = useState(false)
+  const [downloading, setDownloading] = useState(false)
   const relevantCitations = message.citations?.filter(c => c.relevant) ?? []
+  const isSynthesis = !!message.finalReport
+
+  const handleDownload = async () => {
+    setDownloading(true)
+    await downloadLatexAsPdf(message.finalReport!)
+    setDownloading(false)
+  }
 
   return (
     <div style={{ display: 'flex', justifyContent: 'flex-start' }}>
@@ -95,9 +104,34 @@ function AssistantMessage({ message }: { message: Message }) {
           borderRadius: '6px',
           padding: '16px',
         }}>
-          <div className="md" style={{ fontSize: '13px', lineHeight: '1.7', color: 'var(--text)' }}>
-            <ReactMarkdown>{message.content}</ReactMarkdown>
-          </div>
+          {isSynthesis ? (
+            <div style={{ fontSize: '13px' }}>
+              <p style={{ color: 'var(--primary)', marginBottom: '10px' }}>
+                [ok] Rapport de conformité généré.
+              </p>
+              <button
+                onClick={handleDownload}
+                disabled={downloading}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: downloading ? 'default' : 'pointer',
+                  color: downloading ? 'var(--text-muted)' : 'var(--primary)',
+                  fontSize: '13px',
+                  fontFamily: 'inherit',
+                  padding: 0,
+                  textDecoration: 'underline',
+                  opacity: downloading ? 0.6 : 1,
+                }}
+              >
+                {downloading ? '[.] ouverture...' : '[download pdf]'}
+              </button>
+            </div>
+          ) : (
+            <div className="md" style={{ fontSize: '13px', lineHeight: '1.7', color: 'var(--text)' }}>
+              <ReactMarkdown>{message.content}</ReactMarkdown>
+            </div>
+          )}
         </div>
 
         {/* Meta row */}

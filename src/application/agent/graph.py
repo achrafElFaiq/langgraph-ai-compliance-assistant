@@ -3,8 +3,8 @@ from langgraph.graph import StateGraph, START, END
 from langgraph.checkpoint.memory import MemorySaver
 
 from src.application.agent.state import State
-from src.application.agent.nodes.intent import classify_intent
-from src.application.agent.nodes.retrieval import classify, retrieve_articles, retrieve_fallback
+from src.application.agent.nodes.intent import classify,classify_intent
+from src.application.agent.nodes.retrieval import  retrieve_articles, retrieve_fallback
 from src.application.agent.nodes.reasoning import ground, apply, critic_answer
 from src.application.agent.nodes.generation import direct_answer, answer, synthesize
 
@@ -18,12 +18,16 @@ def route_intent(state: State) -> str:
 def route_after_ground(state: State) -> str:
     skeleton = json.loads(state.grounded_skeleton)
     relevant = [v for v in skeleton.values() if v.get("relevant") is True]
+    # Nothing relevant in the scoped retrieval → widen the search once.
+    # fallback_attempted prevents an endless fallback → ground → fallback loop.
     if not relevant and not state.fallback_attempted:
         return "retrieve_fallback"
     return "apply"
 
 
 def route_critic(state: State) -> str:
+    # Leave the answer ↔ critic revision loop when the critic approves
+    # (empty opinion) or we've hit the retry cap of 2 revisions.
     if state.critic_opinion == "" or state.retry_count >= 2:
         return "END"
     return "answer"

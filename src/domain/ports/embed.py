@@ -1,5 +1,5 @@
 from abc import ABC, abstractmethod
-from src.domain.models.models import Article, ArticleChunk
+from src.domain.models.models import ArticleChunk
 
 
 class ArticleEmbedder(ABC):

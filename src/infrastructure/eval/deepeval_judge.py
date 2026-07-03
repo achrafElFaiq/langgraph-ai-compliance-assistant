@@ -4,6 +4,7 @@ from typing import Optional, Tuple, Union
 from deepeval.models.base_model import DeepEvalBaseLLM
 import asyncio
 import json
+import time
 from pathlib import Path
 from uuid import uuid4
 
@@ -101,7 +102,7 @@ class DeepEvalJudge(Judge):
         sem = asyncio.Semaphore(5)
         write_lock = asyncio.Lock()
         run_id = uuid4().hex
-        results_path = Path("datasets/eval/results_deepeval.json")
+        results_path = Path("datasets/agent-eval/results_deepeval.json")
         results_path.write_text("[]")
 
         async def _write_result(item_id: str, scores: dict):
@@ -112,13 +113,33 @@ class DeepEvalJudge(Judge):
 
         async def _eval_item(item):
             async with sem:
-                result = await agent.ainvoke(
+                # Stream in debug+values mode: debug events give per-node timing,
+                # the final "values" chunk is the final state (like ainvoke's return).
+                node_starts: dict = {}
+                node_latencies: dict[str, list[float]] = {}
+                result: dict = {}
+
+                start = time.perf_counter()
+                async for mode, chunk in agent.astream(
                     {"input_text": item["question"]},
                     config={
                         "callbacks": [langfuse_handler],
                         "configurable": {"thread_id": f"eval-deepeval-{run_id}-{item['id']}"}
-                    }
-                )
+                    },
+                    stream_mode=["debug", "values"],
+                ):
+                    if mode == "values":
+                        result = chunk
+                        continue
+                    payload = chunk.get("payload", {})
+                    if chunk.get("type") == "task":
+                        node_starts[payload.get("id")] = time.perf_counter()
+                    elif chunk.get("type") == "task_result":
+                        t0 = node_starts.pop(payload.get("id"), None)
+                        if t0 is not None:
+                            name = payload.get("name", "")
+                            node_latencies.setdefault(name, []).append(time.perf_counter() - t0)
+                end_to_end = time.perf_counter() - start
 
                 if isinstance(result, dict):
                     answer = result.get("answer", "")
@@ -156,6 +177,8 @@ class DeepEvalJudge(Judge):
                 ])
                 scores = {m.__class__.__name__: s for m, s in zip(self._metrics, scores_list)}
                 scores["retry_count"] = retry_count
+                scores["latency"] = end_to_end
+                scores["node_latencies"] = node_latencies
                 await _write_result(item["id"], scores)
                 return scores
 
@@ -169,9 +192,21 @@ class DeepEvalJudge(Judge):
         precision    = [e.get("ContextualPrecisionMetric", 0) for e in results_data]
         relevancy    = [e.get("AnswerRelevancyMetric", 0)     for e in results_data]
 
+        end_to_end_latency = [e.get("latency", 0.0) for e in results_data]
+        retry_counts       = [e.get("retry_count", 0) for e in results_data]
+
+        # Flatten per-question node timings into one list of durations per node.
+        node_latencies: dict[str, list[float]] = {}
+        for e in results_data:
+            for node, durs in (e.get("node_latencies") or {}).items():
+                node_latencies.setdefault(node, []).extend(durs)
+
         return EvaluationResult(
             faithfulness=faithfulness,
             factual_correctness=relevancy,
             context_recall=recall,
             context_precision=precision,
+            end_to_end_latency=end_to_end_latency,
+            node_latencies=node_latencies,
+            retry_counts=retry_counts,
         )

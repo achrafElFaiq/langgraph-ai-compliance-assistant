@@ -17,17 +17,17 @@ from src.domain.ports.chunk import RegulationChunker
 from src.domain.ports.embed import ArticleEmbedder
 from src.domain.ports.fetch import RegulationFetcher
 from src.domain.ports.store import RegulationRepository
-from src.pipelines.evaluation import run_evaluation_pipeline
-from src.pipelines.ingestion import run_ingestion_pipeline
 
 
 async def run_ingestion():
+    from src.pipelines.ingestion import run_ingestion_pipeline
+
     setup_logging()
     fetcher: RegulationFetcher = EurLexFetcher()
     store: RegulationRepository = PostgresRegulationRepository(
         connection_string=os.getenv("DATABASE_URL", "postgresql://localhost/compliance_db")
     )
-    embedder: ArtcileEmbedder = OpenRouterEmbedder("openai/text-embedding-3-small")
+    embedder: ArticleEmbedder = OpenRouterEmbedder("openai/text-embedding-3-small")
     chunker: RegulationChunker = ArticleChunker()
     await run_ingestion_pipeline(fetcher=fetcher, embedder=embedder, store=store, chunker=chunker)
 
@@ -51,7 +51,9 @@ async def run_query(question: str, thread_id: str = "test-1"):
     print(result.get("answer", result))
 
 
-async def run_eval(dataset_path: str = "datasets/eval/dataset.json"):
+async def run_eval(dataset_path: str = "datasets/agent-eval/dataset.json"):
+    from src.pipelines.evaluation import run_evaluation_pipeline
+
     setup_logging()
     await run_evaluation_pipeline(dataset_path=dataset_path)
 
@@ -78,7 +80,7 @@ def build_parser() -> argparse.ArgumentParser:
     eval_parser = subparsers.add_parser("eval", help="Run the evaluation pipeline.")
     eval_parser.add_argument(
         "--dataset",
-        default="datasets/eval/dataset.json",
+        default="datasets/agent-eval/dataset.json",
         help="Path to the evaluation dataset JSON file.",
     )
 

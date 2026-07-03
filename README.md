@@ -121,7 +121,7 @@ Current supported regulations:
 
 ## Evaluation
 
-The repository includes an evaluation pipeline under `src/pipelines/evaluation.py` and datasets under `datasets/eval/`.
+The repository includes an evaluation pipeline under `src/pipelines/evaluation.py` and datasets under `datasets/agent-eval/`.
 
 Run the evaluation pipeline with:
 
@@ -129,7 +129,7 @@ Run the evaluation pipeline with:
 uv run python src/pipelines/evaluation.py
 ```
 
-The evaluation flow uses the labeled dataset in `datasets/eval/dataset.json` and writes score outputs into the `datasets/eval/` directory, including result files for RAGAS and DeepEval-based experiments.
+The evaluation flow uses the labeled dataset in `datasets/agent-eval/dataset.json` and writes score outputs into the `datasets/agent-eval/` directory, including result files for RAGAS and DeepEval-based experiments.
 
 This is useful for measuring:
 
@@ -158,7 +158,7 @@ This gives you a traceable path from:
 The project follows a **ports-and-adapters (hexagonal) architecture**.
 
 - `src/domain/ports/` defines the interfaces for fetching, chunking, embedding, storage, and evaluation.
-- `src/infrastructure/` contains concrete adapters such as the EUR-Lex fetcher, PostgreSQL store, sentence-transformers embedder, and evaluation judges.
+- `src/infrastructure/` contains concrete adapters such as the EUR-Lex fetcher, PostgreSQL store, OpenRouter embedder, and evaluation judges.
 - `src/application/agent/` contains the LangGraph state, nodes, and graph orchestration.
 - `src/pipelines/` contains higher-level workflows such as ingestion and evaluation.
 - `src/config/` centralizes model, store, prompt, and tracing initialization.
@@ -175,7 +175,7 @@ src/
 │   └── ports/          # Abstract interfaces (hexagonal ports)
 ├── infrastructure/
 │   ├── chunk/          # Text chunking adapter
-│   ├── embed/          # Sentence-transformers adapter
+│   ├── embed/          # OpenRouter embedder adapter
 │   ├── eval/           # Evaluation adapters (RAGAS / DeepEval)
 │   ├── fetch/          # EUR-Lex fetching and parsing adapters
 │   └── store/          # PostgreSQL + pgvector adapter

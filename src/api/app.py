@@ -6,13 +6,16 @@ import os
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from src.config.init_store import store
-from src.api.routes import chat, health, stream
+from src.api.routes import chat, health, stream, admin
 from contextlib import asynccontextmanager
+from src.config.settings import setup_logging
+
 
 
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
+    setup_logging()
     await store.connect()
     yield
     await store.close()
@@ -38,6 +41,7 @@ app.add_middleware(
 app.include_router(health.router)
 app.include_router(chat.router)
 app.include_router(stream.router)
+app.include_router(admin.router)
 
 if __name__ == "__main__":
     uvicorn.run("src.api.app:app", host="0.0.0.0", port=8000, reload=True)

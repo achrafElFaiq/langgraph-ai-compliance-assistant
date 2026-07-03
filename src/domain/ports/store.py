@@ -28,5 +28,9 @@ class RegulationRepository(ABC):
         pass
 
     @abstractmethod
+    async def count_articles_by_regulation(self) -> dict[str, int]:
+        pass
+
+    @abstractmethod
     async def retrieve(self, embedding: list[float], query: str, top_k: int = 10) -> list[Article]:
         pass

@@ -1,9 +1,20 @@
 'use client'
 
+import { useState, useEffect } from 'react'
+
 export interface Step {
   node: string
   label: string
   status: 'active' | 'done'
+}
+
+function Dots() {
+  const [dots, setDots] = useState('.')
+  useEffect(() => {
+    const id = setInterval(() => setDots(d => d.length >= 3 ? '.' : d + '.'), 400)
+    return () => clearInterval(id)
+  }, [])
+  return <span>{dots}</span>
 }
 
 export default function ProgressSteps({ steps }: { steps: Step[] }) {
@@ -43,11 +54,10 @@ export default function ProgressSteps({ steps }: { steps: Step[] }) {
               <span className="step-bracket-active" style={{ color: 'var(--primary)', flexShrink: 0 }}>[&gt;]</span>
             )}
             <span
-              className={step.status === 'active' ? 'step-cursor' : undefined}
-              style={{ color: step.status === 'done' ? 'var(--text-muted)' : 'var(--text)' }}
+              className={step.status === 'active' ? 'step-label-active' : undefined}
+              style={{ color: step.status === 'done' ? 'var(--text-muted)' : undefined }}
             >
-              {step.label}
-              {step.status === 'active' && '_'}
+              {step.label}{step.status === 'active' && <Dots />}
             </span>
           </div>
         ))}

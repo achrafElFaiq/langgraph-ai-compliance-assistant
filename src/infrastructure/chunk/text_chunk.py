@@ -13,7 +13,7 @@ class ArticleChunker(RegulationChunker):
             chunk_overlap=chunk_overlap,
         )
 
-    async def chunk(self, articles: list[Article]) -> list[ArticleChunk]:
+    def chunk(self, articles: list[Article]) -> list[ArticleChunk]:
         """Split each article into overlapping chunks, preserving all parent metadata on each chunk."""
 
         result: list[ArticleChunk]  = []

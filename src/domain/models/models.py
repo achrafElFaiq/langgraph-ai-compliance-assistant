@@ -48,3 +48,6 @@ class EvaluationResult(BaseModel):
     factual_correctness: list[float]
     context_recall: list[float]
     context_precision: list[float]
+    end_to_end_latency: list[float] = []        # seconds per question
+    node_latencies: dict[str, list[float]] = {} # node name -> seconds per execution
+    retry_counts: list[int] = []                # retry_count per question

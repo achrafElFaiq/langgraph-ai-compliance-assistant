@@ -41,6 +41,18 @@ class PostgresRegulationRepository(RegulationRepository):
         await self.connection.execute("DELETE FROM articles")
         await self.connection.commit()
 
+    async def count_articles_by_regulation(self) -> Dict[str, int]:
+        """Return a map of regulation_name to number of stored articles."""
+        if not self.connection:
+            raise RuntimeError("Database connection is not initialized")
+
+        async with self.connection.cursor() as cur:
+            await cur.execute(
+                "SELECT regulation_name, COUNT(*) FROM articles GROUP BY regulation_name"
+            )
+            rows = await cur.fetchall()
+        return {row[0]: row[1] for row in rows}
+
     async def store_articles(self, articles: List[Article]) -> Dict[str, int]:
         """Store articles and return a map of article number to database id."""
         if not self.connection:
@@ -160,23 +172,37 @@ class PostgresRegulationRepository(RegulationRepository):
             await cur.execute(
                 f"""
                 WITH vector_search AS (
+                    -- Collapse chunks to one row per article (best-matching chunk)
+                    -- before ranking so an article can't appear twice.
                     SELECT article_id,
-                           ROW_NUMBER() OVER (ORDER BY embedding <=> %s::vector) AS rank
-                    FROM article_chunks
-                    WHERE true {reg_filter}
-                    ORDER BY embedding <=> %s::vector
+                           ROW_NUMBER() OVER (ORDER BY distance) AS rank
+                    FROM (
+                        SELECT article_id, MIN(embedding <=> %s::vector) AS distance
+                        FROM article_chunks
+                        WHERE true {reg_filter}
+                        GROUP BY article_id
+                    ) v
+                    ORDER BY distance
                     LIMIT %s
                 ),
                 bm25_search AS (
                     SELECT article_id,
-                           ROW_NUMBER() OVER (ORDER BY ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s)) DESC) AS rank
-                    FROM article_chunks
-                    WHERE to_tsvector('french', content) @@ plainto_tsquery('french', %s)
-                    {reg_filter}
-                    ORDER BY ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s)) DESC
+                           ROW_NUMBER() OVER (ORDER BY score DESC) AS rank
+                    FROM (
+                        SELECT article_id,
+                               MAX(ts_rank(to_tsvector('french', content), plainto_tsquery('french', %s))) AS score
+                        FROM article_chunks
+                        WHERE to_tsvector('french', content) @@ plainto_tsquery('french', %s)
+                        {reg_filter}
+                        GROUP BY article_id
+                    ) b
+                    ORDER BY score DESC
                     LIMIT %s
                 ),
                 rrf AS (
+                    -- Reciprocal Rank Fusion: blend the two rankings by rank, not raw
+                    -- scores (which aren't comparable). 60 is the standard RRF damping
+                    -- constant; COALESCE(...,0) handles articles found by only one method.
                     SELECT
                         COALESCE(v.article_id, b.article_id) AS article_id,
                         COALESCE(1.0 / (60 + v.rank), 0) + COALESCE(1.0 / (60 + b.rank), 0) AS rrf_score
@@ -199,10 +225,8 @@ class PostgresRegulationRepository(RegulationRepository):
                 LIMIT %s
                 """,
                 (
-                    embedding, *reg_params,  # vector_search WHERE
-                    embedding, top_k,  # vector_search ORDER + LIMIT
-                    query, query, *reg_params,  # bm25_search WHERE
-                    query, top_k,  # bm25_search ORDER + LIMIT
+                    embedding, *reg_params, top_k,  # vector_search: MIN distance, WHERE, LIMIT
+                    query, query, *reg_params, top_k,  # bm25_search: MAX ts_rank, WHERE, reg filter, LIMIT
                     top_k  # final LIMIT
                 )
             )

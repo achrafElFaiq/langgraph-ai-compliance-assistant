@@ -31,20 +31,15 @@ body {
 .md pre { background: var(--bg-secondary); padding: 12px; border-radius: 6px; overflow-x: auto; }
 .md blockquote { border-left: 2px solid var(--border); padding-left: 12px; color: var(--text-muted); margin: 8px 0; }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
+@keyframes color-pulse {
+  0%, 100% { color: var(--text); }
+  50% { color: var(--primary); }
 }
 
-@keyframes pulse-bracket {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-.step-cursor {
-  animation: blink 1s step-end infinite;
+.step-label-active {
+  animation: color-pulse 1.4s ease-in-out infinite;
 }
 
 .step-bracket-active {
-  animation: pulse-bracket 1.2s ease-in-out infinite;
+  color: var(--primary);
 }
