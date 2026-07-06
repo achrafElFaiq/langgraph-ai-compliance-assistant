@@ -1,18 +1,18 @@
 import asyncio
 import json
+import logging
 import os
 import tempfile
 import time
-import logging
 from pathlib import Path
 
 import mlflow
 
+from src.config.init_regulations import REGULATIONS
 from src.domain.ports.chunk import RegulationChunker
 from src.domain.ports.embed import ArticleEmbedder
 from src.domain.ports.fetch import RegulationFetcher
 from src.domain.ports.store import RegulationRepository
-from src.config.init_regulations import REGULATIONS
 
 logger = logging.getLogger(__name__)
 

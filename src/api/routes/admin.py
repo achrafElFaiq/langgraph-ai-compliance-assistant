@@ -2,8 +2,8 @@ import logging
 
 from fastapi import APIRouter
 
-from src.config.init_store import store
 from src.config.init_regulations import REGULATIONS
+from src.config.init_store import store
 
 router = APIRouter()
 logger = logging.getLogger(__name__)

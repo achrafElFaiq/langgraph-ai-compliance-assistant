@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Response
+
 from src.config.init_store import store
 
 router = APIRouter()

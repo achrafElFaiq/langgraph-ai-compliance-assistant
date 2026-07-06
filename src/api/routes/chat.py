@@ -1,7 +1,9 @@
+from uuid import uuid4
+
 from fastapi import APIRouter
+
 from src.api.schemas.chat import ChatRequest, ChatResponse
 from src.application.agent.graph import compiled_graph
-from uuid import uuid4
 
 router = APIRouter()
 

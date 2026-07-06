@@ -1,12 +1,13 @@
 import json
-from langgraph.graph import StateGraph, START, END
-from langgraph.checkpoint.memory import MemorySaver
 
+from langgraph.checkpoint.memory import MemorySaver
+from langgraph.graph import END, START, StateGraph
+
+from src.application.agent.nodes.generation import answer, direct_answer, synthesize
+from src.application.agent.nodes.intent import classify, classify_intent
+from src.application.agent.nodes.reasoning import apply, critic_answer, ground
+from src.application.agent.nodes.retrieval import retrieve_articles, retrieve_fallback
 from src.application.agent.state import State
-from src.application.agent.nodes.intent import classify,classify_intent
-from src.application.agent.nodes.retrieval import  retrieve_articles, retrieve_fallback
-from src.application.agent.nodes.reasoning import ground, apply, critic_answer
-from src.application.agent.nodes.generation import direct_answer, answer, synthesize
 
 checkpointer = MemorySaver()
 

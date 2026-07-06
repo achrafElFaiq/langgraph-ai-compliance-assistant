@@ -48,3 +48,9 @@ line-length = 100
 [tool.ruff.lint]
 select = ["E", "F", "I"]
 ignore = ["E501"]
+
+[tool.ruff.lint.per-file-ignores]
+# Imports intentionally follow load_dotenv() so env vars are set before the
+# modules that read them (e.g. init_llm) are imported.
+"src/api/app.py" = ["E402"]
+"src/pipelines/evaluation.py" = ["E402"]

@@ -1,9 +1,10 @@
 import json
 import logging
 import time
+from uuid import uuid4
+
 from fastapi import APIRouter
 from fastapi.responses import StreamingResponse
-from uuid import uuid4
 
 from src.api.schemas.chat import ChatRequest
 from src.application.agent.graph import compiled_graph

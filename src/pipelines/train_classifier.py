@@ -4,14 +4,14 @@ import csv
 import logging
 import os
 import time
-import joblib
-import numpy as np
 from collections import Counter
 
-from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
+import joblib
+import numpy as np
+from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics import classification_report, f1_score, make_scorer
-from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.model_selection import GridSearchCV, train_test_split
 from sklearn.multioutput import MultiOutputClassifier
 from sklearn.pipeline import FeatureUnion
 from sklearn.preprocessing import MultiLabelBinarizer
@@ -49,7 +49,7 @@ def print_dataset_stats(labels: list[list[str]]):
     flat = [reg for regs in labels for reg in regs]
     for reg, count in sorted(Counter(flat).items()):
         log.info("  %-10s %d questions", reg, count)
-    multi = sum(1 for l in labels if len(l) > 1)
+    multi = sum(1 for lab in labels if len(lab) > 1)
     log.info("  Multi-label : %d (%.1f%%)", multi, multi / len(labels) * 100)
     log.info("  Total       : %d", len(labels))
 

@@ -18,11 +18,16 @@ def _bar(score: float | None) -> str:
 def _distribution(scores: list[float]) -> dict[str, int]:
     buckets = {"0.0–0.2": 0, "0.2–0.4": 0, "0.4–0.6": 0, "0.6–0.8": 0, "0.8–1.0": 0}
     for s in scores:
-        if s < 0.2:   buckets["0.0–0.2"] += 1
-        elif s < 0.4: buckets["0.2–0.4"] += 1
-        elif s < 0.6: buckets["0.4–0.6"] += 1
-        elif s < 0.8: buckets["0.6–0.8"] += 1
-        else:         buckets["0.8–1.0"] += 1
+        if s < 0.2:
+            buckets["0.0–0.2"] += 1
+        elif s < 0.4:
+            buckets["0.2–0.4"] += 1
+        elif s < 0.6:
+            buckets["0.4–0.6"] += 1
+        elif s < 0.8:
+            buckets["0.6–0.8"] += 1
+        else:
+            buckets["0.8–1.0"] += 1
     return buckets
 
 

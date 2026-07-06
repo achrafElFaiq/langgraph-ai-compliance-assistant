@@ -3,6 +3,7 @@ import tempfile
 from pathlib import Path
 
 from dotenv import load_dotenv
+
 load_dotenv()
 
 import asyncio
@@ -12,10 +13,10 @@ import subprocess
 
 import mlflow
 
-from src.infrastructure.eval.deepeval_judge import DeepEvalJudge, OpenRouterDeepEvalLLM
 from src.application.agent.graph import compiled_graph
+from src.config.init_llm import critic_llm, grounder_llm, llm
 from src.config.init_store import store
-from src.config.init_llm import llm, grounder_llm, critic_llm
+from src.infrastructure.eval.deepeval_judge import DeepEvalJudge, OpenRouterDeepEvalLLM
 
 logger = logging.getLogger(__name__)
 
@@ -86,6 +87,7 @@ async def run_evaluation_pipeline(dataset_path: str = "datasets/agent-eval/datas
                 mlflow.log_artifact(graph_png_path, artifact_path="graph")
 
             # ── Run eval ──────────────────────────────────────────────
+
             result = await judge.eval(dataset=dataset, agent=compiled_graph)
 
             # ── Per-question logging ───────────────────────────────────

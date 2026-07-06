@@ -1,7 +1,8 @@
+from langchain_text_splitters import RecursiveCharacterTextSplitter
+
 from src.domain.models.models import Article, ArticleChunk
 from src.domain.ports.chunk import RegulationChunker
 
-from langchain_text_splitters import RecursiveCharacterTextSplitter
 
 class ArticleChunker(RegulationChunker):
     """Recursive character splitter with overlap — chunks articles for embedding while preserving metadata."""

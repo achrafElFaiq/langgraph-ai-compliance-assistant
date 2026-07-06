@@ -1,6 +1,7 @@
 from abc import ABC, abstractmethod
 
 from langgraph.graph.state import CompiledStateGraph
+
 from src.domain.models.models import EvaluationResult
 
 

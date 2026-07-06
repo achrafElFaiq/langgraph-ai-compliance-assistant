@@ -204,7 +204,7 @@ async def main():
     print(f"  Done — {len(all_questions)} single-regulation questions")
 
     # Cross pair questions
-    print(f"\nGenerating cross-pair questions (75 per pair)...")
+    print("\nGenerating cross-pair questions (75 per pair)...")
     cross_pairs = [
         ("MiCA", "GDPR"),
         ("MiCA", "DORA"),
@@ -220,7 +220,7 @@ async def main():
         all_questions.extend(result)
 
     # Cross triple questions
-    print(f"\nGenerating cross-triple questions (40 per triple)...")
+    print("\nGenerating cross-triple questions (40 per triple)...")
     cross_triples = [
         ("MiCA", "AI Act", "GDPR"),
         ("MiCA", "DORA", "GDPR"),

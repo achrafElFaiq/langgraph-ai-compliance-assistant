@@ -1,26 +1,26 @@
-from openai import OpenAI, AsyncOpenAI
-from pydantic import BaseModel
-from typing import Optional, Tuple, Union
-from deepeval.models.base_model import DeepEvalBaseLLM
 import asyncio
 import json
 import time
 from pathlib import Path
+from typing import Optional, Tuple, Union
 from uuid import uuid4
 
 from deepeval.metrics import (
-    FaithfulnessMetric,
-    ContextualRecallMetric,
-    ContextualPrecisionMetric,
     AnswerRelevancyMetric,
+    ContextualPrecisionMetric,
+    ContextualRecallMetric,
+    FaithfulnessMetric,
 )
+from deepeval.models.base_model import DeepEvalBaseLLM
 from deepeval.test_case import LLMTestCase
 from langgraph.graph.state import CompiledStateGraph
+from openai import AsyncOpenAI, OpenAI
+from pydantic import BaseModel
 
-from src.domain.ports.judge import Judge
-from src.domain.models.models import EvaluationResult
-from src.infrastructure.eval.utils import print_results
 from src.config.init_langfuse import langfuse_handler
+from src.domain.models.models import EvaluationResult
+from src.domain.ports.judge import Judge
+from src.infrastructure.eval.utils import print_results
 
 
 class OpenRouterDeepEvalLLM(DeepEvalBaseLLM):

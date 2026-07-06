@@ -1,7 +1,7 @@
 # config/init_llm.py
 import os
-from langchain_openai import ChatOpenAI
 
+from langchain_openai import ChatOpenAI
 
 # Agent LLM (générateur)
 llm = ChatOpenAI(

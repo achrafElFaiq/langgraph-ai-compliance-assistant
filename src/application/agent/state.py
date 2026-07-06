@@ -1,7 +1,10 @@
 from dataclasses import dataclass, field
 from typing import Annotated
+
 from langgraph.graph.message import add_messages
+
 from src.domain.models.models import Article
+
 
 @dataclass
 class State:

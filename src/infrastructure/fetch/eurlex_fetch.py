@@ -11,9 +11,9 @@ import httpx
 
 from src.config.init_regulations import REGULATIONS
 from src.config.settings import SPARQL_ENDPOINT
-from src.infrastructure.fetch.eurlex_parse import EurLexParser
 from src.domain.models.models import FetchResult
 from src.domain.ports.fetch import RegulationFetcher
+from src.infrastructure.fetch.eurlex_parse import EurLexParser
 
 logger = logging.getLogger(__name__)
 

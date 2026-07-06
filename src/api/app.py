@@ -1,16 +1,17 @@
 from dotenv import load_dotenv
+
 load_dotenv()
 
-import uvicorn
 import os
+from contextlib import asynccontextmanager
+
+import uvicorn
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+
+from src.api.routes import admin, chat, health, stream
 from src.config.init_store import store
-from src.api.routes import chat, health, stream, admin
-from contextlib import asynccontextmanager
 from src.config.settings import setup_logging
-
-
 
 
 @asynccontextmanager
